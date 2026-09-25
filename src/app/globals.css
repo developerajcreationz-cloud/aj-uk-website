@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbfbf8;
+  --foreground: #101210;
+
+  --brand-lime: #c8e455;
+  --brand-green: #7f9f2e;
+  --brand-olive: #4d5f18;
+  --brand-black: #101210;
+  --brand-cream: #fbfbf8;
+
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-lime: var(--brand-lime);
+  --color-green: var(--brand-green);
+  --color-olive: var(--brand-olive);
+  --color-ink: var(--brand-black);
+  --color-cream: var(--brand-cream);
+
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-inter);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--brand-lime);
+  color: var(--brand-black);
+}
+
+/* Hide default cursor for devices that support hover + fine pointer */
+@media (hover: hover) and (pointer: fine) {
+  .cursor-enabled {
+    cursor: none;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 26s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 26s linear infinite;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -24px, 0) scale(1.05);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 9s var(--ease-in-out-quart) infinite;
+}
+
+@keyframes float-slower {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, 26px, 0) scale(1.08);
+  }
+}
+
+.animate-float-slower {
+  animation: float-slower 12s var(--ease-in-out-quart) infinite;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+@keyframes scroll-line {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  50.001% {
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+.animate-scroll-line {
+  animation: scroll-line 2s var(--ease-in-out-quart) infinite;
+}
