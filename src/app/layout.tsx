@@ -20,23 +20,23 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ajcreationz.com"),
   title: {
-    default: "AJ Creationz — Creative & Digital Agency for US & UK Brands",
+    default: "AJ Creationz — Creative & Digital Agency",
     template: "%s — AJ Creationz",
   },
   description:
-    "AJ Creationz is a creative and digital agency designing websites, brand identities, and growth-driven campaigns for ambitious businesses across the United States and United Kingdom.",
+    "AJ Creationz is a creative and digital agency designing websites, brand identities, and growth-driven campaigns for ambitious businesses.",
   keywords: [
     "digital agency",
     "web design agency",
-    "branding agency US UK",
+    "branding agency",
     "creative agency",
     "website design",
     "AJ Creationz",
   ],
   openGraph: {
-    title: "AJ Creationz — Creative & Digital Agency for US & UK Brands",
+    title: "AJ Creationz — Creative & Digital Agency",
     description:
-      "Websites, brand identities, and growth-driven campaigns for ambitious businesses across the US and UK.",
+      "Websites, brand identities, and growth-driven campaigns for ambitious businesses.",
     url: "https://ajcreationz.com",
     siteName: "AJ Creationz",
     images: ["/images/logo-full.png"],
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AJ Creationz — Creative & Digital Agency for US & UK Brands",
+    title: "AJ Creationz — Creative & Digital Agency",
     description:
-      "Websites, brand identities, and growth-driven campaigns for ambitious businesses across the US and UK.",
+      "Websites, brand identities, and growth-driven campaigns for ambitious businesses.",
     images: ["/images/logo-full.png"],
   },
 };

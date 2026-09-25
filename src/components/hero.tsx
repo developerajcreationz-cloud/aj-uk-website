@@ -15,8 +15,8 @@ const MARQUEE_ITEMS = [
   "MOTION & INTERACTION",
   "DEVELOPMENT",
   "SEO & GROWTH",
-  "UNITED STATES",
-  "UNITED KINGDOM",
+  "CREATIVE DIRECTION",
+  "GROWTH STRATEGY",
 ];
 
 const STATS = [
@@ -112,7 +112,7 @@ export function Hero() {
             <span className="relative flex h-2 w-2">
               <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-green" />
             </span>
-            CREATIVE &amp; DIGITAL AGENCY — US / UK
+            CREATIVE &amp; DIGITAL AGENCY
           </motion.div>
 
           <h1 className="font-display max-w-5xl text-[13vw] font-medium leading-[0.95] tracking-tight text-ink sm:text-[9vw] md:text-[6.4vw] lg:text-[6vw]">
@@ -148,9 +148,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.9 }}
             className="max-w-md text-balance text-base leading-relaxed text-ink/65 md:max-w-lg md:text-lg"
           >
-            AJ Creationz partners with ambitious brands across the United States and United
-            Kingdom — designing websites, identities, and campaigns that hold attention and
-            earn results.
+            AJ Creationz partners with ambitious brands — designing websites, identities, and
+            campaigns that hold attention and earn results.
           </motion.p>
 
           <motion.div

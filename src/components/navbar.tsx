@@ -118,13 +118,12 @@ export function Navbar() {
               className="mt-10 flex flex-col gap-6 text-sm text-cream/60 md:mt-16 md:flex-row md:items-center md:justify-between"
             >
               <p className="max-w-xs">
-                A creative &amp; digital agency partnering with ambitious brands across the US &amp; UK.
+                A creative &amp; digital agency partnering with ambitious brands ready to move.
               </p>
               <div className="flex flex-col gap-1 md:items-end">
                 <a href="mailto:hello@ajcreationz.com" data-cursor-hover className="text-cream transition-colors hover:text-lime">
                   hello@ajcreationz.com
                 </a>
-                <span>New York — London</span>
               </div>
             </motion.div>
           </motion.div>
