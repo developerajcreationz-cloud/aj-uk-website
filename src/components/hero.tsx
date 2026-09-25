@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import { Magnetic } from "@/components/magnetic";
 import { Marquee } from "@/components/marquee";
+import { RotatingBadge } from "@/components/rotating-badge";
 
 const HEADLINE_LINES = ["Ideas, engineered", "to move your", "audience."];
 
@@ -91,6 +92,8 @@ export function Hero() {
         style={{ y: contentY, opacity: contentOpacity }}
         className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col justify-between px-6 pb-10 md:px-10"
       >
+        <RotatingBadge className="absolute right-6 top-2 hidden text-ink xl:block" />
+
         <div className="flex flex-1 flex-col justify-center gap-8 md:gap-10">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
