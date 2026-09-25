@@ -4,7 +4,8 @@ import { useRef } from "react";
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import { Magnetic } from "@/components/magnetic";
 import { Marquee } from "@/components/marquee";
-import { RotatingBadge } from "@/components/rotating-badge";
+import { HeroScene } from "@/components/hero-scene";
+import { useMediaQuery } from "@/lib/use-media-query";
 
 const HEADLINE_LINES = ["Ideas, engineered", "to move your", "audience."];
 
@@ -36,6 +37,7 @@ export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
+  const showScene = useMediaQuery("(min-width: 1280px)");
 
   const springX = useSpring(mouseX, { stiffness: 40, damping: 20 });
   const springY = useSpring(mouseY, { stiffness: 40, damping: 20 });
@@ -88,12 +90,18 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-cream" />
       </div>
 
+      {showScene && (
+        <HeroScene
+          mouseX={mouseX}
+          mouseY={mouseY}
+          className="absolute -right-16 top-1/2 h-[560px] w-[560px] -translate-y-1/2 2xl:-right-6 2xl:h-[640px] 2xl:w-[640px]"
+        />
+      )}
+
       <motion.div
         style={{ y: contentY, opacity: contentOpacity }}
         className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col justify-between px-6 pb-10 md:px-10"
       >
-        <RotatingBadge className="absolute right-6 top-2 hidden text-ink xl:block" />
-
         <div className="flex flex-1 flex-col justify-center gap-8 md:gap-10">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
