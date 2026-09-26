@@ -1,8 +1,8 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Image from "next/image";
-import { motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Magnetic } from "@/components/magnetic";
 
 type Project = {
@@ -70,7 +70,6 @@ function ArrowIcon() {
 
 export function Work() {
   const trackRef = useRef<HTMLDivElement>(null);
-  const [active, setActive] = useState(0);
 
   const { scrollYProgress } = useScroll({
     target: trackRef,
@@ -78,11 +77,6 @@ export function Work() {
   });
 
   const x = useTransform(scrollYProgress, [0, 1], ["0vw", `-${SCROLL_VW}vw`]);
-
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    const index = Math.round(latest * (SLIDE_COUNT - 1));
-    setActive(Math.max(0, Math.min(SLIDE_COUNT - 1, index)));
-  });
 
   return (
     <section id="work" className="relative border-t border-ink/10 bg-ink text-cream">
@@ -144,15 +138,15 @@ export function Work() {
           <motion.div style={{ x }} className="flex h-full items-center">
             {/* Title slide */}
             <div
-              className="relative flex h-[78vh] shrink-0 flex-col justify-between bg-cream px-10 py-10 text-ink"
+              className="relative flex h-[78vh] shrink-0 flex-col justify-center bg-cream px-10 py-10 text-ink"
               style={{ width: `${SLIDE_VW}vw`, marginRight: `${GAP_VW}vw` }}
             >
-              <div className="flex items-center justify-between text-xs font-medium uppercase tracking-wide text-ink/50">
-                <span>AJ Creationz</span>
-                <span>
-                  {String(active + 1).padStart(2, "0")} / {String(SLIDE_COUNT).padStart(2, "0")}
-                </span>
-              </div>
+              <a href="#" data-cursor-hover className="absolute left-10 top-10 text-sm text-ink/60 transition-colors hover:text-ink">
+                Instagram
+              </a>
+              <a href="#" data-cursor-hover className="absolute right-10 top-10 text-sm text-ink/60 transition-colors hover:text-ink">
+                Facebook
+              </a>
 
               <div>
                 <h2 className="font-display text-[6vw] font-medium leading-[0.95] tracking-tight text-ink xl:text-[4.2vw]">
@@ -180,7 +174,12 @@ export function Work() {
                 </Magnetic>
               </div>
 
-              <p className="text-xs uppercase tracking-wide text-ink/40">Scroll to explore →</p>
+              <a href="#" data-cursor-hover className="absolute bottom-10 left-10 text-sm text-ink/60 transition-colors hover:text-ink">
+                Youtube
+              </a>
+              <a href="#" data-cursor-hover className="absolute bottom-10 right-10 text-sm text-ink/60 transition-colors hover:text-ink">
+                Linkedin
+              </a>
             </div>
 
             {/* Project slides */}
@@ -211,8 +210,8 @@ export function Work() {
                 </div>
 
                 <div className="flex flex-1 flex-col justify-center gap-3 pt-6">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="rounded-full bg-lime px-3 py-1 text-xs font-medium text-ink">
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    <span className="rounded-full border border-cream/25 px-3 py-1 text-xs text-cream/70 transition-colors duration-300 group-hover:border-lime/50">
                       {project.category}
                     </span>
                     <div className="flex flex-wrap gap-x-4 gap-y-1">
