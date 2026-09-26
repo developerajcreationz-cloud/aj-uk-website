@@ -54,7 +54,7 @@ function ChromeKnot({
   });
 
   return (
-    <mesh ref={meshRef} geometry={geometry} scale={1.1}>
+    <mesh ref={meshRef} geometry={geometry} scale={1}>
       <meshPhysicalMaterial
         color="#eef2e2"
         metalness={1}
@@ -78,9 +78,16 @@ export function HeroScene({
   className?: string;
 }) {
   return (
-    <div className={cn("pointer-events-none", className)} aria-hidden>
+    <div
+      className={cn("pointer-events-none", className)}
+      aria-hidden
+      style={{
+        maskImage: "radial-gradient(closest-side, black 62%, transparent 100%)",
+        WebkitMaskImage: "radial-gradient(closest-side, black 62%, transparent 100%)",
+      }}
+    >
       <Canvas
-        camera={{ position: [0, 0, 6.2], fov: 32 }}
+        camera={{ position: [0, 0, 6.8], fov: 30 }}
         gl={{ alpha: true, antialias: true }}
         dpr={[1, 1.75]}
       >

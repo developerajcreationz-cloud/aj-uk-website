@@ -21,7 +21,6 @@ const MARQUEE_ITEMS = [
 
 const STATS = [
   { value: "40+", label: "Brands launched" },
-  { value: "2", label: "Continents served" },
   { value: "5.0", label: "Average client rating" },
 ];
 
@@ -42,10 +41,8 @@ export function Hero() {
   const springX = useSpring(mouseX, { stiffness: 40, damping: 20 });
   const springY = useSpring(mouseY, { stiffness: 40, damping: 20 });
 
-  const blobOneX = useTransform(springX, (v) => v * 40);
-  const blobOneY = useTransform(springY, (v) => v * 40);
-  const blobTwoX = useTransform(springX, (v) => v * -30);
-  const blobTwoY = useTransform(springY, (v) => v * -30);
+  const blobX = useTransform(springX, (v) => v * 30);
+  const blobY = useTransform(springY, (v) => v * 30);
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -71,23 +68,10 @@ export function Hero() {
     >
       {/* Background layer */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div
-          className="absolute inset-0 opacity-[0.35]"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(16,18,16,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(16,18,16,0.06) 1px, transparent 1px)",
-            backgroundSize: "56px 56px",
-          }}
-        />
         <motion.div
-          style={{ x: blobOneX, y: blobOneY }}
-          className="animate-float-slow absolute -right-32 top-10 h-[420px] w-[420px] rounded-full bg-gradient-to-br from-lime/70 to-green/40 blur-[90px] md:h-[560px] md:w-[560px]"
+          style={{ x: blobX, y: blobY }}
+          className="animate-float-slow absolute -right-40 -top-32 h-[560px] w-[560px] rounded-full bg-gradient-to-br from-lime/25 to-transparent blur-[130px] md:h-[680px] md:w-[680px]"
         />
-        <motion.div
-          style={{ x: blobTwoX, y: blobTwoY }}
-          className="animate-float-slower absolute -left-24 bottom-0 h-[320px] w-[320px] rounded-full bg-gradient-to-tr from-olive/50 to-green/30 blur-[100px] md:h-[420px] md:w-[420px]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-cream" />
       </div>
 
       {showScene && (
