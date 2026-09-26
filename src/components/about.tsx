@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Magnetic } from "@/components/magnetic";
+import { TiltCard } from "@/components/tilt-card";
+import { CountUp } from "@/components/count-up";
 
 const VALUES = [
   {
@@ -19,6 +21,12 @@ const VALUES = [
     title: "Built to scale",
     description: "Systems over one-offs — brand and code that hold up as the team, the traffic, and the ambition grow.",
   },
+];
+
+const STATS = [
+  { value: 40, decimals: 0, suffix: "+", label: "Brands launched" },
+  { value: 5, decimals: 1, suffix: "", label: "Average client rating" },
+  { value: 3, decimals: 0, suffix: "+", label: "Years in business" },
 ];
 
 const fadeUp = {
@@ -88,7 +96,27 @@ export function About() {
           </motion.div>
         </div>
 
-        <div className="mt-20 grid gap-10 border-t border-ink/10 pt-12 md:mt-28 md:grid-cols-3 md:gap-12">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={fadeUp}
+          custom={2}
+          className="mt-16 grid grid-cols-3 gap-6 border-y border-ink/10 py-8 md:mt-20 md:gap-12 md:py-10"
+        >
+          {STATS.map((stat) => (
+            <div key={stat.label}>
+              <p className="font-display text-3xl text-ink md:text-5xl">
+                <CountUp value={stat.value} decimals={stat.decimals} suffix={stat.suffix} />
+              </p>
+              <p className="mt-1 text-xs uppercase tracking-wide text-ink/50 md:text-sm">
+                {stat.label}
+              </p>
+            </div>
+          ))}
+        </motion.div>
+
+        <div className="mt-16 grid gap-6 md:mt-20 md:grid-cols-3 md:gap-8" style={{ perspective: 1000 }}>
           {VALUES.map((value, i) => (
             <motion.div
               key={value.index}
@@ -96,15 +124,18 @@ export function About() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
               variants={fadeUp}
-              custom={i + 2}
+              custom={i + 3}
             >
-              <span className="font-mono text-xs text-green">{value.index}</span>
-              <h3 className="font-display mt-3 text-2xl font-medium tracking-tight text-ink md:text-3xl">
-                {value.title}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink/60 md:text-base">
-                {value.description}
-              </p>
+              <TiltCard className="group h-full rounded-2xl border border-ink/10 bg-white/60 p-8 shadow-[0_1px_0_rgba(16,18,16,0.03)] transition-colors duration-300 hover:border-green/30">
+
+                <span className="font-mono text-xs text-green">{value.index}</span>
+                <h3 className="font-display mt-3 text-2xl font-medium tracking-tight text-ink md:text-3xl">
+                  {value.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-ink/60 md:text-base">
+                  {value.description}
+                </p>
+              </TiltCard>
             </motion.div>
           ))}
         </div>
