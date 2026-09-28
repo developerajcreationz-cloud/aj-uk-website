@@ -48,7 +48,7 @@ export function Footer() {
               alt="AJ Creationz"
               width={168}
               height={82}
-              className="h-9 w-auto"
+              className="h-11 w-auto md:h-12"
             />
             <p className="max-w-xs text-sm leading-relaxed text-ink/60">
               A creative &amp; digital agency partnering with ambitious brands ready to move.
@@ -142,12 +142,6 @@ export function Footer() {
             </button>
           </Magnetic>
         </div>
-      </div>
-
-      <div aria-hidden className="pointer-events-none select-none overflow-hidden pb-2">
-        <p className="font-display text-center text-[16vw] font-medium leading-none tracking-tight text-ink/[0.04] md:text-[12vw]">
-          ajcreationz
-        </p>
       </div>
     </footer>
   );
