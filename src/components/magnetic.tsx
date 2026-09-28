@@ -39,6 +39,7 @@ export function Magnetic({
       ref={ref}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
+      whileTap={{ scale: 0.94 }}
       style={{ x: springX, y: springY }}
       className={cn("inline-flex", className)}
     >

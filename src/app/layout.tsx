@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Inter } from "next/font/google";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { Cursor } from "@/components/cursor";
 import { ScrollProgress } from "@/components/scroll-progress";
+import { ScrollToTop } from "@/components/scroll-to-top";
 import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <ScrollProgress />
           <Cursor />
           {children}
+          <ScrollToTop />
         </SmoothScroll>
       </body>
     </html>
