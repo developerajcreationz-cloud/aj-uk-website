@@ -191,6 +191,39 @@ export function HeroVisual({
         </div>
       </Layer>
 
+      {/* SEO ranking card */}
+      <Layer
+        depth={60}
+        delay={1.25}
+        bob={7}
+        springX={springX}
+        springY={springY}
+        className="right-[0%] top-[43%] w-[36%]"
+      >
+        <div className={cn(card, "p-4")}>
+          <div className="flex items-center gap-2 rounded-full border border-ink/10 bg-cream px-3 py-1.5 text-[10px] text-ink/60">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+            best agency near me
+          </div>
+          <div className="mt-3 flex items-start gap-2.5">
+            <span className="font-display flex h-7 min-w-7 items-center justify-center rounded-lg bg-ink px-1.5 text-xs font-medium text-lime">
+              #1
+            </span>
+            <div className="min-w-0 flex-1 space-y-1.5">
+              <p className="truncate text-[11px] font-medium text-olive">ajcreationz.co.uk</p>
+              <div className="h-1.5 w-full rounded-full bg-ink/20" />
+              <div className="h-1.5 w-2/3 rounded-full bg-ink/10" />
+            </div>
+          </div>
+          <p className="mt-3 text-[10px] font-medium uppercase tracking-wide text-ink/50">
+            SEO &amp; growth
+          </p>
+        </div>
+      </Layer>
+
       {/* ROAS chip */}
       <Layer
         depth={70}
