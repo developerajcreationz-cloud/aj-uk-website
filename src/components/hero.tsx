@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import { Magnetic } from "@/components/magnetic";
 import { Marquee } from "@/components/marquee";
-import { HeroScene } from "@/components/hero-scene";
+import { HeroVisual } from "@/components/hero-visual";
 import { useMediaQuery } from "@/lib/use-media-query";
 
 const HEADLINE_LINES = ["Ideas, engineered", "to move your", "audience."];
@@ -75,10 +75,10 @@ export function Hero() {
       </div>
 
       {showScene && (
-        <HeroScene
+        <HeroVisual
           mouseX={mouseX}
           mouseY={mouseY}
-          className="absolute -right-16 top-1/2 h-[560px] w-[560px] -translate-y-1/2 2xl:-right-6 2xl:h-[640px] 2xl:w-[640px]"
+          className="absolute -right-4 top-1/2 h-[540px] w-[540px] -translate-y-1/2 2xl:right-6 2xl:h-[620px] 2xl:w-[620px]"
         />
       )}
 
