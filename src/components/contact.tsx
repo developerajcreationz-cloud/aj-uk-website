@@ -17,7 +17,7 @@ function Field({
       <span className="text-xs font-medium uppercase tracking-wide text-cream/45">{label}</span>
       <input
         {...props}
-        className="mt-2 w-full border-b border-cream/20 bg-transparent pb-3 text-base text-cream outline-none transition-colors duration-300 placeholder:text-cream/25 focus:border-lime"
+        className="mt-2 w-full border-b border-cream/20 bg-transparent pb-3 text-base text-cream outline-none transition-colors duration-300 placeholder:text-cream/25 focus:border-lilac"
       />
     </label>
   );
@@ -51,7 +51,7 @@ export function Contact() {
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute -left-32 bottom-0 h-[460px] w-[460px] rounded-full bg-gradient-to-tr from-lime/15 to-transparent blur-[130px]"
+        className="pointer-events-none absolute -left-32 bottom-0 h-[460px] w-[460px] rounded-full bg-gradient-to-tr from-lilac/15 to-transparent blur-[130px]"
       />
 
       <div className="relative mx-auto grid max-w-[1440px] gap-16 md:grid-cols-2 md:gap-20">
@@ -65,14 +65,14 @@ export function Contact() {
           <div>
             <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/50">
               <span className="relative flex h-2 w-2">
-                <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-lime" />
+                <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-lilac" />
               </span>
               Currently booking new projects
             </p>
             <h2 className="font-display text-[11vw] font-medium leading-[1.02] tracking-tight sm:text-5xl md:text-6xl">
               Let&apos;s build
               <br />
-              <em className="bg-gradient-to-r from-olive via-green to-lime bg-clip-text font-serif italic text-transparent">
+              <em className="bg-gradient-to-r from-plum via-violet to-lilac bg-clip-text font-serif italic text-transparent">
                 something good
               </em>
               .
@@ -89,10 +89,10 @@ export function Contact() {
                 type="button"
                 data-cursor-hover
                 onClick={handleCopy}
-                className="group flex items-center gap-3 text-2xl font-medium tracking-tight text-cream transition-colors duration-300 hover:text-lime sm:text-3xl"
+                className="group flex items-center gap-3 text-2xl font-medium tracking-tight text-cream transition-colors duration-300 hover:text-lilac sm:text-3xl"
               >
                 hello@ajcreationz.com
-                <span className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-cream/20 transition-all duration-300 group-hover:border-lime group-hover:bg-lime group-hover:text-ink">
+                <span className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-cream/20 transition-all duration-300 group-hover:border-lilac group-hover:bg-lilac group-hover:text-ink">
                   <AnimatePresence mode="wait" initial={false}>
                     {copied ? (
                       <motion.svg
@@ -147,9 +147,9 @@ export function Contact() {
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="flex h-full min-h-[360px] flex-col items-start justify-center gap-4 rounded-2xl border border-lime/30 bg-lime/5 p-10"
+                className="flex h-full min-h-[360px] flex-col items-start justify-center gap-4 rounded-2xl border border-lilac/30 bg-lilac/5 p-10"
               >
-                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-lime text-ink">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-lilac text-ink">
                   <svg width="18" height="18" viewBox="0 0 12 12" fill="none">
                     <path d="M2 6l2.5 2.5L10 3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -185,7 +185,7 @@ export function Contact() {
                         onClick={() => setProjectType(type)}
                         className={`rounded-full border px-4 py-2 text-sm transition-colors duration-300 ${
                           projectType === type
-                            ? "border-lime bg-lime text-ink"
+                            ? "border-lilac bg-lilac text-ink"
                             : "border-cream/20 text-cream/70 hover:border-cream/40"
                         }`}
                       >
@@ -204,7 +204,7 @@ export function Contact() {
                     rows={4}
                     placeholder="Tell us about the project…"
                     required
-                    className="mt-2 w-full resize-none border-b border-cream/20 bg-transparent pb-3 text-base text-cream outline-none transition-colors duration-300 placeholder:text-cream/25 focus:border-lime"
+                    className="mt-2 w-full resize-none border-b border-cream/20 bg-transparent pb-3 text-base text-cream outline-none transition-colors duration-300 placeholder:text-cream/25 focus:border-lilac"
                   />
                 </label>
 
@@ -213,10 +213,10 @@ export function Contact() {
                     type="submit"
                     data-cursor-hover
                     disabled={status === "sending"}
-                    className="group inline-flex items-center gap-3 rounded-full bg-lime px-7 py-4 text-sm font-medium text-ink transition-colors duration-300 hover:bg-cream disabled:opacity-70"
+                    className="group inline-flex items-center gap-3 rounded-full bg-lilac px-7 py-4 text-sm font-medium text-ink transition-colors duration-300 hover:bg-cream disabled:opacity-70"
                   >
                     {status === "sending" ? "Sending…" : "Send message"}
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-ink text-lime transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-45">
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-ink text-lilac transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-45">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                         <path d="M2 10L10 2M10 2H3.5M10 2V8.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>

@@ -70,7 +70,7 @@ export function Hero() {
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <motion.div
           style={{ x: blobX, y: blobY }}
-          className="animate-float-slow absolute -right-40 -top-32 h-[560px] w-[560px] rounded-full bg-gradient-to-br from-lime/25 to-transparent blur-[130px] md:h-[680px] md:w-[680px]"
+          className="animate-float-slow absolute -right-40 -top-32 h-[560px] w-[560px] rounded-full bg-gradient-to-br from-lilac/25 to-transparent blur-[130px] md:h-[680px] md:w-[680px]"
         />
       </div>
 
@@ -94,7 +94,7 @@ export function Hero() {
             className="inline-flex w-fit items-center gap-2 rounded-full border border-ink/15 bg-white/60 px-4 py-2 text-xs font-medium tracking-wide text-ink/70 backdrop-blur-sm"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-green" />
+              <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-violet" />
             </span>
             CREATIVE &amp; DIGITAL AGENCY
           </motion.div>
@@ -113,7 +113,7 @@ export function Hero() {
                     line === "to move your" && word === "move" ? (
                       <em
                         key={wi}
-                        className="relative mx-1 inline-block bg-gradient-to-r from-olive via-green to-lime bg-clip-text font-serif italic text-transparent"
+                        className="relative mx-1 inline-block bg-gradient-to-r from-plum via-violet to-lilac bg-clip-text font-serif italic text-transparent"
                       >
                         {word}
                       </em>
@@ -146,10 +146,10 @@ export function Hero() {
               <a
                 href="#contact"
                 data-cursor-hover
-                className="group inline-flex items-center gap-3 rounded-full bg-ink px-7 py-4 text-sm font-medium text-cream transition-colors duration-300 hover:bg-olive"
+                className="group inline-flex items-center gap-3 rounded-full bg-ink px-7 py-4 text-sm font-medium text-cream transition-colors duration-300 hover:bg-plum"
               >
                 Start a project
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-lime text-ink transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-45">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-lilac text-ink transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-45">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                     <path d="M2 10L10 2M10 2H3.5M10 2V8.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>

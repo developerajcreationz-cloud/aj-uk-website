@@ -52,7 +52,7 @@ export function Marquee({ items, className }: { items: string[]; className?: str
         {track.map((item, i) => (
           <span key={i} className="flex items-center gap-8 whitespace-nowrap">
             <span>{item}</span>
-            <span aria-hidden className="text-lime">
+            <span aria-hidden className="text-lilac">
               ✦
             </span>
           </span>

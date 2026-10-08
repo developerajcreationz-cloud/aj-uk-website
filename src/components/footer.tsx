@@ -48,7 +48,7 @@ export function Footer() {
               alt="AJ Creationz"
               width={168}
               height={82}
-              className="h-11 w-auto md:h-12"
+              className="h-11 w-auto self-start md:h-12"
             />
             <p className="max-w-xs text-sm leading-relaxed text-ink/60">
               A creative &amp; digital agency partnering with ambitious brands ready to move.
@@ -57,7 +57,7 @@ export function Footer() {
               <a
                 href="#contact"
                 data-cursor-hover
-                className="group inline-flex w-fit items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-cream transition-colors duration-300 hover:bg-olive"
+                className="group inline-flex w-fit items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-cream transition-colors duration-300 hover:bg-plum"
               >
                 Start a project
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -80,7 +80,7 @@ export function Footer() {
                     data-cursor-hover
                     className="group inline-flex items-center gap-2 text-base text-ink/70 transition-colors duration-300 hover:text-ink"
                   >
-                    <span className="h-1 w-1 rounded-full bg-ink/0 transition-colors duration-300 group-hover:bg-green" />
+                    <span className="h-1 w-1 rounded-full bg-ink/0 transition-colors duration-300 group-hover:bg-violet" />
                     {item.label}
                   </Link>
                 </li>
@@ -131,7 +131,7 @@ export function Footer() {
               data-cursor-hover
               onClick={scrollToTop}
               aria-label="Back to top"
-              className="group flex items-center gap-2 rounded-full border border-ink/15 px-4 py-2 text-xs uppercase tracking-wide text-ink/60 transition-colors duration-300 hover:border-green hover:text-ink"
+              className="group flex items-center gap-2 rounded-full border border-ink/15 px-4 py-2 text-xs uppercase tracking-wide text-ink/60 transition-colors duration-300 hover:border-violet hover:text-ink"
             >
               Back to top
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-ink text-cream transition-transform duration-300 group-hover:-translate-y-0.5">

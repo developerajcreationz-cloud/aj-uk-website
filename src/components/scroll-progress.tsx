@@ -13,7 +13,7 @@ export function ScrollProgress() {
   return (
     <motion.div
       aria-hidden
-      className="fixed left-0 top-0 z-50 h-[3px] w-full origin-left bg-gradient-to-r from-olive via-green to-lime"
+      className="fixed left-0 top-0 z-50 h-[3px] w-full origin-left bg-gradient-to-r from-plum via-violet to-lilac"
       style={{ scaleX }}
     />
   );

@@ -69,12 +69,12 @@ export function HeroVisual({
   const springY = useSpring(mouseY, { stiffness: 50, damping: 18 });
 
   const card =
-    "rounded-3xl border border-ink/10 bg-white/80 shadow-[0_30px_60px_-25px_rgba(16,18,16,0.25)] backdrop-blur-md";
+    "rounded-3xl border border-ink/10 bg-white/80 shadow-[0_30px_60px_-25px_rgba(18,15,29,0.25)] backdrop-blur-md";
 
   return (
     <div className={cn("pointer-events-none", className)} aria-hidden>
       {/* soft halo behind the cluster */}
-      <div className="absolute inset-[8%] rounded-full bg-gradient-to-br from-lime/40 via-lime/10 to-transparent blur-3xl" />
+      <div className="absolute inset-[8%] rounded-full bg-gradient-to-br from-lilac/40 via-lilac/10 to-transparent blur-3xl" />
 
       {/* Reach / performance card (hero of the composition) */}
       <Layer
@@ -95,7 +95,7 @@ export function HeroVisual({
                 +<CountUp value={248} suffix="%" duration={2} />
               </p>
             </div>
-            <span className="rounded-full bg-lime/60 px-3 py-1 text-[11px] font-medium text-olive">
+            <span className="rounded-full bg-lilac/60 px-3 py-1 text-[11px] font-medium text-plum">
               Live
             </span>
           </div>
@@ -111,7 +111,7 @@ export function HeroVisual({
                   "flex-1 rounded-t-lg",
                   i === BARS.length - 1
                     ? "bg-ink"
-                    : "bg-gradient-to-t from-green/70 to-lime"
+                    : "bg-gradient-to-t from-violet/70 to-lilac"
                 )}
               />
             ))}
@@ -132,8 +132,8 @@ export function HeroVisual({
         springY={springY}
         className="right-[0%] top-[2%] w-[38%]"
       >
-        <div className="rounded-3xl bg-ink p-4 shadow-[0_30px_60px_-20px_rgba(16,18,16,0.5)]">
-          <div className="relative flex aspect-video items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-olive via-green to-lime">
+        <div className="rounded-3xl bg-ink p-4 shadow-[0_30px_60px_-20px_rgba(18,15,29,0.5)]">
+          <div className="relative flex aspect-video items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-plum via-violet to-lilac">
             <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-cream/20 blur-xl" />
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-cream text-ink">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
@@ -147,7 +147,7 @@ export function HeroVisual({
                 initial={{ width: "0%" }}
                 animate={{ width: "68%" }}
                 transition={{ duration: 2.4, delay: 1.4, ease: "easeOut" }}
-                className="h-full rounded-full bg-lime"
+                className="h-full rounded-full bg-lilac"
               />
             </div>
             <span className="text-[10px] font-medium text-cream/60">0:42</span>
@@ -167,13 +167,13 @@ export function HeroVisual({
       >
         <div className={cn(card, "p-4")}>
           <div className="flex items-center gap-2.5">
-            <span className="h-8 w-8 rounded-full bg-gradient-to-br from-lime to-green" />
+            <span className="h-8 w-8 rounded-full bg-gradient-to-br from-lilac to-violet" />
             <div className="space-y-1.5">
               <div className="h-2 w-20 rounded-full bg-ink/80" />
               <div className="h-1.5 w-12 rounded-full bg-ink/20" />
             </div>
           </div>
-          <div className="mt-3 h-14 rounded-2xl bg-gradient-to-br from-cream via-lime/40 to-green/60" />
+          <div className="mt-3 h-14 rounded-2xl bg-gradient-to-br from-cream via-lilac/40 to-violet/60" />
           <div className="mt-3 flex items-center gap-4 text-xs font-medium text-ink/70">
             <span className="flex items-center gap-1.5">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="#e5484d">
@@ -191,6 +191,39 @@ export function HeroVisual({
         </div>
       </Layer>
 
+      {/* SEO ranking card */}
+      <Layer
+        depth={60}
+        delay={1.25}
+        bob={7}
+        springX={springX}
+        springY={springY}
+        className="right-[0%] top-[43%] w-[36%]"
+      >
+        <div className={cn(card, "p-4")}>
+          <div className="flex items-center gap-2 rounded-full border border-ink/10 bg-cream px-3 py-1.5 text-[10px] text-ink/60">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+            best agency near me
+          </div>
+          <div className="mt-3 flex items-start gap-2.5">
+            <span className="font-display flex h-7 min-w-7 items-center justify-center rounded-lg bg-ink px-1.5 text-xs font-medium text-lilac">
+              #1
+            </span>
+            <div className="min-w-0 flex-1 space-y-1.5">
+              <p className="truncate text-[11px] font-medium text-plum">ajcreationz.co.uk</p>
+              <div className="h-1.5 w-full rounded-full bg-ink/20" />
+              <div className="h-1.5 w-2/3 rounded-full bg-ink/10" />
+            </div>
+          </div>
+          <p className="mt-3 text-[10px] font-medium uppercase tracking-wide text-ink/50">
+            SEO &amp; growth
+          </p>
+        </div>
+      </Layer>
+
       {/* ROAS chip */}
       <Layer
         depth={70}
@@ -200,8 +233,8 @@ export function HeroVisual({
         springY={springY}
         className="bottom-[14%] right-[2%]"
       >
-        <div className="flex items-center gap-3 rounded-full bg-lime py-2.5 pl-2.5 pr-5 shadow-[0_20px_40px_-15px_rgba(77,95,24,0.6)]">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-ink text-lime">
+        <div className="flex items-center gap-3 rounded-full bg-lilac py-2.5 pl-2.5 pr-5 shadow-[0_20px_40px_-15px_rgba(76,29,149,0.6)]">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-ink text-lilac">
             <svg width="14" height="14" viewBox="0 0 12 12" fill="none">
               <path d="M2 10L10 2M10 2H3.5M10 2V8.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -223,7 +256,7 @@ export function HeroVisual({
         className="left-[2%] top-[6%]"
       >
         <div className="flex items-start">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="#101210" stroke="#fbfbf8" strokeWidth="1.5" strokeLinejoin="round">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#120f1d" stroke="#fbfaff" strokeWidth="1.5" strokeLinejoin="round">
             <path d="M4 3l16 7.500-7 2.200-2.5 7.3L4 3Z" />
           </svg>
           <span className="-ml-0.5 mt-4 rounded-full bg-ink px-3 py-1 text-[11px] font-medium text-cream">

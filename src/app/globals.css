@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbfbf8;
-  --foreground: #101210;
+  --background: #fbfaff;
+  --foreground: #120f1d;
 
-  --brand-lime: #c8e455;
-  --brand-green: #7f9f2e;
-  --brand-olive: #4d5f18;
-  --brand-black: #101210;
-  --brand-cream: #fbfbf8;
+  --brand-lilac: #c4b0ff;
+  --brand-violet: #8b5cf6;
+  --brand-plum: #4c1d95;
+  --brand-black: #120f1d;
+  --brand-cream: #fbfaff;
 
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
   --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
@@ -17,9 +17,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-lime: var(--brand-lime);
-  --color-green: var(--brand-green);
-  --color-olive: var(--brand-olive);
+  --color-lilac: var(--brand-lilac);
+  --color-violet: var(--brand-violet);
+  --color-plum: var(--brand-plum);
   --color-ink: var(--brand-black);
   --color-cream: var(--brand-cream);
 
@@ -57,7 +57,7 @@ body {
 }
 
 ::selection {
-  background: var(--brand-lime);
+  background: var(--brand-lilac);
   color: var(--brand-black);
 }
 

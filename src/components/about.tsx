@@ -43,7 +43,7 @@ export function About() {
     <section id="about" className="relative overflow-hidden border-t border-ink/10 bg-cream px-6 py-24 md:px-10 md:py-32">
       <div
         aria-hidden
-        className="pointer-events-none absolute -left-32 top-0 h-[420px] w-[420px] rounded-full bg-gradient-to-br from-lime/20 to-transparent blur-[110px]"
+        className="pointer-events-none absolute -left-32 top-0 h-[420px] w-[420px] rounded-full bg-gradient-to-br from-lilac/20 to-transparent blur-[110px]"
       />
 
       <div className="relative mx-auto max-w-[1440px]">
@@ -56,13 +56,13 @@ export function About() {
             custom={0}
           >
             <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/50">
-              <span className="h-1.5 w-1.5 rounded-full bg-green" />
+              <span className="h-1.5 w-1.5 rounded-full bg-violet" />
               About us
             </p>
             <h2 className="font-display text-[11vw] font-medium leading-[1.02] tracking-tight text-ink sm:text-5xl md:text-6xl">
               A small team that
               <br />
-              <em className="bg-gradient-to-r from-olive via-green to-lime bg-clip-text font-serif italic text-transparent">
+              <em className="bg-gradient-to-r from-plum via-violet to-lilac bg-clip-text font-serif italic text-transparent">
                 moves fast
               </em>
               .
@@ -126,9 +126,9 @@ export function About() {
               variants={fadeUp}
               custom={i + 3}
             >
-              <TiltCard className="group h-full rounded-2xl border border-ink/10 bg-white/60 p-8 shadow-[0_1px_0_rgba(16,18,16,0.03)] transition-colors duration-300 hover:border-green/30">
+              <TiltCard className="group h-full rounded-2xl border border-ink/10 bg-white/60 p-8 shadow-[0_1px_0_rgba(18,15,29,0.03)] transition-colors duration-300 hover:border-violet/30">
 
-                <span className="font-mono text-xs text-green">{value.index}</span>
+                <span className="font-mono text-xs text-violet">{value.index}</span>
                 <h3 className="font-display mt-3 text-2xl font-medium tracking-tight text-ink md:text-3xl">
                   {value.title}
                 </h3>

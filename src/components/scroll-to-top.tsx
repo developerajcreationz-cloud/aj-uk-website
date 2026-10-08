@@ -47,7 +47,7 @@ export function ScrollToTop() {
           cy="20"
           r={RADIUS}
           fill="none"
-          stroke="#c8e455"
+          stroke="#c4b0ff"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeDasharray={CIRCUMFERENCE}
