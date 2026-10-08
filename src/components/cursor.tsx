@@ -54,7 +54,7 @@ export function Cursor() {
     <>
       <motion.div
         aria-hidden
-        className="pointer-events-none fixed left-0 top-0 z-[100] hidden rounded-full bg-lime md:block"
+        className="pointer-events-none fixed left-0 top-0 z-[100] hidden rounded-full bg-lilac md:block"
         style={{
           x: dotX,
           y: dotY,
@@ -71,7 +71,7 @@ export function Cursor() {
       />
       <motion.div
         aria-hidden
-        className="pointer-events-none fixed left-0 top-0 z-[100] hidden items-center justify-center rounded-full border-2 border-lime md:flex"
+        className="pointer-events-none fixed left-0 top-0 z-[100] hidden items-center justify-center rounded-full border-2 border-lilac md:flex"
         style={{
           x: ringX,
           y: ringY,
@@ -83,7 +83,7 @@ export function Cursor() {
           width: isPointer ? 56 : 30,
           height: isPointer ? 56 : 30,
           scale: isDown ? 0.85 : 1,
-          backgroundColor: isPointer ? "#c8e455" : "rgba(200,228,85,0)",
+          backgroundColor: isPointer ? "#c4b0ff" : "rgba(196,176,255,0)",
         }}
         transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
       >
@@ -101,7 +101,7 @@ export function Cursor() {
         >
           <path
             d="M2 10L10 2M10 2H3.5M10 2V8.5"
-            stroke="#101210"
+            stroke="#120f1d"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"

@@ -108,7 +108,7 @@ export function Work() {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/50"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-lime" />
+            <span className="h-1.5 w-1.5 rounded-full bg-lilac" />
             Selected work
           </motion.p>
 
@@ -121,7 +121,7 @@ export function Work() {
           >
             The work
             <br />
-            <em className="bg-gradient-to-r from-olive via-green to-lime bg-clip-text font-serif italic text-transparent">
+            <em className="bg-gradient-to-r from-plum via-violet to-lilac bg-clip-text font-serif italic text-transparent">
               we&apos;re proud of
             </em>
           </motion.h2>

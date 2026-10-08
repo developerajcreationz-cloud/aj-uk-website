@@ -15,7 +15,7 @@ export function TiltCard({ children, className }: { children: ReactNode; classNa
   const rotateY = useTransform(springX, [-0.5, 0.5], [-7, 7]);
   const glareX = useTransform(springX, [-0.5, 0.5], [0, 100]);
   const glareY = useTransform(springY, [-0.5, 0.5], [0, 100]);
-  const glare = useMotionTemplate`radial-gradient(220px circle at ${glareX}% ${glareY}%, rgba(200,228,85,0.16), transparent 65%)`;
+  const glare = useMotionTemplate`radial-gradient(220px circle at ${glareX}% ${glareY}%, rgba(196,176,255,0.16), transparent 65%)`;
 
   const handleMove = (e: MouseEvent<HTMLDivElement>) => {
     const rect = ref.current?.getBoundingClientRect();

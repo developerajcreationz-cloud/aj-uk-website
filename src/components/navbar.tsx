@@ -51,7 +51,7 @@ export function Navbar() {
             <Link
               href="#contact"
               data-cursor-hover
-              className="hidden items-center gap-2 rounded-full border border-ink/15 bg-ink px-5 py-2.5 text-sm font-medium text-cream transition-colors hover:bg-olive md:inline-flex"
+              className="hidden items-center gap-2 rounded-full border border-ink/15 bg-ink px-5 py-2.5 text-sm font-medium text-cream transition-colors hover:bg-plum md:inline-flex"
             >
               Start a project
             </Link>
@@ -102,8 +102,8 @@ export function Navbar() {
                     onClick={() => setOpen(false)}
                     className="group flex items-baseline gap-4"
                   >
-                    <span className="font-mono text-xs text-lime">{link.index}</span>
-                    <span className="font-display text-[13vw] leading-none tracking-tight text-cream transition-colors duration-300 group-hover:text-lime md:text-[5.5vw]">
+                    <span className="font-mono text-xs text-lilac">{link.index}</span>
+                    <span className="font-display text-[13vw] leading-none tracking-tight text-cream transition-colors duration-300 group-hover:text-lilac md:text-[5.5vw]">
                       {link.label}
                     </span>
                   </Link>
@@ -121,7 +121,7 @@ export function Navbar() {
                 A creative &amp; digital agency partnering with ambitious brands ready to move.
               </p>
               <div className="flex flex-col gap-1 md:items-end">
-                <a href="mailto:hello@ajcreationz.com" data-cursor-hover className="text-cream transition-colors hover:text-lime">
+                <a href="mailto:hello@ajcreationz.com" data-cursor-hover className="text-cream transition-colors hover:text-lilac">
                   hello@ajcreationz.com
                 </a>
               </div>

@@ -58,7 +58,7 @@ export function Services() {
         >
           <div>
             <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/50">
-              <span className="h-1.5 w-1.5 rounded-full bg-lime" />
+              <span className="h-1.5 w-1.5 rounded-full bg-lilac" />
               What we do
             </p>
             <h2 className="font-display max-w-xl text-[10vw] font-medium leading-[1.02] tracking-tight sm:text-5xl md:text-6xl">
@@ -88,7 +88,7 @@ export function Services() {
               >
                 <span
                   aria-hidden
-                  className="absolute inset-0 origin-left scale-x-0 bg-lime transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:scale-x-100"
+                  className="absolute inset-0 origin-left scale-x-0 bg-lilac transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:scale-x-100"
                 />
 
                 <span className="relative z-10 font-mono text-sm text-cream/40 transition-colors duration-500 group-hover:text-ink/60 md:w-12">

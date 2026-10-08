@@ -52,7 +52,7 @@ function Stars({ rating }: { rating: number }) {
           height="14"
           viewBox="0 0 16 16"
           fill={i < rating ? "currentColor" : "none"}
-          className={i < rating ? "text-lime" : "text-cream/20"}
+          className={i < rating ? "text-lilac" : "text-cream/20"}
         >
           <path
             d="M8 1l2.06 4.51 4.94.5-3.7 3.36.98 4.84L8 11.9 3.72 14.2l.98-4.83L1 5.99l4.94-.49L8 1z"
@@ -91,7 +91,7 @@ export function Testimonials() {
     <section id="testimonials" className="relative overflow-hidden border-t border-cream/10 bg-ink py-24 text-cream md:py-32">
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-40 top-0 h-[480px] w-[480px] rounded-full bg-gradient-to-br from-lime/15 to-transparent blur-[130px]"
+        className="pointer-events-none absolute -right-40 top-0 h-[480px] w-[480px] rounded-full bg-gradient-to-br from-lilac/15 to-transparent blur-[130px]"
       />
 
       <div className="relative mx-auto max-w-[1600px] px-6 md:px-10">
@@ -104,13 +104,13 @@ export function Testimonials() {
         >
           <div>
             <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/50">
-              <span className="h-1.5 w-1.5 rounded-full bg-lime" />
+              <span className="h-1.5 w-1.5 rounded-full bg-lilac" />
               What clients say
             </p>
             <h2 className="font-display max-w-xl text-[10vw] font-medium leading-[1.02] tracking-tight sm:text-5xl md:text-6xl">
               Don&apos;t just take
               <br />
-              <em className="bg-gradient-to-r from-olive via-green to-lime bg-clip-text font-serif italic text-transparent">
+              <em className="bg-gradient-to-r from-plum via-violet to-lilac bg-clip-text font-serif italic text-transparent">
                 our word for it
               </em>
               .
@@ -124,7 +124,7 @@ export function Testimonials() {
                 data-cursor-hover
                 onClick={() => nudge(-1)}
                 aria-label="Previous testimonial"
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-cream/20 transition-colors duration-300 hover:border-lime hover:text-lime"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-cream/20 transition-colors duration-300 hover:border-lilac hover:text-lilac"
               >
                 <svg width="16" height="16" viewBox="0 0 12 12" fill="none">
                   <path d="M10 2L2 10M2 10H8.5M2 10V3.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
@@ -137,7 +137,7 @@ export function Testimonials() {
                 data-cursor-hover
                 onClick={() => nudge(1)}
                 aria-label="Next testimonial"
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-cream/20 transition-colors duration-300 hover:border-lime hover:text-lime"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-cream/20 transition-colors duration-300 hover:border-lilac hover:text-lilac"
               >
                 <svg width="16" height="16" viewBox="0 0 12 12" fill="none">
                   <path d="M2 10L10 2M10 2H3.5M10 2V8.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
