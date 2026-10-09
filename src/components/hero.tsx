@@ -133,7 +133,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.9 }}
             className="max-w-md text-balance text-base leading-relaxed text-ink/65 md:max-w-lg md:text-lg"
           >
-            AJ Creationz is a UK digital agency. We build brand identities, WordPress and Shopify
+            AJ Creationz is a digital agency working with clients worldwide. We build brand identities, WordPress and Shopify
             websites, video, SEO, Meta and Google Ads, and GoHighLevel CRM systems that earn results.
           </motion.p>
 

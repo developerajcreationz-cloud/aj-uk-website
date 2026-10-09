@@ -47,7 +47,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         url,
         serviceType: service.keyword,
         provider: { "@id": `${SITE.url}/#organization` },
-        areaServed: { "@type": "Country", name: "United Kingdom" },
+        areaServed: "Worldwide",
       },
       {
         "@type": "BreadcrumbList",

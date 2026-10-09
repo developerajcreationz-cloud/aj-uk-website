@@ -1,9 +1,9 @@
 export const SITE = {
   name: "AJ Creationz",
   url: "https://ajcreationz.co.uk",
-  title: "Digital Agency UK | Web, Brand, SEO & Ads | AJ Creationz",
+  title: "Digital Agency | Web, Brand, SEO & Ads | AJ Creationz",
   description:
-    "AJ Creationz is a UK digital agency building brand identities, WordPress, Shopify and custom websites, video, SEO, Meta and Google Ads, and GoHighLevel CRM automation for ambitious businesses.",
+    "AJ Creationz is a digital agency working with clients worldwide, building brand identities, WordPress, Shopify and custom websites, video, SEO, Meta and Google Ads, and GoHighLevel CRM automation for ambitious businesses.",
   email: "hello@ajcreationz.com",
   logo: "/images/logo-full.png",
   services: [
