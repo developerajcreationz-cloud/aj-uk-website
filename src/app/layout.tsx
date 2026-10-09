@@ -41,6 +41,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: SITE.name, url: SITE.url }],
   alternates: { canonical: "/" },
+  verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
   robots: {
     index: true,
     follow: true,
