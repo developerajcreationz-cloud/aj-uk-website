@@ -145,7 +145,7 @@ export function Hero() {
           >
             <Magnetic>
               <a
-                href="#contact"
+                href="/contact"
                 data-cursor-hover
                 className="group inline-flex items-center gap-3 rounded-full bg-ink px-7 py-4 text-sm font-medium text-cream transition-colors duration-300 hover:bg-plum"
               >

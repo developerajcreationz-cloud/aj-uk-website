@@ -7,11 +7,11 @@ import { useLenis } from "lenis/react";
 import { Magnetic } from "@/components/magnetic";
 
 const SITEMAP = [
-  { label: "Work", href: "#work" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", href: "/work" },
+  { label: "Services", href: "/services" },
+  { label: "About", href: "/about" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const SOCIALS = [
@@ -55,7 +55,7 @@ export function Footer() {
             </p>
             <Magnetic strength={0.25} className="w-fit">
               <a
-                href="#contact"
+                href="/contact"
                 data-cursor-hover
                 className="group inline-flex w-fit items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-cream transition-colors duration-300 hover:bg-plum"
               >
@@ -121,9 +121,11 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col-reverse items-center gap-6 border-t border-ink/10 pt-8 md:mt-20 md:flex-row md:items-center md:justify-between">
-          <p className="text-xs text-ink/40">
-            © {new Date().getFullYear()} AJ Creationz. All rights reserved.
-          </p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-ink/40">
+            <p>© {new Date().getFullYear()} AJ Creationz. All rights reserved.</p>
+            <Link href="/privacy" className="hover:text-ink">Privacy</Link>
+            <Link href="/terms" className="hover:text-ink">Terms</Link>
+          </div>
 
           <Magnetic strength={0.3}>
             <button

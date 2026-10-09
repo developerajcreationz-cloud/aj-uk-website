@@ -7,10 +7,10 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { label: "Work", href: "#work", index: "01" },
-  { label: "Services", href: "#services", index: "02" },
-  { label: "About", href: "#about", index: "03" },
-  { label: "Contact", href: "#contact", index: "04" },
+  { label: "Work", href: "/work", index: "01" },
+  { label: "Services", href: "/services", index: "02" },
+  { label: "About", href: "/about", index: "03" },
+  { label: "Contact", href: "/contact", index: "04" },
 ];
 
 export function Navbar() {
@@ -49,7 +49,7 @@ export function Navbar() {
 
           <div className="flex items-center gap-3 md:gap-4">
             <Link
-              href="#contact"
+              href="/contact"
               data-cursor-hover
               className="hidden items-center gap-2 rounded-full border border-ink/15 bg-ink px-5 py-2.5 text-sm font-medium text-cream transition-colors hover:bg-plum md:inline-flex"
             >

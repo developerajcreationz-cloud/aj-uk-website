@@ -85,7 +85,7 @@ export function About() {
             </p>
             <Magnetic strength={0.25}>
               <a
-                href="#contact"
+                href="/contact"
                 data-cursor-hover
                 className="group inline-flex w-fit items-center gap-2 border-b border-ink/25 pb-1 text-sm font-medium text-ink transition-colors duration-300 hover:border-ink"
               >

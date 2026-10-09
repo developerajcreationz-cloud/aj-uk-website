@@ -1,45 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
+import { SERVICES } from "@/lib/services";
 
-const SERVICES = [
-  {
-    index: "01",
-    title: "Brand Identity",
-    description: "Positioning, naming, logo systems, and guidelines built to hold up at any size.",
-    tags: ["Strategy", "Naming", "Logo systems"],
-  },
-  {
-    index: "02",
-    title: "Website Development",
-    description: "Fast, conversion-focused websites on WordPress, Shopify, or fully custom builds.",
-    tags: ["WordPress", "Shopify", "Custom"],
-  },
-  {
-    index: "03",
-    title: "Video Editing",
-    description: "Social cuts, brand films, and ad creative edited to hold attention and drive action.",
-    tags: ["Reels & Shorts", "Brand films", "Ad creative"],
-  },
-  {
-    index: "04",
-    title: "SEO & Growth",
-    description: "Technical SEO, content systems, and measurement that compound over time.",
-    tags: ["Technical SEO", "Content", "Analytics"],
-  },
-  {
-    index: "05",
-    title: "Meta & Google Ads",
-    description: "Paid campaigns built around profitable acquisition, tracked from click to customer.",
-    tags: ["Meta Ads", "Google Ads", "Conversion tracking"],
-  },
-  {
-    index: "06",
-    title: "GoHighLevel CRM",
-    description: "Lead capture, follow-up automation, and pipelines set up so no enquiry slips through.",
-    tags: ["Automation", "Pipelines", "Email & SMS"],
-  },
-];
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -87,8 +52,8 @@ export function Services() {
               variants={fadeUp}
               custom={i + 1}
             >
-              <a
-                href="#contact"
+              <Link
+                href={`/services/${service.slug}`}
                 data-cursor-hover
                 className="group relative flex flex-col gap-4 border-b border-cream/10 py-8 transition-colors duration-500 md:flex-row md:items-center md:gap-10 md:py-10"
               >
@@ -131,7 +96,7 @@ export function Services() {
                     />
                   </svg>
                 </span>
-              </a>
+              </Link>
             </motion.li>
           ))}
         </ul>
