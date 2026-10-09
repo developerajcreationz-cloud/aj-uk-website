@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { SERVICES } from "@/lib/services";
+import { TOP_LEVEL_SERVICES as SERVICES } from "@/lib/services";
 
 
 
