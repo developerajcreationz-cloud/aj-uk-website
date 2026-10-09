@@ -14,7 +14,7 @@ const PROJECT_TYPES = [
   "Not sure yet",
 ];
 
-type Status = "idle" | "sending" | "sent";
+type Status = "idle" | "sending" | "sent" | "error";
 
 function Field({
   label,
@@ -46,10 +46,26 @@ export function Contact() {
     }
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const data = new FormData(e.currentTarget);
     setStatus("sending");
-    window.setTimeout(() => setStatus("sent"), 1100);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.get("name"),
+          email: data.get("email"),
+          message: data.get("message"),
+          company: data.get("company"),
+          projectType,
+        }),
+      });
+      setStatus(res.ok ? "sent" : "error");
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -215,6 +231,21 @@ export function Contact() {
                     className="mt-2 w-full resize-none border-b border-cream/20 bg-transparent pb-3 text-base text-cream outline-none transition-colors duration-300 placeholder:text-cream/25 focus:border-lilac"
                   />
                 </label>
+
+                <input
+                  type="text"
+                  name="company"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden
+                  className="hidden"
+                />
+
+                {status === "error" && (
+                  <p role="alert" className="text-sm text-red-300">
+                    Sorry, that didn&apos;t send. Please try again or email hello@ajcreationz.com.
+                  </p>
+                )}
 
                 <Magnetic strength={0.25} className="w-fit">
                   <button
