@@ -10,13 +10,14 @@ import { useMediaQuery } from "@/lib/use-media-query";
 const HEADLINE_LINES = ["Ideas, engineered", "to move your", "audience."];
 
 const MARQUEE_ITEMS = [
-  "WEB DESIGN",
-  "BRAND STRATEGY",
-  "MOTION & INTERACTION",
-  "DEVELOPMENT",
+  "BRAND IDENTITY",
+  "WORDPRESS",
+  "SHOPIFY",
+  "CUSTOM WEBSITES",
+  "VIDEO EDITING",
   "SEO & GROWTH",
-  "CREATIVE DIRECTION",
-  "GROWTH STRATEGY",
+  "META & GOOGLE ADS",
+  "GOHIGHLEVEL CRM",
 ];
 
 const STATS = [

@@ -3,14 +3,15 @@ export const SITE = {
   url: "https://ajcreationz.co.uk",
   title: "AJ Creationz — Creative & Digital Agency",
   description:
-    "AJ Creationz is a UK creative and digital agency designing websites, brand identities, SEO and growth-driven campaigns for ambitious businesses.",
+    "AJ Creationz is a UK creative and digital agency designing websites, brand identities, video, SEO, paid ads and CRM automation for ambitious businesses.",
   email: "hello@ajcreationz.com",
   logo: "/images/logo-full.png",
   services: [
-    "Brand & Identity",
-    "Web Design & Development",
-    "Motion & Interaction",
+    "Brand Identity",
+    "Website Development (WordPress, Shopify, Custom)",
+    "Video Editing",
     "SEO & Growth",
-    "Content & Social",
+    "Meta & Google Ads",
+    "GoHighLevel CRM",
   ],
 } as const;

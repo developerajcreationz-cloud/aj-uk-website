@@ -4,7 +4,15 @@ import { useState, type FormEvent } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Magnetic } from "@/components/magnetic";
 
-const PROJECT_TYPES = ["Branding", "Website", "Social & Content", "Not sure yet"];
+const PROJECT_TYPES = [
+  "Brand Identity",
+  "Website",
+  "Video Editing",
+  "SEO & Growth",
+  "Ads",
+  "CRM",
+  "Not sure yet",
+];
 
 type Status = "idle" | "sending" | "sent";
 

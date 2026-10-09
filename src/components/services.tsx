@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 const SERVICES = [
   {
     index: "01",
-    title: "Brand & Identity",
+    title: "Brand Identity",
     description: "Positioning, naming, logo systems, and guidelines built to hold up at any size.",
     tags: ["Strategy", "Naming", "Logo systems"],
   },
   {
     index: "02",
-    title: "Web Design & Development",
-    description: "High-performance, animated websites and products engineered for speed and scroll.",
-    tags: ["Next.js", "Webflow", "E-commerce"],
+    title: "Website Development",
+    description: "Fast, conversion-focused websites on WordPress, Shopify, or fully custom builds.",
+    tags: ["WordPress", "Shopify", "Custom"],
   },
   {
     index: "03",
-    title: "Motion & Interaction",
-    description: "Micro-interactions, scroll storytelling, and 3D that make a site feel alive.",
-    tags: ["WebGL", "Motion design", "Prototyping"],
+    title: "Video Editing",
+    description: "Social cuts, brand films, and ad creative edited to hold attention and drive action.",
+    tags: ["Reels & Shorts", "Brand films", "Ad creative"],
   },
   {
     index: "04",
@@ -29,9 +29,15 @@ const SERVICES = [
   },
   {
     index: "05",
-    title: "Content & Social",
-    description: "Campaigns, video, and social systems built to repeat and scale.",
-    tags: ["Video", "Social", "Campaigns"],
+    title: "Meta & Google Ads",
+    description: "Paid campaigns built around profitable acquisition, tracked from click to customer.",
+    tags: ["Meta Ads", "Google Ads", "Conversion tracking"],
+  },
+  {
+    index: "06",
+    title: "GoHighLevel CRM",
+    description: "Lead capture, follow-up automation, and pipelines set up so no enquiry slips through.",
+    tags: ["Automation", "Pipelines", "Email & SMS"],
   },
 ];
 
