@@ -2,9 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { TOP_LEVEL_SERVICES as SERVICES } from "@/lib/services";
-
-
+import { TOP_LEVEL_SERVICES as SERVICES } from "@/content/services";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -37,8 +35,8 @@ export function Services() {
             </h2>
           </div>
           <p className="max-w-sm text-balance text-sm leading-relaxed text-cream/55 md:text-base">
-            Every engagement pulls from the same core disciplines — mixed and matched to what
-            the brand actually needs, not a fixed package.
+            Every engagement pulls from the same core disciplines — mixed and matched to what the brand actually needs,
+            not a fixed package.
           </p>
         </motion.div>
 

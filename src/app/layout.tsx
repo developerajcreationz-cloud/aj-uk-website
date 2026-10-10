@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
 import Script from "next/script";
-import { SmoothScroll } from "@/components/smooth-scroll";
-import { Cursor } from "@/components/cursor";
-import { ScrollProgress } from "@/components/scroll-progress";
-import { ScrollToTop } from "@/components/scroll-to-top";
-import { SITE } from "@/lib/site";
+import { SmoothScroll } from "@/components/layout/smooth-scroll";
+import { Cursor } from "@/components/layout/cursor";
+import { ScrollProgress } from "@/components/layout/scroll-progress";
+import { ScrollToTop } from "@/components/layout/scroll-to-top";
+import { JsonLd } from "@/components/seo/json-ld";
+import { SITE } from "@/config/site";
 import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
@@ -95,15 +96,9 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${bricolage.variable} ${inter.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${bricolage.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-cream text-ink cursor-enabled">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
-        />
+        <JsonLd data={jsonLd} />
         {GA_ID && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />

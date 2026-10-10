@@ -1,17 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PROJECTS } from "@/lib/projects";
+import { PROJECTS } from "@/content/projects";
 
 export function CaseStudies() {
   return (
     <section className="bg-cream px-6 pb-20 md:px-10 md:pb-28">
       <div className="mx-auto max-w-[1440px] divide-y divide-ink/10 border-t border-ink/10">
         {PROJECTS.map((p, i) => (
-          <article
-            key={p.slug}
-            id={p.slug}
-            className="grid gap-8 py-14 md:grid-cols-2 md:gap-16 md:py-20"
-          >
+          <article key={p.slug} id={p.slug} className="grid gap-8 py-14 md:grid-cols-2 md:gap-16 md:py-20">
             <div className={`relative aspect-[4/3] overflow-hidden rounded-2xl bg-ink/5 ${i % 2 ? "md:order-2" : ""}`}>
               <Image
                 src={p.image}
@@ -51,7 +47,12 @@ export function CaseStudies() {
                 </blockquote>
               )}
               <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium">
-                <a href={p.sourceUrl} target="_blank" rel="noopener" className="border-b border-ink/25 pb-1 hover:border-ink">
+                <a
+                  href={p.sourceUrl}
+                  target="_blank"
+                  rel="noopener"
+                  className="border-b border-ink/25 pb-1 hover:border-ink"
+                >
                   Full project on ajcreationz.co ↗
                 </a>
                 <Link href="/contact" className="border-b border-ink/25 pb-1 hover:border-ink">

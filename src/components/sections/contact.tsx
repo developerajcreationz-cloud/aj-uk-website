@@ -2,24 +2,13 @@
 
 import { useState, type FormEvent } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Magnetic } from "@/components/magnetic";
+import { Magnetic } from "@/components/ui/magnetic";
 
-const PROJECT_TYPES = [
-  "Brand Identity",
-  "Website",
-  "Video Editing",
-  "SEO & Growth",
-  "Ads",
-  "CRM",
-  "Not sure yet",
-];
+const PROJECT_TYPES = ["Brand Identity", "Website", "Video Editing", "SEO & Growth", "Ads", "CRM", "Not sure yet"];
 
 type Status = "idle" | "sending" | "sent" | "error";
 
-function Field({
-  label,
-  ...props
-}: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
+function Field({ label, ...props }: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <label className="group block">
       <span className="text-xs font-medium uppercase tracking-wide text-cream/45">{label}</span>
@@ -102,8 +91,8 @@ export function Contact() {
               .
             </h2>
             <p className="mt-6 max-w-sm text-balance text-base leading-relaxed text-cream/60">
-              Tell us a bit about the project and we&apos;ll get back to you within one business
-              day. We work remotely and cover both UK and US working hours.
+              Tell us a bit about the project and we&apos;ll get back to you within one business day. We work remotely
+              and cover both UK and US working hours.
             </p>
           </div>
 
@@ -130,7 +119,13 @@ export function Contact() {
                         viewBox="0 0 12 12"
                         fill="none"
                       >
-                        <path d="M2 6l2.5 2.5L10 3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path
+                          d="M2 6l2.5 2.5L10 3"
+                          stroke="currentColor"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </motion.svg>
                     ) : (
                       <motion.svg
@@ -145,16 +140,19 @@ export function Contact() {
                         fill="none"
                       >
                         <rect x="4" y="4" width="7" height="7" rx="1" stroke="currentColor" strokeWidth="1.2" />
-                        <path d="M2.5 8V2.5A1 1 0 0 1 3.5 1.5H8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+                        <path
+                          d="M2.5 8V2.5A1 1 0 0 1 3.5 1.5H8"
+                          stroke="currentColor"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                        />
                       </motion.svg>
                     )}
                   </AnimatePresence>
                 </span>
               </button>
             </Magnetic>
-            <p className="text-xs text-cream/40">
-              {copied ? "Copied to clipboard" : "Click to copy"}
-            </p>
+            <p className="text-xs text-cream/40">{copied ? "Copied to clipboard" : "Click to copy"}</p>
           </div>
         </motion.div>
 
@@ -175,7 +173,13 @@ export function Contact() {
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-lilac text-ink">
                   <svg width="18" height="18" viewBox="0 0 12 12" fill="none">
-                    <path d="M2 6l2.5 2.5L10 3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                    <path
+                      d="M2 6l2.5 2.5L10 3"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </span>
                 <h3 className="font-display text-2xl text-cream">Message sent.</h3>
@@ -197,9 +201,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <span className="text-xs font-medium uppercase tracking-wide text-cream/45">
-                    Project type
-                  </span>
+                  <span className="text-xs font-medium uppercase tracking-wide text-cream/45">Project type</span>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {PROJECT_TYPES.map((type) => (
                       <button
@@ -220,9 +222,7 @@ export function Contact() {
                 </div>
 
                 <label className="block">
-                  <span className="text-xs font-medium uppercase tracking-wide text-cream/45">
-                    Message
-                  </span>
+                  <span className="text-xs font-medium uppercase tracking-wide text-cream/45">Message</span>
                   <textarea
                     name="message"
                     rows={4}
@@ -232,14 +232,7 @@ export function Contact() {
                   />
                 </label>
 
-                <input
-                  type="text"
-                  name="company"
-                  tabIndex={-1}
-                  autoComplete="off"
-                  aria-hidden
-                  className="hidden"
-                />
+                <input type="text" name="company" tabIndex={-1} autoComplete="off" aria-hidden className="hidden" />
 
                 {status === "error" && (
                   <p role="alert" className="text-sm text-red-300">
@@ -257,7 +250,13 @@ export function Contact() {
                     {status === "sending" ? "Sending…" : "Send message"}
                     <span className="flex h-6 w-6 items-center justify-center rounded-full bg-ink text-lilac transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-45">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                        <path d="M2 10L10 2M10 2H3.5M10 2V8.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                        <path
+                          d="M2 10L10 2M10 2H3.5M10 2V8.5"
+                          stroke="currentColor"
+                          strokeWidth="1.4"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     </span>
                   </button>

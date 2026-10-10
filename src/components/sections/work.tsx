@@ -4,7 +4,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Magnetic } from "@/components/magnetic";
+import { Magnetic } from "@/components/ui/magnetic";
 
 type Project = {
   title: string;
@@ -133,8 +133,7 @@ export function Work() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="max-w-sm text-balance text-sm leading-relaxed text-cream/55 md:text-base"
           >
-            Brand systems, interface design and social kits, each with the brief and what we
-            delivered on the work page.
+            Brand systems, interface design and social kits, each with the brief and what we delivered on the work page.
           </motion.p>
 
           <Magnetic strength={0.25}>

@@ -55,7 +55,13 @@ export function ScrollToTop() {
         />
       </svg>
       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="relative">
-        <path d="M6 10V2M6 2L2 6M6 2l4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d="M6 10V2M6 2L2 6M6 2l4 4"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     </motion.button>
   );

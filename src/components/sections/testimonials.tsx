@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { animate, motion, useMotionValue } from "framer-motion";
-import { Magnetic } from "@/components/magnetic";
+import { Magnetic } from "@/components/ui/magnetic";
 
 const TESTIMONIALS = [
   {
@@ -60,7 +60,10 @@ export function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="relative overflow-hidden border-t border-cream/10 bg-ink py-24 text-cream md:py-32">
+    <section
+      id="testimonials"
+      className="relative overflow-hidden border-t border-cream/10 bg-ink py-24 text-cream md:py-32"
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute -right-40 top-0 h-[480px] w-[480px] rounded-full bg-gradient-to-br from-lilac/15 to-transparent blur-[130px]"
@@ -99,7 +102,13 @@ export function Testimonials() {
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-cream/20 transition-colors duration-300 hover:border-lilac hover:text-lilac"
               >
                 <svg width="16" height="16" viewBox="0 0 12 12" fill="none">
-                  <path d="M10 2L2 10M2 10H8.5M2 10V3.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <path
+                    d="M10 2L2 10M2 10H8.5M2 10V3.5"
+                    stroke="currentColor"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </button>
             </Magnetic>
@@ -112,7 +121,13 @@ export function Testimonials() {
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-cream/20 transition-colors duration-300 hover:border-lilac hover:text-lilac"
               >
                 <svg width="16" height="16" viewBox="0 0 12 12" fill="none">
-                  <path d="M2 10L10 2M10 2H3.5M10 2V8.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <path
+                    d="M2 10L10 2M10 2H3.5M10 2V8.5"
+                    stroke="currentColor"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </button>
             </Magnetic>

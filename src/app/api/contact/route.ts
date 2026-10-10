@@ -16,7 +16,12 @@ function limited(ip: string) {
 }
 
 const clean = (v: unknown, max: number) =>
-  typeof v === "string" ? v.replace(/[\r\n]+/g, " ").trim().slice(0, max) : "";
+  typeof v === "string"
+    ? v
+        .replace(/[\r\n]+/g, " ")
+        .trim()
+        .slice(0, max)
+    : "";
 
 export async function POST(request: Request) {
   let body: Record<string, unknown>;
@@ -35,8 +40,7 @@ export async function POST(request: Request) {
   const name = clean(body.name, MAX.name);
   const email = clean(body.email, MAX.email);
   const projectType = clean(body.projectType, MAX.projectType) || "Not specified";
-  const message =
-    typeof body.message === "string" ? body.message.trim().slice(0, MAX.message) : "";
+  const message = typeof body.message === "string" ? body.message.trim().slice(0, MAX.message) : "";
 
   if (!name || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return Response.json({ error: "Please complete all fields" }, { status: 400 });

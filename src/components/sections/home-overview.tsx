@@ -1,23 +1,53 @@
 import Link from "next/link";
-import { TOP_LEVEL_SERVICES } from "@/lib/services";
+import { TOP_LEVEL_SERVICES } from "@/content/services";
 
 const AUDIENCES = [
-  { title: "Owner-led and growing businesses", text: "Service firms, consultants and trades that need a site and a lead system that work together." },
-  { title: "Ecommerce brands", text: "Shopify and WooCommerce stores that need design, tracking and paid traffic that add up." },
-  { title: "Startups", text: "A brand, a fast launch site and the first search and ad campaigns, without hiring four suppliers." },
+  {
+    title: "Owner-led and growing businesses",
+    text: "Service firms, consultants and trades that need a site and a lead system that work together.",
+  },
+  {
+    title: "Ecommerce brands",
+    text: "Shopify and WooCommerce stores that need design, tracking and paid traffic that add up.",
+  },
+  {
+    title: "Startups",
+    text: "A brand, a fast launch site and the first search and ad campaigns, without hiring four suppliers.",
+  },
 ];
 
 const DIFFERENCES = [
-  { title: "Prices in the open", text: "Every service page shows market price ranges with named sources, in pounds for UK guides and dollars for US ones, so you can judge any quote, ours included." },
-  { title: "One team, one set of numbers", text: "Website, SEO, ads and CRM share the same tracking, so you can see which campaign produced which customer." },
-  { title: "Rules built in", text: "Consent, cookie and messaging rules differ between the UK and the US. We build in UK GDPR and PECR consent, and US rules such as A2P 10DLC for SMS, and recommend legal review of the wording." },
+  {
+    title: "Prices in the open",
+    text: "Every service page shows market price ranges with named sources, in pounds for UK guides and dollars for US ones, so you can judge any quote, ours included.",
+  },
+  {
+    title: "One team, one set of numbers",
+    text: "Website, SEO, ads and CRM share the same tracking, so you can see which campaign produced which customer.",
+  },
+  {
+    title: "Rules built in",
+    text: "Consent, cookie and messaging rules differ between the UK and the US. We build in UK GDPR and PECR consent, and US rules such as A2P 10DLC for SMS, and recommend legal review of the wording.",
+  },
 ];
 
 const FAQS = [
-  { q: "What does a digital agency do?", a: "A digital agency designs and runs the online side of a business: the brand, the website, search and paid advertising, video and the systems that follow up with leads." },
-  { q: "Which businesses do you work with?", a: "Mainly owner-led businesses, ecommerce brands and startups in the UK and the US. We work remotely, and overlap with both UK and US working hours." },
-  { q: "Can I buy one service on its own?", a: "Yes. A website, a brand identity, an ad account or a CRM setup can each be a standalone project, and they are designed to connect later." },
-  { q: "How do you price projects?", a: "We agree scope first and quote in writing. The pricing sections on each service page show typical market ranges so you can compare." },
+  {
+    q: "What does a digital agency do?",
+    a: "A digital agency designs and runs the online side of a business: the brand, the website, search and paid advertising, video and the systems that follow up with leads.",
+  },
+  {
+    q: "Which businesses do you work with?",
+    a: "Mainly owner-led businesses, ecommerce brands and startups in the UK and the US. We work remotely, and overlap with both UK and US working hours.",
+  },
+  {
+    q: "Can I buy one service on its own?",
+    a: "Yes. A website, a brand identity, an ad account or a CRM setup can each be a standalone project, and they are designed to connect later.",
+  },
+  {
+    q: "How do you price projects?",
+    a: "We agree scope first and quote in writing. The pricing sections on each service page show typical market ranges so you can compare.",
+  },
 ];
 
 export function HomeOverview() {
@@ -28,14 +58,15 @@ export function HomeOverview() {
           <h2 className="font-display text-3xl font-medium tracking-tight md:text-5xl">What AJ Creationz does</h2>
           <div className="max-w-3xl space-y-5 text-base leading-relaxed text-ink/75 md:text-lg">
             <p>
-              AJ Creationz is a digital agency that builds and runs the parts of a business that bring in customers: a website on
-              WordPress, Shopify or custom code, a brand identity, SEO, Meta and Google Ads, video editing and a GoHighLevel CRM that
-              follows up every enquiry. We work with businesses in the UK and the US, remotely, and every project has a named lead.
+              AJ Creationz is a digital agency that builds and runs the parts of a business that bring in customers: a
+              website on WordPress, Shopify or custom code, a brand identity, SEO, Meta and Google Ads, video editing
+              and a GoHighLevel CRM that follows up every enquiry. We work with businesses in the UK and the US,
+              remotely, and every project has a named lead.
             </p>
             <p>
-              Most small businesses buy these as separate jobs from separate suppliers, and nothing connects. We connect them: the
-              site is built for search, the ads send traffic to pages that convert, and the CRM shows which source produced each
-              lead.
+              Most small businesses buy these as separate jobs from separate suppliers, and nothing connects. We connect
+              them: the site is built for search, the ads send traffic to pages that convert, and the CRM shows which
+              source produced each lead.
             </p>
           </div>
         </div>

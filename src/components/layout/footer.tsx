@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useLenis } from "lenis/react";
-import { Magnetic } from "@/components/magnetic";
+import { Magnetic } from "@/components/ui/magnetic";
 
 const SITEMAP = [
   { label: "Work", href: "/work" },
@@ -123,8 +123,12 @@ export function Footer() {
         <div className="mt-16 flex flex-col-reverse items-center gap-6 border-t border-ink/10 pt-8 md:mt-20 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-ink/40">
             <p>© {new Date().getFullYear()} AJ Creationz. All rights reserved.</p>
-            <Link href="/privacy" className="hover:text-ink">Privacy</Link>
-            <Link href="/terms" className="hover:text-ink">Terms</Link>
+            <Link href="/privacy" className="hover:text-ink">
+              Privacy
+            </Link>
+            <Link href="/terms" className="hover:text-ink">
+              Terms
+            </Link>
           </div>
 
           <Magnetic strength={0.3}>
@@ -138,7 +142,13 @@ export function Footer() {
               Back to top
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-ink text-cream transition-transform duration-300 group-hover:-translate-y-0.5">
                 <svg width="11" height="11" viewBox="0 0 12 12" fill="none">
-                  <path d="M6 10V2M6 2L2 6M6 2l4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <path
+                    d="M6 10V2M6 2L2 6M6 2l4 4"
+                    stroke="currentColor"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </span>
             </button>

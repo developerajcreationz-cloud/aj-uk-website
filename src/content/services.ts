@@ -103,17 +103,41 @@ export const SERVICES: Service[] = [
     method: {
       name: "The AJ Brand Build",
       steps: [
-        { title: "Position", text: "We agree your audience, promise and competitors in a short strategy brief you sign off before any design begins." },
-        { title: "Design", text: "We develop the identity and test it on the touchpoints you really use: website header, social avatar, invoice, signage." },
-        { title: "Systemize", text: "We write the guidelines and package every file, so the brand stays consistent after we hand over." },
+        {
+          title: "Position",
+          text: "We agree your audience, promise and competitors in a short strategy brief you sign off before any design begins.",
+        },
+        {
+          title: "Design",
+          text: "We develop the identity and test it on the touchpoints you really use: website header, social avatar, invoice, signage.",
+        },
+        {
+          title: "Systemize",
+          text: "We write the guidelines and package every file, so the brand stays consistent after we hand over.",
+        },
       ],
     },
     faqs: [
-      { q: "How long does a brand identity project take?", a: "Most identity projects take three to six weeks, depending on scope and how quickly feedback comes back. A logo-only project is faster; a full strategy and guidelines project takes longer." },
-      { q: "What is the difference between a logo and a brand identity?", a: "A logo is one element. A brand identity is the whole system around it: strategy, colors, typography, imagery, tone of voice and the rules for using them together." },
-      { q: "Do I own the logo and brand files?", a: "Yes. On full payment you receive the final files and own the deliverables. Agree this in writing with any designer you hire." },
-      { q: "Can you also build the website once the brand is done?", a: "Yes. We design and build websites on WordPress, Shopify or custom code, so the new identity goes live consistently across your site." },
-      { q: "Can you work with a business in another country or time zone?", a: "Yes. We work remotely with clients in the UK and the US, using video calls, shared documents and agreed overlap hours that cover both UK and US time zones." },
+      {
+        q: "How long does a brand identity project take?",
+        a: "Most identity projects take three to six weeks, depending on scope and how quickly feedback comes back. A logo-only project is faster; a full strategy and guidelines project takes longer.",
+      },
+      {
+        q: "What is the difference between a logo and a brand identity?",
+        a: "A logo is one element. A brand identity is the whole system around it: strategy, colors, typography, imagery, tone of voice and the rules for using them together.",
+      },
+      {
+        q: "Do I own the logo and brand files?",
+        a: "Yes. On full payment you receive the final files and own the deliverables. Agree this in writing with any designer you hire.",
+      },
+      {
+        q: "Can you also build the website once the brand is done?",
+        a: "Yes. We design and build websites on WordPress, Shopify or custom code, so the new identity goes live consistently across your site.",
+      },
+      {
+        q: "Can you work with a business in another country or time zone?",
+        a: "Yes. We work remotely with clients in the UK and the US, using video calls, shared documents and agreed overlap hours that cover both UK and US time zones.",
+      },
     ],
     related: ["website-development", "video-editing", "seo-growth"],
   },
@@ -194,16 +218,37 @@ export const SERVICES: Service[] = [
       steps: [
         { title: "Plan", text: "We agree goals, page structure, platform and tracking before design starts." },
         { title: "Build", text: "We design, develop and test every template across phones, tablets and desktops." },
-        { title: "Launch", text: "We migrate content, set up redirects, check speed and SEO basics, then go live and monitor." },
+        {
+          title: "Launch",
+          text: "We migrate content, set up redirects, check speed and SEO basics, then go live and monitor.",
+        },
       ],
     },
     faqs: [
-      { q: "Which platform is best for my business?", a: "WordPress suits most service businesses, Shopify suits online retailers, and custom code suits businesses with unusual requirements. A short call is usually enough to decide." },
-      { q: "How long does it take to build a website?", a: "A typical small-business site takes four to eight weeks. Online shops and custom builds take longer, depending on the number of products and features." },
-      { q: "Will I be able to edit the site myself?", a: "Yes. WordPress and Shopify builds come with a walkthrough so you can update pages, products and blog posts without a developer." },
-      { q: "Will my new website hurt my current Google rankings?", a: "It should not if the migration is done properly. We map every old URL to a new one with redirects and check indexing after launch." },
-      { q: "Do you build sites for customers in multiple countries?", a: "Yes. We set up currency, tax and shipping rules for the markets you sell to, and structure the site so other languages can be added later." },
-      { q: "Do you offer ongoing website support?", a: "Yes. We can handle updates, backups, security checks and improvements after launch." },
+      {
+        q: "Which platform is best for my business?",
+        a: "WordPress suits most service businesses, Shopify suits online retailers, and custom code suits businesses with unusual requirements. A short call is usually enough to decide.",
+      },
+      {
+        q: "How long does it take to build a website?",
+        a: "A typical small-business site takes four to eight weeks. Online shops and custom builds take longer, depending on the number of products and features.",
+      },
+      {
+        q: "Will I be able to edit the site myself?",
+        a: "Yes. WordPress and Shopify builds come with a walkthrough so you can update pages, products and blog posts without a developer.",
+      },
+      {
+        q: "Will my new website hurt my current Google rankings?",
+        a: "It should not if the migration is done properly. We map every old URL to a new one with redirects and check indexing after launch.",
+      },
+      {
+        q: "Do you build sites for customers in multiple countries?",
+        a: "Yes. We set up currency, tax and shipping rules for the markets you sell to, and structure the site so other languages can be added later.",
+      },
+      {
+        q: "Do you offer ongoing website support?",
+        a: "Yes. We can handle updates, backups, security checks and improvements after launch.",
+      },
     ],
     related: ["seo-growth", "meta-google-ads", "brand-identity"],
   },
@@ -272,7 +317,10 @@ export const SERVICES: Service[] = [
       h2: "How much does a WordPress website cost?",
       intro: "Published guides give these indicative ranges in US dollars. They are not AJ Creationz quotes.",
       rows: [
-        { label: "DIY: domain, hosting and optional premium theme", range: "domain $12–$25/yr, hosting $40–$150/yr, theme $30–$100" },
+        {
+          label: "DIY: domain, hosting and optional premium theme",
+          range: "domain $12–$25/yr, hosting $40–$150/yr, theme $30–$100",
+        },
         { label: "Freelancer build, 5–10 page business site", range: "$1,500 – $5,000" },
         { label: "Agency build including strategy, design and content", range: "$5,000 – $15,000" },
         { label: "Developer hourly rates by region", range: "$25–$60 emerging markets; $75–$200 US, UK, Australia" },
@@ -288,10 +336,22 @@ export const SERVICES: Service[] = [
       ],
     },
     faqs: [
-      { q: "Is WordPress good for SEO?", a: "Yes, when it is built well. It gives you control over URLs, headings, metadata and structured data. Performance and content quality still decide results." },
-      { q: "How much does a WordPress website cost?", a: "Guides put freelancer builds at roughly $1,500 to $5,000 and agency builds at $5,000 to $15,000. Your quote depends on page count, features and design complexity." },
-      { q: "Can you redesign my existing WordPress site?", a: "Yes. We keep what ranks, redirect old URLs and rebuild the design, speed and structure." },
-      { q: "Do I need WooCommerce or Shopify?", a: "For a small catalog, WooCommerce can work. For larger shops, Shopify is usually simpler to run. We will recommend one after a short call." },
+      {
+        q: "Is WordPress good for SEO?",
+        a: "Yes, when it is built well. It gives you control over URLs, headings, metadata and structured data. Performance and content quality still decide results.",
+      },
+      {
+        q: "How much does a WordPress website cost?",
+        a: "Guides put freelancer builds at roughly $1,500 to $5,000 and agency builds at $5,000 to $15,000. Your quote depends on page count, features and design complexity.",
+      },
+      {
+        q: "Can you redesign my existing WordPress site?",
+        a: "Yes. We keep what ranks, redirect old URLs and rebuild the design, speed and structure.",
+      },
+      {
+        q: "Do I need WooCommerce or Shopify?",
+        a: "For a small catalog, WooCommerce can work. For larger shops, Shopify is usually simpler to run. We will recommend one after a short call.",
+      },
     ],
     related: ["shopify-web-design", "custom-website-development", "seo-growth"],
   },
@@ -358,7 +418,8 @@ export const SERVICES: Service[] = [
     ],
     pricing: {
       h2: "How much does a Shopify store cost?",
-      intro: "There are two separate costs: Shopify's subscription and the build. Published guides give these indicative figures in US dollars.",
+      intro:
+        "There are two separate costs: Shopify's subscription and the build. Published guides give these indicative figures in US dollars.",
       rows: [
         { label: "Freelancer build", range: "$2,000 – $10,000" },
         { label: "Agency build", range: "$8,000 – $50,000+" },
@@ -377,11 +438,26 @@ export const SERVICES: Service[] = [
       ],
     },
     faqs: [
-      { q: "How much does a Shopify store cost?", a: "Guides put freelancer builds at roughly $2,000 to $10,000 and agency builds at $8,000 to $50,000 or more, plus Shopify's monthly subscription, apps and payment fees." },
-      { q: "Shopify or WooCommerce?", a: "Shopify is simpler to run and better for larger catalogs. WooCommerce suits a small shop that sits inside a content-heavy WordPress site." },
-      { q: "Can you move my shop to Shopify?", a: "Yes. We import products, customers where permitted, and set up redirects to protect existing search traffic." },
-      { q: "Can you set up a store that sells in several currencies?", a: "Yes. We configure multi-currency pricing, shipping zones and tax display for each market you sell to." },
-      { q: "Do you build Shopify Plus stores?", a: "Our focus is standard Shopify for small and growing businesses. If you need Shopify Plus, tell us your requirements and we will say honestly whether we are the right fit." },
+      {
+        q: "How much does a Shopify store cost?",
+        a: "Guides put freelancer builds at roughly $2,000 to $10,000 and agency builds at $8,000 to $50,000 or more, plus Shopify's monthly subscription, apps and payment fees.",
+      },
+      {
+        q: "Shopify or WooCommerce?",
+        a: "Shopify is simpler to run and better for larger catalogs. WooCommerce suits a small shop that sits inside a content-heavy WordPress site.",
+      },
+      {
+        q: "Can you move my shop to Shopify?",
+        a: "Yes. We import products, customers where permitted, and set up redirects to protect existing search traffic.",
+      },
+      {
+        q: "Can you set up a store that sells in several currencies?",
+        a: "Yes. We configure multi-currency pricing, shipping zones and tax display for each market you sell to.",
+      },
+      {
+        q: "Do you build Shopify Plus stores?",
+        a: "Our focus is standard Shopify for small and growing businesses. If you need Shopify Plus, tell us your requirements and we will say honestly whether we are the right fit.",
+      },
     ],
     related: ["wordpress-web-design", "meta-google-ads", "gohighlevel-crm"],
   },
@@ -435,14 +511,26 @@ export const SERVICES: Service[] = [
       name: "The AJ Custom Build",
       steps: [
         { title: "Scope", text: "Requirements, integrations and success measures written down and agreed." },
-        { title: "Build in stages", text: "Working versions shared regularly so you see progress, not a reveal at the end." },
+        {
+          title: "Build in stages",
+          text: "Working versions shared regularly so you see progress, not a reveal at the end.",
+        },
         { title: "Harden and hand over", text: "Performance, security and documentation completed before launch." },
       ],
     },
     faqs: [
-      { q: "How much does custom website development cost?", a: "It depends entirely on scope. Because requirements vary so much, we provide a fixed quote after a scoping call rather than a generic price." },
-      { q: "Is a custom site better for SEO?", a: "It can be faster and give finer control, but a well-built WordPress site ranks perfectly well. Content and links still matter most." },
-      { q: "Can my team edit a custom site?", a: "Yes, if we connect it to a content management system. We agree this at the start." },
+      {
+        q: "How much does custom website development cost?",
+        a: "It depends entirely on scope. Because requirements vary so much, we provide a fixed quote after a scoping call rather than a generic price.",
+      },
+      {
+        q: "Is a custom site better for SEO?",
+        a: "It can be faster and give finer control, but a well-built WordPress site ranks perfectly well. Content and links still matter most.",
+      },
+      {
+        q: "Can my team edit a custom site?",
+        a: "Yes, if we connect it to a content management system. We agree this at the start.",
+      },
       { q: "Will I own the code?", a: "Yes. You receive the source code and documentation on full payment." },
     ],
     related: ["wordpress-web-design", "shopify-web-design", "seo-growth"],
@@ -509,7 +597,8 @@ export const SERVICES: Service[] = [
     ],
     pricing: {
       h2: "How much does video editing cost?",
-      intro: "Published guides give these indicative figures in US dollars. We provide fixed quotes once we have seen your footage and brief.",
+      intro:
+        "Published guides give these indicative figures in US dollars. We provide fixed quotes once we have seen your footage and brief.",
       rows: [
         { label: "Short-form video, beginner editor", range: "$25 – $75" },
         { label: "Short-form video, intermediate editor", range: "$75 – $200" },
@@ -528,11 +617,26 @@ export const SERVICES: Service[] = [
       ],
     },
     faqs: [
-      { q: "How much does video editing cost?", a: "Guides put freelance short-form edits at roughly $25 to $500 per video depending on experience, and Western mid-level editors at $50 to $150 an hour. Project prices depend on length, captions, motion graphics and the number of formats." },
-      { q: "Do you film as well as edit?", a: "Our focus is editing your footage. If you need filming, we can advise on what to shoot or coordinate it with a videographer." },
-      { q: "How quickly can you turn a video around?", a: "Short social edits are usually delivered within a few working days of receiving footage. We agree dates for each project." },
-      { q: "Can you edit videos for paid ads?", a: "Yes. We create ad variations with different hooks and formats for Meta and Google." },
-      { q: "Can you add subtitles in other languages?", a: "Yes, from translations you supply. We handle the timing and styling." },
+      {
+        q: "How much does video editing cost?",
+        a: "Guides put freelance short-form edits at roughly $25 to $500 per video depending on experience, and Western mid-level editors at $50 to $150 an hour. Project prices depend on length, captions, motion graphics and the number of formats.",
+      },
+      {
+        q: "Do you film as well as edit?",
+        a: "Our focus is editing your footage. If you need filming, we can advise on what to shoot or coordinate it with a videographer.",
+      },
+      {
+        q: "How quickly can you turn a video around?",
+        a: "Short social edits are usually delivered within a few working days of receiving footage. We agree dates for each project.",
+      },
+      {
+        q: "Can you edit videos for paid ads?",
+        a: "Yes. We create ad variations with different hooks and formats for Meta and Google.",
+      },
+      {
+        q: "Can you add subtitles in other languages?",
+        a: "Yes, from translations you supply. We handle the timing and styling.",
+      },
       { q: "How many revisions are included?", a: "Two rounds of revisions are included as standard." },
     ],
     related: ["meta-google-ads", "brand-identity", "seo-growth"],
@@ -606,7 +710,8 @@ export const SERVICES: Service[] = [
     ],
     pricing: {
       h2: "How much does SEO cost?",
-      intro: "Published guides give these indicative monthly ranges in US dollars. They are market figures, not AJ Creationz quotes.",
+      intro:
+        "Published guides give these indicative monthly ranges in US dollars. They are market figures, not AJ Creationz quotes.",
       rows: [
         { label: "Typical small-business budget", range: "$500 – $5,000 per month" },
         { label: "Freelancers", range: "$300 – $1,500 per month" },
@@ -625,12 +730,30 @@ export const SERVICES: Service[] = [
       ],
     },
     faqs: [
-      { q: "How much does SEO cost?", a: "Most small businesses pay between $500 and $5,000 a month. Freelancers are typically cheaper and mid-size agencies cost $1,500 to $5,000, depending on competition and scope." },
-      { q: "How long does SEO take to work?", a: "Expect early movement in two to three months and compounding results over six to twelve. Competitive terms take longer." },
-      { q: "Do you guarantee first-page rankings?", a: "No. Nobody can honestly guarantee rankings. We commit to the work, transparency and regular reporting." },
-      { q: "Can you help with SEO in multiple countries or languages?", a: "Yes. We plan URL structure, hreflang and localized content for each market." },
-      { q: "Do I need SEO if I run Google Ads?", a: "They complement each other. Ads bring traffic now; SEO builds traffic that does not stop when you stop paying." },
-      { q: "Can you fix SEO on my existing website?", a: "Yes. We begin with an audit of your current site and prioritize the fixes with the biggest impact." },
+      {
+        q: "How much does SEO cost?",
+        a: "Most small businesses pay between $500 and $5,000 a month. Freelancers are typically cheaper and mid-size agencies cost $1,500 to $5,000, depending on competition and scope.",
+      },
+      {
+        q: "How long does SEO take to work?",
+        a: "Expect early movement in two to three months and compounding results over six to twelve. Competitive terms take longer.",
+      },
+      {
+        q: "Do you guarantee first-page rankings?",
+        a: "No. Nobody can honestly guarantee rankings. We commit to the work, transparency and regular reporting.",
+      },
+      {
+        q: "Can you help with SEO in multiple countries or languages?",
+        a: "Yes. We plan URL structure, hreflang and localized content for each market.",
+      },
+      {
+        q: "Do I need SEO if I run Google Ads?",
+        a: "They complement each other. Ads bring traffic now; SEO builds traffic that does not stop when you stop paying.",
+      },
+      {
+        q: "Can you fix SEO on my existing website?",
+        a: "Yes. We begin with an audit of your current site and prioritize the fixes with the biggest impact.",
+      },
     ],
     related: ["website-development", "meta-google-ads", "gohighlevel-crm"],
   },
@@ -691,7 +814,8 @@ export const SERVICES: Service[] = [
     ],
     pricing: {
       h2: "How much does ad management cost?",
-      intro: "There are two separate costs: what you pay the platforms, and what you pay to manage them. Published guides give these indicative figures in US dollars.",
+      intro:
+        "There are two separate costs: what you pay the platforms, and what you pay to manage them. Published guides give these indicative figures in US dollars.",
       rows: [
         { label: "Management fee as share of ad spend", range: "10% – 20% (small accounts often 20–30%)" },
         { label: "Flat retainer, mid-tier agency", range: "$1,500 – $3,500 per month" },
@@ -710,12 +834,30 @@ export const SERVICES: Service[] = [
       ],
     },
     faqs: [
-      { q: "What is the difference between Google Ads and Meta Ads?", a: "Google Ads shows your ads to people searching for what you sell. Meta Ads shows them to people browsing Facebook and Instagram based on interests and behavior." },
-      { q: "How much should I spend on ads?", a: "It depends on your market and goals. We recommend a realistic test budget after a short call and review it after the first month of data." },
-      { q: "How much do you charge to manage ads?", a: "Agencies commonly charge 10% to 20% of ad spend or a flat retainer. We agree a clear management fee in writing before starting; ad spend is paid directly to the platforms." },
-      { q: "Can you run ads in several countries?", a: "Yes. We structure campaigns by market, with local currencies, languages and landing pages where needed." },
-      { q: "Will the ad accounts be in my name?", a: "Yes. Your accounts, data and history stay yours if we ever stop working together." },
-      { q: "How soon will I see results?", a: "Ads can generate traffic within days, but expect two to three months of testing before costs stabilize." },
+      {
+        q: "What is the difference between Google Ads and Meta Ads?",
+        a: "Google Ads shows your ads to people searching for what you sell. Meta Ads shows them to people browsing Facebook and Instagram based on interests and behavior.",
+      },
+      {
+        q: "How much should I spend on ads?",
+        a: "It depends on your market and goals. We recommend a realistic test budget after a short call and review it after the first month of data.",
+      },
+      {
+        q: "How much do you charge to manage ads?",
+        a: "Agencies commonly charge 10% to 20% of ad spend or a flat retainer. We agree a clear management fee in writing before starting; ad spend is paid directly to the platforms.",
+      },
+      {
+        q: "Can you run ads in several countries?",
+        a: "Yes. We structure campaigns by market, with local currencies, languages and landing pages where needed.",
+      },
+      {
+        q: "Will the ad accounts be in my name?",
+        a: "Yes. Your accounts, data and history stay yours if we ever stop working together.",
+      },
+      {
+        q: "How soon will I see results?",
+        a: "Ads can generate traffic within days, but expect two to three months of testing before costs stabilize.",
+      },
     ],
     related: ["video-editing", "gohighlevel-crm", "seo-growth"],
   },
@@ -781,10 +923,22 @@ export const SERVICES: Service[] = [
       ],
     },
     faqs: [
-      { q: "How much does Google Ads management cost?", a: "Agencies usually charge 10% to 20% of ad spend or a monthly retainer, often $1,500 to $3,500 for mid-tier agencies. We agree the fee in writing before work begins; ad spend is paid directly to Google." },
-      { q: "Can you take over my existing Google Ads account?", a: "Yes. We start with an audit and keep your history and data." },
-      { q: "What is Performance Max?", a: "Performance Max is a Google campaign type that runs ads across Search, YouTube, Display and more using automation. It works best with strong tracking and quality assets." },
-      { q: "Do I need a website to run Google Ads?", a: "You need a landing page. If your current site is not suitable, we can build one." },
+      {
+        q: "How much does Google Ads management cost?",
+        a: "Agencies usually charge 10% to 20% of ad spend or a monthly retainer, often $1,500 to $3,500 for mid-tier agencies. We agree the fee in writing before work begins; ad spend is paid directly to Google.",
+      },
+      {
+        q: "Can you take over my existing Google Ads account?",
+        a: "Yes. We start with an audit and keep your history and data.",
+      },
+      {
+        q: "What is Performance Max?",
+        a: "Performance Max is a Google campaign type that runs ads across Search, YouTube, Display and more using automation. It works best with strong tracking and quality assets.",
+      },
+      {
+        q: "Do I need a website to run Google Ads?",
+        a: "You need a landing page. If your current site is not suitable, we can build one.",
+      },
     ],
     related: ["meta-ads-management", "seo-growth", "website-development"],
   },
@@ -843,7 +997,8 @@ export const SERVICES: Service[] = [
     ],
     pricing: {
       h2: "How much does a Meta ads agency cost?",
-      intro: "Meta ad management is usually priced the same ways as other paid media. Published guides give these indicative figures in US dollars.",
+      intro:
+        "Meta ad management is usually priced the same ways as other paid media. Published guides give these indicative figures in US dollars.",
       rows: [
         { label: "Agency fee as share of ad spend", range: "10% – 20%" },
         { label: "Flat monthly retainer, mid-tier agency", range: "$1,500 – $3,500" },
@@ -860,10 +1015,22 @@ export const SERVICES: Service[] = [
       ],
     },
     faqs: [
-      { q: "How much do Meta ads cost for a small business?", a: "Ad spend depends on your audience and market. Management is usually 10% to 20% of spend or a flat retainer. We recommend a test budget after a short call." },
-      { q: "Do you create the ad creative?", a: "Yes. Our video editing and brand services produce images, videos and carousels." },
-      { q: "What is the Conversions API?", a: "It sends conversion events from your server to Meta, improving tracking accuracy when browser tracking is blocked." },
-      { q: "Are Meta ads right for my business?", a: "They suit businesses with a visual product or service and a clear offer. We will tell you honestly if another channel is a better start." },
+      {
+        q: "How much do Meta ads cost for a small business?",
+        a: "Ad spend depends on your audience and market. Management is usually 10% to 20% of spend or a flat retainer. We recommend a test budget after a short call.",
+      },
+      {
+        q: "Do you create the ad creative?",
+        a: "Yes. Our video editing and brand services produce images, videos and carousels.",
+      },
+      {
+        q: "What is the Conversions API?",
+        a: "It sends conversion events from your server to Meta, improving tracking accuracy when browser tracking is blocked.",
+      },
+      {
+        q: "Are Meta ads right for my business?",
+        a: "They suit businesses with a visual product or service and a clear offer. We will tell you honestly if another channel is a better start.",
+      },
     ],
     related: ["google-ads-management", "video-editing", "gohighlevel-crm"],
   },
@@ -926,7 +1093,8 @@ export const SERVICES: Service[] = [
     ],
     pricing: {
       h2: "How much does GoHighLevel cost?",
-      intro: "There are platform fees, usage fees and setup fees. Published sources give these indicative figures in US dollars.",
+      intro:
+        "There are platform fees, usage fees and setup fees. Published sources give these indicative figures in US dollars.",
       rows: [
         { label: "Starter plan", range: "$97 per month" },
         { label: "Unlimited plan", range: "$297 per month" },
@@ -945,11 +1113,26 @@ export const SERVICES: Service[] = [
       ],
     },
     faqs: [
-      { q: "What is GoHighLevel used for?", a: "It is a CRM and automation platform for capturing leads, following up by email and SMS, booking appointments, managing pipelines and requesting reviews." },
-      { q: "How much does GoHighLevel cost?", a: "Published sources list plans from about $97 to $497 a month, plus usage fees for SMS, email and voice. Setup costs depend on scope, which we agree after mapping your process." },
-      { q: "Do I need to already have a GoHighLevel account?", a: "No. We can create one, or tidy an existing account. It stays in your name." },
-      { q: "Is GoHighLevel compliant with GDPR and US messaging rules?", a: "Compliance depends on how you configure and use it. We build in consent capture and unsubscribe handling, help with US A2P 10DLC registration, and recommend legal review of consent wording." },
-      { q: "Can GoHighLevel replace my current CRM?", a: "Often, yes. We can migrate contacts and history from spreadsheets or other CRMs." },
+      {
+        q: "What is GoHighLevel used for?",
+        a: "It is a CRM and automation platform for capturing leads, following up by email and SMS, booking appointments, managing pipelines and requesting reviews.",
+      },
+      {
+        q: "How much does GoHighLevel cost?",
+        a: "Published sources list plans from about $97 to $497 a month, plus usage fees for SMS, email and voice. Setup costs depend on scope, which we agree after mapping your process.",
+      },
+      {
+        q: "Do I need to already have a GoHighLevel account?",
+        a: "No. We can create one, or tidy an existing account. It stays in your name.",
+      },
+      {
+        q: "Is GoHighLevel compliant with GDPR and US messaging rules?",
+        a: "Compliance depends on how you configure and use it. We build in consent capture and unsubscribe handling, help with US A2P 10DLC registration, and recommend legal review of consent wording.",
+      },
+      {
+        q: "Can GoHighLevel replace my current CRM?",
+        a: "Often, yes. We can migrate contacts and history from spreadsheets or other CRMs.",
+      },
     ],
     related: ["meta-google-ads", "website-development", "seo-growth"],
   },

@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Magnetic } from "@/components/magnetic";
-import { TiltCard } from "@/components/tilt-card";
-import { CountUp } from "@/components/count-up";
+import { Magnetic } from "@/components/ui/magnetic";
+import { TiltCard } from "@/components/ui/tilt-card";
+import { CountUp } from "@/components/ui/count-up";
 
 const VALUES = [
   {
@@ -46,7 +46,10 @@ const fadeUp = {
 
 export function About() {
   return (
-    <section id="about" className="relative overflow-hidden border-t border-ink/10 bg-cream px-6 py-24 md:px-10 md:py-32">
+    <section
+      id="about"
+      className="relative overflow-hidden border-t border-ink/10 bg-cream px-6 py-24 md:px-10 md:py-32"
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute -left-32 top-0 h-[420px] w-[420px] rounded-full bg-gradient-to-br from-lilac/20 to-transparent blur-[110px]"
@@ -84,11 +87,10 @@ export function About() {
             className="flex flex-col justify-center gap-6"
           >
             <p className="text-balance text-base leading-relaxed text-ink/65 md:text-lg">
-              AJ Creationz builds the parts of a business that bring in customers: the brand, the
-              website, the search and ad traffic that reaches it, and the CRM that follows up. We
-              work with owner-led businesses in the UK and the US, remotely, with the people who do
-              the work in every call. Our main studio site, ajcreationz.co, covers our creative
-              and brand-led work; this site is where we explain the web, search, ads and automation
+              AJ Creationz builds the parts of a business that bring in customers: the brand, the website, the search
+              and ad traffic that reaches it, and the CRM that follows up. We work with owner-led businesses in the UK
+              and the US, remotely, with the people who do the work in every call. Our main studio site, ajcreationz.co,
+              covers our creative and brand-led work; this site is where we explain the web, search, ads and automation
               side in detail, with the pricing context to go with it.
             </p>
             <Magnetic strength={0.25}>
@@ -117,9 +119,7 @@ export function About() {
               <p className="font-display text-3xl text-ink md:text-5xl">
                 <CountUp value={stat.value} decimals={stat.decimals} suffix={stat.suffix} />
               </p>
-              <p className="mt-1 text-xs uppercase tracking-wide text-ink/50 md:text-sm">
-                {stat.label}
-              </p>
+              <p className="mt-1 text-xs uppercase tracking-wide text-ink/50 md:text-sm">{stat.label}</p>
             </div>
           ))}
         </motion.div>
@@ -135,32 +135,24 @@ export function About() {
               custom={i + 3}
             >
               <TiltCard className="group h-full rounded-2xl border border-ink/10 bg-white/60 p-8 shadow-[0_1px_0_rgba(18,15,29,0.03)] transition-colors duration-300 hover:border-violet/30">
-
                 <span className="font-mono text-xs text-violet">{value.index}</span>
                 <h3 className="font-display mt-3 text-2xl font-medium tracking-tight text-ink md:text-3xl">
                   {value.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-ink/60 md:text-base">
-                  {value.description}
-                </p>
+                <p className="mt-3 text-sm leading-relaxed text-ink/60 md:text-base">{value.description}</p>
               </TiltCard>
             </motion.div>
           ))}
         </div>
 
         <div className="mt-16 md:mt-20">
-          <h3 className="font-display text-2xl font-medium tracking-tight text-ink md:text-3xl">
-            Meet the team
-          </h3>
+          <h3 className="font-display text-2xl font-medium tracking-tight text-ink md:text-3xl">Meet the team</h3>
           <p className="mt-3 max-w-2xl text-sm text-ink/60 md:text-base">
             The people you will speak to on a project. More team members will be added here.
           </p>
           <ul className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
             {TEAM.map((member) => (
-              <li
-                key={member.name}
-                className="rounded-2xl border border-ink/10 bg-white/60 p-6"
-              >
+              <li key={member.name} className="rounded-2xl border border-ink/10 bg-white/60 p-6">
                 <p className="font-display text-xl font-medium text-ink">{member.name}</p>
                 <p className="mt-1 text-sm text-ink/60">{member.role}</p>
               </li>

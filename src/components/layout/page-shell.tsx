@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 
 export function PageShell({ children }: { children: React.ReactNode }) {
   return (
@@ -50,9 +50,7 @@ export function PageHero({
           {title}
         </h1>
         {intro && (
-          <p className="mt-8 max-w-2xl text-balance text-base leading-relaxed text-ink/60 md:text-lg">
-            {intro}
-          </p>
+          <p className="mt-8 max-w-2xl text-balance text-base leading-relaxed text-ink/60 md:text-lg">{intro}</p>
         )}
       </div>
     </section>

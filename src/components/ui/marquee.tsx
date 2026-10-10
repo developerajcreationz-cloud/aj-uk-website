@@ -23,7 +23,7 @@ export function Marquee({ items, className }: { items: string[]; className?: str
     const tween = gsap.fromTo(
       el,
       { xPercent: 0 },
-      { xPercent: -50, duration: BASE_DURATION, ease: "none", repeat: -1 }
+      { xPercent: -50, duration: BASE_DURATION, ease: "none", repeat: -1 },
     );
     tweenRef.current = tween;
 

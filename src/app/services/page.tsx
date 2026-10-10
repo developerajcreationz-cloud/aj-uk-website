@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { PageShell, PageHero, CtaBand } from "@/components/page-shell";
-import { Services } from "@/components/services";
+import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
+import { Services } from "@/components/sections/services";
 
 export const metadata: Metadata = {
   title: { absolute: "Web Design, SEO, Ads & CRM Services | AJ Creationz" },

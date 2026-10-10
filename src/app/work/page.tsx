@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { PageShell, PageHero, CtaBand } from "@/components/page-shell";
-import { CaseStudies } from "@/components/case-studies";
-import { Testimonials } from "@/components/testimonials";
-import { PROJECTS } from "@/lib/projects";
-import { SITE } from "@/lib/site";
+import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
+import { CaseStudies } from "@/components/sections/case-studies";
+import { Testimonials } from "@/components/sections/testimonials";
+import { PROJECTS } from "@/content/projects";
+import { JsonLd } from "@/components/seo/json-ld";
+import { SITE } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: "Our Work | Brand Identity, UI/UX & Social Case Studies" },
@@ -31,7 +32,7 @@ export default function WorkPage() {
   };
   return (
     <PageShell>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
+      <JsonLd data={jsonLd} />
       <PageHero
         eyebrow="Work"
         title="Projects we have built and the briefs behind them."

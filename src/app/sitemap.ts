@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
-import { SITE } from "@/lib/site";
-import { SERVICES } from "@/lib/services";
+import { SITE } from "@/config/site";
+import { SERVICES } from "@/content/services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date(SITE.contentUpdated);

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { PageShell } from "@/components/page-shell";
-import { Contact } from "@/components/contact";
+import { PageShell } from "@/components/layout/page-shell";
+import { Contact } from "@/components/sections/contact";
 
 export const metadata: Metadata = {
   title: { absolute: "Contact AJ Creationz | Get a Quote for Your Project" },
-  description: "Tell AJ Creationz about your website, SEO, ads, video or CRM project. We work with UK and US businesses and reply within one working day.",
+  description:
+    "Tell AJ Creationz about your website, SEO, ads, video or CRM project. We work with UK and US businesses and reply within one working day.",
   alternates: { canonical: "/contact" },
 };
 

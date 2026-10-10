@@ -1,63 +1,85 @@
-# AJ Creationz — Website
+# AJ Creationz website
 
-Creative & digital agency site for AJ Creationz, built section by section with heavy scroll-based interaction and motion. Targets a US & UK audience.
+Website for **AJ Creationz** at [ajcreationz.co.uk](https://ajcreationz.co.uk): a digital agency serving UK and US businesses (websites, brand identity, SEO, Meta and Google Ads, video editing, GoHighLevel CRM). The main studio site is [ajcreationz.co](https://ajcreationz.co) and has different content.
 
-## Stack
+**Stack:** Next.js 16 (App Router, TypeScript), Tailwind CSS v4, Framer Motion, Lenis. Hosted on Hostinger as a Node.js app, auto-deployed from GitHub `main`.
 
-- **Next.js 16** (App Router, TypeScript)
-- **Tailwind CSS v4** — brand tokens (`--brand-lime`, `--brand-green`, `--brand-olive`, `--brand-black`, `--brand-cream`) defined in `src/app/globals.css`
-- **Framer Motion** — component-level animation, scroll-linked transforms, magnetic buttons
-- **GSAP + ScrollTrigger** — wired up and synced to Lenis, ready for scroll-driven scenes in upcoming sections
-- **Lenis** — smooth/inertia scrolling (`src/components/smooth-scroll.tsx`)
-
-## Project status
-
-Built incrementally, section by section, so each piece can be reviewed live before moving to the next:
-
-- [x] Global shell: smooth scroll, custom cursor, scroll progress bar, fonts, color tokens, SEO metadata
-- [x] Navbar with full-screen animated menu overlay
-- [x] Hero section (headline reveal, parallax blobs, magnetic CTAs, marquee, stats)
-- [ ] Services
-- [ ] Work / case studies
-- [ ] About
-- [ ] Testimonials
-- [ ] Contact
-- [ ] Footer (full)
+> This repo uses a version of Next.js with breaking changes. Read `node_modules/next/dist/docs/` before changing framework-level code (see `AGENTS.md`).
 
 ## Getting started
 
 ```bash
-npm install
-npm run dev
+nvm use            # Node 22 (see .nvmrc)
+npm ci
+cp .env.example .env.local
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+| Script                 | Purpose                                       |
+| ---------------------- | --------------------------------------------- |
+| `npm run dev`          | Local dev server                              |
+| `npm run build`        | Production build (webpack)                    |
+| `npm run start`        | Serve the production build                    |
+| `npm run lint`         | ESLint                                        |
+| `npm run typecheck`    | TypeScript, no emit                           |
+| `npm run format`       | Prettier, write                               |
+| `npm run format:check` | Prettier, check only (used in CI)             |
+| `npm run check`        | Lint + typecheck + build, run before a commit |
 
-```bash
-npm run build   # production build
-npm run start   # serve the production build
-npm run lint    # eslint
+## Project structure
+
+```
+src/
+  app/                  Routes (App Router) and route-level metadata
+    layout.tsx          Root layout: fonts, global metadata, Organization/WebSite JSON-LD, GA4, verification tag
+    page.tsx            Home
+    about/ contact/ work/ privacy/ terms/
+    services/           Index page and [slug] detail pages (generated from content/services.ts)
+    api/contact/        Contact form endpoint (SMTP)
+    sitemap.ts robots.ts opengraph-image.tsx icon.png
+  components/
+    layout/             Site chrome: navbar, footer, page-shell, cursor, smooth scroll, scroll helpers
+    sections/           Page sections: hero, home-overview, services, work, case-studies, about, testimonials, contact
+    ui/                 Small reusable pieces: magnetic, marquee, count-up, tilt-card
+    seo/                JsonLd (structured-data script)
+  content/              Page content as data: services.ts (11 service pages), projects.ts (case studies)
+  config/site.ts        Site-wide constants: name, URL, email, team, markets, verification token
+  hooks/                React hooks
+  lib/                  Pure helpers (utils.ts)
+docs/seo/               SEO audit, SERP analysis, blog topics, Search Console and sitemap guide
+public/images/          Logos and work images
+.github/                CI workflow, PR and issue templates, Dependabot, CODEOWNERS
 ```
 
-## Brand assets
+Where things go:
 
-Source logo lockup lives at `public/images/`:
+- **Change copy on a service page** -> `src/content/services.ts`. The page template in `src/app/services/[slug]/page.tsx` renders it.
+- **Add a case study** -> `src/content/projects.ts` and an image in `public/images/work/`.
+- **Change the email, team or tagline** -> `src/config/site.ts`.
+- **Add a page** -> new folder in `src/app/`, then add it to `src/app/sitemap.ts` and bump `SITE.contentUpdated`.
 
-- `logo-full.png` — full lockup (icon + wordmark), dark text, transparent background — used on light surfaces (navbar)
-- `logo-full-white.png` — same lockup with white wordmark — for dark surfaces
-- `logo-icon.png` — arch mark only, transparent background
-- `logo-icon-square.png` — arch mark centered on a square canvas — source for `src/app/icon.png` (site favicon)
+## Content and SEO rules
 
-## Deploying on Hostinger
+- One H1 per page. Titles 50-60 characters, meta descriptions 140-155.
+- Headings, titles and URLs never mention the UK or the US; the audience is stated in body copy, meta descriptions, pricing notes and structured data.
+- Every page needs a unique canonical (set via `alternates.canonical`).
+- Prices on the site are market figures with named sources, not quotes.
+- Strategy, SERP analysis and blog plans live in `docs/seo/`.
 
-This repo is connected to Hostinger via GitHub for deployment.
+## Environment variables
 
-1. In Hostinger's website/hosting panel, connect this GitHub repository and branch.
-2. **Framework preset:** `Next.js`.
-3. **Build command:** `npm run build`
-4. **Start / run command:** `npm run start` (Next.js is deployed as a Node app, not static export — the project uses Next's built-in Node runtime)
-5. **Node version:** 20.x or later (developed against Node 22)
-6. **Install command:** `npm install`
-7. No environment variables are required yet. When a contact form / CMS / analytics integration is added later, document required env vars here and add them in Hostinger's environment variables panel.
+See `.env.example`. Set the same names in Hostinger's environment variables for production, then rebuild (variables starting with `NEXT_PUBLIC_` are baked in at build time).
 
-After each merge to the deployed branch, Hostinger should auto-build and redeploy. Verify the live URL after every section is added so the interaction/animation experience is checked in a real browser, not just locally.
+| Variable                   | Purpose                                                           |
+| -------------------------- | ----------------------------------------------------------------- |
+| `SMTP_HOST/PORT/USER/PASS` | Hostinger SMTP for the contact form                               |
+| `CONTACT_TO`               | Inbox that receives contact-form messages                         |
+| `GOOGLE_SITE_VERIFICATION` | Optional override for the Search Console tag (default is in code) |
+| `NEXT_PUBLIC_GA_ID`        | GA4 measurement ID; analytics is off until set                    |
+
+## Workflow and deployment
+
+- `main` is production. Hostinger builds and deploys every push to `main` (Node 24 runtime, `npm run build`, `npm run start`).
+- Work on a branch, open a pull request, and let CI pass (format, lint, typecheck, build) before merging. See `CONTRIBUTING.md`.
+- After a deploy, check the live pages and `/sitemap.xml`.
+- Search Console: the verification meta tag is rendered on every page. Do not remove it. Sitemap to submit: `https://ajcreationz.co.uk/sitemap.xml`. Details in `docs/seo/search-console-and-sitemap.md`.

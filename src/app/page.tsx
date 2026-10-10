@@ -1,12 +1,12 @@
-import { Navbar } from "@/components/navbar";
-import { Hero } from "@/components/hero";
-import { HomeOverview } from "@/components/home-overview";
-import { Services } from "@/components/services";
-import { Work } from "@/components/work";
-import { About } from "@/components/about";
-import { Testimonials } from "@/components/testimonials";
-import { Contact } from "@/components/contact";
-import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/layout/navbar";
+import { Hero } from "@/components/sections/hero";
+import { HomeOverview } from "@/components/sections/home-overview";
+import { Services } from "@/components/sections/services";
+import { Work } from "@/components/sections/work";
+import { About } from "@/components/sections/about";
+import { Testimonials } from "@/components/sections/testimonials";
+import { Contact } from "@/components/sections/contact";
+import { Footer } from "@/components/layout/footer";
 
 export default function Home() {
   return (

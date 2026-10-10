@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { PageShell, PageHero, CtaBand } from "@/components/page-shell";
-import { SERVICES, TOP_LEVEL_SERVICES, UK_PRICING, childrenOf, getService } from "@/lib/services";
-import { SITE } from "@/lib/site";
+import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
+import { SERVICES, TOP_LEVEL_SERVICES, UK_PRICING, childrenOf, getService } from "@/content/services";
+import { JsonLd } from "@/components/seo/json-ld";
+import { SITE } from "@/config/site";
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -47,7 +48,10 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         url,
         serviceType: service.keyword,
         provider: { "@id": `${SITE.url}/#organization` },
-        areaServed: [{ "@type": "Country", name: "United Kingdom" }, { "@type": "Country", name: "United States" }],
+        areaServed: [
+          { "@type": "Country", name: "United Kingdom" },
+          { "@type": "Country", name: "United States" },
+        ],
       },
       {
         "@type": "BreadcrumbList",
@@ -74,10 +78,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
   return (
     <PageShell>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
-      />
+      <JsonLd data={jsonLd} />
       <PageHero eyebrow={`Service ${service.index}`} title={service.h1} crumbs={crumbs} />
 
       <section className="bg-cream px-6 pb-16 md:px-10 md:pb-24">
@@ -167,7 +168,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               <p className="mt-4 text-xs leading-relaxed text-ink/50">{service.pricing.note}</p>
               {uk && (
                 <>
-                  <h3 className="font-display mt-10 text-xl font-medium tracking-tight md:text-2xl">Market figures in pounds</h3>
+                  <h3 className="font-display mt-10 text-xl font-medium tracking-tight md:text-2xl">
+                    Market figures in pounds
+                  </h3>
                   <p className="mt-2 text-base leading-relaxed text-ink/70">{uk.intro}</p>
                   <dl className="mt-4 divide-y divide-ink/10 border-y border-ink/10">
                     {uk.rows.map((r) => (

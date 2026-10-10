@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run typecheck && npm run build"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.8",
@@ -30,11 +34,16 @@
     "@types/three": "^0.186.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4",
     "typescript": "^5"
   },
   "overrides": {
     "sharp": "0.35.5",
     "source-map-js": "1.2.2"
-  }
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "description": "Website for AJ Creationz (ajcreationz.co.uk): digital agency serving UK and US businesses."
 }

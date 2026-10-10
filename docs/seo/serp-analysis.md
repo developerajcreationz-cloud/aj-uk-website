@@ -8,13 +8,13 @@ Evidence labels: **OBSERVED** (seen in a dated search result), **RESEARCH** (thi
 
 ## 0. What changed with a global scope
 
-| Before (UK) | Now (global) |
-|---|---|
-| Keywords carried "UK" and city names | Head terms have **no location modifier**, in the form that gets searched worldwide ("shopify web design agency") |
-| Prices in GBP | Prices in **USD**, labeled as market figures that vary by region |
-| UK GDPR/PECR only | GDPR/UK GDPR, CCPA, CAN-SPAM, TCPA, CASL and US **A2P 10DLC** SMS registration |
-| Spelling and examples British | US English for content (the most widely searched English variant) |
-| Competitor set: UK agencies | Competitor set: global SERP, dominated by **US agencies, offshore providers (India, SE Asia) and freelance marketplaces** |
+| Before (UK)                          | Now (global)                                                                                                              |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| Keywords carried "UK" and city names | Head terms have **no location modifier**, in the form that gets searched worldwide ("shopify web design agency")          |
+| Prices in GBP                        | Prices in **USD**, labeled as market figures that vary by region                                                          |
+| UK GDPR/PECR only                    | GDPR/UK GDPR, CCPA, CAN-SPAM, TCPA, CASL and US **A2P 10DLC** SMS registration                                            |
+| Spelling and examples British        | US English for content (the most widely searched English variant)                                                         |
+| Competitor set: UK agencies          | Competitor set: global SERP, dominated by **US agencies, offshore providers (India, SE Asia) and freelance marketplaces** |
 
 **The biggest technical finding is the domain, not the content.** See Section 6, item 1.
 
@@ -22,12 +22,12 @@ Evidence labels: **OBSERVED** (seen in a dated search result), **RESEARCH** (thi
 
 ## 1. Limits of this analysis (read first)
 
-| Limit | Effect |
-|---|---|
-| Search ran through a **US-based search tool** | It reasonably reflects a US / global-English SERP, but **not** other countries' results, local packs, ad blocks or "People also ask". **LIMITED CONFIDENCE** for any non-US market. |
-| Network policy **blocked fetching competitor pages** and our live domain | No competitor headings, word counts, schema or Core Web Vitals. Page-structure notes come only from result titles and summaries. **LIMITED CONFIDENCE.** |
-| No keyword-volume or difficulty data | Priorities rest on commercial intent and SERP shape, not volume. |
-| Target countries are not yet decided | Section 5 proposes a market-priority approach but needs your input. |
+| Limit                                                                    | Effect                                                                                                                                                                              |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Search ran through a **US-based search tool**                            | It reasonably reflects a US / global-English SERP, but **not** other countries' results, local packs, ad blocks or "People also ask". **LIMITED CONFIDENCE** for any non-US market. |
+| Network policy **blocked fetching competitor pages** and our live domain | No competitor headings, word counts, schema or Core Web Vitals. Page-structure notes come only from result titles and summaries. **LIMITED CONFIDENCE.**                            |
+| No keyword-volume or difficulty data                                     | Priorities rest on commercial intent and SERP shape, not volume.                                                                                                                    |
+| Target countries are not yet decided                                     | Section 5 proposes a market-priority approach but needs your input.                                                                                                                 |
 
 **To close the gaps (about an hour):** run the Section 4 queries in incognito from each priority market (use a VPN or Google's `gl=` parameter), record the top 10, "People also ask" and ads, and open the top 3 pages per query. Template in Section 9.
 
@@ -54,16 +54,16 @@ Across all eight service queries, results fell into five groups:
 
 ## 3. Competitor set by service (OBSERVED; claims are the competitors' own)
 
-| Service | Competitors surfaced | Type | Notes |
-|---|---|---|---|
-| Brand identity | Condensed (Brooklyn), Spellbrand (since 1998), Ramotion (San Francisco), Zeviq, Passionates, KOTA (London) | Agencies, startup-focused studios | "For startups and small businesses" is the common modifier. Packages usually list logo variations, palette, typography, social mockups and a guidelines document. |
-| Shopify | Orbit Media, Digivate, Charle Agency, IRPR Agency, Crossing Minds, We Make Websites, Duck.Design | Agency pages + roundups | Many pitch **custom themes, migrations, headless and international expansion**. Shopify Partner / Plus status is a common badge. |
-| WordPress | Sumy Designs, Passionates, Bilberry, Seahawk Media, FreshySites | Agency pages + roundups | Pitch: custom design over templates, integrations, ongoing support. |
-| Video editing | VEEDYOU, Vidpros, LOCALiQ, ITDurres, Contra freelancers | Agencies, subscription services, freelancers | Fixed per-project prices and **monthly packages** are common. Captions and sound-off design are standard claims. |
-| SEO | Reboot Online, Breakline, Visionary Marketing, Koozai (all UK, remote), Focus Digital (US), Thrive, Boostability, Agency Partner Interactive | Agencies + listicles | "No-contract / pay-as-you-go" and "free audit" are common hooks. |
-| Google Ads | WebFX, JDR Group, Chameleon, SunTec India, W3Era, ClicksGeek, PPC Ads Marketing | Agencies, offshore, white-label | **Google Partner** status is the main trust signal. Fee guides from Outerbox Design, Linear Design, ClicksGeek, SaaS Hero. |
-| Meta ads | Andava Digital, Novi Digital, Priority Pixels (guide) | Agencies | Many results were job-board listings, i.e. weak competition quality. Guides stress Conversions API and privacy rules. |
-| GoHighLevel | Omni Online Strategies (Florida), Ecosire, RV Technologies, many Fiverr/Contra freelancers | Agencies, freelancers | **A2P 10DLC** registration is a recurring US-specific topic. Snapshots, white-label SaaS mode and sub-accounts are common offers. |
+| Service        | Competitors surfaced                                                                                                                         | Type                                         | Notes                                                                                                                                                             |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Brand identity | Condensed (Brooklyn), Spellbrand (since 1998), Ramotion (San Francisco), Zeviq, Passionates, KOTA (London)                                   | Agencies, startup-focused studios            | "For startups and small businesses" is the common modifier. Packages usually list logo variations, palette, typography, social mockups and a guidelines document. |
+| Shopify        | Orbit Media, Digivate, Charle Agency, IRPR Agency, Crossing Minds, We Make Websites, Duck.Design                                             | Agency pages + roundups                      | Many pitch **custom themes, migrations, headless and international expansion**. Shopify Partner / Plus status is a common badge.                                  |
+| WordPress      | Sumy Designs, Passionates, Bilberry, Seahawk Media, FreshySites                                                                              | Agency pages + roundups                      | Pitch: custom design over templates, integrations, ongoing support.                                                                                               |
+| Video editing  | VEEDYOU, Vidpros, LOCALiQ, ITDurres, Contra freelancers                                                                                      | Agencies, subscription services, freelancers | Fixed per-project prices and **monthly packages** are common. Captions and sound-off design are standard claims.                                                  |
+| SEO            | Reboot Online, Breakline, Visionary Marketing, Koozai (all UK, remote), Focus Digital (US), Thrive, Boostability, Agency Partner Interactive | Agencies + listicles                         | "No-contract / pay-as-you-go" and "free audit" are common hooks.                                                                                                  |
+| Google Ads     | WebFX, JDR Group, Chameleon, SunTec India, W3Era, ClicksGeek, PPC Ads Marketing                                                              | Agencies, offshore, white-label              | **Google Partner** status is the main trust signal. Fee guides from Outerbox Design, Linear Design, ClicksGeek, SaaS Hero.                                        |
+| Meta ads       | Andava Digital, Novi Digital, Priority Pixels (guide)                                                                                        | Agencies                                     | Many results were job-board listings, i.e. weak competition quality. Guides stress Conversions API and privacy rules.                                             |
+| GoHighLevel    | Omni Online Strategies (Florida), Ecosire, RV Technologies, many Fiverr/Contra freelancers                                                   | Agencies, freelancers                        | **A2P 10DLC** registration is a recurring US-specific topic. Snapshots, white-label SaaS mode and sub-accounts are common offers.                                 |
 
 ---
 
@@ -72,68 +72,75 @@ Across all eight service queries, results fell into five groups:
 **Rule:** head terms carry **no country**. Country or city terms are added only where AJ Creationz has real proof in that market (clients, reviews, presence). Priority: **P1** head term for a published page; **P2** supporting query answered on that page; **P3** needs its own planned page.
 
 ### Brand identity
-| Query | Intent | Target | Priority |
-|---|---|---|---|
-| brand identity agency | Commercial | `/services/brand-identity` | P1 |
-| branding agency for startups / small businesses | Commercial | same | P2 |
-| how much does brand identity cost / logo design cost | Informational | same (pricing) | P2 |
-| brand guidelines: what to include | Informational | Blog | P3 |
-| rebrand vs refresh | Informational | Blog | P3 |
+
+| Query                                                | Intent        | Target                     | Priority |
+| ---------------------------------------------------- | ------------- | -------------------------- | -------- |
+| brand identity agency                                | Commercial    | `/services/brand-identity` | P1       |
+| branding agency for startups / small businesses      | Commercial    | same                       | P2       |
+| how much does brand identity cost / logo design cost | Informational | same (pricing)             | P2       |
+| brand guidelines: what to include                    | Informational | Blog                       | P3       |
+| rebrand vs refresh                                   | Informational | Blog                       | P3       |
 
 ### Website development
-| Query | Intent | Target | Priority |
-|---|---|---|---|
-| website development agency | Commercial | `/services/website-development` | P1 |
-| WordPress web design agency | Commercial | `/services/wordpress-web-design` | P1 |
-| Shopify web design agency | Commercial | `/services/shopify-web-design` | P1 |
-| custom website development company | Commercial | `/services/custom-website-development` | P1 |
-| how much does a small business website cost | Informational | pillar pricing + blog | P2 / P3 |
-| Shopify store cost / Shopify migration | Informational | Shopify page; Blog | P2 / P3 |
-| Shopify vs WordPress / WooCommerce | Comparison | Reference page | P3 |
-| international ecommerce / multi-currency Shopify | Informational | Reference page | P3 |
-| website migration without losing SEO | Informational | Blog | P3 |
+
+| Query                                            | Intent        | Target                                 | Priority |
+| ------------------------------------------------ | ------------- | -------------------------------------- | -------- |
+| website development agency                       | Commercial    | `/services/website-development`        | P1       |
+| WordPress web design agency                      | Commercial    | `/services/wordpress-web-design`       | P1       |
+| Shopify web design agency                        | Commercial    | `/services/shopify-web-design`         | P1       |
+| custom website development company               | Commercial    | `/services/custom-website-development` | P1       |
+| how much does a small business website cost      | Informational | pillar pricing + blog                  | P2 / P3  |
+| Shopify store cost / Shopify migration           | Informational | Shopify page; Blog                     | P2 / P3  |
+| Shopify vs WordPress / WooCommerce               | Comparison    | Reference page                         | P3       |
+| international ecommerce / multi-currency Shopify | Informational | Reference page                         | P3       |
+| website migration without losing SEO             | Informational | Blog                                   | P3       |
 
 ### Video editing
-| Query | Intent | Target | Priority |
-|---|---|---|---|
-| video editing services for business | Commercial | `/services/video-editing` | P1 |
-| social media video editing / reels editing service | Commercial | same | P2 |
-| video editing cost per video | Informational | same (pricing) | P2 |
-| video editing subscription / monthly video editing | Commercial | Reference page (offer decision needed) | P3 |
-| video ads for Meta and TikTok | Informational | Blog | P3 |
+
+| Query                                              | Intent        | Target                                 | Priority |
+| -------------------------------------------------- | ------------- | -------------------------------------- | -------- |
+| video editing services for business                | Commercial    | `/services/video-editing`              | P1       |
+| social media video editing / reels editing service | Commercial    | same                                   | P2       |
+| video editing cost per video                       | Informational | same (pricing)                         | P2       |
+| video editing subscription / monthly video editing | Commercial    | Reference page (offer decision needed) | P3       |
+| video ads for Meta and TikTok                      | Informational | Blog                                   | P3       |
 
 ### SEO and growth
-| Query | Intent | Target | Priority |
-|---|---|---|---|
-| SEO agency for small business | Commercial | `/services/seo-growth` | P1 |
-| how much does SEO cost | Informational | same (pricing) | P2 |
-| international SEO / multilingual SEO | Informational + commercial | Reference page | P3 |
-| local SEO services | Commercial | Reference page | P3 |
-| technical SEO audit | Commercial | Reference page | P3 |
-| SEO for AI search / AI Overviews | Informational | Blog | P3 |
+
+| Query                                | Intent                     | Target                 | Priority |
+| ------------------------------------ | -------------------------- | ---------------------- | -------- |
+| SEO agency for small business        | Commercial                 | `/services/seo-growth` | P1       |
+| how much does SEO cost               | Informational              | same (pricing)         | P2       |
+| international SEO / multilingual SEO | Informational + commercial | Reference page         | P3       |
+| local SEO services                   | Commercial                 | Reference page         | P3       |
+| technical SEO audit                  | Commercial                 | Reference page         | P3       |
+| SEO for AI search / AI Overviews     | Informational              | Blog                   | P3       |
 
 ### Paid ads
-| Query | Intent | Target | Priority |
-|---|---|---|---|
-| PPC agency | Commercial | `/services/meta-google-ads` | P1 |
-| Google Ads agency | Commercial | `/services/google-ads-management` | P1 |
-| Meta ads agency / Facebook ads agency | Commercial | `/services/meta-ads-management` | P1 |
-| Google Ads management cost / PPC pricing | Informational | pillar pricing | P2 |
-| Google Ads vs Facebook ads | Comparison | pillar section; Blog | P2 / P3 |
-| Meta Conversions API setup | Informational | Blog | P3 |
-| Performance Max explained | Informational | Blog | P3 |
+
+| Query                                    | Intent        | Target                            | Priority |
+| ---------------------------------------- | ------------- | --------------------------------- | -------- |
+| PPC agency                               | Commercial    | `/services/meta-google-ads`       | P1       |
+| Google Ads agency                        | Commercial    | `/services/google-ads-management` | P1       |
+| Meta ads agency / Facebook ads agency    | Commercial    | `/services/meta-ads-management`   | P1       |
+| Google Ads management cost / PPC pricing | Informational | pillar pricing                    | P2       |
+| Google Ads vs Facebook ads               | Comparison    | pillar section; Blog              | P2 / P3  |
+| Meta Conversions API setup               | Informational | Blog                              | P3       |
+| Performance Max explained                | Informational | Blog                              | P3       |
 
 ### GoHighLevel CRM
-| Query | Intent | Target | Priority |
-|---|---|---|---|
-| GoHighLevel agency | Commercial | `/services/gohighlevel-crm` | P1 |
-| GoHighLevel setup / GoHighLevel consultant | Commercial | same | P2 |
-| GoHighLevel pricing | Informational | same (pricing) | P2 |
-| GoHighLevel vs HubSpot | Comparison | same (section); Reference page | P2 / P3 |
-| GoHighLevel A2P 10DLC registration | Informational | Reference page | P3 |
-| GoHighLevel and GDPR / SMS compliance | Informational | Reference page | P3 |
+
+| Query                                      | Intent        | Target                         | Priority |
+| ------------------------------------------ | ------------- | ------------------------------ | -------- |
+| GoHighLevel agency                         | Commercial    | `/services/gohighlevel-crm`    | P1       |
+| GoHighLevel setup / GoHighLevel consultant | Commercial    | same                           | P2       |
+| GoHighLevel pricing                        | Informational | same (pricing)                 | P2       |
+| GoHighLevel vs HubSpot                     | Comparison    | same (section); Reference page | P2 / P3  |
+| GoHighLevel A2P 10DLC registration         | Informational | Reference page                 | P3       |
+| GoHighLevel and GDPR / SMS compliance      | Informational | Reference page                 | P3       |
 
 ### Modifier layers to add as pages (HYPOTHESIS; test with the manual SERP pass)
+
 - **Segment:** "for startups", "for ecommerce brands", "for SaaS", "for coaches and consultants", "for local service businesses". These beat generic head terms for a new domain.
 - **Market:** "web design agency Dubai", "Shopify agency Australia", and so on. **Only build a market page where we can show real work or clients there.** Thin per-city pages are doorway content and risk a spam action.
 
@@ -149,23 +156,23 @@ Across all eight service queries, results fell into five groups:
 
 **Planned (not yet written; each needs a non-commodity element first):**
 
-| Page | Type | Parent | Information-gain idea |
-|---|---|---|---|
-| Shopify vs WordPress: which to choose | Reference | website-development | Scored decision checklist from real builds |
-| How much does a website cost | Blog | website-development | Our own cost breakdown by scope |
-| International ecommerce on Shopify | Reference | shopify-web-design | Multi-currency and tax setup walkthrough |
-| Website migration SEO checklist | Blog | website-development | Our redirect-mapping template |
-| International SEO: structure, hreflang, domains | Reference | seo-growth | Decision tree with examples |
-| Local SEO services | Reference | seo-growth | Worked Google Business Profile audit |
-| Technical SEO audit: what we check | Reference | seo-growth | Our audit checklist |
-| SEO for AI search | Blog | seo-growth | Observed AI citations for a fixed prompt set |
-| Google Ads vs Meta Ads | Blog | meta-google-ads | Decision tree by business type |
-| Meta Conversions API explained | Blog | meta-ads-management | Setup walkthrough with screenshots |
-| GoHighLevel vs HubSpot | Reference | gohighlevel-crm | Cost model by team size |
-| GoHighLevel A2P 10DLC registration | Reference | gohighlevel-crm | Step-by-step with common rejection reasons |
-| Brand guidelines: what to include | Blog | brand-identity | Our guidelines template |
-| Reels editing: hooks and safe zones | Blog | video-editing | Annotated before/after edits |
-| Case studies (existing clients) | Reference | by service | Real outcomes, with permission |
+| Page                                            | Type      | Parent              | Information-gain idea                        |
+| ----------------------------------------------- | --------- | ------------------- | -------------------------------------------- |
+| Shopify vs WordPress: which to choose           | Reference | website-development | Scored decision checklist from real builds   |
+| How much does a website cost                    | Blog      | website-development | Our own cost breakdown by scope              |
+| International ecommerce on Shopify              | Reference | shopify-web-design  | Multi-currency and tax setup walkthrough     |
+| Website migration SEO checklist                 | Blog      | website-development | Our redirect-mapping template                |
+| International SEO: structure, hreflang, domains | Reference | seo-growth          | Decision tree with examples                  |
+| Local SEO services                              | Reference | seo-growth          | Worked Google Business Profile audit         |
+| Technical SEO audit: what we check              | Reference | seo-growth          | Our audit checklist                          |
+| SEO for AI search                               | Blog      | seo-growth          | Observed AI citations for a fixed prompt set |
+| Google Ads vs Meta Ads                          | Blog      | meta-google-ads     | Decision tree by business type               |
+| Meta Conversions API explained                  | Blog      | meta-ads-management | Setup walkthrough with screenshots           |
+| GoHighLevel vs HubSpot                          | Reference | gohighlevel-crm     | Cost model by team size                      |
+| GoHighLevel A2P 10DLC registration              | Reference | gohighlevel-crm     | Step-by-step with common rejection reasons   |
+| Brand guidelines: what to include               | Blog      | brand-identity      | Our guidelines template                      |
+| Reels editing: hooks and safe zones             | Blog      | video-editing       | Annotated before/after edits                 |
+| Case studies (existing clients)                 | Reference | by service          | Real outcomes, with permission               |
 
 **Market priority (needs your input).** Pick 2–3 launch markets and I will tailor examples, currency display, pricing context and (where warranted) market pages. Suggested method: choose markets where you already have clients or can show proof, and where Section 9's SERP check shows beatable competition.
 
@@ -187,6 +194,7 @@ Across all eight service queries, results fell into five groups:
 ## 7. Gaps and differentiation
 
 **Where we can credibly differ (HYPOTHESES to test)**
+
 1. **Sourced, transparent pricing** across every service, labeled as market figures. Most competitors publish cost guides only to sell.
 2. **One team across the funnel:** brand, site, video, ads, SEO and CRM, with the pages cross-linked into a single loop.
 3. **Honest platform advice** (custom vs template; GoHighLevel vs HubSpot) where competitors push their own offer.
@@ -194,6 +202,7 @@ Across all eight service queries, results fell into five groups:
 5. **Premium-over-offshore positioning:** strategy, tracking and integration, rather than lowest price.
 
 **Gaps we cannot close yet**
+
 - **Proof:** three portfolio items, no reviews, no verified partner badges. Do not claim badges you do not hold. Becoming a Shopify Partner, Google Partner and Meta Business Partner are achievable and would match what competitors lead with.
 - **Authority:** a new domain with few links and no directory listings.
 - **Market presence:** nothing yet shows where clients are, which blocks credible market pages.
@@ -202,43 +211,35 @@ Across all eight service queries, results fell into five groups:
 
 ## 8. On-site audit notes (from the repository, not a live crawl; LIMITED CONFIDENCE)
 
-| Area | Status |
-|---|---|
-| Crawlability | `robots.ts` and `sitemap.ts` exist; sitemap lists all 11 service pages plus core pages. |
+| Area                  | Status                                                                                                                                                                       |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Crawlability          | `robots.ts` and `sitemap.ts` exist; sitemap lists all 11 service pages plus core pages.                                                                                      |
 | Titles / descriptions | Service pages have unique keyword-led titles (43–55 characters; some are under the 50–60 target) and descriptions (about 130–155). Home, Work and Contact are still generic. |
-| Structured data | Organization, WebSite on all pages; Service, BreadcrumbList, FAQPage on service pages. FAQ rich results are deprecated, so the FAQ markup gives no SERP feature. |
-| Headings | One H1 per service page, H2 per sub-intent. |
-| Rendering | Static generation; good for crawling. |
-| Performance | Heavy client animation and 3D on the homepage. **Run PageSpeed/CWV on the live URL**, from more than one region. |
-| Domain | See Section 6, item 1. |
-| Not verified | Live indexing, Search Console, GA4, backlinks, review profiles, Google Business Profile. |
+| Structured data       | Organization, WebSite on all pages; Service, BreadcrumbList, FAQPage on service pages. FAQ rich results are deprecated, so the FAQ markup gives no SERP feature.             |
+| Headings              | One H1 per service page, H2 per sub-intent.                                                                                                                                  |
+| Rendering             | Static generation; good for crawling.                                                                                                                                        |
+| Performance           | Heavy client animation and 3D on the homepage. **Run PageSpeed/CWV on the live URL**, from more than one region.                                                             |
+| Domain                | See Section 6, item 1.                                                                                                                                                       |
+| Not verified          | Live indexing, Search Console, GA4, backlinks, review profiles, Google Business Profile.                                                                                     |
 
 ---
 
 ## 9. Next actions
 
 **Decisions needed from you**
+
 1. **Which domain is primary?** Recommend moving to a generic domain (Section 6.1).
 2. **Which 2–3 markets first?** Drives examples and any market pages.
 3. **Contact and invoicing currency/time zones:** what you actually offer.
 
-**Before launch**
-4. Add a **named author and bio** to service pages (Content Playbook 2.4); I did not invent one.
-5. Add the **four images per page** (photoreal, alt text 110–120 characters). I can write the briefs.
-6. Replace placeholder privacy and terms text after legal review.
+**Before launch** 4. Add a **named author and bio** to service pages (Content Playbook 2.4); I did not invent one. 5. Add the **four images per page** (photoreal, alt text 110–120 characters). I can write the briefs. 6. Replace placeholder privacy and terms text after legal review.
 
-**Next 30 days**
-7. Verify in **Google Search Console** and Bing Webmaster Tools; submit the sitemap; install GA4.
-8. Create a **Google Business Profile** if you have a real location; keep business details identical everywhere.
-9. Get listed on the directories that rank: Clutch, Sortlist, DesignRush, and partner directories (Shopify, Google, Meta, GoHighLevel).
-10. Collect **3–5 reviews** and turn the three portfolio items into case studies.
-11. Run the **SERP pass** below and update this document.
+**Next 30 days** 7. Verify in **Google Search Console** and Bing Webmaster Tools; submit the sitemap; install GA4. 8. Create a **Google Business Profile** if you have a real location; keep business details identical everywhere. 9. Get listed on the directories that rank: Clutch, Sortlist, DesignRush, and partner directories (Shopify, Google, Meta, GoHighLevel). 10. Collect **3–5 reviews** and turn the three portfolio items into case studies. 11. Run the **SERP pass** below and update this document.
 
-**Next 90 days**
-12. Publish the highest-value planned pages: cost guides, platform comparisons, A2P 10DLC.
-13. Refresh pricing ranges quarterly; they come from third-party guides.
+**Next 90 days** 12. Publish the highest-value planned pages: cost guides, platform comparisons, A2P 10DLC. 13. Refresh pricing ranges quarterly; they come from third-party guides.
 
 ### Template for the manual SERP pass (one per query and market)
+
 ```
 Query / market (country, language, device) / date:
 Top 10 (URL | type: agency / offshore / marketplace / directory / listicle / guide):

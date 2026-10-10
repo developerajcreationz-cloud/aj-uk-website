@@ -1,14 +1,8 @@
 "use client";
 
 import type { ReactNode } from "react";
-import {
-  motion,
-  useReducedMotion,
-  useSpring,
-  useTransform,
-  type MotionValue,
-} from "framer-motion";
-import { CountUp } from "@/components/count-up";
+import { motion, useReducedMotion, useSpring, useTransform, type MotionValue } from "framer-motion";
+import { CountUp } from "@/components/ui/count-up";
 import { cn } from "@/lib/utils";
 
 const BARS = [34, 46, 40, 58, 70, 64, 94];
@@ -77,27 +71,16 @@ export function HeroVisual({
       <div className="absolute inset-[8%] rounded-full bg-gradient-to-br from-lilac/40 via-lilac/10 to-transparent blur-3xl" />
 
       {/* Reach / performance card (hero of the composition) */}
-      <Layer
-        depth={30}
-        delay={0.8}
-        bob={6}
-        springX={springX}
-        springY={springY}
-        className="left-[4%] top-[17%] w-[58%]"
-      >
+      <Layer depth={30} delay={0.8} bob={6} springX={springX} springY={springY} className="left-[4%] top-[17%] w-[58%]">
         <div className={cn(card, "p-6")}>
           <div className="flex items-start justify-between">
             <div>
-              <p className="text-[11px] font-medium uppercase tracking-wider text-ink/50">
-                Campaign reach
-              </p>
+              <p className="text-[11px] font-medium uppercase tracking-wider text-ink/50">Campaign reach</p>
               <p className="font-display mt-1 text-5xl font-medium leading-none tracking-tight text-ink">
                 +<CountUp value={248} suffix="%" duration={2} />
               </p>
             </div>
-            <span className="rounded-full bg-lilac/60 px-3 py-1 text-[11px] font-medium text-plum">
-              Live
-            </span>
+            <span className="rounded-full bg-lilac/60 px-3 py-1 text-[11px] font-medium text-plum">Live</span>
           </div>
 
           <div className="mt-5 flex h-24 items-end gap-2.5">
@@ -109,9 +92,7 @@ export function HeroVisual({
                 transition={{ duration: 0.9, delay: 1.2 + i * 0.07, ease: [0.25, 1, 0.5, 1] }}
                 className={cn(
                   "flex-1 rounded-t-lg",
-                  i === BARS.length - 1
-                    ? "bg-ink"
-                    : "bg-gradient-to-t from-violet/70 to-lilac"
+                  i === BARS.length - 1 ? "bg-ink" : "bg-gradient-to-t from-violet/70 to-lilac",
                 )}
               />
             ))}
@@ -124,14 +105,7 @@ export function HeroVisual({
       </Layer>
 
       {/* Brand film card */}
-      <Layer
-        depth={55}
-        delay={1.0}
-        bob={7}
-        springX={springX}
-        springY={springY}
-        className="right-[0%] top-[2%] w-[38%]"
-      >
+      <Layer depth={55} delay={1.0} bob={7} springX={springX} springY={springY} className="right-[0%] top-[2%] w-[38%]">
         <div className="rounded-3xl bg-ink p-4 shadow-[0_30px_60px_-20px_rgba(18,15,29,0.5)]">
           <div className="relative flex aspect-video items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-plum via-violet to-lilac">
             <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-cream/20 blur-xl" />
@@ -182,7 +156,15 @@ export function HeroVisual({
               12.4k
             </span>
             <span className="flex items-center gap-1.5">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinejoin="round"
+              >
                 <path d="M21 12a8 8 0 0 1-11.8 7L3 20l1.200-4.8A8 8 0 1 1 21 12Z" />
               </svg>
               486
@@ -202,7 +184,15 @@ export function HeroVisual({
       >
         <div className={cn(card, "p-4")}>
           <div className="flex items-center gap-2 rounded-full border border-ink/10 bg-cream px-3 py-1.5 text-[10px] text-ink/60">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+            <svg
+              width="11"
+              height="11"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+            >
               <circle cx="11" cy="11" r="7" />
               <path d="m20 20-3.5-3.5" />
             </svg>
@@ -218,25 +208,22 @@ export function HeroVisual({
               <div className="h-1.5 w-2/3 rounded-full bg-ink/10" />
             </div>
           </div>
-          <p className="mt-3 text-[10px] font-medium uppercase tracking-wide text-ink/50">
-            SEO &amp; growth
-          </p>
+          <p className="mt-3 text-[10px] font-medium uppercase tracking-wide text-ink/50">SEO &amp; growth</p>
         </div>
       </Layer>
 
       {/* ROAS chip */}
-      <Layer
-        depth={70}
-        delay={1.3}
-        bob={5}
-        springX={springX}
-        springY={springY}
-        className="bottom-[14%] right-[2%]"
-      >
+      <Layer depth={70} delay={1.3} bob={5} springX={springX} springY={springY} className="bottom-[14%] right-[2%]">
         <div className="flex items-center gap-3 rounded-full bg-lilac py-2.5 pl-2.5 pr-5 shadow-[0_20px_40px_-15px_rgba(76,29,149,0.6)]">
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-ink text-lilac">
             <svg width="14" height="14" viewBox="0 0 12 12" fill="none">
-              <path d="M2 10L10 2M10 2H3.5M10 2V8.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+              <path
+                d="M2 10L10 2M10 2H3.5M10 2V8.5"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </span>
           <div className="leading-tight">
@@ -247,16 +234,17 @@ export function HeroVisual({
       </Layer>
 
       {/* Collaborator cursor */}
-      <Layer
-        depth={90}
-        delay={1.5}
-        bob={4}
-        springX={springX}
-        springY={springY}
-        className="left-[2%] top-[6%]"
-      >
+      <Layer depth={90} delay={1.5} bob={4} springX={springX} springY={springY} className="left-[2%] top-[6%]">
         <div className="flex items-start">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="#120f1d" stroke="#fbfaff" strokeWidth="1.5" strokeLinejoin="round">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="#120f1d"
+            stroke="#fbfaff"
+            strokeWidth="1.5"
+            strokeLinejoin="round"
+          >
             <path d="M4 3l16 7.500-7 2.200-2.5 7.3L4 3Z" />
           </svg>
           <span className="-ml-0.5 mt-4 rounded-full bg-ink px-3 py-1 text-[11px] font-medium text-cream">

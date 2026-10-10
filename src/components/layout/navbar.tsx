@@ -30,9 +30,7 @@ export function Navbar() {
         transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1], delay: 0.15 }}
         className={cn(
           "fixed inset-x-0 top-0 z-40 transition-colors duration-500",
-          scrolled || open
-            ? "bg-cream/85 backdrop-blur-md border-b border-ink/10"
-            : "bg-transparent"
+          scrolled || open ? "bg-cream/85 backdrop-blur-md border-b border-ink/10" : "bg-transparent",
         )}
       >
         <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 md:px-10">
@@ -121,7 +119,11 @@ export function Navbar() {
                 A creative &amp; digital agency partnering with ambitious brands ready to move.
               </p>
               <div className="flex flex-col gap-1 md:items-end">
-                <a href="mailto:grow@ajcreationz.co" data-cursor-hover className="text-cream transition-colors hover:text-lilac">
+                <a
+                  href="mailto:grow@ajcreationz.co"
+                  data-cursor-hover
+                  className="text-cream transition-colors hover:text-lilac"
+                >
                   grow@ajcreationz.co
                 </a>
               </div>

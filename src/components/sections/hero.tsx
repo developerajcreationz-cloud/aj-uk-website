@@ -2,10 +2,10 @@
 
 import { useRef } from "react";
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from "framer-motion";
-import { Magnetic } from "@/components/magnetic";
-import { Marquee } from "@/components/marquee";
-import { HeroVisual } from "@/components/hero-visual";
-import { useMediaQuery } from "@/lib/use-media-query";
+import { Magnetic } from "@/components/ui/magnetic";
+import { Marquee } from "@/components/ui/marquee";
+import { HeroVisual } from "@/components/sections/hero-visual";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 const HEADLINE_LINES = ["Digital agency", "for websites, brand,", "SEO and ads."];
 
@@ -103,13 +103,7 @@ export function Hero() {
           <h1 className="font-display max-w-5xl text-[13vw] font-medium leading-[0.95] tracking-tight text-ink sm:text-[9vw] md:text-[6.4vw] lg:text-[6vw]">
             {HEADLINE_LINES.map((line, i) => (
               <span key={line} className="block overflow-hidden pb-1">
-                <motion.span
-                  custom={i}
-                  variants={lineVariants}
-                  initial="hidden"
-                  animate="visible"
-                  className="block"
-                >
+                <motion.span custom={i} variants={lineVariants} initial="hidden" animate="visible" className="block">
                   {line.split(" ").map((word, wi) =>
                     line === "for websites, brand," && word === "websites," ? (
                       <em
@@ -120,7 +114,7 @@ export function Hero() {
                       </em>
                     ) : (
                       <span key={wi}>{word} </span>
-                    )
+                    ),
                   )}
                 </motion.span>
               </span>
@@ -133,9 +127,9 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.9 }}
             className="max-w-md text-balance text-base leading-relaxed text-ink/65 md:max-w-lg md:text-lg"
           >
-            AJ Creationz is a digital agency for UK and US businesses. We build WordPress, Shopify and custom
-            websites, brand identities, SEO, Meta and Google Ads, video and GoHighLevel CRM systems, all
-            tracked to the leads and sales they bring in.
+            AJ Creationz is a digital agency for UK and US businesses. We build WordPress, Shopify and custom websites,
+            brand identities, SEO, Meta and Google Ads, video and GoHighLevel CRM systems, all tracked to the leads and
+            sales they bring in.
           </motion.p>
 
           <motion.div
@@ -153,7 +147,13 @@ export function Hero() {
                 Start a project
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-lilac text-ink transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-45">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M2 10L10 2M10 2H3.5M10 2V8.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                    <path
+                      d="M2 10L10 2M10 2H3.5M10 2V8.5"
+                      stroke="currentColor"
+                      strokeWidth="1.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </span>
               </a>
