@@ -9,6 +9,7 @@ import { Magnetic } from "@/components/ui/magnetic";
 const SITEMAP = [
   { label: "Work", href: "/work" },
   { label: "Services", href: "/services" },
+  { label: "Guides", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Testimonials", href: "/#testimonials" },
   { label: "Contact", href: "/contact" },

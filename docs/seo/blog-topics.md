@@ -1,129 +1,50 @@
-# 10 Blog Topics for Lead Generation (ajcreationz.co.uk)
+# Blog Topics: keywords, volumes and status (ajcreationz.co.uk)
 
-Prepared 10 Oct 2026 with the SEO Content Playbook v7.0 (§5 Blog Post Standards, §7 pre-writing workflow). Page type for every item: **Blog post**, 1,200–2,500 words, set by the top-10 SERP for that query. Each belongs to a cluster and links up to its parent service page (the pillar). SERP notes come from the 10 Oct 2026 capture in `serp-analysis-uk-us.md` (US-based tool; **LIMITED CONFIDENCE** until you run the manual pass).
+Updated 10 Oct 2026. Page type for every item: **Blog post** (Content Playbook v7.1, section 5), each with a parent service page, the section 2.7 **Value Test** answered, a named author, sourced figures and a worksheet, template or formula as the information-gain element.
 
-**Rules applied**
+**Decisions in this revision**
 
-- Titles and H2s carry no "UK" or "US". Both markets are covered in the body and in a GBP and USD figures table.
-- Keywords are placed in the title tag, H1, meta description, first 100 words and one H2. No density targets.
-- Each post needs a named human author, an answer in the first 150–200 words, and **one information-gain element** a competitor cannot reword. Where that element depends on your own work (templates, screenshots, real builds), it is marked **needs you**.
-- Do not publish a post until its information-gain element exists.
+- Skipped by request: _GoHighLevel A2P 10DLC registration_ and _Meta Conversions API explained_.
+- The other eight are written and live at `/blog/<slug>` (content in `src/content/posts/`).
+- Keywords were re-ranked using your Semrush bulk export (volume, KD %, intent as exported). The database country was not visible in the screenshots, so confirm it before treating volumes as UK or US.
 
-## Priority order (by buying intent)
+## Status and keywords
 
-| #   | Topic                                        | Funnel stage          | Why it generates leads                     |
-| --- | -------------------------------------------- | --------------------- | ------------------------------------------ |
-| 1   | How much does a website cost?                | Decision              | Price researchers are close to hiring      |
-| 3   | How much does SEO cost for a small business? | Decision              | Same, and SERP is vendor-dominated         |
-| 6   | GoHighLevel A2P 10DLC registration           | Problem-aware, urgent | People stuck with blocked SMS want a fixer |
-| 5   | GoHighLevel vs HubSpot                       | Consideration         | Direct platform choice                     |
-| 2   | Shopify vs WordPress                         | Consideration         | Platform choice before a build             |
-| 4   | Google Ads vs Meta Ads                       | Consideration         | Budget allocation before an ad retainer    |
-| 7   | Website migration SEO checklist              | Problem-aware         | A rebuild is about to happen               |
-| 9   | Meta Conversions API explained               | Problem-aware         | Tracking broken, needs a specialist        |
-| 8   | What to include in brand guidelines          | Awareness             | Feeds the brand pillar                     |
-| 10  | Reels editing: hooks, captions, safe zones   | Awareness             | Feeds the video pillar                     |
+| #   | Post (slug)                                                                              | Primary keyword (volume / KD)                | Secondary keywords (volume / KD where exported)                                                                                                                                                                                                | Parent service      | Value element on the page                                             |
+| --- | ---------------------------------------------------------------------------------------- | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | --------------------------------------------------------------------- |
+| 1   | How much does a website cost in 2026? (`how-much-does-a-website-cost`)                   | how much does a website cost (2,900 / 57)    | website design pricing (1,000 / 50); website maintenance cost (1,300 / 29); ecommerce website cost (720 / 39); small business website cost (480 / 53); web design agency pricing (390 / 18); how much does a wordpress website cost (110 / 29) | website-development | Three-year cost worksheet with arithmetic; quote-comparison checklist |
+| 2   | SEO pricing: how much does SEO cost? (`seo-pricing`)                                     | seo pricing (8,100 / 46)                     | how much does seo cost (2,400 / 43); is seo worth it (1,600 / 22); cheap seo packages (1,300 / 30); local seo cost (1,000 / 28); seo retainer cost (20)                                                                                        | seo-growth          | Break-even formula with worked example; what-you-should-get checklist |
+| 3   | GoHighLevel vs HubSpot (`gohighlevel-vs-hubspot`)                                        | gohighlevel vs hubspot (170 / 11)            | best crm for small business (5,400 / 61); gohighlevel pricing (3,600 / 25); hubspot alternatives (1,900 / 25); gohighlevel review (880 / 32); hubspot cost for small business (20)                                                             | gohighlevel-crm     | Transparent yearly cost model; fit rules                              |
+| 4   | Shopify vs WordPress (`shopify-vs-wordpress`)                                            | shopify vs wordpress (720 / 17)              | shopify vs woocommerce (1,900 / 30); best platform for small business website (110 / 45); wordpress or shopify for ecommerce (20); shopify vs wordpress cost (20)                                                                              | shopify-web-design  | 8-question scorecard                                                  |
+| 5   | Google Ads vs Facebook Ads (`google-ads-vs-facebook-ads`)                                | google ads vs facebook ads (590 / 29)        | google ads vs meta ads (110 / 29); ppc vs paid social (20); facebook ads vs google ads for small business (no data)                                                                                                                            | meta-google-ads     | Maximum cost-per-lead formula with worked example                     |
+| 6   | Website migration SEO checklist (`website-migration-seo-checklist`)                      | website migration seo checklist (1,300 / 32) | website redesign seo (1,900 / 26); redirect chains (720 / 33); 301 redirect map (140 / 18); change domain without losing seo (50 / 15); site migration traffic loss (0)                                                                        | website-development | Redirect map template and chain rule                                  |
+| 7   | Brand guidelines template (`brand-guidelines-template`)                                  | brand guidelines template (2,400 / 40)       | brand guidelines examples (2,900 / 36); what are brand guidelines (720 / 35); brand style guide for small business (no data); logo usage rules (20)                                                                                            | brand-identity      | Nine-section template with a filled example                           |
+| 8   | Instagram Reels safe zones, TikTok captions and hooks (`reels-and-tiktok-editing-guide`) | instagram reels safe zones (170 / 22)        | tiktok video captions (260 / 36); reels editing tips (20); hook ideas for reels (20); video editing cost per video (20)                                                                                                                        | video-editing       | Safe-zone pixel math, conservative boxes, hook patterns               |
 
----
+## What the Semrush data changes
 
-## 1. How much does a website cost?
+| Finding                                                                                                                                                                                                                                                                                                                                                                 | Action                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **gohighlevel pricing: 3,600 searches, KD 25, CPC $206.93**, the highest commercial value in your export                                                                                                                                                                                                                                                                | The GHL post covers pricing, but a **dedicated "GoHighLevel pricing" post** is the best next topic |
+| **seo pricing 8,100** is about 3x "how much does seo cost" (2,400)                                                                                                                                                                                                                                                                                                      | Post 2 is titled and targeted on "seo pricing"                                                     |
+| **best crm for small business 5,400, KD 61**                                                                                                                                                                                                                                                                                                                            | Hard to win directly; supported by post 3 and a possible later "best CRM" post                     |
+| **website redesign seo 1,900, KD 26** and **redirect chains 720**                                                                                                                                                                                                                                                                                                       | Added as secondary targets in post 6                                                               |
+| **brand guidelines examples 2,900** and **template 2,400**                                                                                                                                                                                                                                                                                                              | Combined in post 7                                                                                 |
+| **Low or zero volume** (hook ideas for reels, hubspot cost for small business, seo retainer cost, wordpress or shopify for ecommerce, 20 each)                                                                                                                                                                                                                          | Kept only as supporting phrases, not as targets                                                    |
+| **Rows with no data** (small business seo cost per month, crm with sms and booking, switch from wordpress to shopify, best paid ads for lead generation, facebook ads vs google ads for small business, migrate wordpress to shopify seo, brand style guide for small business, brand colour codes, short form video editing for business, vertical video format specs) | Click "Update metrics" in Semrush, then re-rank; kept as natural phrases only                      |
 
-- **Parent pillar:** `/services/website-development`
-- **Primary keyword:** how much does a website cost
-- **Secondary keywords:** small business website cost; website design pricing; web design agency pricing; how much does a WordPress website cost; ecommerce website cost; website maintenance cost
-- **Intent / SERP:** informational with commercial intent. Results are agency price guides (Blue Whale Media, ProfileTree, Spotdev, Kwiboo, Dribbble, Bookipi, Arounda).
-- **Information gain:** one table with **UK (£) and US ($) ranges side by side** from named sources, plus a scope-to-price worksheet. _Needs you_ for your own typical project ranges if you want to publish them.
-- **Lead CTA:** "Get a written quote" → `/contact`; download of the worksheet.
-- **Schema:** BlogPosting, Person (author), FAQPage (kept for AI parsing; no rich result).
+## Further topics from the data (not yet written)
 
-## 2. Shopify vs WordPress: which is right for your shop?
+1. **GoHighLevel pricing** (3,600, KD 25): highest commercial value.
+2. **Is SEO worth it?** (1,600, KD 22): partly covered by the break-even section in post 2.
+3. **Website maintenance cost** (1,300, KD 29): could be split out of post 1.
+4. **HubSpot alternatives** (1,900, KD 25).
+5. **Local SEO cost** (1,000, KD 28).
 
-- **Parent pillar:** `/services/shopify-web-design` (lateral link to `/services/wordpress-web-design`)
-- **Primary keyword:** shopify vs wordpress
-- **Secondary keywords:** shopify vs woocommerce; best platform for small business website; wordpress or shopify for ecommerce; shopify vs wordpress cost; switch from wordpress to shopify
-- **Intent / SERP:** comparison. Results are affiliate-style comparisons (StartUps.co.uk, NerdWallet, IONOS, Qoblex).
-- **Information gain:** a **scored decision checklist** (catalogue size, content needs, team skills, budget, integrations). _Needs you_ for real build examples.
-- **Lead CTA:** "Not sure which fits? Ask for a platform recommendation."
+## Notes for publishing
 
-## 3. How much does SEO cost for a small business?
-
-- **Parent pillar:** `/services/seo-growth`
-- **Primary keyword:** how much does seo cost
-- **Secondary keywords:** seo pricing; small business seo cost per month; seo retainer cost; local seo cost; is seo worth it; cheap seo packages
-- **Intent / SERP:** informational with commercial intent. Almost entirely UK and US agency guides (whitehat-seo, Epic Edits, whito, Polaris, SEO.com).
-- **Information gain:** UK and US monthly ranges side by side, a "what you should receive for each tier" checklist, and red flags for packages under about £400 a month (sourced).
-- **Lead CTA:** "Request a free technical audit of your site".
-
-## 4. Google Ads vs Meta Ads: where should a small business start?
-
-- **Parent pillar:** `/services/meta-google-ads`
-- **Primary keyword:** google ads vs facebook ads
-- **Secondary keywords:** google ads vs meta ads; ppc vs paid social; best paid ads for lead generation; facebook ads vs google ads for small business; should I run google ads or facebook ads
-- **Intent / SERP:** comparison. Results are mostly older vendor blogs (one from 2019), so a current, structured answer can win.
-- **Information gain:** a **decision tree by business type** (search demand exists vs demand must be created; budget; sales cycle) and a 90-day test plan with cost-per-lead thresholds. _Needs you_ for real account benchmarks if you have them.
-- **Lead CTA:** "Get a two-channel test plan for your budget".
-
-## 5. GoHighLevel vs HubSpot: which CRM fits a small team?
-
-- **Parent pillar:** `/services/gohighlevel-crm`
-- **Primary keyword:** gohighlevel vs hubspot
-- **Secondary keywords:** best crm for small business; gohighlevel pricing; hubspot alternatives; gohighlevel review; crm with sms and booking; hubspot cost for small business
-- **Intent / SERP:** comparison. Results are vendor and reseller blogs (Softr, Builts, RSLA, Layer3, GHL Experts) that disagree on which suits small teams.
-- **Information gain:** a **cost model by team size** (5 users, 5,000 contacts, SMS volume) using published plan prices, with the assumptions shown. Flag that the sources are vendor-affiliated.
-- **Lead CTA:** "Book a CRM fit call".
-
-## 6. GoHighLevel A2P 10DLC registration: why campaigns get rejected and how to fix it
-
-- **Parent pillar:** `/services/gohighlevel-crm`
-- **Primary keyword:** gohighlevel a2p 10dlc
-- **Secondary keywords:** a2p 10dlc registration; 10dlc campaign rejected; twilio error 30882; error 30898; sms compliance usa; gohighlevel sms not sending; brand registration ein
-- **Intent / SERP:** problem-solving. Results are Fiverr gigs and a few vendor guides (Signal House, GHL Scale Up). Little neutral, structured help.
-- **Information gain:** a **rejection-code table** (e.g. 30882 consent problems; 30898 duplicate EIN use) with the fix for each, plus a pre-submission checklist (brand email and domain match, opt-in language, website terms). Verify every step against Twilio and LeadConnector's current documentation before publishing. _Needs you_ for screenshots from a real registration.
-- **Lead CTA:** "Have your registration reviewed before you submit".
-- **Note:** US-specific problem; body text should state it is for US numbers.
-
-## 7. Website migration SEO checklist: change platform without losing rankings
-
-- **Parent pillar:** `/services/website-development`
-- **Primary keyword:** website migration seo checklist
-- **Secondary keywords:** 301 redirect map; migrate wordpress to shopify seo; site migration traffic loss; website redesign seo; change domain without losing seo; redirect chains
-- **Intent / SERP:** how-to. Results: Seer Interactive, Priority Pixels, Focus Reactive, Centric, PBJ Marketing.
-- **Information gain:** our **redirect-mapping template** (old URL, new URL, status, notes) and a before/after launch checklist. _Needs you_ for the real template.
-- **Lead CTA:** "Planning a rebuild? Book a migration review".
-
-## 8. What to include in brand guidelines (with a template)
-
-- **Parent pillar:** `/services/brand-identity`
-- **Primary keyword:** brand guidelines
-- **Secondary keywords:** what are brand guidelines; brand guidelines template; brand style guide for small business; brand guidelines examples; logo usage rules; brand colour codes hex rgb cmyk
-- **Intent / SERP:** informational. Results are template marketplaces (Gumroad, Creative Market, Framer) and design blogs.
-- **Information gain:** our **one-page guidelines template** (logo rules, hex/RGB/CMYK, type, imagery, voice, dos and don'ts). _Needs you_ for the template file.
-- **Lead CTA:** "Get the template, or ask us to build your guidelines".
-
-## 9. Meta Conversions API explained for Shopify and WordPress
-
-- **Parent pillar:** `/services/meta-ads-management`
-- **Primary keyword:** meta conversions api
-- **Secondary keywords:** facebook conversions api setup; conversions api shopify; meta pixel vs conversions api; event match quality; event deduplication event_id; meta ads tracking not accurate
-- **Intent / SERP:** how-to. Shopify guidance is plentiful (WeltPixel, CustomerLabs, Attribuly); **WordPress coverage is thin** — the opening.
-- **Information gain:** a setup walkthrough with a deduplication test, covering the three Shopify routes (native channel, app/gateway, server-side GTM) and a WordPress route. The consent caveat must be stated (CAPI does not fix missing consent). _Needs you_ for screenshots.
-- **Lead CTA:** "Get your Meta tracking audited".
-
-## 10. Reels and Shorts editing for business: hooks, captions and safe zones
-
-- **Parent pillar:** `/services/video-editing`
-- **Primary keyword:** reels editing tips
-- **Secondary keywords:** short form video editing for business; instagram reels safe zones; tiktok video captions; video editing cost per video; hook ideas for reels; vertical video format specs
-- **Intent / SERP:** informational. Results: Softileo, ProfileTree, agency pages.
-- **Information gain:** **annotated before/after edits** showing the hook, caption placement and safe zones on a real phone. _Needs you_ for the footage.
-- **Lead CTA:** "Send us one clip for an edit quote".
-
----
-
-## Cluster linking plan
-
-Each blog post links up to its pillar with a descriptive anchor and to one sibling post; each pillar links down to its posts in a "Guides" block once they exist. Pairs: 1↔7 (website), 2↔1, 3↔(SEO pillar), 4↔9 (ads), 5↔6 (CRM), 8↔(brand pillar), 10↔(video pillar).
-
-## Freshness
-
-Prices and platform plans change. Re-check figures quarterly and refresh with genuine revisions (not date-stamp changes). Perplexity-style retrieval favours content updated within roughly 60–90 days (industry research, directional).
+- **Authors:** posts are attributed to Athar (six posts), Hina (brand guidelines) and Ahmad Jan (Reels). Each person must read and approve their posts; the playbook forbids publishing under an author who has not reviewed the page.
+- **Information gain:** each post's worksheet, template or formula is ours. Illustrative examples use labeled assumptions. Price ranges are third-party figures; re-check quarterly.
+- **Length:** posts run roughly 1,100 to 1,600 words including FAQs and sources, set by the topic and the SERP; the playbook range for blog posts is 1,200 to 2,500, and nothing was padded. Add depth only where a reader would need it.
+- **Images:** the four-image rule is not met (no photoreal images were produced). Add them before promoting the posts.
+- **Freshness:** `dateModified` is 10 Oct 2026. Only change it with a genuine revision.

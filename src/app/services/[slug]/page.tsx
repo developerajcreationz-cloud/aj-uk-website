@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { SERVICES, TOP_LEVEL_SERVICES, UK_PRICING, childrenOf, getService } from "@/content/services";
 import { JsonLd } from "@/components/seo/json-ld";
+import { POSTS } from "@/content/posts";
 import { SITE } from "@/config/site";
 
 export function generateStaticParams() {
@@ -73,6 +74,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     ],
   };
 
+  const guides = POSTS.filter((p) => p.parent === service.slug);
   const uk = UK_PRICING[service.slug];
   const related = service.related.map(getService).filter((s): s is NonNullable<typeof s> => !!s);
 
@@ -217,6 +219,29 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           </dl>
         </div>
       </section>
+
+      {guides.length > 0 && (
+        <section className="border-t border-ink/10 bg-cream px-6 py-16 md:px-10 md:py-20">
+          <div className="mx-auto max-w-[1440px]">
+            <h2 className="font-display mb-8 text-3xl font-medium tracking-tight md:text-4xl">Guides</h2>
+            <ul className="grid gap-4 md:grid-cols-2">
+              {guides.map((g) => (
+                <li key={g.slug}>
+                  <Link
+                    href={`/blog/${g.slug}`}
+                    data-cursor-hover
+                    className="block h-full rounded-2xl border border-ink/10 p-6 transition-colors hover:bg-ink hover:text-cream"
+                  >
+                    <h3 className="font-display text-xl font-medium">{g.title}</h3>
+                    <p className="mt-2 text-sm opacity-70">{g.metaDescription}</p>
+                    <span className="mt-4 inline-block text-sm">Read the guide →</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       <section className="border-t border-ink/10 bg-cream px-6 py-12 md:px-10">
         <div className="mx-auto flex max-w-[1440px] flex-wrap gap-3">
