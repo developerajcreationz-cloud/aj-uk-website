@@ -98,11 +98,11 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               <li>
                 <a
-                  href="mailto:hello@ajcreationz.com"
+                  href="mailto:grow@ajcreationz.co"
                   data-cursor-hover
                   className="text-base text-ink/70 transition-colors duration-300 hover:text-ink"
                 >
-                  hello@ajcreationz.com
+                  grow@ajcreationz.co
                 </a>
               </li>
               {SOCIALS.map((s) => (

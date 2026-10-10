@@ -23,6 +23,12 @@ const VALUES = [
   },
 ];
 
+const TEAM = [
+  { name: "Ahmad Jan", role: "Creative Imagination Lead" },
+  { name: "Athar", role: "Strategic Director" },
+  { name: "Hina", role: "Brand Architect" },
+];
+
 const STATS = [
   { value: 40, decimals: 0, suffix: "+", label: "Brands launched" },
   { value: 5, decimals: 1, suffix: "", label: "Average client rating" },
@@ -138,6 +144,23 @@ export function About() {
               </TiltCard>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-16 md:mt-20">
+          <h3 className="font-display text-2xl font-medium tracking-tight text-ink md:text-3xl">
+            Meet the team
+          </h3>
+          <ul className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
+            {TEAM.map((member) => (
+              <li
+                key={member.name}
+                className="rounded-2xl border border-ink/10 bg-white/60 p-6"
+              >
+                <p className="font-display text-xl font-medium text-ink">{member.name}</p>
+                <p className="mt-1 text-sm text-ink/60">{member.role}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

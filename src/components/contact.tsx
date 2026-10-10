@@ -38,7 +38,7 @@ export function Contact() {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText("hello@ajcreationz.com");
+      await navigator.clipboard.writeText("grow@ajcreationz.co");
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1800);
     } catch {
@@ -115,7 +115,7 @@ export function Contact() {
                 onClick={handleCopy}
                 className="group flex items-center gap-3 text-2xl font-medium tracking-tight text-cream transition-colors duration-300 hover:text-lilac sm:text-3xl"
               >
-                hello@ajcreationz.com
+                grow@ajcreationz.co
                 <span className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-cream/20 transition-all duration-300 group-hover:border-lilac group-hover:bg-lilac group-hover:text-ink">
                   <AnimatePresence mode="wait" initial={false}>
                     {copied ? (
@@ -243,7 +243,7 @@ export function Contact() {
 
                 {status === "error" && (
                   <p role="alert" className="text-sm text-red-300">
-                    Sorry, that didn&apos;t send. Please try again or email hello@ajcreationz.com.
+                    Sorry, that didn&apos;t send. Please try again or email grow@ajcreationz.co.
                   </p>
                 )}
 

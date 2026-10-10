@@ -121,8 +121,8 @@ export function Navbar() {
                 A creative &amp; digital agency partnering with ambitious brands ready to move.
               </p>
               <div className="flex flex-col gap-1 md:items-end">
-                <a href="mailto:hello@ajcreationz.com" data-cursor-hover className="text-cream transition-colors hover:text-lilac">
-                  hello@ajcreationz.com
+                <a href="mailto:grow@ajcreationz.co" data-cursor-hover className="text-cream transition-colors hover:text-lilac">
+                  grow@ajcreationz.co
                 </a>
               </div>
             </motion.div>
