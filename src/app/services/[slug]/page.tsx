@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageShell, PageHero, CtaBand } from "@/components/page-shell";
-import { SERVICES, TOP_LEVEL_SERVICES, childrenOf, getService } from "@/lib/services";
+import { SERVICES, TOP_LEVEL_SERVICES, UK_PRICING, childrenOf, getService } from "@/lib/services";
 import { SITE } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -47,7 +47,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         url,
         serviceType: service.keyword,
         provider: { "@id": `${SITE.url}/#organization` },
-        areaServed: "Worldwide",
+        areaServed: [{ "@type": "Country", name: "United Kingdom" }, { "@type": "Country", name: "United States" }],
       },
       {
         "@type": "BreadcrumbList",
@@ -69,6 +69,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     ],
   };
 
+  const uk = UK_PRICING[service.slug];
   const related = service.related.map(getService).filter((s): s is NonNullable<typeof s> => !!s);
 
   return (
@@ -164,6 +165,21 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                 ))}
               </dl>
               <p className="mt-4 text-xs leading-relaxed text-ink/50">{service.pricing.note}</p>
+              {uk && (
+                <>
+                  <h3 className="font-display mt-10 text-xl font-medium tracking-tight md:text-2xl">Market figures in pounds</h3>
+                  <p className="mt-2 text-base leading-relaxed text-ink/70">{uk.intro}</p>
+                  <dl className="mt-4 divide-y divide-ink/10 border-y border-ink/10">
+                    {uk.rows.map((r) => (
+                      <div key={r.label} className="flex flex-col gap-1 py-4 sm:flex-row sm:justify-between">
+                        <dt className="text-ink/75">{r.label}</dt>
+                        <dd className="font-medium">{r.range}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                  <p className="mt-4 text-xs leading-relaxed text-ink/50">{uk.note}</p>
+                </>
+              )}
             </div>
           </div>
         </section>

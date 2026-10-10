@@ -103,7 +103,7 @@ export function Contact() {
             </h2>
             <p className="mt-6 max-w-sm text-balance text-base leading-relaxed text-cream/60">
               Tell us a bit about the project and we&apos;ll get back to you within one business
-              day.
+              day. We work remotely and cover both UK and US working hours.
             </p>
           </div>
 

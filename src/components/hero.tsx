@@ -7,7 +7,7 @@ import { Marquee } from "@/components/marquee";
 import { HeroVisual } from "@/components/hero-visual";
 import { useMediaQuery } from "@/lib/use-media-query";
 
-const HEADLINE_LINES = ["Ideas, engineered", "to move your", "audience."];
+const HEADLINE_LINES = ["Digital agency", "for websites, brand,", "SEO and ads."];
 
 const MARQUEE_ITEMS = [
   "BRAND IDENTITY",
@@ -21,8 +21,8 @@ const MARQUEE_ITEMS = [
 ];
 
 const STATS = [
-  { value: "40+", label: "Brands launched" },
-  { value: "5.0", label: "Average client rating" },
+  { value: "6", label: "Core services, one team" },
+  { value: "1 day", label: "To reply to enquiries" },
 ];
 
 const lineVariants = {
@@ -111,7 +111,7 @@ export function Hero() {
                   className="block"
                 >
                   {line.split(" ").map((word, wi) =>
-                    line === "to move your" && word === "move" ? (
+                    line === "for websites, brand," && word === "websites," ? (
                       <em
                         key={wi}
                         className="relative mx-1 inline-block bg-gradient-to-r from-plum via-violet to-lilac bg-clip-text font-serif italic text-transparent"
@@ -133,8 +133,9 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.9 }}
             className="max-w-md text-balance text-base leading-relaxed text-ink/65 md:max-w-lg md:text-lg"
           >
-            AJ Creationz is a digital agency working with clients worldwide. We build brand identities, WordPress and Shopify
-            websites, video, SEO, Meta and Google Ads, and GoHighLevel CRM systems that earn results.
+            AJ Creationz is a digital agency for UK and US businesses. We build WordPress, Shopify and custom
+            websites, brand identities, SEO, Meta and Google Ads, video and GoHighLevel CRM systems, all
+            tracked to the leads and sales they bring in.
           </motion.p>
 
           <motion.div
@@ -160,7 +161,7 @@ export function Hero() {
 
             <Magnetic strength={0.25}>
               <a
-                href="#work"
+                href="/work"
                 data-cursor-hover
                 className="group inline-flex items-center gap-2 border-b border-ink/25 pb-1 text-sm font-medium text-ink transition-colors duration-300 hover:border-ink"
               >

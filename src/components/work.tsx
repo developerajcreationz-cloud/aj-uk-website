@@ -33,7 +33,7 @@ const COLUMN_B: Project[] = [
 function ProjectCard({ project, priority }: { project: Project; priority?: boolean }) {
   return (
     <a
-      href="/contact"
+      href="/work"
       data-cursor-hover
       className="group relative block aspect-[4/3] w-full overflow-hidden rounded-2xl bg-cream/5"
     >
@@ -133,17 +133,17 @@ export function Work() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="max-w-sm text-balance text-sm leading-relaxed text-cream/55 md:text-base"
           >
-            A few recent favorites — brand systems, campaigns, and product work. More of our
-            case studies are landing here soon.
+            Brand systems, interface design and social kits, each with the brief and what we
+            delivered on the work page.
           </motion.p>
 
           <Magnetic strength={0.25}>
             <a
-              href="/contact"
+              href="/work"
               data-cursor-hover
               className="group mt-2 inline-flex w-fit items-center gap-2 border-b border-cream/25 pb-1 text-sm font-medium transition-colors duration-300 hover:border-cream"
             >
-              Start your project
+              See all case studies
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
             </a>
           </Magnetic>

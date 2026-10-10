@@ -30,9 +30,9 @@ const TEAM = [
 ];
 
 const STATS = [
-  { value: 40, decimals: 0, suffix: "+", label: "Brands launched" },
-  { value: 5, decimals: 1, suffix: "", label: "Average client rating" },
-  { value: 3, decimals: 0, suffix: "+", label: "Years in business" },
+  { value: 6, decimals: 0, suffix: "", label: "Core services" },
+  { value: 3, decimals: 0, suffix: "", label: "Named senior leads" },
+  { value: 1, decimals: 0, suffix: " day", label: "To reply to enquiries" },
 ];
 
 const fadeUp = {
@@ -84,10 +84,12 @@ export function About() {
             className="flex flex-col justify-center gap-6"
           >
             <p className="text-balance text-base leading-relaxed text-ink/65 md:text-lg">
-              AJ Creationz started as a two-person studio solving one problem — most agency
-              websites look impressive and convert nothing. We stayed small on purpose: every
-              client works directly with the people actually designing, building, and shipping
-              their project, not an account manager relaying it.
+              AJ Creationz builds the parts of a business that bring in customers: the brand, the
+              website, the search and ad traffic that reaches it, and the CRM that follows up. We
+              work with owner-led businesses in the UK and the US, remotely, with the people who do
+              the work in every call. Our main studio site, ajcreationz.co, covers our creative
+              and brand-led work; this site is where we explain the web, search, ads and automation
+              side in detail, with the pricing context to go with it.
             </p>
             <Magnetic strength={0.25}>
               <a
@@ -150,6 +152,9 @@ export function About() {
           <h3 className="font-display text-2xl font-medium tracking-tight text-ink md:text-3xl">
             Meet the team
           </h3>
+          <p className="mt-3 max-w-2xl text-sm text-ink/60 md:text-base">
+            The people you will speak to on a project. More team members will be added here.
+          </p>
           <ul className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
             {TEAM.map((member) => (
               <li

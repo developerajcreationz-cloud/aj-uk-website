@@ -4,8 +4,8 @@ import { About } from "@/components/about";
 import { Testimonials } from "@/components/testimonials";
 
 export const metadata: Metadata = {
-  title: { absolute: "About AJ Creationz | Digital Agency" },
-  description: "AJ Creationz is a creative and digital agency working with clients worldwide. Meet the studio and how we work.",
+  title: { absolute: "About AJ Creationz | The Digital Agency Team & Approach" },
+  description: "AJ Creationz is a creative and digital agency for UK and US businesses. Meet the team behind the websites, SEO, ads and CRM systems.",
   alternates: { canonical: "/about" },
 };
 

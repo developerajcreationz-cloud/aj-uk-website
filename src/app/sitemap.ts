@@ -3,7 +3,7 @@ import { SITE } from "@/lib/site";
 import { SERVICES } from "@/lib/services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const lastModified = new Date(SITE.contentUpdated);
   const paths = [
     { p: "", priority: 1 },
     { p: "/services", priority: 0.9 },
@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   return paths.map(({ p, priority }) => ({
     url: `${SITE.url}${p}`,
-    lastModified: now,
+    lastModified,
     changeFrequency: "monthly",
     priority,
   }));

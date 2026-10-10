@@ -9,7 +9,7 @@ export type Service = {
   /** Short line used on cards. */
   description: string;
   tags: string[];
-  /** Primary keyword the page targets (global, no geo modifier). */
+  /** Primary keyword the page targets (no geo modifier in headings or titles; UK and US audience is signalled in body copy). */
   keyword: string;
   /** Full <title>, used verbatim (no template suffix). Aim for 50-60 characters. */
   metaTitle: string;
@@ -41,10 +41,10 @@ export const SERVICES: Service[] = [
     keyword: "brand identity agency",
     metaTitle: "Brand Identity Agency | Branding for Growing Businesses",
     metaDescription:
-      "Brand identity agency working with businesses worldwide. Brand strategy, logo design and guidelines you can use everywhere. Request a clear quote today.",
+      "Brand identity agency for UK and US businesses. Brand strategy, logo design and guidelines you can use everywhere. Request a clear quote today.",
     h1: "Brand identity agency for growing businesses",
     answer: [
-      "A brand identity is the set of visual and verbal choices that make a business instantly recognizable: its name, logo, colors, typography, imagery and tone of voice, plus the rules for using them. AJ Creationz builds brand identities for startups and growing businesses around the world, working remotely from positioning through to a guidelines document that your team, printer and web developer can follow without calling us.",
+      "A brand identity is the set of visual and verbal choices that make a business instantly recognizable: its name, logo, colors, typography, imagery and tone of voice, plus the rules for using them. AJ Creationz builds brand identities for startups and growing businesses in the UK and US, working remotely from positioning through to a guidelines document that your team, printer and web developer can follow without calling us.",
       "A logo alone is rarely enough. Without a clear position and consistent rules, even a well-drawn logo ends up looking different on your website, your social profiles and your packaging. We design the whole system once, so every new touchpoint looks like it came from the same business.",
     ],
     sections: [
@@ -113,7 +113,7 @@ export const SERVICES: Service[] = [
       { q: "What is the difference between a logo and a brand identity?", a: "A logo is one element. A brand identity is the whole system around it: strategy, colors, typography, imagery, tone of voice and the rules for using them together." },
       { q: "Do I own the logo and brand files?", a: "Yes. On full payment you receive the final files and own the deliverables. Agree this in writing with any designer you hire." },
       { q: "Can you also build the website once the brand is done?", a: "Yes. We design and build websites on WordPress, Shopify or custom code, so the new identity goes live consistently across your site." },
-      { q: "Can you work with a business in another country or time zone?", a: "Yes. We work remotely with clients worldwide, using video calls, shared documents and agreed overlap hours." },
+      { q: "Can you work with a business in another country or time zone?", a: "Yes. We work remotely with clients in the UK and the US, using video calls, shared documents and agreed overlap hours that cover both UK and US time zones." },
     ],
     related: ["website-development", "video-editing", "seo-growth"],
   },
@@ -128,7 +128,7 @@ export const SERVICES: Service[] = [
     keyword: "website development agency",
     metaTitle: "Website Development Agency | WordPress, Shopify, Custom",
     metaDescription:
-      "Website development agency building fast, search-ready sites on WordPress, Shopify or custom code for clients worldwide. See which platform fits you.",
+      "Website development agency building fast, search-ready sites on WordPress, Shopify or custom code for UK and US businesses. See which platform fits you.",
     h1: "Website development agency: WordPress, Shopify and custom",
     answer: [
       "Website development is the design and build of a site that loads quickly, works on every device and turns visitors into enquiries or orders. AJ Creationz builds on three platforms, WordPress, Shopify and custom code, for clients around the world, and we choose between them based on what your business needs rather than what we prefer to sell.",
@@ -308,7 +308,7 @@ export const SERVICES: Service[] = [
       "Shopify web design agency for store setup, custom themes, payments, shipping and conversion tracking. Launch a store built to sell. Get a quote.",
     h1: "Shopify web design agency",
     answer: [
-      "Shopify is a hosted ecommerce platform that handles payments, inventory, shipping and tax, so you can focus on products and customers. AJ Creationz designs and builds Shopify stores for clients worldwide, from a clean template setup for a new shop to a customized theme for a brand that wants to stand out.",
+      "Shopify is a hosted ecommerce platform that handles payments, inventory, shipping and tax, so you can focus on products and customers. AJ Creationz designs and builds Shopify stores for UK and US brands, from a clean template setup for a new shop to a customized theme for a brand that wants to stand out.",
       "A good Shopify store makes it quick to find a product, easy to trust the shop and simple to pay. We set up shipping, tax and payments for the markets you sell to, design product and collection pages for conversion, and connect analytics so you can see which pages and ads bring in sales.",
     ],
     sections: [
@@ -458,7 +458,7 @@ export const SERVICES: Service[] = [
     keyword: "video editing services for business",
     metaTitle: "Video Editing Services for Business | Social & Ads",
     metaDescription:
-      "Video editing services for businesses worldwide: Reels, TikToks, YouTube Shorts, brand films and ad creative, captioned and formatted for every platform.",
+      "Video editing services for UK and US businesses: Reels, TikToks, YouTube Shorts, brand films and ad creative, captioned and formatted for every platform.",
     h1: "Video editing services for business",
     answer: [
       "Video editing turns raw footage into finished content: trimmed, paced, captioned, color-corrected and exported in the right format for each platform. AJ Creationz edits social videos, brand films and ad creative for businesses around the world, so you can film on a phone or camera and hand the cutting to us.",
@@ -548,7 +548,7 @@ export const SERVICES: Service[] = [
     keyword: "SEO agency for small business",
     metaTitle: "SEO Agency for Small Business | Technical SEO & Content",
     metaDescription:
-      "SEO agency for small and growing businesses worldwide: technical audits, content, local and international SEO, and clear monthly reporting.",
+      "SEO agency for small and growing UK and US businesses: technical audits, content, local and international SEO, and clear monthly reporting.",
     h1: "SEO agency for small and growing businesses",
     answer: [
       "SEO, or search engine optimization, is the work of making your website easier for search engines to crawl and more useful to the people searching, so you appear for the queries that bring in customers. AJ Creationz is an SEO agency for small and growing businesses in any market, and we focus on the fundamentals that compound: technical health, relevant content and honest measurement.",
@@ -645,7 +645,7 @@ export const SERVICES: Service[] = [
     keyword: "PPC agency",
     metaTitle: "PPC Agency | Google Ads & Meta Ads Management",
     metaDescription:
-      "PPC agency managing Google Ads and Meta (Facebook and Instagram) campaigns for businesses worldwide, with tracking that makes every dollar accountable.",
+      "PPC agency managing Google Ads and Meta campaigns for UK and US businesses, with tracking that makes every pound and dollar accountable. Get a quote.",
     h1: "PPC agency for Google Ads and Meta Ads",
     answer: [
       "Paid advertising puts your business in front of people now, either when they search for what you sell (Google Ads) or while they scroll social feeds (Meta, which runs Facebook and Instagram ads). AJ Creationz plans, launches and manages both for businesses in any market, tying every campaign to a cost per lead or return on ad spend you can check.",
@@ -732,7 +732,7 @@ export const SERVICES: Service[] = [
       "Google Ads agency managing Search, Shopping and Performance Max campaigns with conversion tracking and monthly reporting. Request an account review.",
     h1: "Google Ads agency and PPC management",
     answer: [
-      "Google Ads lets you appear at the top of search results when someone searches for what you sell, and you pay only when they click. AJ Creationz manages Google Ads for businesses worldwide, building campaigns around the searches that signal buying intent and measuring success by leads and sales, not clicks.",
+      "Google Ads lets you appear at the top of search results when someone searches for what you sell, and you pay only when they click. AJ Creationz manages Google Ads for UK and US businesses, building campaigns around the searches that signal buying intent and measuring success by leads and sales, not clicks.",
       "We run Search campaigns for service businesses, Shopping and Performance Max for online stores, and remarketing to bring back visitors who did not convert. Your Google Ads account stays in your name, and every campaign has a tracked conversion goal before it launches.",
     ],
     sections: [
@@ -798,10 +798,10 @@ export const SERVICES: Service[] = [
     keyword: "Meta ads agency",
     metaTitle: "Meta Ads Agency | Facebook & Instagram Ads Management",
     metaDescription:
-      "Meta ads agency managing Facebook and Instagram campaigns with strong creative, tracking and retargeting for businesses worldwide. Get a quote.",
+      "Meta ads agency managing Facebook and Instagram campaigns with strong creative, tracking and retargeting for UK and US businesses. Get a quote.",
     h1: "Meta ads agency for Facebook and Instagram",
     answer: [
-      "Meta Ads are the adverts you see on Facebook and Instagram. They let you reach people by location, interests and behavior, which makes them effective for lead generation, ecommerce and local businesses. AJ Creationz manages Meta Ads for businesses worldwide, with strong creative, accurate tracking and campaigns built around cost per lead or return on ad spend.",
+      "Meta Ads are the adverts you see on Facebook and Instagram. They let you reach people by location, interests and behavior, which makes them effective for lead generation, ecommerce and local businesses. AJ Creationz manages Meta Ads for UK and US businesses, with strong creative, accurate tracking and campaigns built around cost per lead or return on ad spend.",
       "Meta results depend heavily on creative and tracking. Since Apple's privacy changes and browser restrictions, the Meta pixel alone misses conversions, so we set up the Conversions API alongside it and handle consent for the privacy laws that apply to your audience. We then test creative variations and let the data show which ones deserve more budget.",
     ],
     sections: [
@@ -881,7 +881,7 @@ export const SERVICES: Service[] = [
       "GoHighLevel agency for CRM setup: pipelines, lead capture, email and SMS follow-up, booking and reporting. Stop losing enquiries. Request a quote.",
     h1: "GoHighLevel agency: CRM setup and automation",
     answer: [
-      "GoHighLevel (GHL) is an all-in-one CRM and marketing automation platform that combines contact management, sales pipelines, email and SMS, landing pages, appointment booking and review requests in one place. AJ Creationz sets it up for businesses worldwide so that every enquiry is captured, answered quickly and followed up automatically.",
+      "GoHighLevel (GHL) is an all-in-one CRM and marketing automation platform that combines contact management, sales pipelines, email and SMS, landing pages, appointment booking and review requests in one place. AJ Creationz sets it up for UK and US businesses so that every enquiry is captured, answered quickly and followed up automatically.",
       "Most businesses do not lose leads because their marketing fails; they lose them because replies are slow and follow-up is inconsistent. A properly configured GoHighLevel account replies instantly, books calls, sends reminders and shows you exactly where every lead sits in your pipeline. We build and test that system and train your team to use it, with the account in your name.",
     ],
     sections: [
@@ -954,6 +954,68 @@ export const SERVICES: Service[] = [
     related: ["meta-google-ads", "website-development", "seo-growth"],
   },
 ];
+
+/** UK market figures in GBP, kept separate from the USD tables. Sourced from UK guides searched on 10 Oct 2026; most publishers sell the service. */
+export const UK_PRICING: Record<string, { intro: string; rows: { label: string; range: string }[]; note: string }> = {
+  "brand-identity": {
+    intro: "UK pricing guides give these indicative ranges in pounds.",
+    rows: [
+      { label: "Logo only, professional small-business logo", range: "£500 – £3,000" },
+      { label: "Logo plus brand guidelines (starter pack)", range: "£1,500 – £5,000" },
+      { label: "Full identity with strategy, SMEs", range: "£5,000 – £20,000" },
+      { label: "Complete rebrand with research and rollout", range: "£10,000 – £50,000+" },
+    ],
+    note: "Sources: whito.co.uk, Huddle Creative and Phable, searched 10 Oct 2026. Figures disagree between publishers and London agencies are reported to charge more than regional ones. Confirm whether quotes include VAT.",
+  },
+  "website-development": {
+    intro: "UK cost guides give these indicative ranges in pounds.",
+    rows: [
+      { label: "Professionally built small-business site", range: "£2,000 – £8,000" },
+      { label: "Regional or small agency build", range: "£2,500 – £10,000" },
+      { label: "Ecommerce build, typical UK agency", range: "£5,000 – £15,000" },
+      { label: "Agency hourly rate", range: "£80 – £150+" },
+    ],
+    note: "Sources: UK agency cost guides from Blue Whale Media, ProfileTree, Spotdev and Kwiboo, searched 10 Oct 2026. Ask whether support and hosting are included, because post-launch costs can exceed the build over three to five years.",
+  },
+  "seo-growth": {
+    intro: "UK SEO pricing guides give these indicative monthly ranges in pounds.",
+    rows: [
+      { label: "Typical small-business SEO retainer", range: "£500 – £2,000 per month" },
+      { label: "Local-only SEO", range: "from about £300 per month" },
+      { label: "Freelancers", range: "£300 – £1,000 per month" },
+      { label: "Competitive national or ecommerce SEO", range: "£2,000 – £8,000 per month" },
+    ],
+    note: "Sources: whitehat-seo.co.uk, Epic Edits and whito.co.uk, searched 10 Oct 2026. All publishers sell SEO and several warn that packages under about £400 a month are mostly automated work. Confirm whether quotes include VAT.",
+  },
+  "meta-google-ads": {
+    intro: "UK management-fee guides give these indicative ranges in pounds, on top of your ad spend.",
+    rows: [
+      { label: "Google Ads management, typical UK SME", range: "£500 – £2,500 per month" },
+      { label: "Percentage of ad spend", range: "10% – 20%" },
+      { label: "Meta ads retainers", range: "£1,500 – £8,000+ per month" },
+      { label: "Typical minimum ad budget cited by one UK guide (Meta)", range: "£3,000 – £5,000 per month" },
+    ],
+    note: "Sources: Advertizingly (June 2026), whito.co.uk and Priority Pixels, searched 10 Oct 2026. Publishers sell these services and several agencies decline accounts spending under about £500 a month on ads.",
+  },
+  "meta-ads-management": {
+    intro: "One UK guide gives these indicative figures in pounds, on top of your ad spend.",
+    rows: [
+      { label: "Typical monthly retainer", range: "£1,500 – £8,000+" },
+      { label: "Percentage of spend", range: "10% – 20%" },
+    ],
+    note: "Source: Priority Pixels guide to choosing a Meta ads agency, searched 10 Oct 2026. It also advises confirming that an agency uses both the Meta Pixel and the Conversions API, and asking how it handles UK consent and cookie compliance.",
+  },
+  "gohighlevel-crm": {
+    intro: "UK providers publish these implementation figures in pounds, in addition to the platform fees above.",
+    rows: [
+      { label: "Implementation, UK specialist agency (from)", range: "£3,500" },
+      { label: "White-label agency build (from)", range: "£8,000" },
+      { label: "Consulting, hourly", range: "around £90 per hour" },
+      { label: "Full project-based builds, one ranking's range", range: "£2,000 – £12,000" },
+    ],
+    note: "Sources: Softomate Solutions (a vendor that also ranks itself first in its own list) and a London GoHighLevel agency ranking, searched 10 Oct 2026. Treat as indicative; the sources are the vendors themselves.",
+  },
+};
 
 export const getService = (slug: string) => SERVICES.find((s) => s.slug === slug);
 export const TOP_LEVEL_SERVICES = SERVICES.filter((s) => !s.parent);

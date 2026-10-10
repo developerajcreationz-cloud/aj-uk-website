@@ -3,8 +3,8 @@ import { PageShell } from "@/components/page-shell";
 import { Contact } from "@/components/contact";
 
 export const metadata: Metadata = {
-  title: { absolute: "Contact AJ Creationz | Start a Project" },
-  description: "Start a project with AJ Creationz. Tell us what you need and we will reply within one working day.",
+  title: { absolute: "Contact AJ Creationz | Get a Quote for Your Project" },
+  description: "Tell AJ Creationz about your website, SEO, ads, video or CRM project. We work with UK and US businesses and reply within one working day.",
   alternates: { canonical: "/contact" },
 };
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
+import Script from "next/script";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { Cursor } from "@/components/cursor";
 import { ScrollProgress } from "@/components/scroll-progress";
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: SITE.name, url: SITE.url }],
   alternates: { canonical: "/" },
-  verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
+  verification: { google: process.env.GOOGLE_SITE_VERIFICATION || SITE.googleVerification },
   robots: {
     index: true,
     follow: true,
@@ -52,7 +53,6 @@ export const metadata: Metadata = {
     description: SITE.description,
     url: SITE.url,
     siteName: SITE.name,
-    images: [SITE.logo],
     locale: "en",
     type: "website",
   },
@@ -60,9 +60,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE.title,
     description: SITE.description,
-    images: [SITE.logo],
   },
 };
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -76,7 +77,9 @@ const jsonLd = {
       image: `${SITE.url}${SITE.logo}`,
       description: SITE.description,
       email: SITE.email,
-      areaServed: "Worldwide",
+      areaServed: SITE.markets.map((name) => ({ "@type": "Country", name })),
+      sameAs: [SITE.mainSiteUrl],
+      employee: SITE.team.map((m) => ({ "@type": "Person", name: m.name, jobTitle: m.role })),
       serviceType: SITE.services,
     },
     {
@@ -101,6 +104,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
         />
+        {GA_ID && (
+          <>
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+            <Script id="ga4" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
+            </Script>
+          </>
+        )}
         <SmoothScroll>
           <ScrollProgress />
           <Cursor />

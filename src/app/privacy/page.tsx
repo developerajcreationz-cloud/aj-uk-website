@@ -14,7 +14,7 @@ export default function Page() {
       <div className="mx-auto flex max-w-3xl flex-col gap-10 px-6 pb-28 md:px-10">
         <section>
           <h2 className="font-display text-2xl font-medium">Who we are</h2>
-          <p className="mt-3 text-ink/70 leading-relaxed">AJ Creationz is a creative and digital agency serving clients worldwide. You can contact us at grow@ajcreationz.co.</p>
+          <p className="mt-3 text-ink/70 leading-relaxed">AJ Creationz is a creative and digital agency serving clients in the UK and the US. You can contact us at grow@ajcreationz.co.</p>
         </section>
         <section>
           <h2 className="font-display text-2xl font-medium">What we collect</h2>

@@ -6,64 +6,36 @@ import { Magnetic } from "@/components/magnetic";
 
 const TESTIMONIALS = [
   {
-    quote:
-      "They rebuilt our brand and our site in the same sprint and somehow neither felt rushed. Six weeks in, conversion on the new pages was already up.",
-    name: "Amara Chen",
-    role: "Founder, Northline Goods",
-    rating: 5,
+    quote: "I had a vision in my head but didn't know how to express it.",
+    name: "Brian Amos",
+    role: "Interior Design Studio Owner",
   },
   {
-    quote:
-      "Most agencies hand you a deck. AJ Creationz handed us a system — components, guidelines, the works — that our own team could keep building on.",
-    name: "Marcus Reyes",
-    role: "Head of Marketing, Vantage Fit",
-    rating: 5,
+    quote: "None understood strategy like this.",
+    name: "Edward Jordan",
+    role: "Real Estate Consultant",
   },
   {
-    quote:
-      "The social kit alone paid for the engagement. Engagement rate nearly doubled the month after launch and it's held.",
-    name: "Priya Nair",
-    role: "Founder, Sugreve",
-    rating: 5,
+    quote: "Our audience response tripled in 30 days.",
+    name: "James Hatcher",
+    role: "E-commerce Brand Owner",
   },
   {
-    quote:
-      "Fast, direct, and genuinely good taste. No account manager relay — we talked straight to the people doing the work, every time.",
-    name: "Daniel Osei",
-    role: "COO, NayaSource",
-    rating: 5,
+    quote: "What I loved most was how stress-free the entire process was.",
+    name: "Frank Bell",
+    role: "Tech Startup Founder",
   },
   {
-    quote:
-      "What sold us was the pace of iteration. We'd flag something Monday morning and see it addressed before end of day.",
-    name: "Leah Fontaine",
-    role: "Brand Lead, Framily Adventures",
-    rating: 5,
+    quote: "AJ Creationz made our brand feel human, elegant, and alive.",
+    name: "Mary Ross",
+    role: "Luxury Hotel Marketing Director",
+  },
+  {
+    quote: "Travel isn't just about the places you go, it's about the people you meet along the way.",
+    name: "Derachio Jackson",
+    role: "Creative Director, Framily Adventures",
   },
 ];
-
-function Stars({ rating }: { rating: number }) {
-  return (
-    <div className="flex gap-1" aria-label={`${rating} out of 5 stars`}>
-      {Array.from({ length: 5 }).map((_, i) => (
-        <svg
-          key={i}
-          width="14"
-          height="14"
-          viewBox="0 0 16 16"
-          fill={i < rating ? "currentColor" : "none"}
-          className={i < rating ? "text-lilac" : "text-cream/20"}
-        >
-          <path
-            d="M8 1l2.06 4.51 4.94.5-3.7 3.36.98 4.84L8 11.9 3.72 14.2l.98-4.83L1 5.99l4.94-.49L8 1z"
-            stroke={i < rating ? "none" : "currentColor"}
-            strokeWidth="1"
-          />
-        </svg>
-      ))}
-    </div>
-  );
-}
 
 export function Testimonials() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -163,8 +135,7 @@ export function Testimonials() {
               className="flex w-[85vw] shrink-0 flex-col justify-between rounded-2xl border border-cream/10 bg-cream/[0.03] p-8 sm:w-[420px] md:p-10"
             >
               <div>
-                <Stars rating={t.rating} />
-                <p className="font-display mt-6 text-xl leading-snug tracking-tight text-cream sm:text-2xl">
+                <p className="font-display text-xl leading-snug tracking-tight text-cream sm:text-2xl">
                   &ldquo;{t.quote}&rdquo;
                 </p>
               </div>
