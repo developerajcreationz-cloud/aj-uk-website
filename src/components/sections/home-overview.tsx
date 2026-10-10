@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Illustration, SERVICE_SCENES } from "@/components/illustrations";
 import { TOP_LEVEL_SERVICES } from "@/content/services";
 
 const AUDIENCES = [
@@ -89,6 +90,9 @@ export function HomeOverview() {
                 data-cursor-hover
                 className="block h-full rounded-2xl border border-ink/10 p-6 transition-colors hover:bg-ink hover:text-cream"
               >
+                {SERVICE_SCENES[s.slug] && (
+                  <Illustration scene={SERVICE_SCENES[s.slug]} className="mb-5 overflow-hidden rounded-2xl" />
+                )}
                 <h3 className="font-display text-xl font-medium">{s.title}</h3>
                 <p className="mt-2 text-sm opacity-70">{s.description}</p>
                 <span className="mt-4 inline-block text-sm">Read the {s.keyword} guide →</span>

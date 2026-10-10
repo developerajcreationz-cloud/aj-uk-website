@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { SERVICES, TOP_LEVEL_SERVICES, UK_PRICING, childrenOf, getService } from "@/content/services";
+import { Illustration, SERVICE_SCENES } from "@/components/illustrations";
 import { JsonLd } from "@/components/seo/json-ld";
 import { POSTS } from "@/content/posts";
 import { SITE } from "@/config/site";
@@ -90,16 +91,21 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               <p key={p.slice(0, 40)}>{p}</p>
             ))}
           </div>
-          <div className="h-fit rounded-2xl border border-ink/10 p-6">
-            <p className="font-display text-xl font-medium">Talk to us about {service.title.toLowerCase()}</p>
-            <p className="mt-2 text-sm text-ink/60">Tell us what you need. We reply within one working day.</p>
-            <Link
-              href="/contact"
-              data-cursor-hover
-              className="mt-5 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-plum"
-            >
-              Get a quote <span>→</span>
-            </Link>
+          <div className="h-fit space-y-6">
+            {SERVICE_SCENES[service.slug] && (
+              <Illustration scene={SERVICE_SCENES[service.slug]} className="overflow-hidden rounded-3xl" />
+            )}
+            <div className="h-fit rounded-2xl border border-ink/10 p-6">
+              <p className="font-display text-xl font-medium">Talk to us about {service.title}</p>
+              <p className="mt-2 text-sm text-ink/60">Tell us what you need. We reply within one working day.</p>
+              <Link
+                href="/contact"
+                data-cursor-hover
+                className="mt-5 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-plum"
+              >
+                Get a quote <span>→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

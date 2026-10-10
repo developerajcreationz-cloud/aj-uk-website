@@ -16,6 +16,7 @@ export const websiteMigrationSeoChecklist: Post = {
     "site migration traffic loss",
   ],
   parent: "website-development",
+  scene: "migration",
   related: ["how-much-does-a-website-cost", "shopify-vs-wordpress"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",

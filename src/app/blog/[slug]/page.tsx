@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { JsonLd } from "@/components/seo/json-ld";
+import { Illustration } from "@/components/illustrations";
 import { InlineText } from "@/components/sections/inline-text";
 import { PostBlocks } from "@/components/sections/post-body";
 import { POSTS, getPost } from "@/content/posts";
@@ -95,11 +96,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
       <article className="bg-cream px-6 pb-20 md:px-10 md:pb-28">
         <div className="mx-auto grid max-w-[1440px] gap-10 md:grid-cols-[2fr_1fr] md:gap-16">
-          <div className="max-w-3xl space-y-12 text-base leading-relaxed text-ink/75 md:text-lg">
+          <div className="min-w-0 max-w-3xl space-y-12 text-base leading-relaxed text-ink/75 md:text-lg">
             <p className="text-sm text-ink/55">
               By <strong className="font-medium text-ink">{post.author.name}</strong>, {post.author.role} · Published{" "}
               {post.datePublished} · Updated {post.dateModified}
             </p>
+
+            <Illustration scene={post.scene} className="overflow-hidden rounded-3xl" />
 
             <aside className="rounded-2xl border border-ink/10 bg-white/60 p-6">
               <p className="font-display text-lg font-medium text-ink">What you will get from this guide</p>

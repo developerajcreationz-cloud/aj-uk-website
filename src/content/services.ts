@@ -656,7 +656,7 @@ export const SERVICES: Service[] = [
     h1: "SEO agency for small and growing businesses",
     answer: [
       "SEO, or search engine optimization, is the work of making your website easier for search engines to crawl and more useful to the people searching, so you appear for the queries that bring in customers. AJ Creationz is an SEO agency for small and growing businesses in any market, and we focus on the fundamentals that compound: technical health, relevant content and honest measurement.",
-      "No one can guarantee rankings, and we do not. What we commit to is a clear plan, the work done properly and reporting in plain English that connects search activity to enquiries and sales. Most sites see early movement within two to three months, with stronger results building over six to twelve.",
+      "No one can guarantee rankings, and we do not. What we commit to is a clear plan, the work done properly and reporting in plain English that connects search activity to enquiries and sales. Timing depends on competition and where your site starts, so we put expected timing in writing before we begin.",
     ],
     sections: [
       {

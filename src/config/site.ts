@@ -22,9 +22,9 @@ export const SITE = {
     "GoHighLevel CRM",
   ],
   team: [
-    { name: "Ahmad Jan", role: "Creative Imagination Lead" },
-    { name: "Athar", role: "Strategic Director" },
-    { name: "Hina", role: "Brand Architect" },
+    { name: "Ahmad Jan", role: "Creative Imagination Lead", photo: "/images/team/ahmad-jan.webp" },
+    { name: "Athar", role: "Strategic Director", photo: "/images/team/athar.webp" },
+    { name: "Hina", role: "Brand Architect", photo: "/images/team/hina.webp" },
     { name: "Zohaib", role: "Web Developer and SEO Specialist", photo: "/images/team/zohaib.webp" },
   ],
 } as const;

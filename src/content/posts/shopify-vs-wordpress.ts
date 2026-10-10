@@ -15,6 +15,7 @@ export const shopifyVsWordpress: Post = {
     "switch from wordpress to shopify",
   ],
   parent: "shopify-web-design",
+  scene: "platforms",
   related: ["how-much-does-a-website-cost", "website-migration-seo-checklist"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",

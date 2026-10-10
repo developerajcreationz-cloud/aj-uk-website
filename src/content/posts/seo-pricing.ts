@@ -16,6 +16,7 @@ export const seoPricing: Post = {
     "small business seo cost per month",
   ],
   parent: "seo-growth",
+  scene: "seo",
   related: ["how-much-does-a-website-cost", "google-ads-vs-facebook-ads"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",

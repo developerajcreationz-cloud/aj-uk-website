@@ -15,8 +15,9 @@ export const reelsAndTiktokEditingGuide: Post = {
     "video editing cost per video",
   ],
   parent: "video-editing",
+  scene: "video",
   related: ["brand-guidelines-template", "google-ads-vs-facebook-ads"],
-  author: { name: "Ahmad Jan", role: "Creative Imagination Lead" },
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",
   dateModified: "2026-10-10",
   takeaways: [

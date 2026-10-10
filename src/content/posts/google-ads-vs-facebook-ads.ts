@@ -14,8 +14,9 @@ export const googleAdsVsFacebookAds: Post = {
     "best paid ads for lead generation",
   ],
   parent: "meta-google-ads",
+  scene: "ads",
   related: ["seo-pricing", "gohighlevel-vs-hubspot"],
-  author: { name: "Athar", role: "Strategic Director" },
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",
   dateModified: "2026-10-10",
   takeaways: [

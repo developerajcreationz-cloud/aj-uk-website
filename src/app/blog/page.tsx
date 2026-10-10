@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Illustration } from "@/components/illustrations";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { POSTS } from "@/content/posts";
 import { getService } from "@/content/services";
@@ -28,6 +29,7 @@ export default function BlogIndex() {
                 data-cursor-hover
                 className="block h-full rounded-2xl border border-ink/10 p-8 transition-colors hover:bg-ink hover:text-cream"
               >
+                <Illustration scene={p.scene} className="mb-6 overflow-hidden rounded-2xl" />
                 <p className="text-xs uppercase tracking-wide opacity-60">{getService(p.parent)?.title}</p>
                 <h2 className="font-display mt-3 text-2xl font-medium tracking-tight md:text-3xl">{p.title}</h2>
                 <p className="mt-3 text-sm leading-relaxed opacity-70">{p.metaDescription}</p>

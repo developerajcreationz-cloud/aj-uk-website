@@ -16,8 +16,9 @@ export const websiteCost: Post = {
     "how much does a wordpress website cost",
   ],
   parent: "website-development",
+  scene: "website",
   related: ["shopify-vs-wordpress", "website-migration-seo-checklist"],
-  author: { name: "Athar", role: "Strategic Director" },
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",
   dateModified: "2026-10-10",
   takeaways: [

@@ -1,3 +1,5 @@
+import type { SceneKey } from "@/components/illustrations";
+
 export type Block =
   | { type: "p"; text: string }
   | { type: "h3"; text: string }
@@ -18,6 +20,8 @@ export type Post = {
   secondaryKeywords: string[];
   /** Parent service page (pillar) slug. */
   parent: string;
+  /** Illustration shown at the top of the post and on cards. */
+  scene: SceneKey;
   /** Sibling post slugs. */
   related: string[];
   author: { name: string; role: string };

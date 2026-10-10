@@ -15,8 +15,9 @@ export const brandGuidelinesTemplate: Post = {
     "brand colour codes hex rgb cmyk",
   ],
   parent: "brand-identity",
+  scene: "brand",
   related: ["how-much-does-a-website-cost", "reels-and-tiktok-editing-guide"],
-  author: { name: "Hina", role: "Brand Architect" },
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",
   dateModified: "2026-10-10",
   takeaways: [
