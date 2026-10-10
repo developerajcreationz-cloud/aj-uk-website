@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
+import { SITE } from "@/config/site";
 import { Magnetic } from "@/components/ui/magnetic";
 import { TiltCard } from "@/components/ui/tilt-card";
 import { CountUp } from "@/components/ui/count-up";
@@ -23,15 +25,9 @@ const VALUES = [
   },
 ];
 
-const TEAM = [
-  { name: "Ahmad Jan", role: "Creative Imagination Lead" },
-  { name: "Athar", role: "Strategic Director" },
-  { name: "Hina", role: "Brand Architect" },
-];
-
 const STATS = [
   { value: 6, decimals: 0, suffix: "", label: "Core services" },
-  { value: 3, decimals: 0, suffix: "", label: "Named senior leads" },
+  { value: SITE.team.length, decimals: 0, suffix: "", label: "Named team members" },
   { value: 1, decimals: 0, suffix: " day", label: "To reply to enquiries" },
 ];
 
@@ -150,11 +146,23 @@ export function About() {
           <p className="mt-3 max-w-2xl text-sm text-ink/60 md:text-base">
             The people you will speak to on a project. More team members will be added here.
           </p>
-          <ul className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
-            {TEAM.map((member) => (
-              <li key={member.name} className="rounded-2xl border border-ink/10 bg-white/60 p-6">
-                <p className="font-display text-xl font-medium text-ink">{member.name}</p>
-                <p className="mt-1 text-sm text-ink/60">{member.role}</p>
+          <ul id="team" className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8">
+            {SITE.team.map((member) => (
+              <li key={member.name} className="overflow-hidden rounded-2xl border border-ink/10 bg-white/60">
+                {"photo" in member && member.photo && (
+                  <Image
+                    src={member.photo}
+                    alt={`${member.name}, ${member.role} at AJ Creationz`}
+                    width={600}
+                    height={800}
+                    sizes="(min-width: 768px) 30vw, 90vw"
+                    className="aspect-[3/4] w-full object-cover object-top"
+                  />
+                )}
+                <div className="p-6">
+                  <p className="font-display text-xl font-medium text-ink">{member.name}</p>
+                  <p className="mt-1 text-sm text-ink/60">{member.role}</p>
+                </div>
               </li>
             ))}
           </ul>

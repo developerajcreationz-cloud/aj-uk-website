@@ -80,7 +80,12 @@ const jsonLd = {
       email: SITE.email,
       areaServed: SITE.markets.map((name) => ({ "@type": "Country", name })),
       sameAs: [SITE.mainSiteUrl],
-      employee: SITE.team.map((m) => ({ "@type": "Person", name: m.name, jobTitle: m.role })),
+      employee: SITE.team.map((m) => ({
+        "@type": "Person",
+        name: m.name,
+        jobTitle: m.role,
+        ...("photo" in m && m.photo ? { image: `${SITE.url}${m.photo}` } : {}),
+      })),
       serviceType: SITE.services,
     },
     {

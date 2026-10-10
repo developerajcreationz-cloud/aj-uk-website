@@ -17,7 +17,7 @@ export const websiteMigrationSeoChecklist: Post = {
   ],
   parent: "website-development",
   related: ["how-much-does-a-website-cost", "shopify-vs-wordpress"],
-  author: { name: "Athar", role: "Strategic Director" },
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",
   dateModified: "2026-10-10",
   takeaways: [

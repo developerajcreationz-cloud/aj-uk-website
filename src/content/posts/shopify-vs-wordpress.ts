@@ -16,7 +16,7 @@ export const shopifyVsWordpress: Post = {
   ],
   parent: "shopify-web-design",
   related: ["how-much-does-a-website-cost", "website-migration-seo-checklist"],
-  author: { name: "Athar", role: "Strategic Director" },
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",
   dateModified: "2026-10-10",
   takeaways: [

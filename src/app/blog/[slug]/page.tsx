@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
@@ -84,6 +85,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     ],
   };
 
+  const authorProfile = SITE.team.find((m) => m.name === post.author.name);
   const related = post.related.map(getPost).filter((p): p is NonNullable<typeof p> => !!p);
 
   return (
@@ -151,6 +153,29 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   </div>
                 ))}
               </dl>
+            </section>
+
+            <section className="flex items-center gap-5 rounded-2xl border border-ink/10 p-6">
+              {authorProfile && "photo" in authorProfile && authorProfile.photo && (
+                <Image
+                  src={authorProfile.photo}
+                  alt={`${post.author.name}, ${post.author.role}`}
+                  width={96}
+                  height={128}
+                  className="h-24 w-20 shrink-0 rounded-xl object-cover object-top"
+                />
+              )}
+              <div>
+                <p className="text-xs uppercase tracking-wide text-ink/50">About the author</p>
+                <p className="font-display mt-1 text-xl font-medium text-ink">{post.author.name}</p>
+                <p className="text-sm text-ink/60">{post.author.role}, AJ Creationz</p>
+                <Link
+                  href="/about#team"
+                  className="mt-2 inline-block text-sm underline underline-offset-4 hover:text-violet"
+                >
+                  Meet the team
+                </Link>
+              </div>
             </section>
 
             <section>

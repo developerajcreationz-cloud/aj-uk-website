@@ -17,7 +17,7 @@ export const seoPricing: Post = {
   ],
   parent: "seo-growth",
   related: ["how-much-does-a-website-cost", "google-ads-vs-facebook-ads"],
-  author: { name: "Athar", role: "Strategic Director" },
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",
   dateModified: "2026-10-10",
   takeaways: [

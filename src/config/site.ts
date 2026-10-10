@@ -25,5 +25,6 @@ export const SITE = {
     { name: "Ahmad Jan", role: "Creative Imagination Lead" },
     { name: "Athar", role: "Strategic Director" },
     { name: "Hina", role: "Brand Architect" },
+    { name: "Zohaib", role: "Web Developer and SEO Specialist", photo: "/images/team/zohaib.webp" },
   ],
 } as const;

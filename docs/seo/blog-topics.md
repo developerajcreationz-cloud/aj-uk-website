@@ -43,7 +43,7 @@ Updated 10 Oct 2026. Page type for every item: **Blog post** (Content Playbook v
 
 ## Notes for publishing
 
-- **Authors:** posts are attributed to Athar (six posts), Hina (brand guidelines) and Ahmad Jan (Reels). Each person must read and approve their posts; the playbook forbids publishing under an author who has not reviewed the page.
+- **Authors:** posts are attributed to Athar (website cost, GoHighLevel vs HubSpot, Google Ads vs Facebook Ads), Zohaib (SEO pricing, Shopify vs WordPress, migration checklist), Hina (brand guidelines) and Ahmad Jan (Reels). Each person must read and approve their posts; the playbook forbids publishing under an author who has not reviewed the page.
 - **Information gain:** each post's worksheet, template or formula is ours. Illustrative examples use labeled assumptions. Price ranges are third-party figures; re-check quarterly.
 - **Length:** posts run roughly 1,100 to 1,600 words including FAQs and sources, set by the topic and the SERP; the playbook range for blog posts is 1,200 to 2,500, and nothing was padded. Add depth only where a reader would need it.
 - **Images:** the four-image rule is not met (no photoreal images were produced). Add them before promoting the posts.
