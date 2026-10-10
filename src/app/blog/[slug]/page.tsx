@@ -6,6 +6,8 @@ import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Illustration } from "@/components/illustrations";
 import { InlineText } from "@/components/sections/inline-text";
+import { Accordion } from "@/components/ui/accordion";
+import { Reveal } from "@/components/ui/reveal";
 import { PostBlocks } from "@/components/sections/post-body";
 import { POSTS, getPost } from "@/content/posts";
 import { getService } from "@/content/services";
@@ -22,13 +24,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: { absolute: p.metaTitle },
     description: p.metaDescription,
-    alternates: { canonical: `/blog/${p.slug}` },
+    alternates: { canonical: `/blog/${p.slug}/` },
     authors: [{ name: p.author.name }],
     openGraph: {
       type: "article",
       title: p.metaTitle,
       description: p.metaDescription,
-      url: `/blog/${p.slug}`,
+      url: `/blog/${p.slug}/`,
       publishedTime: p.datePublished,
       modifiedTime: p.dateModified,
       authors: [p.author.name],
@@ -42,8 +44,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   if (!post) notFound();
 
   const parent = getService(post.parent);
-  const url = `${SITE.url}/blog/${post.slug}`;
-  const crumbs = [{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: post.title }];
+  const url = `${SITE.url}/blog/${post.slug}/`;
+  const crumbs = [{ label: "Home", href: "/" }, { label: "Blog", href: "/blog/" }, { label: post.title }];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -72,7 +74,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           "@type": "ListItem",
           position: i + 1,
           name: c.label,
-          item: c.href ? `${SITE.url}${c.href === "/" ? "" : c.href}` : url,
+          item: c.href ? `${SITE.url}${c.href.endsWith("/") ? c.href : c.href + "/"}` : url,
         })),
       },
       {
@@ -95,14 +97,16 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       <PageHero eyebrow={parent?.title ?? "Guide"} title={post.title} crumbs={crumbs} />
 
       <article className="bg-cream px-6 pb-20 md:px-10 md:pb-28">
-        <div className="mx-auto grid max-w-[1440px] gap-10 md:grid-cols-[2fr_1fr] md:gap-16">
-          <div className="min-w-0 max-w-3xl space-y-12 text-base leading-relaxed text-ink/75 md:text-lg">
+        <div className="mx-auto grid max-w-[1440px] gap-10 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-14">
+          <div className="min-w-0 max-w-4xl space-y-12 text-base leading-relaxed text-ink/75 md:text-lg">
             <p className="text-sm text-ink/55">
               By <strong className="font-medium text-ink">{post.author.name}</strong>, {post.author.role} · Published{" "}
               {post.datePublished} · Updated {post.dateModified}
             </p>
 
-            <Illustration scene={post.scene} className="overflow-hidden rounded-3xl" />
+            <Reveal dir="zoom">
+              <Illustration scene={post.scene} className="overflow-hidden rounded-3xl" />
+            </Reveal>
 
             <aside className="rounded-2xl border border-ink/10 bg-white/60 p-6">
               <p className="font-display text-lg font-medium text-ink">What you will get from this guide</p>
@@ -126,17 +130,19 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             </div>
 
             {post.sections.map((s) => (
-              <section key={s.h2}>
-                <h2 className="font-display mb-5 text-3xl font-medium tracking-tight text-ink md:text-4xl">{s.h2}</h2>
-                <PostBlocks blocks={s.blocks} />
-              </section>
+              <Reveal key={s.h2} amount={0.1}>
+                <section>
+                  <h2 className="font-display mb-5 text-3xl font-medium tracking-tight text-ink md:text-4xl">{s.h2}</h2>
+                  <PostBlocks blocks={s.blocks} />
+                </section>
+              </Reveal>
             ))}
 
             <section className="rounded-2xl bg-ink p-8 text-cream">
               <h2 className="font-display text-2xl font-medium">{post.doNext.title}</h2>
               <p className="mt-3 text-cream/75">{post.doNext.text}</p>
               <Link
-                href="/contact"
+                href="/contact/"
                 data-cursor-hover
                 className="mt-6 inline-flex items-center gap-2 rounded-full bg-lilac px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-cream"
               >
@@ -148,14 +154,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               <h2 className="font-display mb-5 text-3xl font-medium tracking-tight text-ink md:text-4xl">
                 Frequently asked questions
               </h2>
-              <dl className="divide-y divide-ink/10 border-y border-ink/10">
-                {post.faqs.map((f) => (
-                  <div key={f.q} className="py-5">
-                    <dt className="text-lg font-medium text-ink">{f.q}</dt>
-                    <dd className="mt-2 text-base text-ink/65">{f.a}</dd>
-                  </div>
-                ))}
-              </dl>
+              <Accordion items={post.faqs} />
             </section>
 
             <section className="flex items-center gap-5 rounded-2xl border border-ink/10 p-6">
@@ -180,31 +179,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 </Link>
               </div>
             </section>
-
-            <section>
-              <h2 className="font-display mb-4 text-2xl font-medium tracking-tight text-ink">Sources</h2>
-              <ul className="space-y-2 text-sm text-ink/65">
-                {post.sources.map((s) => (
-                  <li key={s.url}>
-                    <a
-                      href={s.url}
-                      target="_blank"
-                      rel="noopener"
-                      className="underline underline-offset-4 hover:text-ink"
-                    >
-                      {s.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4 text-xs text-ink/50">
-                Figures were collected on {post.datePublished} from the pages above. Most publishers sell the service
-                they describe, so treat ranges as indicative and verify with the vendor before you decide.
-              </p>
-            </section>
           </div>
 
-          <aside className="h-fit space-y-6 md:sticky md:top-28">
+          <aside className="h-fit space-y-6 lg:sticky lg:top-28 lg:order-first">
             {parent && (
               <div className="rounded-2xl border border-ink/10 p-6">
                 <p className="text-xs uppercase tracking-wide text-ink/50">Related service</p>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Illustration, type SceneKey } from "@/components/illustrations";
+import { Reveal, SplitWords } from "@/components/ui/reveal";
 
 export function PageShell({ children }: { children: React.ReactNode }) {
   return (
@@ -64,15 +65,20 @@ export function PageHero({
             <span className="h-1.5 w-1.5 rounded-full bg-violet" />
             {eyebrow}
           </p>
-          <h1 className="font-display max-w-4xl text-[11vw] font-medium leading-[1] tracking-tight sm:text-6xl md:text-7xl">
-            {title}
-          </h1>
+          <SplitWords
+            as="h1"
+            text={title}
+            className="font-display max-w-4xl text-[11vw] font-medium leading-[1] tracking-tight sm:text-6xl md:text-7xl"
+            accentClassName=""
+          />
           {intro && (
-            <p className="mt-8 max-w-2xl text-balance text-base leading-relaxed text-ink/60 md:text-lg">{intro}</p>
+            <Reveal delay={0.35}>
+              <p className="mt-8 max-w-2xl text-balance text-base leading-relaxed text-ink/60 md:text-lg">{intro}</p>
+            </Reveal>
           )}
         </div>
         {scene && (
-          <div className="relative hidden lg:block">
+          <Reveal dir="zoom" delay={0.3} className="relative hidden lg:block animate-bob">
             <div
               aria-hidden
               className="absolute inset-6 -z-10 rotate-3 rounded-[2rem] bg-gradient-to-br from-violet/30 to-lilac/40 blur-xl"
@@ -81,7 +87,7 @@ export function PageHero({
               scene={scene}
               className="overflow-hidden rounded-[2rem] shadow-[0_40px_80px_-40px_rgba(76,29,149,0.5)]"
             />
-          </div>
+          </Reveal>
         )}
       </div>
     </section>
@@ -94,7 +100,7 @@ export function CtaBand({ title = "Ready to start your project?" }: { title?: st
       <div className="mx-auto flex max-w-[1440px] flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <h2 className="font-display max-w-2xl text-4xl font-medium tracking-tight md:text-6xl">{title}</h2>
         <Link
-          href="/contact"
+          href="/contact/"
           data-cursor-hover
           className="inline-flex w-fit items-center gap-2 rounded-full bg-lilac px-7 py-4 text-sm font-medium text-ink transition-colors hover:bg-cream"
         >

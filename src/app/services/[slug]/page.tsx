@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { SERVICES, TOP_LEVEL_SERVICES, UK_PRICING, childrenOf, getService } from "@/content/services";
 import { Illustration, SERVICE_SCENES } from "@/components/illustrations";
+import { Reveal } from "@/components/ui/reveal";
+import { Accordion } from "@/components/ui/accordion";
 import { JsonLd } from "@/components/seo/json-ld";
 import { POSTS } from "@/content/posts";
 import { SITE } from "@/config/site";
@@ -19,8 +21,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: { absolute: s.metaTitle },
     description: s.metaDescription,
-    alternates: { canonical: `/services/${s.slug}` },
-    openGraph: { title: s.metaTitle, description: s.metaDescription, url: `/services/${s.slug}` },
+    alternates: { canonical: `/services/${s.slug}/` },
+    openGraph: { title: s.metaTitle, description: s.metaDescription, url: `/services/${s.slug}/` },
   };
 }
 
@@ -31,11 +33,11 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
   const parent = service.parent ? getService(service.parent) : undefined;
   const children = childrenOf(service.slug);
-  const url = `${SITE.url}/services/${service.slug}`;
+  const url = `${SITE.url}/services/${service.slug}/`;
 
   const crumbs = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
+    { label: "Services", href: "/services/" },
     ...(parent ? [{ label: parent.title, href: `/services/${parent.slug}` }] : []),
     { label: service.title },
   ];
@@ -61,7 +63,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           "@type": "ListItem",
           position: i + 1,
           name: c.label,
-          ...(c.href ? { item: `${SITE.url}${c.href === "/" ? "" : c.href}` } : { item: url }),
+          ...(c.href ? { item: `${SITE.url}${c.href.endsWith("/") ? c.href : c.href + "/"}` } : { item: url }),
         })),
       },
       {
@@ -99,7 +101,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               <p className="font-display text-xl font-medium">Talk to us about {service.title}</p>
               <p className="mt-2 text-sm text-ink/60">Tell us what you need. We reply within one working day.</p>
               <Link
-                href="/contact"
+                href="/contact/"
                 data-cursor-hover
                 className="mt-5 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-plum"
               >
@@ -134,29 +136,31 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       )}
 
       {service.sections.map((section, i) => (
-        <section
-          key={section.h2}
-          className={`px-6 py-16 md:px-10 md:py-20 ${i % 2 === 0 ? "border-t border-ink/10 bg-cream" : "bg-cream"}`}
-        >
-          <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-[1fr_2fr] md:gap-16">
-            <h2 className="font-display text-3xl font-medium tracking-tight md:text-4xl">{section.h2}</h2>
-            <div className="max-w-3xl space-y-4 text-base leading-relaxed text-ink/70">
-              {section.paragraphs.map((p) => (
-                <p key={p.slice(0, 40)}>{p}</p>
-              ))}
-              {section.bullets && (
-                <ul className="divide-y divide-ink/10 border-y border-ink/10">
-                  {section.bullets.map((b) => (
-                    <li key={b} className="flex gap-3 py-3">
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-violet" />
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-              )}
+        <Reveal key={section.h2} amount={0.1}>
+          <section
+            key={section.h2}
+            className={`px-6 py-16 md:px-10 md:py-20 ${i % 2 === 0 ? "border-t border-ink/10 bg-cream" : "bg-cream"}`}
+          >
+            <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-[1fr_2fr] md:gap-16">
+              <h2 className="font-display text-3xl font-medium tracking-tight md:text-4xl">{section.h2}</h2>
+              <div className="max-w-3xl space-y-4 text-base leading-relaxed text-ink/70">
+                {section.paragraphs.map((p) => (
+                  <p key={p.slice(0, 40)}>{p}</p>
+                ))}
+                {section.bullets && (
+                  <ul className="divide-y divide-ink/10 border-y border-ink/10">
+                    {section.bullets.map((b) => (
+                      <li key={b} className="flex gap-3 py-3">
+                        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-violet" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </Reveal>
       ))}
 
       {service.pricing && (
@@ -215,14 +219,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <section className="bg-cream px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto grid max-w-[1440px] gap-12 md:grid-cols-[1fr_2fr] md:gap-16">
           <h2 className="font-display text-3xl font-medium tracking-tight md:text-5xl">Frequently asked questions</h2>
-          <dl className="divide-y divide-ink/10 border-y border-ink/10">
-            {service.faqs.map((f) => (
-              <div key={f.q} className="py-6">
-                <dt className="text-lg font-medium">{f.q}</dt>
-                <dd className="mt-2 leading-relaxed text-ink/65">{f.a}</dd>
-              </div>
-            ))}
-          </dl>
+          <Accordion items={service.faqs} />
         </div>
       </section>
 

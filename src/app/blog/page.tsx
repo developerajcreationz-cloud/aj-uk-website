@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Illustration } from "@/components/illustrations";
+import { Reveal } from "@/components/ui/reveal";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { POSTS } from "@/content/posts";
 import { getService } from "@/content/services";
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   title: { absolute: "Blog: Web Design, SEO, Ads & CRM Guides | AJ Creationz" },
   description:
     "Practical guides with sourced price ranges, worksheets and checklists on websites, SEO, paid ads, CRM and video, for UK and US businesses.",
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: "/blog/" },
 };
 
 export default function BlogIndex() {
@@ -23,21 +24,23 @@ export default function BlogIndex() {
       />
       <section className="bg-cream px-6 pb-24 md:px-10 md:pb-32">
         <ul className="mx-auto grid max-w-[1440px] gap-6 md:grid-cols-2">
-          {POSTS.map((p) => (
+          {POSTS.map((p, i) => (
             <li key={p.slug}>
-              <Link
-                href={`/blog/${p.slug}`}
-                data-cursor-hover
-                className="block h-full rounded-2xl border border-ink/10 p-8 transition-colors hover:bg-ink hover:text-cream"
-              >
-                <Illustration scene={p.scene} className="mb-6 overflow-hidden rounded-2xl" />
-                <p className="text-xs uppercase tracking-wide opacity-60">{getService(p.parent)?.title}</p>
-                <h2 className="font-display mt-3 text-2xl font-medium tracking-tight md:text-3xl">{p.title}</h2>
-                <p className="mt-3 text-sm leading-relaxed opacity-70">{p.metaDescription}</p>
-                <p className="mt-5 text-xs opacity-60">
-                  By {p.author.name}, {p.author.role} · Updated {p.dateModified}
-                </p>
-              </Link>
+              <Reveal dir="zoom" delay={(i % 2) * 0.1} className="h-full">
+                <Link
+                  href={`/blog/${p.slug}`}
+                  data-cursor-hover
+                  className="block h-full rounded-2xl border border-ink/10 p-8 transition-all duration-500 hover:-translate-y-1.5 hover:bg-ink hover:text-cream hover:shadow-[0_30px_60px_-30px_rgba(76,29,149,0.5)]"
+                >
+                  <Illustration scene={p.scene} className="mb-6 overflow-hidden rounded-2xl" />
+                  <p className="text-xs uppercase tracking-wide opacity-60">{getService(p.parent)?.title}</p>
+                  <h2 className="font-display mt-3 text-2xl font-medium tracking-tight md:text-3xl">{p.title}</h2>
+                  <p className="mt-3 text-sm leading-relaxed opacity-70">{p.metaDescription}</p>
+                  <p className="mt-5 text-xs opacity-60">
+                    By {p.author.name}, {p.author.role} · Updated {p.dateModified}
+                  </p>
+                </Link>
+              </Reveal>
             </li>
           ))}
         </ul>

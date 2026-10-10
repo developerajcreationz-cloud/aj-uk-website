@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { SplitWords } from "@/components/ui/reveal";
 import type { ReactNode } from "react";
 
 const fadeUp = {
@@ -149,12 +150,13 @@ function GrowthLoop() {
       </div>
 
       <div className="absolute inset-[6%]">
-        {LOOP.map((n) => (
+        {LOOP.map((n, i) => (
           <Link
             key={n.label}
             href={n.href}
             data-cursor-hover
-            className={`group absolute ${n.pos} flex items-center gap-2 whitespace-nowrap rounded-full border border-ink/10 bg-white/90 px-3 py-2 text-xs font-medium shadow-[0_10px_30px_-12px_rgba(18,15,29,0.35)] backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-ink hover:text-cream md:px-4 md:text-sm`}
+            style={{ animationDelay: `${i * 0.7}s` }}
+            className={`animate-bob group absolute ${n.pos} flex items-center gap-2 whitespace-nowrap rounded-full border border-ink/10 bg-white/90 px-3 py-2 text-xs font-medium shadow-[0_10px_30px_-12px_rgba(18,15,29,0.35)] backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-ink hover:text-cream md:px-4 md:text-sm`}
           >
             <span className="text-violet transition-colors group-hover:text-lilac">{n.icon}</span>
             {n.label}
@@ -188,19 +190,10 @@ export function HomeIntro() {
               What AJ Creationz does
             </motion.p>
 
-            <motion.h2
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.4 }}
-              variants={fadeUp}
-              custom={1}
+            <SplitWords
+              text="We build the parts of a business that *bring in customers.*"
               className="font-display text-[11vw] font-medium leading-[1] tracking-tight sm:text-6xl md:text-7xl"
-            >
-              We build the parts of a business that{" "}
-              <em className="bg-gradient-to-r from-plum via-violet to-lilac bg-clip-text font-serif italic text-transparent">
-                bring in customers.
-              </em>
-            </motion.h2>
+            />
 
             <motion.div
               initial="hidden"
@@ -232,19 +225,12 @@ export function HomeIntro() {
               className="mt-9 flex flex-wrap items-center gap-6"
             >
               <Link
-                href="/services"
+                href="/services/"
                 data-cursor-hover
                 className="group inline-flex items-center gap-3 rounded-full bg-ink px-7 py-4 text-sm font-medium text-cream transition-colors hover:bg-plum"
               >
                 See all services
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-              </Link>
-              <Link
-                href="/blog"
-                data-cursor-hover
-                className="border-b border-ink/25 pb-1 text-sm font-medium transition-colors hover:border-ink"
-              >
-                Read the blog →
               </Link>
             </motion.div>
           </div>
@@ -266,11 +252,15 @@ export function HomeIntro() {
           {AUDIENCES.map((a, i) => (
             <motion.li
               key={a.title}
-              initial="hidden"
-              whileInView="visible"
+              initial={{
+                opacity: 0,
+                x: i === 0 ? -56 : i === 2 ? 56 : 0,
+                y: i === 1 ? 56 : 0,
+                scale: i === 1 ? 0.92 : 1,
+              }}
+              whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
-              variants={fadeUp}
-              custom={i}
+              transition={{ duration: 0.85, ease: [0.25, 1, 0.5, 1], delay: i * 0.08 }}
             >
               <Link
                 href={a.href}

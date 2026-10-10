@@ -6,16 +6,15 @@ import { motion } from "framer-motion";
 import { useLenis } from "lenis/react";
 import { Magnetic } from "@/components/ui/magnetic";
 import { SITE } from "@/config/site";
-import { POSTS } from "@/content/posts";
 import { TOP_LEVEL_SERVICES } from "@/content/services";
 
 const COMPANY = [
-  { label: "Work", href: "/work" },
-  { label: "About and team", href: "/about" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
-  { label: "Privacy", href: "/privacy" },
-  { label: "Terms", href: "/terms" },
+  { label: "Work", href: "/work/" },
+  { label: "About and team", href: "/about/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Contact", href: "/contact/" },
+  { label: "Privacy", href: "/privacy/" },
+  { label: "Terms", href: "/terms/" },
 ];
 
 const reveal = (i = 0) => ({
@@ -81,7 +80,7 @@ export function Footer() {
 
           <Magnetic strength={0.25} className="w-fit">
             <Link
-              href="/contact"
+              href="/contact/"
               data-cursor-hover
               className="group inline-flex items-center gap-3 rounded-full bg-lilac px-8 py-5 text-sm font-medium text-ink transition-colors duration-300 hover:bg-cream"
             >
@@ -92,7 +91,7 @@ export function Footer() {
         </motion.div>
 
         {/* Link columns */}
-        <div className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1.2fr_1fr] md:py-20">
+        <div className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] md:py-20">
           <motion.div {...reveal(0)} className="flex flex-col gap-6">
             <Image
               src="/images/logo-full-white.png"
@@ -105,21 +104,6 @@ export function Footer() {
               A digital agency for websites, brand, SEO, ads, video and CRM. We work remotely with businesses in the UK
               and the US.
             </p>
-            <ul className="flex flex-wrap gap-2">
-              {SITE.social.map((s) => (
-                <li key={s.label}>
-                  <a
-                    href={s.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    data-cursor-hover
-                    className="inline-flex rounded-full border border-cream/20 px-4 py-2 text-xs transition-colors duration-300 hover:border-lilac hover:bg-lilac hover:text-ink"
-                  >
-                    {s.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </motion.div>
 
           <motion.nav {...reveal(1)} aria-label="Services">
@@ -135,25 +119,7 @@ export function Footer() {
             </ul>
           </motion.nav>
 
-          <motion.nav {...reveal(2)} aria-label="Latest from the blog">
-            <p className="mb-5 text-xs font-medium uppercase tracking-wide text-cream/40">From the blog</p>
-            <ul className="flex flex-col gap-3">
-              {POSTS.slice(0, 4).map((p) => (
-                <li key={p.slug}>
-                  <Link href={`/blog/${p.slug}`} data-cursor-hover className={`${linkClass} line-clamp-2`}>
-                    {p.title}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link href="/blog" data-cursor-hover className="text-sm font-medium text-lilac hover:text-cream">
-                  All articles →
-                </Link>
-              </li>
-            </ul>
-          </motion.nav>
-
-          <motion.nav {...reveal(3)} aria-label="Company">
+          <motion.nav {...reveal(2)} aria-label="Company">
             <p className="mb-5 text-xs font-medium uppercase tracking-wide text-cream/40">Company</p>
             <ul className="flex flex-col gap-3">
               {COMPANY.map((c) => (
@@ -165,6 +131,24 @@ export function Footer() {
               ))}
             </ul>
           </motion.nav>
+
+          <motion.div {...reveal(3)}>
+            <p className="mb-5 text-xs font-medium uppercase tracking-wide text-cream/40">Connect</p>
+            <ul className="flex flex-col gap-3">
+              <li>
+                <a href={`mailto:${SITE.email}`} data-cursor-hover className={linkClass}>
+                  {SITE.email}
+                </a>
+              </li>
+              {SITE.social.map((s) => (
+                <li key={s.label}>
+                  <a href={s.href} target="_blank" rel="noopener noreferrer" data-cursor-hover className={linkClass}>
+                    {s.label} ↗
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
         </div>
       </div>
 

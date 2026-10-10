@@ -4,7 +4,7 @@ import { PageShell, PageHero } from "@/components/layout/page-shell";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "How AJ Creationz collects and uses your personal data.",
-  alternates: { canonical: "/privacy" },
+  alternates: { canonical: "/privacy/" },
 };
 
 export default function Page() {

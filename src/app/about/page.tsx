@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: { absolute: "About AJ Creationz | The Digital Agency Team & Approach" },
   description:
     "AJ Creationz is a creative and digital agency for UK and US businesses. Meet the team behind the websites, SEO, ads and CRM systems.",
-  alternates: { canonical: "/about" },
+  alternates: { canonical: "/about/" },
 };
 
 export default function AboutPage() {

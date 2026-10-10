@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: { absolute: "Our Work | Brand Identity, UI/UX & Social Case Studies" },
   description:
     "Brand identity, UI/UX and social media projects by AJ Creationz: NayaSource, Framily Adventures, Call Time and more, with the brief and what we delivered.",
-  alternates: { canonical: "/work" },
+  alternates: { canonical: "/work/" },
 };
 
 export default function WorkPage() {
@@ -25,7 +25,7 @@ export default function WorkPage() {
         name: p.title,
         genre: p.category,
         description: p.brief,
-        url: `${SITE.url}/work#${p.slug}`,
+        url: `${SITE.url}/work/#${p.slug}`,
         creator: { "@id": `${SITE.url}/#organization` },
       },
     })),

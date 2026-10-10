@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Every URL ends in a slash (redirects the slash-less form with a 308).
+  trailingSlash: true,
   // One canonical host: send www to the bare domain with a permanent redirect.
   async redirects() {
     return [

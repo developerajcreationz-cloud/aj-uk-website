@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     "video editing",
     "AJ Creationz",
   ],
-  authors: [{ name: SITE.name, url: SITE.url }],
+  authors: [{ name: SITE.name, url: `${SITE.url}/` }],
   alternates: { canonical: "/" },
   verification: { google: process.env.GOOGLE_SITE_VERIFICATION || SITE.googleVerification },
   robots: {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: SITE.title,
     description: SITE.description,
-    url: SITE.url,
+    url: `${SITE.url}/`,
     siteName: SITE.name,
     locale: "en",
     type: "website",
@@ -73,7 +73,7 @@ const jsonLd = {
       "@type": "ProfessionalService",
       "@id": `${SITE.url}/#organization`,
       name: SITE.name,
-      url: SITE.url,
+      url: `${SITE.url}/`,
       logo: `${SITE.url}${SITE.logo}`,
       image: `${SITE.url}${SITE.logo}`,
       description: SITE.description,
@@ -91,7 +91,7 @@ const jsonLd = {
     {
       "@type": "WebSite",
       "@id": `${SITE.url}/#website`,
-      url: SITE.url,
+      url: `${SITE.url}/`,
       name: SITE.name,
       publisher: { "@id": `${SITE.url}/#organization` },
       inLanguage: "en",

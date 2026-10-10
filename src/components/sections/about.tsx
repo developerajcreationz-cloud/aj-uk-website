@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { SITE } from "@/config/site";
+import { Reveal } from "@/components/ui/reveal";
 import { Magnetic } from "@/components/ui/magnetic";
 import { TiltCard } from "@/components/ui/tilt-card";
 import { CountUp } from "@/components/ui/count-up";
@@ -91,7 +92,7 @@ export function About() {
             </p>
             <Magnetic strength={0.25}>
               <a
-                href="/contact"
+                href="/contact/"
                 data-cursor-hover
                 className="group inline-flex w-fit items-center gap-2 border-b border-ink/25 pb-1 text-sm font-medium text-ink transition-colors duration-300 hover:border-ink"
               >
@@ -147,23 +148,25 @@ export function About() {
             The people you will speak to on a project. More team members will be added here.
           </p>
           <ul id="team" className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8">
-            {SITE.team.map((member) => (
-              <li key={member.name} className="overflow-hidden rounded-2xl border border-ink/10 bg-white/60">
-                {"photo" in member && member.photo && (
-                  <Image
-                    src={member.photo}
-                    alt={`${member.name}, ${member.role} at AJ Creationz`}
-                    width={600}
-                    height={800}
-                    sizes="(min-width: 768px) 30vw, 90vw"
-                    className="aspect-[3/4] w-full object-cover object-top"
-                  />
-                )}
-                <div className="p-6">
-                  <p className="font-display text-xl font-medium text-ink">{member.name}</p>
-                  <p className="mt-1 text-sm text-ink/60">{member.role}</p>
-                </div>
-              </li>
+            {SITE.team.map((member, i) => (
+              <Reveal key={member.name} dir="up" delay={i * 0.1} className="h-full">
+                <li className="group overflow-hidden rounded-2xl border border-ink/10 bg-white/60 transition-all duration-500 hover:-translate-y-2 hover:border-violet/40 hover:shadow-[0_30px_60px_-30px_rgba(76,29,149,0.4)]">
+                  {"photo" in member && member.photo && (
+                    <Image
+                      src={member.photo}
+                      alt={`${member.name}, ${member.role} at AJ Creationz`}
+                      width={600}
+                      height={800}
+                      sizes="(min-width: 768px) 30vw, 90vw"
+                      className="aspect-[3/4] w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    />
+                  )}
+                  <div className="p-6">
+                    <p className="font-display text-xl font-medium text-ink">{member.name}</p>
+                    <p className="mt-1 text-sm text-ink/60">{member.role}</p>
+                  </div>
+                </li>
+              </Reveal>
             ))}
           </ul>
         </div>

@@ -140,7 +140,7 @@ export function Hero() {
           >
             <Magnetic>
               <a
-                href="/contact"
+                href="/contact/"
                 data-cursor-hover
                 className="group inline-flex items-center gap-3 rounded-full bg-ink px-7 py-4 text-sm font-medium text-cream transition-colors duration-300 hover:bg-plum"
               >
@@ -161,7 +161,7 @@ export function Hero() {
 
             <Magnetic strength={0.25}>
               <a
-                href="/work"
+                href="/work/"
                 data-cursor-hover
                 className="group inline-flex items-center gap-2 border-b border-ink/25 pb-1 text-sm font-medium text-ink transition-colors duration-300 hover:border-ink"
               >

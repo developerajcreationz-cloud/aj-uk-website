@@ -33,7 +33,7 @@ const COLUMN_B: Project[] = [
 function ProjectCard({ project, priority }: { project: Project; priority?: boolean }) {
   return (
     <a
-      href="/work"
+      href="/work/"
       data-cursor-hover
       className="group relative block aspect-[4/3] w-full overflow-hidden rounded-2xl bg-cream/5"
     >
@@ -138,7 +138,7 @@ export function Work() {
 
           <Magnetic strength={0.25}>
             <a
-              href="/work"
+              href="/work/"
               data-cursor-hover
               className="group mt-2 inline-flex w-fit items-center gap-2 border-b border-cream/25 pb-1 text-sm font-medium transition-colors duration-300 hover:border-cream"
             >

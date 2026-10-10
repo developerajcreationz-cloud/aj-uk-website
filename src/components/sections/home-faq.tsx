@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Reveal, SplitWords } from "@/components/ui/reveal";
 
 const FAQS = [
   {
@@ -32,20 +33,18 @@ export function HomeFaq() {
             <span className="h-1.5 w-1.5 rounded-full bg-violet" />
             FAQ
           </p>
-          <h2 className="font-display text-[11vw] font-medium leading-[1] tracking-tight sm:text-6xl md:text-6xl">
-            Common{" "}
-            <em className="bg-gradient-to-r from-plum via-violet to-lilac bg-clip-text font-serif italic text-transparent">
-              questions
-            </em>
-          </h2>
+          <SplitWords
+            text="Common *questions*"
+            className="font-display text-[11vw] font-medium leading-[1] tracking-tight sm:text-6xl md:text-6xl"
+          />
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-ink/60 md:text-base">
             Something else on your mind? Ask us, or browse the guides.
           </p>
           <div className="mt-6 flex flex-wrap gap-5 text-sm font-medium">
-            <Link href="/contact" data-cursor-hover className="border-b border-ink/25 pb-1 hover:border-ink">
+            <Link href="/contact/" data-cursor-hover className="border-b border-ink/25 pb-1 hover:border-ink">
               Ask a question →
             </Link>
-            <Link href="/blog" data-cursor-hover className="border-b border-ink/25 pb-1 hover:border-ink">
+            <Link href="/blog/" data-cursor-hover className="border-b border-ink/25 pb-1 hover:border-ink">
               Browse the blog →
             </Link>
           </div>
@@ -53,20 +52,21 @@ export function HomeFaq() {
 
         <div className="space-y-3">
           {FAQS.map((f, i) => (
-            <details
-              key={f.q}
-              open={i === 0}
-              className="group rounded-2xl border border-ink/10 bg-white/70 px-6 py-5 transition-colors open:border-violet/40 open:bg-white md:px-8"
-            >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-lg font-medium md:text-xl [&::-webkit-details-marker]:hidden">
-                {f.q}
-                <span className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink/15 transition-colors group-open:border-violet group-open:bg-violet group-open:text-white">
-                  <span className="absolute h-0.5 w-3.5 rounded bg-current" />
-                  <span className="absolute h-3.5 w-0.5 rounded bg-current transition-transform duration-300 group-open:rotate-90" />
-                </span>
-              </summary>
-              <p className="mt-4 max-w-2xl pr-12 leading-relaxed text-ink/65">{f.a}</p>
-            </details>
+            <Reveal key={f.q} delay={i * 0.08}>
+              <details
+                open={i === 0}
+                className="group rounded-2xl border border-ink/10 bg-white/70 px-6 py-5 transition-colors open:border-violet/40 open:bg-white md:px-8"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-lg font-medium md:text-xl [&::-webkit-details-marker]:hidden">
+                  {f.q}
+                  <span className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink/15 transition-colors group-open:border-violet group-open:bg-violet group-open:text-white">
+                    <span className="absolute h-0.5 w-3.5 rounded bg-current" />
+                    <span className="absolute h-3.5 w-0.5 rounded bg-current transition-transform duration-300 group-open:rotate-90" />
+                  </span>
+                </summary>
+                <p className="mt-4 max-w-2xl pr-12 leading-relaxed text-ink/65">{f.a}</p>
+              </details>
+            </Reveal>
           ))}
         </div>
       </div>

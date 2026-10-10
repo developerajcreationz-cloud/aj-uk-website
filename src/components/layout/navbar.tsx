@@ -7,11 +7,11 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { label: "Work", href: "/work", index: "01" },
-  { label: "Services", href: "/services", index: "02" },
-  { label: "Blog", href: "/blog", index: "03" },
-  { label: "About", href: "/about", index: "04" },
-  { label: "Contact", href: "/contact", index: "05" },
+  { label: "Work", href: "/work/", index: "01" },
+  { label: "Services", href: "/services/", index: "02" },
+  { label: "Blog", href: "/blog/", index: "03" },
+  { label: "About", href: "/about/", index: "04" },
+  { label: "Contact", href: "/contact/", index: "05" },
 ];
 
 export function Navbar() {
@@ -48,7 +48,7 @@ export function Navbar() {
 
           <div className="flex items-center gap-3 md:gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               data-cursor-hover
               className="hidden items-center gap-2 rounded-full border border-ink/15 bg-ink px-5 py-2.5 text-sm font-medium text-cream transition-colors hover:bg-plum md:inline-flex"
             >
@@ -83,9 +83,9 @@ export function Navbar() {
             animate={{ clipPath: "circle(150% at calc(100% - 44px) 44px)" }}
             exit={{ clipPath: "circle(0% at calc(100% - 44px) 44px)" }}
             transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
-            className="fixed inset-0 z-30 flex flex-col justify-center bg-ink px-6 text-cream md:px-16"
+            className="fixed inset-0 z-30 flex flex-col overflow-y-auto bg-ink px-6 pb-10 pt-28 text-cream md:px-16"
           >
-            <nav className="flex flex-col gap-2">
+            <nav className="my-auto flex flex-col gap-1 md:gap-2">
               {NAV_LINKS.map((link, i) => (
                 <motion.div
                   key={link.href}
@@ -93,7 +93,7 @@ export function Navbar() {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: 40, opacity: 0 }}
                   transition={{ duration: 0.5, delay: open ? 0.15 + i * 0.06 : 0, ease: [0.25, 1, 0.5, 1] }}
-                  className="border-b border-cream/10 py-4"
+                  className="border-b border-cream/10 py-3 md:py-4"
                 >
                   <Link
                     href={link.href}
@@ -102,7 +102,7 @@ export function Navbar() {
                     className="group flex items-baseline gap-4"
                   >
                     <span className="font-mono text-xs text-lilac">{link.index}</span>
-                    <span className="font-display text-[13vw] leading-none tracking-tight text-cream transition-colors duration-300 group-hover:text-lilac md:text-[5.5vw]">
+                    <span className="font-display text-[11vw] leading-none tracking-tight text-cream transition-colors duration-300 group-hover:text-lilac md:text-[min(5.5vw,9vh)]">
                       {link.label}
                     </span>
                   </Link>
@@ -114,7 +114,7 @@ export function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="mt-10 flex flex-col gap-6 text-sm text-cream/60 md:mt-16 md:flex-row md:items-center md:justify-between"
+              className="mt-8 flex flex-col gap-6 text-sm text-cream/60 md:flex-row md:items-center md:justify-between"
             >
               <p className="max-w-xs">
                 A creative &amp; digital agency partnering with ambitious brands ready to move.

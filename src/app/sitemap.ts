@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { p: "/terms", priority: 0.2 },
   ];
   return paths.map(({ p, priority }) => ({
-    url: `${SITE.url}${p}`,
+    url: `${SITE.url}${p}/`,
     lastModified,
     changeFrequency: "monthly",
     priority,

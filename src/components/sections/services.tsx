@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { SplitWords } from "@/components/ui/reveal";
 import { Illustration, SERVICE_SCENES } from "@/components/illustrations";
 import { TOP_LEVEL_SERVICES as SERVICES, childrenOf } from "@/content/services";
 
@@ -35,9 +36,11 @@ export function Services() {
               <span className="h-1.5 w-1.5 rounded-full bg-lilac" />
               What we do
             </p>
-            <h2 className="font-display max-w-xl text-[10vw] font-medium leading-[1.02] tracking-tight sm:text-5xl md:text-6xl">
-              Full-stack creative, without the noise.
-            </h2>
+            <SplitWords
+              text="Full-stack creative, *without the noise.*"
+              className="font-display max-w-xl text-[10vw] font-medium leading-[1.02] tracking-tight sm:text-5xl md:text-6xl"
+              accentClassName="bg-gradient-to-r from-lilac via-violet to-lilac bg-clip-text font-serif italic text-transparent"
+            />
           </div>
           <div className="flex max-w-sm flex-col gap-5">
             <p className="text-balance text-sm leading-relaxed text-cream/55 md:text-base">
@@ -45,7 +48,7 @@ export function Services() {
               a fixed package. Open any service for what is included, market prices and our method.
             </p>
             <Link
-              href="/services"
+              href="/services/"
               data-cursor-hover
               className="w-fit border-b border-cream/30 pb-1 text-sm font-medium transition-colors hover:border-cream"
             >
@@ -54,7 +57,7 @@ export function Services() {
           </div>
         </motion.div>
 
-        <ul className="border-t border-cream/10">
+        <ul className="group/list border-t border-cream/10">
           {SERVICES.map((service, i) => {
             const children = childrenOf(service.slug);
             const scene = SERVICE_SCENES[service.slug];
@@ -66,7 +69,7 @@ export function Services() {
                 viewport={{ once: true, amount: 0.4 }}
                 variants={fadeUp}
                 custom={i + 1}
-                className="group relative border-b border-cream/10"
+                className="group relative border-b border-cream/10 transition-opacity duration-300 group-hover/list:opacity-40 hover:opacity-100!"
               >
                 <span
                   aria-hidden

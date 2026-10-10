@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SplitWords } from "@/components/ui/reveal";
 
 const REASONS = [
   {
@@ -34,12 +35,10 @@ export function HomeWhy() {
               <span className="h-1.5 w-1.5 rounded-full bg-violet" />
               The difference
             </p>
-            <h2 className="font-display text-[11vw] font-medium leading-[1] tracking-tight sm:text-6xl md:text-7xl">
-              Why clients{" "}
-              <em className="bg-gradient-to-r from-plum via-violet to-lilac bg-clip-text font-serif italic text-transparent">
-                choose us
-              </em>
-            </h2>
+            <SplitWords
+              text="Why clients *choose us*"
+              className="font-display text-[11vw] font-medium leading-[1] tracking-tight sm:text-6xl md:text-7xl"
+            />
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-ink/60 md:text-base">
             Three habits that make the work easier to judge and easier to trust.
@@ -50,8 +49,13 @@ export function HomeWhy() {
           {REASONS.map((r, i) => (
             <motion.li
               key={r.title}
-              initial={{ opacity: 0, y: 32 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{
+                opacity: 0,
+                x: i === 0 ? -48 : i === 2 ? 48 : 0,
+                y: i === 1 ? 48 : 0,
+                scale: i === 1 ? 0.94 : 1,
+              }}
+              whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.7, ease: [0.25, 1, 0.5, 1], delay: i * 0.1 }}
               className="group relative overflow-hidden rounded-3xl border border-ink/10 bg-white/70 p-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-violet/40 hover:shadow-[0_30px_60px_-30px_rgba(76,29,149,0.35)] md:p-10"

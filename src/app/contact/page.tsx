@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: { absolute: "Contact AJ Creationz | Get a Quote for Your Project" },
   description:
     "Tell AJ Creationz about your website, SEO, ads, video or CRM project. We work with UK and US businesses and reply within one working day.",
-  alternates: { canonical: "/contact" },
+  alternates: { canonical: "/contact/" },
 };
 
 export default function ContactPage() {

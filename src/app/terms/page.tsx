@@ -4,7 +4,7 @@ import { PageShell, PageHero } from "@/components/layout/page-shell";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Terms for using the AJ Creationz website and services.",
-  alternates: { canonical: "/terms" },
+  alternates: { canonical: "/terms/" },
 };
 
 export default function Page() {
