@@ -123,3 +123,33 @@ body {
 .animate-scroll-line {
   animation: scroll-line 2s var(--ease-in-out-quart) infinite;
 }
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+
+.animate-spin-slower {
+  animation: spin-slow 70s linear infinite reverse;
+}
+
+/* Outlined display text, used for large numerals and the footer wordmark */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--outline, rgba(139, 92, 246, 0.6));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin-slow,
+  .animate-spin-slower,
+  .animate-float-slow,
+  .animate-pulse-dot,
+  .animate-scroll-line {
+    animation: none;
+  }
+}

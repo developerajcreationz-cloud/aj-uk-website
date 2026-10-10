@@ -15,6 +15,7 @@ export default function AboutPage() {
     <PageShell>
       <PageHero
         eyebrow="About"
+        scene="crm"
         title="A small studio with big-agency standards."
         intro="We combine brand, web, video, ads and CRM so your marketing works as one system."
       />

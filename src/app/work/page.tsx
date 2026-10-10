@@ -35,6 +35,7 @@ export default function WorkPage() {
       <JsonLd data={jsonLd} />
       <PageHero
         eyebrow="Work"
+        scene="brand"
         title="Projects we have built and the briefs behind them."
         intro="Four projects from our portfolio, each with the brief we were given and what we delivered. We list outcomes only where we can state them accurately."
       />

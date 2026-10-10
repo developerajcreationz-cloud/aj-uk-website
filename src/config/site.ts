@@ -13,6 +13,13 @@ export const SITE = {
   /** Bump when page content changes materially; used for sitemap lastModified. */
   contentUpdated: "2026-10-10",
   markets: ["United Kingdom", "United States"],
+  /** Profiles taken from the main site (ajcreationz.co). */
+  social: [
+    { label: "Instagram", href: "https://www.instagram.com/ajcreationz.co/" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/ahmadjan1012/" },
+    { label: "Behance", href: "https://www.behance.net/AJCREATIONZ-AGENCY" },
+    { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61571556940245" },
+  ],
   services: [
     "Brand Identity",
     "Website Development (WordPress, Shopify, Custom)",

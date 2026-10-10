@@ -14,6 +14,7 @@ export default function ServicesPage() {
     <PageShell>
       <PageHero
         eyebrow="Services"
+        scene="website"
         title="Everything you need to grow, in one team."
         intro="Websites, brand, video, SEO, paid ads and CRM automation for UK and US businesses. Each service page shows what is included, what it typically costs in the market and how we work. Pick one or combine them."
       />

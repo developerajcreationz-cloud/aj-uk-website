@@ -6,7 +6,7 @@ import { POSTS } from "@/content/posts";
 import { getService } from "@/content/services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Guides on Web Design, SEO, Ads and CRM | AJ Creationz" },
+  title: { absolute: "Blog: Web Design, SEO, Ads & CRM Guides | AJ Creationz" },
   description:
     "Practical guides with sourced price ranges, worksheets and checklists on websites, SEO, paid ads, CRM and video, for UK and US businesses.",
   alternates: { canonical: "/blog" },
@@ -16,7 +16,8 @@ export default function BlogIndex() {
   return (
     <PageShell>
       <PageHero
-        eyebrow="Guides"
+        eyebrow="Blog"
+        scene="seo"
         title="Practical guides with the numbers shown."
         intro="Each guide includes sourced price ranges for the UK and the US, a worksheet or checklist you can use, and a clear next step. Figures come from published guides and are labeled as indicative."
       />

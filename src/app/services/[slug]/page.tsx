@@ -229,7 +229,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       {guides.length > 0 && (
         <section className="border-t border-ink/10 bg-cream px-6 py-16 md:px-10 md:py-20">
           <div className="mx-auto max-w-[1440px]">
-            <h2 className="font-display mb-8 text-3xl font-medium tracking-tight md:text-4xl">Guides</h2>
+            <h2 className="font-display mb-8 text-3xl font-medium tracking-tight md:text-4xl">From the blog</h2>
             <ul className="grid gap-4 md:grid-cols-2">
               {guides.map((g) => (
                 <li key={g.slug}>

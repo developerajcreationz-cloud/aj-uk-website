@@ -79,7 +79,7 @@ const jsonLd = {
       description: SITE.description,
       email: SITE.email,
       areaServed: SITE.markets.map((name) => ({ "@type": "Country", name })),
-      sameAs: [SITE.mainSiteUrl],
+      sameAs: [SITE.mainSiteUrl, ...SITE.social.map((s) => s.href)],
       employee: SITE.team.map((m) => ({
         "@type": "Person",
         name: m.name,

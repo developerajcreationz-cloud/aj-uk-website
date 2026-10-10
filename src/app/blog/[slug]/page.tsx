@@ -43,7 +43,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   const parent = getService(post.parent);
   const url = `${SITE.url}/blog/${post.slug}`;
-  const crumbs = [{ label: "Home", href: "/" }, { label: "Guides", href: "/blog" }, { label: post.title }];
+  const crumbs = [{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: post.title }];
 
   const jsonLd = {
     "@context": "https://schema.org",
