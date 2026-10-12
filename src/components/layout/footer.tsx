@@ -152,14 +152,6 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Wordmark */}
-      <div aria-hidden className="relative select-none overflow-hidden">
-        <p className="font-display text-outline whitespace-nowrap text-center text-[19vw] font-medium leading-[0.8] tracking-tighter [--outline:rgba(196,176,255,0.35)]">
-          ajcreationz
-        </p>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink to-transparent" />
-      </div>
-
       <div className="relative border-t border-cream/10">
         <div className="mx-auto flex max-w-[1440px] flex-col-reverse items-center gap-5 px-6 py-6 md:flex-row md:justify-between md:px-10">
           <p className="text-xs text-cream/45">© {new Date().getFullYear()} AJ Creationz. All rights reserved.</p>

@@ -6,7 +6,7 @@ import { Magnetic } from "@/components/ui/magnetic";
 
 const PROJECT_TYPES = ["Brand Identity", "Website", "Video Editing", "SEO & Growth", "Ads", "CRM", "Not sure yet"];
 
-type Status = "idle" | "sending" | "sent" | "error";
+type Status = "idle" | "sending" | "sent" | "error" | "invalid";
 
 function Field({ label, ...props }: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
   return (
@@ -37,6 +37,10 @@ export function Contact() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!projectType) {
+      setStatus("invalid");
+      return;
+    }
     const data = new FormData(e.currentTarget);
     setStatus("sending");
     try {
@@ -202,13 +206,18 @@ export function Contact() {
 
                 <div>
                   <span className="text-xs font-medium uppercase tracking-wide text-cream/45">Project type</span>
-                  <div className="mt-3 flex flex-wrap gap-2">
+                  <div role="radiogroup" aria-label="Project type" aria-required className="mt-3 flex flex-wrap gap-2">
                     {PROJECT_TYPES.map((type) => (
                       <button
                         key={type}
                         type="button"
+                        role="radio"
+                        aria-checked={projectType === type}
                         data-cursor-hover
-                        onClick={() => setProjectType(type)}
+                        onClick={() => {
+                          setProjectType(type);
+                          setStatus((s) => (s === "invalid" ? "idle" : s));
+                        }}
                         className={`rounded-full border px-4 py-2 text-sm transition-colors duration-300 ${
                           projectType === type
                             ? "border-lilac bg-lilac text-ink"
@@ -233,6 +242,12 @@ export function Contact() {
                 </label>
 
                 <input type="text" name="company" tabIndex={-1} autoComplete="off" aria-hidden className="hidden" />
+
+                {status === "invalid" && (
+                  <p role="alert" className="text-sm text-red-300">
+                    Please choose a project type.
+                  </p>
+                )}
 
                 {status === "error" && (
                   <p role="alert" className="text-sm text-red-300">

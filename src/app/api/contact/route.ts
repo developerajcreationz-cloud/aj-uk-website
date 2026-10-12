@@ -39,10 +39,10 @@ export async function POST(request: Request) {
 
   const name = clean(body.name, MAX.name);
   const email = clean(body.email, MAX.email);
-  const projectType = clean(body.projectType, MAX.projectType) || "Not specified";
+  const projectType = clean(body.projectType, MAX.projectType);
   const message = typeof body.message === "string" ? body.message.trim().slice(0, MAX.message) : "";
 
-  if (!name || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  if (!name || !message || !projectType || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return Response.json({ error: "Please complete all fields" }, { status: 400 });
   }
 
