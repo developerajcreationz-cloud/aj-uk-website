@@ -56,6 +56,12 @@ export function Contact() {
         }),
       });
       setStatus(res.ok ? "sent" : "error");
+      if (res.ok) {
+        // gtag exists only after the visitor accepted analytics cookies.
+        (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag?.("event", "generate_lead", {
+          form: "contact",
+        });
+      }
     } catch {
       setStatus("error");
     }

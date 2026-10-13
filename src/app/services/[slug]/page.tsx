@@ -5,9 +5,11 @@ import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { SERVICES, TOP_LEVEL_SERVICES, UK_PRICING, childrenOf, getService } from "@/content/services";
 import { Illustration, SERVICE_SCENES } from "@/components/illustrations";
 import { Reveal } from "@/components/ui/reveal";
+import { InlineText } from "@/components/sections/inline-text";
 import { Accordion } from "@/components/ui/accordion";
 import { JsonLd } from "@/components/seo/json-ld";
 import { POSTS } from "@/content/posts";
+import { pageMetadata } from "@/lib/metadata";
 import { SITE } from "@/config/site";
 
 export function generateStaticParams() {
@@ -18,12 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const s = getService(slug);
   if (!s) return {};
-  return {
-    title: { absolute: s.metaTitle },
-    description: s.metaDescription,
-    alternates: { canonical: `/services/${s.slug}/` },
-    openGraph: { title: s.metaTitle, description: s.metaDescription, url: `/services/${s.slug}/` },
-  };
+  return pageMetadata({ title: s.metaTitle, description: s.metaDescription, path: `/services/${s.slug}/` });
 }
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -90,7 +87,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-[2fr_1fr] md:gap-16">
           <div className="max-w-3xl space-y-5 text-base leading-relaxed text-ink/75 md:text-lg">
             {service.answer.map((p) => (
-              <p key={p.slice(0, 40)}>{p}</p>
+              <p key={p.slice(0, 40)}>
+                <InlineText text={p} />
+              </p>
             ))}
           </div>
           <div className="h-fit space-y-6">
@@ -145,14 +144,16 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               <h2 className="font-display text-3xl font-medium tracking-tight md:text-4xl">{section.h2}</h2>
               <div className="max-w-3xl space-y-4 text-base leading-relaxed text-ink/70">
                 {section.paragraphs.map((p) => (
-                  <p key={p.slice(0, 40)}>{p}</p>
+                  <p key={p.slice(0, 40)}>
+                    <InlineText text={p} />
+                  </p>
                 ))}
                 {section.bullets && (
                   <ul className="divide-y divide-ink/10 border-y border-ink/10">
                     {section.bullets.map((b) => (
                       <li key={b} className="flex gap-3 py-3">
                         <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-violet" />
-                        {b}
+                        <InlineText text={b} />
                       </li>
                     ))}
                   </ul>

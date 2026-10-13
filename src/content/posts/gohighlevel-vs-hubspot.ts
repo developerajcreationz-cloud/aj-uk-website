@@ -3,7 +3,7 @@ import type { Post } from "./types";
 export const gohighlevelVsHubspot: Post = {
   slug: "gohighlevel-vs-hubspot",
   title: "GoHighLevel vs HubSpot: which CRM fits a small business?",
-  metaTitle: "GoHighLevel vs HubSpot: CRM Cost and Fit Compared",
+  metaTitle: "GoHighLevel vs HubSpot: CRM Cost, Fit and Pricing Compared",
   metaDescription:
     "GoHighLevel vs HubSpot for small teams: published plan prices, a transparent yearly cost model, and clear rules for which CRM fits your business.",
   primaryKeyword: "gohighlevel vs hubspot",

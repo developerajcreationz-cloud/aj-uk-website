@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { Services } from "@/components/sections/services";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: { absolute: "Web Design, SEO, Ads & CRM Services | AJ Creationz" },
+export const metadata: Metadata = pageMetadata({
+  title: "Web Design, SEO, Ads & CRM Services | AJ Creationz",
   description:
     "Brand identity, WordPress, Shopify and custom websites, video editing, SEO, Meta and Google Ads, and GoHighLevel CRM for UK and US businesses.",
-  alternates: { canonical: "/services/" },
-};
+  path: "/services/",
+});
 
 export default function ServicesPage() {
   return (

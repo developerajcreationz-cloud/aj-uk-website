@@ -11,6 +11,7 @@ import { Reveal } from "@/components/ui/reveal";
 import { PostBlocks } from "@/components/sections/post-body";
 import { POSTS, getPost } from "@/content/posts";
 import { getService } from "@/content/services";
+import { pageMetadata } from "@/lib/metadata";
 import { SITE } from "@/config/site";
 
 export function generateStaticParams() {
@@ -21,21 +22,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const p = getPost(slug);
   if (!p) return {};
-  return {
-    title: { absolute: p.metaTitle },
+  return pageMetadata({
+    title: p.metaTitle,
     description: p.metaDescription,
-    alternates: { canonical: `/blog/${p.slug}/` },
-    authors: [{ name: p.author.name }],
-    openGraph: {
-      type: "article",
-      title: p.metaTitle,
-      description: p.metaDescription,
-      url: `/blog/${p.slug}/`,
-      publishedTime: p.datePublished,
-      modifiedTime: p.dateModified,
-      authors: [p.author.name],
-    },
-  };
+    path: `/blog/${p.slug}/`,
+    article: { publishedTime: p.datePublished, modifiedTime: p.dateModified, authors: [p.author.name] },
+  });
 }
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -63,6 +55,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           "@type": "Person",
           name: post.author.name,
           jobTitle: post.author.role,
+          url: `${SITE.url}/about/#team`,
           worksFor: { "@id": `${SITE.url}/#organization` },
         },
         publisher: { "@id": `${SITE.url}/#organization` },

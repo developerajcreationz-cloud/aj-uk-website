@@ -5,13 +5,14 @@ import { Reveal } from "@/components/ui/reveal";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { POSTS } from "@/content/posts";
 import { getService } from "@/content/services";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: { absolute: "Blog: Web Design, SEO, Ads & CRM Guides | AJ Creationz" },
+export const metadata: Metadata = pageMetadata({
+  title: "Blog: Web Design, SEO, Ads & CRM Guides | AJ Creationz",
   description:
-    "Practical guides with sourced price ranges, worksheets and checklists on websites, SEO, paid ads, CRM and video, for UK and US businesses.",
-  alternates: { canonical: "/blog/" },
-};
+    "Practical guides with sourced price ranges, worksheets and checklists on websites, SEO, paid ads, CRM and video, for UK and US businesses to use.",
+  path: "/blog/",
+});
 
 export default function BlogIndex() {
   return (

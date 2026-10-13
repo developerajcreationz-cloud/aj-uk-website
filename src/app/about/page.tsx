@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
 import { About } from "@/components/sections/about";
 import { Testimonials } from "@/components/sections/testimonials";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: { absolute: "About AJ Creationz | The Digital Agency Team & Approach" },
+export const metadata: Metadata = pageMetadata({
+  title: "About AJ Creationz | The Digital Agency Team & Approach",
   description:
-    "AJ Creationz is a creative and digital agency for UK and US businesses. Meet the team behind the websites, SEO, ads and CRM systems.",
-  alternates: { canonical: "/about/" },
-};
+    "AJ Creationz is a creative and digital agency for UK and US businesses. Meet the team behind our websites, SEO, ads, video and CRM systems and approach.",
+  path: "/about/",
+});
 
 export default function AboutPage() {
   return (

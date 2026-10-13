@@ -71,8 +71,7 @@ export const PROJECTS: Project[] = [
     category: "Social media kits and ad creatives",
     image: "/images/work/social-media-creatives.jpg",
     sourceUrl: "https://ajcreationz.co/portfolio/social-media-kits/",
-    brief:
-      "Social media kits and custom ad creatives produced for a client. A fuller brief for this project will be added.",
+    brief: "Social media kits and custom ad creatives produced for a client.",
     delivered: ["Social media kits", "Custom ad creatives"],
   },
 ];

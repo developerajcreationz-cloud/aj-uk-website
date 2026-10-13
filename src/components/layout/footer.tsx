@@ -7,6 +7,7 @@ import { useLenis } from "lenis/react";
 import { Magnetic } from "@/components/ui/magnetic";
 import { SITE } from "@/config/site";
 import { TOP_LEVEL_SERVICES } from "@/content/services";
+import { analyticsEnabled, openCookieSettings } from "@/components/layout/analytics";
 
 const COMPANY = [
   { label: "Work", href: "/work/" },
@@ -156,6 +157,16 @@ export function Footer() {
         <div className="mx-auto flex max-w-[1440px] flex-col-reverse items-center gap-5 px-6 py-6 md:flex-row md:justify-between md:px-10">
           <p className="text-xs text-cream/45">© {new Date().getFullYear()} AJ Creationz. All rights reserved.</p>
           <p className="text-xs text-cream/45">Serving businesses in the UK and the US, remotely.</p>
+          {analyticsEnabled && (
+            <button
+              type="button"
+              data-cursor-hover
+              onClick={openCookieSettings}
+              className="text-xs text-cream/45 underline underline-offset-4 transition-colors hover:text-lilac"
+            >
+              Cookie settings
+            </button>
+          )}
           <Magnetic strength={0.3}>
             <button
               type="button"

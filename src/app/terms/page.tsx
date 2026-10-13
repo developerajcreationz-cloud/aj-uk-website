@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { PageShell, PageHero } from "@/components/layout/page-shell";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Terms of Service",
-  description: "Terms for using the AJ Creationz website and services.",
-  alternates: { canonical: "/terms/" },
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Terms of Service | Working With AJ Creationz Digital Agency",
+  description:
+    "The terms for using the AJ Creationz website and hiring us: how projects are scoped and paid for, who owns the work, and our liability limits.",
+  path: "/terms/",
+});
 
 export default function Page() {
   return (

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
-import Script from "next/script";
 import { SmoothScroll } from "@/components/layout/smooth-scroll";
 import { Cursor } from "@/components/layout/cursor";
 import { ScrollProgress } from "@/components/layout/scroll-progress";
 import { ScrollToTop } from "@/components/layout/scroll-to-top";
+import { Analytics } from "@/components/layout/analytics";
 import { JsonLd } from "@/components/seo/json-ld";
+import { OG_IMAGE } from "@/lib/metadata";
 import { SITE } from "@/config/site";
 import "./globals.css";
 
@@ -26,21 +27,6 @@ export const metadata: Metadata = {
   title: { default: SITE.title, template: "%s — AJ Creationz" },
   description: SITE.description,
   applicationName: SITE.name,
-  keywords: [
-    "digital agency",
-    "creative agency",
-    "web design agency",
-    "branding agency",
-    "SEO agency",
-    "website design",
-    "Shopify web design agency",
-    "WordPress web design agency",
-    "Google Ads agency",
-    "Meta ads agency",
-    "GoHighLevel CRM",
-    "video editing",
-    "AJ Creationz",
-  ],
   authors: [{ name: SITE.name, url: `${SITE.url}/` }],
   alternates: { canonical: "/" },
   verification: { google: process.env.GOOGLE_SITE_VERIFICATION || SITE.googleVerification },
@@ -54,17 +40,18 @@ export const metadata: Metadata = {
     description: SITE.description,
     url: `${SITE.url}/`,
     siteName: SITE.name,
-    locale: "en",
+    locale: "en_GB",
+    alternateLocale: ["en_US"],
     type: "website",
+    images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE.title,
     description: SITE.description,
+    images: [OG_IMAGE.url],
   },
 };
-
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -104,14 +91,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${bricolage.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-cream text-ink cursor-enabled">
         <JsonLd data={jsonLd} />
-        {GA_ID && (
-          <>
-            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-            <Script id="ga4" strategy="afterInteractive">
-              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
-            </Script>
-          </>
-        )}
+        <Analytics />
         <SmoothScroll>
           <ScrollProgress />
           <Cursor />

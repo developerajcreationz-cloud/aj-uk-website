@@ -501,6 +501,35 @@ export const SERVICES: Service[] = [
         ],
       },
       {
+        h2: "Custom, WordPress or Shopify: how to decide",
+        paragraphs: ["Choose by the job the site has to do, not by what sounds most advanced. As a rule of thumb:"],
+        bullets: [
+          "**Mostly pages and a blog, edited often by your team:** [WordPress](/services/wordpress-web-design) is usually the faster and cheaper route.",
+          "**Selling products with standard checkout:** [Shopify](/services/shopify-web-design) handles payments, tax and inventory so you do not have to.",
+          "**Custom logic, your own data, logins or a product:** a custom build is the better fit, because plugins and apps start to fight each other.",
+          "**Not sure:** [our website development overview](/services/website-development) compares the options, and we will recommend the simplest one that works.",
+        ],
+      },
+      {
+        h2: "What you receive at handover",
+        paragraphs: [
+          "A custom site should never be a black box. At launch you get the items below, agreed in the quote.",
+        ],
+        bullets: [
+          "The full source code in a repository you own, with a README explaining how to run, change and deploy it",
+          "Hosting and domain set up in your accounts, with access details",
+          "Search basics built in: unique titles and descriptions, a sitemap, canonical URLs, structured data and 301 redirects if you are replacing an old site (see our [website migration checklist](/blog/website-migration-seo-checklist))",
+          "Analytics and conversion tracking installed and tested, with consent handled for your audience",
+          "A short walkthrough for the people who will edit content",
+        ],
+      },
+      {
+        h2: "Questions to ask any developer",
+        paragraphs: [
+          "Whoever you hire, get written answers to these first: Who owns the code and accounts? What happens if the developer is unavailable? How are updates and security patches handled, and what does that cost? How will the site be measured for speed on a mid-range phone? Vague answers are a warning sign.",
+        ],
+      },
+      {
         h2: "Security, hosting and maintenance",
         paragraphs: [
           "We handle deployment, environment configuration, dependency updates and security patching, and document how the site is built so you are never locked in to us.",
@@ -532,6 +561,14 @@ export const SERVICES: Service[] = [
         a: "Yes, if we connect it to a content management system. We agree this at the start.",
       },
       { q: "Will I own the code?", a: "Yes. You receive the source code and documentation on full payment." },
+      {
+        q: "How long does a custom build take?",
+        a: "It depends on scope. A marketing site with a few templates is far quicker than a portal with logins and integrations, so we give a timeline in the written quote after the scoping call.",
+      },
+      {
+        q: "What does a custom site cost to maintain?",
+        a: "Hosting is usually modest. The main ongoing cost is developer time for updates, security patches and new features, which we agree as a monthly plan or hourly rate before launch.",
+      },
     ],
     related: ["wordpress-web-design", "shopify-web-design", "seo-growth"],
   },
@@ -652,7 +689,7 @@ export const SERVICES: Service[] = [
     keyword: "SEO agency for small business",
     metaTitle: "SEO Agency for Small Business | Technical SEO & Content",
     metaDescription:
-      "SEO agency for small and growing UK and US businesses: technical audits, content, local and international SEO, and clear monthly reporting.",
+      "SEO agency for small and growing UK and US businesses: technical audits, content, local and international SEO, and clear monthly reports you can follow.",
     h1: "SEO agency for small and growing businesses",
     answer: [
       "SEO, or search engine optimization, is the work of making your website easier for search engines to crawl and more useful to the people searching, so you appear for the queries that bring in customers. AJ Creationz is an SEO agency for small and growing businesses in any market, and we focus on the fundamentals that compound: technical health, relevant content and honest measurement.",
@@ -766,7 +803,7 @@ export const SERVICES: Service[] = [
     description: "Paid campaigns built around profitable acquisition, tracked from click to customer.",
     tags: ["Meta Ads", "Google Ads", "Conversion tracking"],
     keyword: "PPC agency",
-    metaTitle: "PPC Agency | Google Ads & Meta Ads Management",
+    metaTitle: "PPC Agency | Google Ads & Meta Ads Management Services",
     metaDescription:
       "PPC agency managing Google Ads and Meta campaigns for UK and US businesses, with tracking that makes every pound and dollar accountable. Get a quote.",
     h1: "PPC agency for Google Ads and Meta Ads",
@@ -869,7 +906,7 @@ export const SERVICES: Service[] = [
     description: "Search, Shopping and Performance Max campaigns managed for profitable leads.",
     tags: ["Search", "Shopping", "Performance Max"],
     keyword: "Google Ads agency",
-    metaTitle: "Google Ads Agency | PPC Management Services",
+    metaTitle: "Google Ads Agency | Search, Shopping & PPC Management",
     metaDescription:
       "Google Ads agency managing Search, Shopping and Performance Max campaigns with conversion tracking and monthly reporting. Request an account review.",
     h1: "Google Ads agency and PPC management",
@@ -908,6 +945,32 @@ export const SERVICES: Service[] = [
         ],
       },
       {
+        h2: "Google Ads on its own, or alongside Meta?",
+        paragraphs: [
+          "This page covers Google Ads only. If you are still choosing between Google and Facebook or Instagram, read our [PPC agency overview](/services/meta-google-ads) or the guide to [Google Ads vs Facebook Ads](/blog/google-ads-vs-facebook-ads). For Meta campaigns specifically, see [Meta ads management](/services/meta-ads-management).",
+        ],
+      },
+      {
+        h2: "What we check in an existing account",
+        paragraphs: [
+          "If you already run Google Ads, the first week is an audit. We look at the items below and send you a short list of what we found, ranked by how much money it is wasting.",
+        ],
+        bullets: [
+          "Whether conversions are real actions (calls, forms, purchases) or just page views",
+          "Search terms that triggered your ads but have nothing to do with what you sell",
+          "Campaigns mixing brand and non-brand searches, which hides true cost per lead",
+          "Budgets limited on the best campaigns and spent on the weakest ones",
+          "Location and device settings that show ads outside your service area",
+          "Ad copy and landing pages that do not match the keywords they serve",
+        ],
+      },
+      {
+        h2: "What to prepare before we start",
+        paragraphs: [
+          "A short call is enough if you can tell us your average sale or lead value, how many leads you can handle, the areas you serve and what you have already tried. Access to your Google Ads account and website analytics lets us start the audit straight away.",
+        ],
+      },
+      {
         h2: "Landing pages and quality",
         paragraphs: [
           "Google rewards relevant ads and pages with lower costs. We match each ad group to a focused landing page, and our website team can build or improve it.",
@@ -938,6 +1001,14 @@ export const SERVICES: Service[] = [
       {
         q: "Do I need a website to run Google Ads?",
         a: "You need a landing page. If your current site is not suitable, we can build one.",
+      },
+      {
+        q: "Should I start with Google Ads or SEO?",
+        a: "Ads send traffic within days but stop when the budget stops. SEO takes longer to build and keeps working. Businesses that need leads now often start with ads and add SEO alongside.",
+      },
+      {
+        q: "How long before Google Ads is profitable?",
+        a: "Expect a learning period while tracking and search terms settle. We set a target cost per lead up front and report against it every month.",
       },
     ],
     related: ["meta-ads-management", "seo-growth", "website-development"],

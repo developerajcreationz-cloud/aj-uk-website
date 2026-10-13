@@ -5,13 +5,14 @@ import { Testimonials } from "@/components/sections/testimonials";
 import { PROJECTS } from "@/content/projects";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SITE } from "@/config/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: { absolute: "Our Work | Brand Identity, UI/UX & Social Case Studies" },
+export const metadata: Metadata = pageMetadata({
+  title: "Our Work | Brand Identity, UI/UX & Social Case Studies",
   description:
     "Brand identity, UI/UX and social media projects by AJ Creationz: NayaSource, Framily Adventures, Call Time and more, with the brief and what we delivered.",
-  alternates: { canonical: "/work/" },
-};
+  path: "/work/",
+});
 
 export default function WorkPage() {
   const jsonLd = {
