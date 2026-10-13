@@ -80,6 +80,14 @@ export function CaseStudies() {
                 )}
                 <Reveal delay={0.3}>
                   <div className="mt-8 flex flex-wrap gap-5 text-sm font-medium">
+                    {p.detail && (
+                      <Link
+                        href={`/work/${p.slug}/`}
+                        className="border-b border-ink bg-transparent pb-1 hover:text-violet"
+                      >
+                        Read the case study →
+                      </Link>
+                    )}
                     <a
                       href={p.sourceUrl}
                       target="_blank"

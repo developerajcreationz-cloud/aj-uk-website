@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef } from "react";
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import { Magnetic } from "@/components/ui/magnetic";
@@ -160,14 +161,14 @@ export function Hero() {
             </Magnetic>
 
             <Magnetic strength={0.25}>
-              <a
+              <Link
                 href="/work/"
                 data-cursor-hover
                 className="group inline-flex items-center gap-2 border-b border-ink/25 pb-1 text-sm font-medium text-ink transition-colors duration-300 hover:border-ink"
               >
                 See our work
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-              </a>
+              </Link>
             </Magnetic>
           </motion.div>
         </div>

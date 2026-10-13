@@ -1,7 +1,7 @@
 export const SITE = {
   name: "AJ Creationz",
   url: "https://ajcreationz.co.uk",
-  /** Main brand site (separate domain with different content). */
+  /** Global brand site. ajcreationz.co serves the world; this site (ajcreationz.co.uk) serves the UK and US. */
   mainSiteUrl: "https://ajcreationz.co",
   title: "Digital Agency | Web, Brand, SEO & Ads | AJ Creationz",
   description:

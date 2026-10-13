@@ -2,19 +2,22 @@
 
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Magnetic } from "@/components/ui/magnetic";
 
 type Project = {
+  slug: string;
   title: string;
   category: string;
   image: string;
 };
 
 const COLUMN_A: Project[] = [
-  { title: "Call Time", category: "Brand Identity", image: "/images/work/call-time.jpg" },
+  { slug: "call-time", title: "Call Time", category: "Brand Identity", image: "/images/work/call-time.jpg" },
   {
+    slug: "social-media-creatives",
     title: "Social Media Creatives",
     category: "Social Media Kits",
     image: "/images/work/social-media-creatives.jpg",
@@ -23,17 +26,18 @@ const COLUMN_A: Project[] = [
 
 const COLUMN_B: Project[] = [
   {
+    slug: "framily-adventures",
     title: "Framily Adventures",
     category: "Brand Identity",
     image: "/images/work/framily-adventures.jpg",
   },
-  { title: "NayaSource", category: "Branding", image: "/images/work/nayasource.jpg" },
+  { slug: "nayasource", title: "NayaSource", category: "Branding", image: "/images/work/nayasource.jpg" },
 ];
 
 function ProjectCard({ project, priority }: { project: Project; priority?: boolean }) {
   return (
-    <a
-      href="/work/"
+    <Link
+      href={project.slug === "social-media-creatives" ? "/work/" : `/work/${project.slug}/`}
       data-cursor-hover
       className="group relative block aspect-[4/3] w-full overflow-hidden rounded-2xl bg-cream/5"
     >
@@ -63,7 +67,7 @@ function ProjectCard({ project, priority }: { project: Project; priority?: boole
           </svg>
         </span>
       </div>
-    </a>
+    </Link>
   );
 }
 
@@ -137,14 +141,14 @@ export function Work() {
           </motion.p>
 
           <Magnetic strength={0.25}>
-            <a
+            <Link
               href="/work/"
               data-cursor-hover
               className="group mt-2 inline-flex w-fit items-center gap-2 border-b border-cream/25 pb-1 text-sm font-medium transition-colors duration-300 hover:border-cream"
             >
               See all case studies
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </a>
+            </Link>
           </Magnetic>
         </div>
 

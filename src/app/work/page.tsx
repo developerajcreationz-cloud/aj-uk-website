@@ -26,7 +26,7 @@ export default function WorkPage() {
         name: p.title,
         genre: p.category,
         description: p.brief,
-        url: `${SITE.url}/work/#${p.slug}`,
+        url: p.detail ? `${SITE.url}/work/${p.slug}/` : `${SITE.url}/work/#${p.slug}`,
         creator: { "@id": `${SITE.url}/#organization` },
       },
     })),
@@ -38,7 +38,7 @@ export default function WorkPage() {
         eyebrow="Work"
         scene="brand"
         title="Projects we have built and the briefs behind them."
-        intro="Four projects from our portfolio, each with the brief we were given and what we delivered. We list outcomes only where we can state them accurately."
+        intro="Four projects from our portfolio, each with the brief we were given and what we delivered. Three have a full case study. We list outcomes only where we can state them accurately."
       />
       <CaseStudies />
       <Testimonials />

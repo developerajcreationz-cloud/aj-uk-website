@@ -37,6 +37,21 @@ const TESTIMONIALS = [
   },
 ];
 
+const AVATARS = ["bg-violet", "bg-plum", "bg-emerald-600", "bg-amber-600", "bg-sky-600", "bg-rose-600"];
+const avatarColor = (name: string) => AVATARS[[...name].reduce((n, c) => n + c.charCodeAt(0), 0) % AVATARS.length];
+
+function Stars() {
+  return (
+    <div role="img" aria-label="5 out of 5 stars" className="mt-4 flex gap-0.5 text-[#fbbc04]">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <svg key={i} width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+          <path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.7 7.1L12 17.6 5.7 21.3l1.7-7.1L2 9.5l7.1-.6L12 2z" />
+        </svg>
+      ))}
+    </div>
+  );
+}
+
 export function Testimonials() {
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -145,20 +160,25 @@ export function Testimonials() {
           className="flex w-max cursor-grab gap-6 active:cursor-grabbing"
         >
           {TESTIMONIALS.map((t) => (
-            <div
+            <figure
               key={t.name}
-              className="flex w-[85vw] shrink-0 flex-col justify-between rounded-2xl border border-cream/10 bg-cream/[0.03] p-8 sm:w-[420px] md:p-10"
+              className="flex w-[85vw] shrink-0 flex-col rounded-2xl bg-white p-6 text-ink shadow-[0_20px_50px_-30px_rgba(0,0,0,0.6)] sm:w-[400px] md:p-7"
             >
-              <div>
-                <p className="font-display text-xl leading-snug tracking-tight text-cream sm:text-2xl">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-              </div>
-              <div className="mt-8">
-                <p className="text-sm font-medium text-cream">{t.name}</p>
-                <p className="mt-0.5 text-xs text-cream/50">{t.role}</p>
-              </div>
-            </div>
+              <figcaption className="flex items-center gap-3">
+                <span
+                  aria-hidden
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-base font-medium text-white ${avatarColor(t.name)}`}
+                >
+                  {t.name.charAt(0)}
+                </span>
+                <span className="min-w-0">
+                  <span className="block truncate text-sm font-medium text-ink">{t.name}</span>
+                  <span className="block truncate text-xs text-ink/55">{t.role}</span>
+                </span>
+              </figcaption>
+              <Stars />
+              <blockquote className="mt-3 text-[15px] leading-relaxed text-ink/80">{t.quote}</blockquote>
+            </figure>
           ))}
         </motion.div>
       </div>

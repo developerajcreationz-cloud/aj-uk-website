@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE } from "@/config/site";
 import { SERVICES } from "@/content/services";
 import { POSTS } from "@/content/posts";
+import { PROJECTS_WITH_PAGES } from "@/content/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUpdated = new Date(SITE.contentUpdated);
@@ -11,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { p: "/services", priority: 0.9 },
     ...SERVICES.map((s) => ({ p: `/services/${s.slug}`, priority: s.parent ? 0.7 : 0.8 })),
     { p: "/work", priority: 0.8 },
+    ...PROJECTS_WITH_PAGES.map((project) => ({ p: `/work/${project.slug}`, priority: 0.6 })),
     { p: "/blog", priority: 0.7 },
     ...POSTS.map((post) => ({ p: `/blog/${post.slug}`, priority: 0.6, modified: post.dateModified })),
     { p: "/about", priority: 0.7 },
