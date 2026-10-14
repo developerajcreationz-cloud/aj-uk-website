@@ -30,6 +30,13 @@ export default function BlogIndex() {
       <section className="bg-cream px-6 pb-24 md:px-10 md:pb-32">
         <div className="mx-auto max-w-[1440px]">
           <nav aria-label="Blog categories" className="mb-12 flex flex-wrap gap-3">
+            <Link
+              href="#all"
+              data-cursor-hover
+              className="rounded-full border border-ink bg-ink px-4 py-2 text-sm text-cream transition-colors hover:bg-transparent hover:text-ink"
+            >
+              All guides <span className="opacity-70">({POSTS.length})</span>
+            </Link>
             {groups.map((g) => (
               <Link
                 key={g.slug}
@@ -41,6 +48,39 @@ export default function BlogIndex() {
               </Link>
             ))}
           </nav>
+
+          <section id="all" aria-labelledby="all-heading" className="mb-16 scroll-mt-28 md:mb-24">
+            <h2 id="all-heading" className="font-display text-3xl font-medium tracking-tight md:text-5xl">
+              All guides, newest first
+            </h2>
+            <p className="mt-3 max-w-2xl text-ink/60">
+              Every guide in publish order. New guides are added daily and appear at the top.
+            </p>
+            <ol className="mt-8 divide-y divide-ink/10 border-y border-ink/10">
+              {POSTS.map((p) => (
+                <li key={p.slug}>
+                  <Link
+                    href={`/blog/${p.slug}`}
+                    data-cursor-hover
+                    className="flex flex-col gap-1 py-4 transition-colors hover:text-violet-700 md:flex-row md:items-baseline md:gap-6"
+                  >
+                    <time dateTime={p.datePublished} className="w-32 shrink-0 text-sm text-ink/60">
+                      {new Date(`${p.datePublished}T00:00:00Z`).toLocaleDateString("en-GB", {
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric",
+                        timeZone: "UTC",
+                      })}
+                    </time>
+                    <span className="font-display text-lg font-medium md:text-xl">{p.title}</span>
+                    <span className="text-xs uppercase tracking-wide text-ink/60 md:ml-auto">
+                      {categoryOf(p)?.label}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </section>
 
           <div className="space-y-16 md:space-y-24">
             {groups.map((g) => (
