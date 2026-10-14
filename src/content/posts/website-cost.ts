@@ -19,8 +19,8 @@ export const websiteCost: Post = {
   scene: "website",
   related: ["shopify-vs-wordpress", "website-migration-seo-checklist"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-10",
-  dateModified: "2026-10-10",
+  datePublished: "2026-10-01",
+  dateModified: "2026-10-01",
   takeaways: [
     "Price ranges for freelancer, agency and ecommerce websites, in pounds and dollars, with the source of each figure",
     "A worksheet that turns a quote into a three-year cost, with the arithmetic shown",

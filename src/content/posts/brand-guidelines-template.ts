@@ -18,8 +18,8 @@ export const brandGuidelinesTemplate: Post = {
   scene: "brand",
   related: ["how-much-does-a-website-cost", "reels-and-tiktok-editing-guide"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-10",
-  dateModified: "2026-10-10",
+  datePublished: "2026-10-07",
+  dateModified: "2026-10-07",
   takeaways: [
     "The nine sections a small business needs, and what each one must say",
     "A filled-in example for a fictional business, so you can copy the level of detail",

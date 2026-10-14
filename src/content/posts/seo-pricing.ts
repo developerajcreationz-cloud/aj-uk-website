@@ -19,8 +19,8 @@ export const seoPricing: Post = {
   scene: "seo",
   related: ["how-much-does-a-website-cost", "google-ads-vs-facebook-ads"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-10",
-  dateModified: "2026-10-10",
+  datePublished: "2026-10-02",
+  dateModified: "2026-10-02",
   takeaways: [
     "Typical monthly SEO prices for small businesses, in pounds and dollars, with named sources",
     "What you should receive at each price, so you can spot a package that is mostly automation",

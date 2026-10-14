@@ -18,8 +18,8 @@ export const reelsAndTiktokEditingGuide: Post = {
   scene: "video",
   related: ["brand-guidelines-template", "google-ads-vs-facebook-ads"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-10",
-  dateModified: "2026-10-10",
+  datePublished: "2026-10-08",
+  dateModified: "2026-10-08",
   takeaways: [
     "Instagram Reels safe zones with the pixel math, for organic posts and for ads",
     "Caption and hook rules you can apply in any editor",

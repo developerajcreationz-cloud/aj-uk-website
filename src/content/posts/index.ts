@@ -10,7 +10,7 @@ import { reelsAndTiktokEditingGuide } from "./reels-and-tiktok-editing-guide";
 
 export type { Post, Block } from "./types";
 
-/** Newest first. */
+/** Newest first (sorted by publish date). */
 export const POSTS: Post[] = [
   websiteCost,
   seoPricing,
@@ -20,7 +20,7 @@ export const POSTS: Post[] = [
   websiteMigrationSeoChecklist,
   brandGuidelinesTemplate,
   reelsAndTiktokEditingGuide,
-];
+].sort((a, b) => b.datePublished.localeCompare(a.datePublished));
 
 export const getPost = (slug: string) => POSTS.find((p) => p.slug === slug);
 export const postsForService = (serviceSlug: string) => POSTS.filter((p) => p.parent === serviceSlug);

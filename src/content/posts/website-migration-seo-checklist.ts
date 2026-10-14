@@ -19,8 +19,8 @@ export const websiteMigrationSeoChecklist: Post = {
   scene: "migration",
   related: ["how-much-does-a-website-cost", "shopify-vs-wordpress"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-10",
-  dateModified: "2026-10-10",
+  datePublished: "2026-10-06",
+  dateModified: "2026-10-06",
   takeaways: [
     "A before, during and after checklist you can hand to whoever is building the new site",
     "A redirect map template with worked examples, including the chain mistake to avoid",

@@ -19,8 +19,8 @@ export const gohighlevelVsHubspot: Post = {
   scene: "crm",
   related: ["google-ads-vs-facebook-ads", "seo-pricing"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-10",
-  dateModified: "2026-10-10",
+  datePublished: "2026-10-05",
+  dateModified: "2026-10-05",
   takeaways: [
     "Published GoHighLevel and HubSpot prices, with the sources and their limits",
     "A yearly cost model with the arithmetic shown, so you can rerun it for your team size",

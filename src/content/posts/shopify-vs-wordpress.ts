@@ -18,8 +18,8 @@ export const shopifyVsWordpress: Post = {
   scene: "platforms",
   related: ["how-much-does-a-website-cost", "website-migration-seo-checklist"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-10",
-  dateModified: "2026-10-10",
+  datePublished: "2026-10-03",
+  dateModified: "2026-10-03",
   takeaways: [
     "Shopify plan prices and WordPress running costs, with the sources and their limits",
     "An 8-question scorecard that gives you a recommendation from your own answers",

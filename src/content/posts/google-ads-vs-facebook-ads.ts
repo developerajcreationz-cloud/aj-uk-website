@@ -17,8 +17,8 @@ export const googleAdsVsFacebookAds: Post = {
   scene: "ads",
   related: ["seo-pricing", "gohighlevel-vs-hubspot"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-10",
-  dateModified: "2026-10-10",
+  datePublished: "2026-10-04",
+  dateModified: "2026-10-04",
   takeaways: [
     "A simple rule for choosing between searches (Google) and interruptions (Meta), with examples",
     "A formula for the most you can pay per lead and still profit, with the arithmetic shown",
