@@ -53,7 +53,7 @@ export function Footer() {
           className="flex flex-col gap-10 border-b border-cream/10 pb-16 md:flex-row md:items-end md:justify-between md:pb-20"
         >
           <div>
-            <p className="mb-5 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/50">
+            <p className="mb-5 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/55">
               <span className="relative flex h-2 w-2">
                 <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-lilac" />
               </span>
@@ -108,7 +108,7 @@ export function Footer() {
           </motion.div>
 
           <motion.nav {...reveal(1)} aria-label="Services">
-            <p className="mb-5 text-xs font-medium uppercase tracking-wide text-cream/40">Services</p>
+            <p className="mb-5 text-xs font-medium uppercase tracking-wide text-cream/55">Services</p>
             <ul className="flex flex-col gap-3">
               {TOP_LEVEL_SERVICES.map((s) => (
                 <li key={s.slug}>
@@ -121,7 +121,7 @@ export function Footer() {
           </motion.nav>
 
           <motion.nav {...reveal(2)} aria-label="Company">
-            <p className="mb-5 text-xs font-medium uppercase tracking-wide text-cream/40">Company</p>
+            <p className="mb-5 text-xs font-medium uppercase tracking-wide text-cream/55">Company</p>
             <ul className="flex flex-col gap-3">
               {COMPANY.map((c) => (
                 <li key={c.href}>
@@ -134,7 +134,7 @@ export function Footer() {
           </motion.nav>
 
           <motion.div {...reveal(3)}>
-            <p className="mb-5 text-xs font-medium uppercase tracking-wide text-cream/40">Connect</p>
+            <p className="mb-5 text-xs font-medium uppercase tracking-wide text-cream/55">Connect</p>
             <ul className="flex flex-col gap-3">
               <li>
                 <a href={`mailto:${SITE.email}`} data-cursor-hover className={linkClass}>
@@ -160,14 +160,14 @@ export function Footer() {
 
       <div className="relative border-t border-cream/10">
         <div className="mx-auto flex max-w-[1440px] flex-col-reverse items-center gap-5 px-6 py-6 md:flex-row md:justify-between md:px-10">
-          <p className="text-xs text-cream/45">© {new Date().getFullYear()} AJ Creationz. All rights reserved.</p>
-          <p className="text-xs text-cream/45">Serving businesses in the UK and the US, remotely.</p>
+          <p className="text-xs text-cream/55">© {new Date().getFullYear()} AJ Creationz. All rights reserved.</p>
+          <p className="text-xs text-cream/55">Serving businesses in the UK and the US, remotely.</p>
           {analyticsEnabled && (
             <button
               type="button"
               data-cursor-hover
               onClick={openCookieSettings}
-              className="text-xs text-cream/45 underline underline-offset-4 transition-colors hover:text-lilac"
+              className="text-xs text-cream/55 underline underline-offset-4 transition-colors hover:text-lilac"
             >
               Cookie settings
             </button>

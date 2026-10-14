@@ -11,10 +11,10 @@ type Status = "idle" | "sending" | "sent" | "error" | "invalid";
 function Field({ label, ...props }: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <label className="group block">
-      <span className="text-xs font-medium uppercase tracking-wide text-cream/45">{label}</span>
+      <span className="text-xs font-medium uppercase tracking-wide text-cream/55">{label}</span>
       <input
         {...props}
-        className="mt-2 w-full border-b border-cream/20 bg-transparent pb-3 text-base text-cream outline-none transition-colors duration-300 placeholder:text-cream/25 focus:border-lilac"
+        className="mt-2 w-full border-b border-cream/20 bg-transparent pb-3 text-base text-cream outline-none transition-colors duration-300 placeholder:text-cream/55 focus:border-lilac"
       />
     </label>
   );
@@ -86,7 +86,7 @@ export function Contact() {
           className="flex flex-col justify-between gap-12"
         >
           <div>
-            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/50">
+            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/55">
               <span className="relative flex h-2 w-2">
                 <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-lilac" />
               </span>
@@ -162,7 +162,7 @@ export function Contact() {
                 </span>
               </button>
             </Magnetic>
-            <p className="text-xs text-cream/40">{copied ? "Copied to clipboard" : "Click to copy"}</p>
+            <p className="text-xs text-cream/55">{copied ? "Copied to clipboard" : "Click to copy"}</p>
           </div>
         </motion.div>
 
@@ -211,7 +211,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <span className="text-xs font-medium uppercase tracking-wide text-cream/45">Project type</span>
+                  <span className="text-xs font-medium uppercase tracking-wide text-cream/55">Project type</span>
                   <div role="radiogroup" aria-label="Project type" aria-required className="mt-3 flex flex-wrap gap-2">
                     {PROJECT_TYPES.map((type) => (
                       <button
@@ -237,13 +237,13 @@ export function Contact() {
                 </div>
 
                 <label className="block">
-                  <span className="text-xs font-medium uppercase tracking-wide text-cream/45">Message</span>
+                  <span className="text-xs font-medium uppercase tracking-wide text-cream/55">Message</span>
                   <textarea
                     name="message"
                     rows={4}
                     placeholder="Tell us about the project…"
                     required
-                    className="mt-2 w-full resize-none border-b border-cream/20 bg-transparent pb-3 text-base text-cream outline-none transition-colors duration-300 placeholder:text-cream/25 focus:border-lilac"
+                    className="mt-2 w-full resize-none border-b border-cream/20 bg-transparent pb-3 text-base text-cream outline-none transition-colors duration-300 placeholder:text-cream/55 focus:border-lilac"
                   />
                 </label>
 

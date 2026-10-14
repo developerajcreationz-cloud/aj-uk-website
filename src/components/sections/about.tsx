@@ -61,7 +61,7 @@ export function About() {
             variants={fadeUp}
             custom={0}
           >
-            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/50">
+            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/60">
               <span className="h-1.5 w-1.5 rounded-full bg-violet" />
               About us
             </p>
@@ -116,7 +116,7 @@ export function About() {
               <p className="font-display text-3xl text-ink md:text-5xl">
                 <CountUp value={stat.value} decimals={stat.decimals} suffix={stat.suffix} />
               </p>
-              <p className="mt-1 text-xs uppercase tracking-wide text-ink/50 md:text-sm">{stat.label}</p>
+              <p className="mt-1 text-xs uppercase tracking-wide text-ink/60 md:text-sm">{stat.label}</p>
             </div>
           ))}
         </motion.div>
@@ -149,24 +149,26 @@ export function About() {
           </p>
           <ul id="team" className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8">
             {SITE.team.map((member, i) => (
-              <Reveal key={member.name} dir="up" delay={i * 0.1} className="h-full">
-                <li className="group overflow-hidden rounded-2xl border border-ink/10 bg-white/60 transition-all duration-500 hover:-translate-y-2 hover:border-violet/40 hover:shadow-[0_30px_60px_-30px_rgba(76,29,149,0.4)]">
-                  {"photo" in member && member.photo && (
-                    <Image
-                      src={member.photo}
-                      alt={`${member.name}, ${member.role} at AJ Creationz`}
-                      width={600}
-                      height={800}
-                      sizes="(min-width: 768px) 30vw, 90vw"
-                      className="aspect-[3/4] w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                    />
-                  )}
-                  <div className="p-6">
-                    <p className="font-display text-xl font-medium text-ink">{member.name}</p>
-                    <p className="mt-1 text-sm text-ink/60">{member.role}</p>
+              <li key={member.name} className="h-full">
+                <Reveal dir="up" delay={i * 0.1} className="h-full">
+                  <div className="group overflow-hidden rounded-2xl border border-ink/10 bg-white/60 transition-all duration-500 hover:-translate-y-2 hover:border-violet/40 hover:shadow-[0_30px_60px_-30px_rgba(76,29,149,0.4)]">
+                    {"photo" in member && member.photo && (
+                      <Image
+                        src={member.photo}
+                        alt={`${member.name}, ${member.role} at AJ Creationz`}
+                        width={600}
+                        height={800}
+                        sizes="(min-width: 768px) 30vw, 90vw"
+                        className="aspect-[3/4] w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      />
+                    )}
+                    <div className="p-6">
+                      <p className="font-display text-xl font-medium text-ink">{member.name}</p>
+                      <p className="mt-1 text-sm text-ink/60">{member.role}</p>
+                    </div>
                   </div>
-                </li>
-              </Reveal>
+                </Reveal>
+              </li>
             ))}
           </ul>
         </div>

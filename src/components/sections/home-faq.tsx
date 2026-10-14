@@ -29,7 +29,7 @@ export function HomeFaq() {
       />
       <div className="relative mx-auto grid max-w-[1440px] gap-12 md:grid-cols-[1fr_1.6fr] md:gap-20">
         <div className="md:sticky md:top-32 md:h-fit">
-          <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/50">
+          <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/60">
             <span className="h-1.5 w-1.5 rounded-full bg-violet" />
             FAQ
           </p>

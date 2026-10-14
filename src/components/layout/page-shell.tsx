@@ -46,7 +46,7 @@ export function PageHero({
       >
         <div>
           {crumbs && (
-            <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap gap-2 text-xs text-ink/50">
+            <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap gap-2 text-xs text-ink/60">
               {crumbs.map((c, i) => (
                 <span key={c.label} className="flex gap-2">
                   {c.href ? (
@@ -61,7 +61,7 @@ export function PageHero({
               ))}
             </nav>
           )}
-          <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/50">
+          <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/60">
             <span className="h-1.5 w-1.5 rounded-full bg-violet" />
             {eyebrow}
           </p>

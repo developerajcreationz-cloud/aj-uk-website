@@ -173,3 +173,45 @@ body {
     animation: none;
   }
 }
+
+/*
+ * Hero entrance runs in CSS so it does not wait for hydration. Text that can be the Largest Contentful Paint
+ * (headline, intro, logo) is never started at opacity 0, because Chrome skips fully transparent elements and
+ * reports no LCP at all. The headline only slides; badge, buttons and stats may fade because they are not candidates.
+ */
+@keyframes hero-rise {
+  from {
+    transform: translateY(0.3em);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes hero-fade {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero-rise {
+  animation: hero-rise 0.7s var(--ease-out-quart) both;
+  animation-delay: calc(var(--i, 0) * 60ms);
+}
+
+.hero-fade {
+  animation: hero-fade 0.6s var(--ease-out-quart) both;
+  animation-delay: var(--d, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rise,
+  .hero-fade {
+    animation: none;
+  }
+}

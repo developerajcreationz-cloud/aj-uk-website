@@ -178,7 +178,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                   </div>
                 ))}
               </dl>
-              <p className="mt-4 text-xs leading-relaxed text-ink/50">{service.pricing.note}</p>
+              <p className="mt-4 text-xs leading-relaxed text-ink/60">{service.pricing.note}</p>
               {uk && (
                 <>
                   <h3 className="font-display mt-10 text-xl font-medium tracking-tight md:text-2xl">
@@ -193,7 +193,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                       </div>
                     ))}
                   </dl>
-                  <p className="mt-4 text-xs leading-relaxed text-ink/50">{uk.note}</p>
+                  <p className="mt-4 text-xs leading-relaxed text-ink/60">{uk.note}</p>
                 </>
               )}
             </div>
@@ -203,7 +203,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
       <section className="bg-ink px-6 py-20 text-cream md:px-10 md:py-28">
         <div className="mx-auto max-w-[1440px]">
-          <p className="mb-3 text-xs font-medium uppercase tracking-wide text-cream/50">Our method</p>
+          <p className="mb-3 text-xs font-medium uppercase tracking-wide text-cream/55">Our method</p>
           <h2 className="font-display mb-12 text-3xl font-medium tracking-tight md:text-5xl">{service.method.name}</h2>
           <ol className="grid gap-6 md:grid-cols-3">
             {service.method.steps.map((step, i) => (
@@ -249,7 +249,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
       <section className="border-t border-ink/10 bg-cream px-6 py-12 md:px-10">
         <div className="mx-auto flex max-w-[1440px] flex-wrap gap-3">
-          <span className="w-full text-xs uppercase tracking-wide text-ink/40">Related services</span>
+          <span className="w-full text-xs uppercase tracking-wide text-ink/60">Related services</span>
           {[...(parent ? [parent] : []), ...related].map((s) => (
             <Link
               key={s.slug}

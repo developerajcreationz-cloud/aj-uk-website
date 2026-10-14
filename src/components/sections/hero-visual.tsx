@@ -75,7 +75,7 @@ export function HeroVisual({
         <div className={cn(card, "p-6")}>
           <div className="flex items-start justify-between">
             <div>
-              <p className="text-[11px] font-medium uppercase tracking-wider text-ink/50">Campaign reach</p>
+              <p className="text-[11px] font-medium uppercase tracking-wider text-ink/60">Campaign reach</p>
               <p className="font-display mt-1 text-5xl font-medium leading-none tracking-tight text-ink">
                 +<CountUp value={248} suffix="%" duration={2} />
               </p>
@@ -97,7 +97,7 @@ export function HeroVisual({
               />
             ))}
           </div>
-          <div className="mt-2 flex justify-between text-[10px] uppercase tracking-wide text-ink/40">
+          <div className="mt-2 flex justify-between text-[10px] uppercase tracking-wide text-ink/60">
             <span>Wk 1</span>
             <span>Wk 7</span>
           </div>
@@ -208,7 +208,7 @@ export function HeroVisual({
               <div className="h-1.5 w-2/3 rounded-full bg-ink/10" />
             </div>
           </div>
-          <p className="mt-3 text-[10px] font-medium uppercase tracking-wide text-ink/50">SEO &amp; growth</p>
+          <p className="mt-3 text-[10px] font-medium uppercase tracking-wide text-ink/60">SEO &amp; growth</p>
         </div>
       </Layer>
 

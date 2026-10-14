@@ -37,7 +37,7 @@ export function CaseStudies() {
 
               <div className="relative flex flex-col justify-center">
                 <Reveal dir={flip ? "left" : "right"}>
-                  <p className="text-xs font-medium uppercase tracking-wide text-ink/50">{p.category}</p>
+                  <p className="text-xs font-medium uppercase tracking-wide text-ink/60">{p.category}</p>
                 </Reveal>
                 <SplitWords
                   text={p.title}
@@ -45,11 +45,11 @@ export function CaseStudies() {
                   accentClassName=""
                 />
                 <Reveal delay={0.1}>
-                  <h3 className="mt-6 text-sm font-medium uppercase tracking-wide text-ink/50">The brief</h3>
+                  <h3 className="mt-6 text-sm font-medium uppercase tracking-wide text-ink/60">The brief</h3>
                   <p className="mt-2 leading-relaxed text-ink/70">{p.brief}</p>
                 </Reveal>
                 <Reveal delay={0.15}>
-                  <h3 className="mt-6 text-sm font-medium uppercase tracking-wide text-ink/50">What we delivered</h3>
+                  <h3 className="mt-6 text-sm font-medium uppercase tracking-wide text-ink/60">What we delivered</h3>
                   <ul className="mt-2 divide-y divide-ink/10 border-y border-ink/10">
                     {p.delivered.map((d, n) => (
                       <li
@@ -64,7 +64,7 @@ export function CaseStudies() {
                 </Reveal>
                 {p.approach && (
                   <Reveal delay={0.2}>
-                    <h3 className="mt-6 text-sm font-medium uppercase tracking-wide text-ink/50">Design approach</h3>
+                    <h3 className="mt-6 text-sm font-medium uppercase tracking-wide text-ink/60">Design approach</h3>
                     <p className="mt-2 leading-relaxed text-ink/70">{p.approach}</p>
                   </Reveal>
                 )}
@@ -72,7 +72,7 @@ export function CaseStudies() {
                   <Reveal delay={0.25}>
                     <blockquote className="mt-6 border-l-2 border-violet pl-4">
                       <p className="font-display text-lg leading-snug">&ldquo;{p.quote.text}&rdquo;</p>
-                      <footer className="mt-2 text-sm text-ink/55">
+                      <footer className="mt-2 text-sm text-ink/60">
                         {p.quote.name}, {p.quote.role}
                       </footer>
                     </blockquote>

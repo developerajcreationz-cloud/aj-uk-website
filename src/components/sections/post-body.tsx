@@ -49,7 +49,7 @@ export function PostBlocks({ blocks }: { blocks: Block[] }) {
               <figure key={i} className="overflow-x-auto">
                 <table className="w-full min-w-[520px] border-collapse text-left text-sm">
                   {b.caption && (
-                    <caption className="mb-2 text-left text-xs uppercase tracking-wide text-ink/50">
+                    <caption className="mb-2 text-left text-xs uppercase tracking-wide text-ink/60">
                       {b.caption}
                     </caption>
                   )}
@@ -74,7 +74,7 @@ export function PostBlocks({ blocks }: { blocks: Block[] }) {
                     ))}
                   </tbody>
                 </table>
-                {b.note && <figcaption className="mt-3 text-xs leading-relaxed text-ink/50">{b.note}</figcaption>}
+                {b.note && <figcaption className="mt-3 text-xs leading-relaxed text-ink/60">{b.note}</figcaption>}
               </figure>
             );
           case "callout":

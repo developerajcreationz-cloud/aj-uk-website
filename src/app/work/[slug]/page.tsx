@@ -65,7 +65,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-16">
           <aside className="h-fit space-y-8 lg:sticky lg:top-28">
             <div>
-              <h2 className="text-xs font-medium uppercase tracking-wide text-ink/50">Services</h2>
+              <h2 className="text-xs font-medium uppercase tracking-wide text-ink/60">Services</h2>
               <ul className="mt-3 divide-y divide-ink/10 border-y border-ink/10 text-sm text-ink/75">
                 {detail.services.map((s) => (
                   <li key={s} className="flex gap-3 py-3">
@@ -102,7 +102,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             {project.quote && (
               <blockquote className="border-l-2 border-violet pl-5">
                 <p className="font-display text-xl leading-snug md:text-2xl">&ldquo;{project.quote.text}&rdquo;</p>
-                <footer className="mt-3 text-sm text-ink/55">
+                <footer className="mt-3 text-sm text-ink/60">
                   {project.quote.name}, {project.quote.role}
                 </footer>
               </blockquote>
@@ -124,7 +124,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                       priority={i === 0}
                       className="h-auto w-full rounded-2xl bg-ink/5"
                     />
-                    <figcaption className="mt-2 text-sm text-ink/55">{g.caption}</figcaption>
+                    <figcaption className="mt-2 text-sm text-ink/60">{g.caption}</figcaption>
                   </figure>
                 ))}
               </div>
@@ -138,7 +138,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                     <Link href={`/work/${p.slug}/`} className="underline decoration-violet/50 underline-offset-4">
                       {p.title}
                     </Link>
-                    <span className="text-ink/55"> · {p.category}</span>
+                    <span className="text-ink/60"> · {p.category}</span>
                   </li>
                 ))}
                 <li>

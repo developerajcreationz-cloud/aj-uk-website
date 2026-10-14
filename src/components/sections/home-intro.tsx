@@ -184,7 +184,7 @@ export function HomeIntro() {
               viewport={{ once: true, amount: 0.6 }}
               variants={fadeUp}
               custom={0}
-              className="mb-5 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/50"
+              className="mb-5 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/60"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-violet" />
               What AJ Creationz does
@@ -242,7 +242,7 @@ export function HomeIntro() {
             transition={{ duration: 0.9, ease: [0.25, 1, 0.5, 1] }}
           >
             <GrowthLoop />
-            <p className="mt-6 text-center text-xs uppercase tracking-wide text-ink/45">
+            <p className="mt-6 text-center text-xs uppercase tracking-wide text-ink/60">
               One loop: brand, site, traffic, CRM
             </p>
           </motion.div>

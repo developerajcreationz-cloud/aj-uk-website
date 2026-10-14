@@ -110,7 +110,7 @@ export function Work() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.6 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/50"
+            className="flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/55"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-lilac" />
             Selected work

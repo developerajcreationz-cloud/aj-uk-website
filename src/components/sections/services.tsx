@@ -32,7 +32,7 @@ export function Services() {
           className="mb-16 flex flex-col gap-6 md:mb-24 md:flex-row md:items-end md:justify-between"
         >
           <div>
-            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/50">
+            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-cream/55">
               <span className="h-1.5 w-1.5 rounded-full bg-lilac" />
               What we do
             </p>
@@ -77,7 +77,7 @@ export function Services() {
                 />
 
                 <div className="relative grid items-center gap-5 py-8 md:grid-cols-[56px_minmax(0,1.05fr)_minmax(0,1.1fr)_200px] md:gap-8 md:py-10">
-                  <span className="font-mono text-sm text-cream/40 transition-colors duration-500 group-hover:text-ink/60">
+                  <span className="font-mono text-sm text-cream/55 transition-colors duration-500 group-hover:text-ink/60">
                     {service.index}
                   </span>
 

@@ -31,7 +31,7 @@ export function HomeWhy() {
       <div className="relative mx-auto max-w-[1440px]">
         <div className="mb-14 flex flex-col gap-4 md:mb-20 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/50">
+            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/60">
               <span className="h-1.5 w-1.5 rounded-full bg-violet" />
               The difference
             </p>

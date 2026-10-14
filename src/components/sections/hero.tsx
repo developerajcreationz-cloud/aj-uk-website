@@ -26,14 +26,6 @@ const STATS = [
   { value: "1 day", label: "To reply to enquiries" },
 ];
 
-const lineVariants = {
-  hidden: { y: "110%" },
-  visible: (i: number) => ({
-    y: "0%",
-    transition: { duration: 0.9, ease: [0.25, 1, 0.5, 1] as const, delay: 0.55 + i * 0.1 },
-  }),
-};
-
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
   const mouseX = useMotionValue(0);
@@ -89,22 +81,17 @@ export function Hero() {
         className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col justify-between px-6 pb-10 md:px-10"
       >
         <div className="flex flex-1 flex-col justify-center gap-8 md:gap-10">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex w-fit items-center gap-2 rounded-full border border-ink/15 bg-white/60 px-4 py-2 text-xs font-medium tracking-wide text-ink/70 backdrop-blur-sm"
-          >
+          <div className="hero-fade inline-flex w-fit items-center gap-2 rounded-full border border-ink/15 bg-white/60 px-4 py-2 text-xs font-medium tracking-wide text-ink/70 backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
               <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-violet" />
             </span>
             CREATIVE &amp; DIGITAL AGENCY
-          </motion.div>
+          </div>
 
           <h1 className="font-display max-w-5xl text-[13vw] font-medium leading-[0.95] tracking-tight text-ink sm:text-[9vw] md:text-[6.4vw] lg:text-[6vw]">
             {HEADLINE_LINES.map((line, i) => (
-              <span key={line} className="block overflow-hidden pb-1">
-                <motion.span custom={i} variants={lineVariants} initial="hidden" animate="visible" className="block">
+              <span key={line} className="block pb-1">
+                <span className="hero-rise block" style={{ "--i": i } as React.CSSProperties}>
                   {line.split(" ").map((word, wi) =>
                     line === "for websites, brand," && word === "websites," ? (
                       <em
@@ -117,27 +104,20 @@ export function Hero() {
                       <span key={wi}>{word} </span>
                     ),
                   )}
-                </motion.span>
+                </span>
               </span>
             ))}
           </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.9 }}
-            className="max-w-md text-balance text-base leading-relaxed text-ink/65 md:max-w-lg md:text-lg"
-          >
+          <p className="max-w-md text-balance text-base leading-relaxed text-ink/65 md:max-w-lg md:text-lg">
             AJ Creationz is a digital agency for UK and US businesses. We build WordPress, Shopify and custom websites,
             brand identities, SEO, Meta and Google Ads, video and GoHighLevel CRM systems, all tracked to the leads and
             sales they bring in.
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 1.05 }}
-            className="flex flex-wrap items-center gap-4"
+          <div
+            className="hero-fade flex flex-wrap items-center gap-4"
+            style={{ "--d": "220ms" } as React.CSSProperties}
           >
             <Magnetic>
               <a
@@ -170,31 +150,29 @@ export function Hero() {
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
               </Link>
             </Magnetic>
-          </motion.div>
+          </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.3 }}
-          className="mt-10 flex flex-col gap-8 border-t border-ink/10 pt-6 md:mt-16 md:flex-row md:items-end md:justify-between"
+        <div
+          style={{ "--d": "300ms" } as React.CSSProperties}
+          className="hero-fade mt-10 flex flex-col gap-8 border-t border-ink/10 pt-6 md:mt-16 md:flex-row md:items-end md:justify-between"
         >
           <div className="flex flex-wrap gap-8 md:gap-12">
             {STATS.map((stat) => (
               <div key={stat.label}>
                 <p className="font-display text-2xl text-ink md:text-3xl">{stat.value}</p>
-                <p className="mt-1 text-xs uppercase tracking-wide text-ink/50">{stat.label}</p>
+                <p className="mt-1 text-xs uppercase tracking-wide text-ink/60">{stat.label}</p>
               </div>
             ))}
           </div>
 
-          <div className="hidden items-center gap-3 text-xs uppercase tracking-wide text-ink/50 md:flex">
+          <div className="hidden items-center gap-3 text-xs uppercase tracking-wide text-ink/60 md:flex">
             <span className="relative flex h-8 w-4 justify-center rounded-full border border-ink/20">
               <span className="animate-scroll-line absolute top-1.5 h-2 w-[3px] rounded-full bg-ink/60" />
             </span>
             Scroll to explore
           </div>
-        </motion.div>
+        </div>
       </motion.div>
 
       <div className="relative z-10 border-t border-ink/10 bg-ink py-4 text-sm font-medium tracking-wide text-cream/80">

@@ -92,7 +92,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       <article className="bg-cream px-6 pb-20 md:px-10 md:pb-28">
         <div className="mx-auto grid max-w-[1440px] gap-10 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-14">
           <div className="min-w-0 max-w-4xl space-y-12 text-base leading-relaxed text-ink/75 md:text-lg">
-            <p className="text-sm text-ink/55">
+            <p className="text-sm text-ink/60">
               By <strong className="font-medium text-ink">{post.author.name}</strong>, {post.author.role} · Published{" "}
               {post.datePublished} · Updated {post.dateModified}
             </p>
@@ -119,7 +119,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   <InlineText text={p} />
                 </p>
               ))}
-              {post.disclosure && <p className="text-sm text-ink/55">{post.disclosure}</p>}
+              {post.disclosure && <p className="text-sm text-ink/60">{post.disclosure}</p>}
             </div>
 
             {post.sections.map((s) => (
@@ -161,7 +161,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 />
               )}
               <div>
-                <p className="text-xs uppercase tracking-wide text-ink/50">About the author</p>
+                <p className="text-xs uppercase tracking-wide text-ink/60">About the author</p>
                 <p className="font-display mt-1 text-xl font-medium text-ink">{post.author.name}</p>
                 <p className="text-sm text-ink/60">{post.author.role}, AJ Creationz</p>
                 <Link
@@ -177,7 +177,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <aside className="h-fit space-y-6 lg:sticky lg:top-28 lg:order-first">
             {parent && (
               <div className="rounded-2xl border border-ink/10 p-6">
-                <p className="text-xs uppercase tracking-wide text-ink/50">Related service</p>
+                <p className="text-xs uppercase tracking-wide text-ink/60">Related service</p>
                 <Link
                   href={`/services/${parent.slug}`}
                   className="font-display mt-2 block text-xl font-medium hover:text-violet"
@@ -189,7 +189,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             )}
             {related.length > 0 && (
               <div className="rounded-2xl border border-ink/10 p-6">
-                <p className="text-xs uppercase tracking-wide text-ink/50">More guides</p>
+                <p className="text-xs uppercase tracking-wide text-ink/60">More guides</p>
                 <ul className="mt-3 space-y-3">
                   {related.map((r) => (
                     <li key={r.slug}>
