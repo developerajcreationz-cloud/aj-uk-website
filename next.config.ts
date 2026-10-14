@@ -19,9 +19,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*",
+        source: "/",
         has: [{ type: "host", value: "www.ajcreationz.co.uk" }],
-        destination: "https://ajcreationz.co.uk/:path*",
+        destination: "https://ajcreationz.co.uk/",
+        permanent: true,
+      },
+      // Keep the trailing slash in the destination so www URLs reach the canonical page in one hop.
+      {
+        source: "/:path+",
+        has: [{ type: "host", value: "www.ajcreationz.co.uk" }],
+        destination: "https://ajcreationz.co.uk/:path+/",
         permanent: true,
       },
     ];
