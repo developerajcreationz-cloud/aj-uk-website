@@ -74,7 +74,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     ],
   };
 
-  const guides = POSTS.filter((p) => p.parent === service.slug);
+  // A pillar page also lists the guides of its child pages (for example, website development lists Shopify guides).
+  const guideSlugs = [service.slug, ...childrenOf(service.slug).map((c) => c.slug)];
+  const guides = POSTS.filter((p) => guideSlugs.includes(p.parent));
   const uk = UK_PRICING[service.slug];
   const related = service.related.map(getService).filter((s): s is NonNullable<typeof s> => !!s);
 

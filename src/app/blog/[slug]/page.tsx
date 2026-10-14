@@ -9,7 +9,7 @@ import { InlineText } from "@/components/sections/inline-text";
 import { Accordion } from "@/components/ui/accordion";
 import { Reveal } from "@/components/ui/reveal";
 import { PostBlocks } from "@/components/sections/post-body";
-import { POSTS, getPost } from "@/content/posts";
+import { POSTS, categoryOf, getPost } from "@/content/posts";
 import { getService } from "@/content/services";
 import { pageMetadata } from "@/lib/metadata";
 import { SITE } from "@/config/site";
@@ -37,6 +37,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   const parent = getService(post.parent);
   const url = `${SITE.url}/blog/${post.slug}/`;
+  const category = categoryOf(post);
   const crumbs = [{ label: "Home", href: "/" }, { label: "Blog", href: "/blog/" }, { label: post.title }];
 
   const jsonLd = {
@@ -51,6 +52,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         datePublished: post.datePublished,
         dateModified: post.dateModified,
         keywords: [post.primaryKeyword, ...post.secondaryKeywords].join(", "),
+        ...(category ? { articleSection: category.label } : {}),
         author: {
           "@type": "Person",
           name: post.author.name,
@@ -93,6 +95,17 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <div className="mx-auto grid max-w-[1440px] gap-10 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-14">
           <div className="min-w-0 max-w-4xl space-y-12 text-base leading-relaxed text-ink/75 md:text-lg">
             <p className="text-sm text-ink/60">
+              {category && (
+                <>
+                  <Link
+                    href={`/blog/#${category.slug}`}
+                    className="rounded-full border border-ink/15 px-3 py-1 text-xs uppercase tracking-wide text-ink/70 hover:bg-ink hover:text-cream"
+                  >
+                    {category.label}
+                  </Link>{" "}
+                  ·{" "}
+                </>
+              )}
               By <strong className="font-medium text-ink">{post.author.name}</strong>, {post.author.role} · Published{" "}
               {post.datePublished} · Updated {post.dateModified}
             </p>
