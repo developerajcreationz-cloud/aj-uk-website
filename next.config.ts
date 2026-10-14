@@ -18,6 +18,10 @@ const nextConfig: NextConfig = {
   // One canonical host: send www to the bare domain with a permanent redirect.
   async redirects() {
     return [
+      // Pages from the previous site that have a direct equivalent here.
+      { source: "/about-us", destination: "/about/", permanent: true },
+      { source: "/contact-us", destination: "/contact/", permanent: true },
+      { source: "/home-2", destination: "/", permanent: true },
       {
         source: "/",
         has: [{ type: "host", value: "www.ajcreationz.co.uk" }],
