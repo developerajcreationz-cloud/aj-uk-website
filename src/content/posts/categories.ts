@@ -9,7 +9,7 @@ export type BlogCategory = {
 };
 
 /**
- * Blog categories. They only group posts on /blog/ (anchors such as /blog/#seo); post URLs stay /blog/<slug>/.
+ * Blog categories. They group posts on /blog/category/<slug>/ pages; post URLs stay /blog/<slug>/.
  * A post's category comes from its parent service page, so the two never disagree.
  */
 export const CATEGORIES: BlogCategory[] = [

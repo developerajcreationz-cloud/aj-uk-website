@@ -98,7 +98,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               {category && (
                 <>
                   <Link
-                    href={`/blog/#${category.slug}`}
+                    href={`/blog/category/${category.slug}/`}
                     className="rounded-full border border-ink/15 px-3 py-1 text-xs uppercase tracking-wide text-ink/70 hover:bg-ink hover:text-cream"
                   >
                     {category.label}
