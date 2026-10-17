@@ -1,0 +1,37 @@
+export const SITE = {
+  name: "AJ Creationz",
+  url: "https://ajcreationz.co.uk",
+  /** Global brand site. ajcreationz.co serves the world; this site (ajcreationz.co.uk) serves the UK and US. */
+  mainSiteUrl: "https://ajcreationz.co",
+  title: "Digital Agency | Web, Brand, SEO & Ads | AJ Creationz",
+  description:
+    "Digital agency for UK and US businesses: WordPress, Shopify and custom websites, brand identity, SEO, Meta and Google Ads, video and GoHighLevel CRM.",
+  email: "grow@ajcreationz.co",
+  logo: "/images/logo-full.png",
+  /** Search Console HTML-tag verification. Keep this tag in the page head. */
+  googleVerification: "Yp0JS38ugKIipb5Dze06h2fRRWb8XHbVmPbuiV65Ye0",
+  /** Bump when page content changes materially; used for sitemap lastModified. */
+  contentUpdated: "2026-10-10",
+  markets: ["United Kingdom", "United States"],
+  /** Profiles taken from the main site (ajcreationz.co). */
+  social: [
+    { label: "Instagram", href: "https://www.instagram.com/ajcreationz.co/" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/ahmadjan1012/" },
+    { label: "Behance", href: "https://www.behance.net/AJCREATIONZ-AGENCY" },
+    { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61571556940245" },
+  ],
+  services: [
+    "Brand Identity",
+    "Website Development (WordPress, Shopify, Custom)",
+    "Video Editing",
+    "SEO & Growth",
+    "Meta & Google Ads",
+    "GoHighLevel CRM",
+  ],
+  team: [
+    { name: "Ahmad Jan", role: "Creative Imagination Lead", photo: "/images/team/ahmad-jan.webp" },
+    { name: "Athar", role: "Strategic Director", photo: "/images/team/athar.webp" },
+    { name: "Hina", role: "Brand Architect", photo: "/images/team/hina.webp" },
+    { name: "Zohaib", role: "Web Developer and SEO Specialist", photo: "/images/team/zohaib.webp" },
+  ],
+} as const;

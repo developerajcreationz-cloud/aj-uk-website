@@ -1,0 +1,178 @@
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { SITE } from "@/config/site";
+import { Reveal } from "@/components/ui/reveal";
+import { Magnetic } from "@/components/ui/magnetic";
+import { TiltCard } from "@/components/ui/tilt-card";
+import { CountUp } from "@/components/ui/count-up";
+
+const VALUES = [
+  {
+    index: "01",
+    title: "Senior only",
+    description: "Every project is led by people who've shipped it before — no juniors learning on your dime.",
+  },
+  {
+    index: "02",
+    title: "Data-informed",
+    description: "Design decisions get tested, not guessed. We measure what moves the numbers and cut what doesn't.",
+  },
+  {
+    index: "03",
+    title: "Built to scale",
+    description: "Systems over one-offs — brand and code that hold up as the team, the traffic, and the ambition grow.",
+  },
+];
+
+const STATS = [
+  { value: 6, decimals: 0, suffix: "", label: "Core services" },
+  { value: SITE.team.length, decimals: 0, suffix: "", label: "Named team members" },
+  { value: 1, decimals: 0, suffix: " day", label: "To reply to enquiries" },
+];
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.25, 1, 0.5, 1] as const, delay: i * 0.08 },
+  }),
+};
+
+export function About() {
+  return (
+    <section
+      id="about"
+      className="relative overflow-hidden border-t border-ink/10 bg-cream px-6 py-24 md:px-10 md:py-32"
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -left-32 top-0 h-[420px] w-[420px] rounded-full bg-gradient-to-br from-lilac/20 to-transparent blur-[110px]"
+      />
+
+      <div className="relative mx-auto max-w-[1440px]">
+        <div className="grid gap-12 md:grid-cols-2 md:gap-16">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={fadeUp}
+            custom={0}
+          >
+            <p className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-ink/60">
+              <span className="h-1.5 w-1.5 rounded-full bg-violet" />
+              About us
+            </p>
+            <h2 className="font-display text-[11vw] font-medium leading-[1.02] tracking-tight text-ink sm:text-5xl md:text-6xl">
+              A small team that
+              <br />
+              <em className="bg-gradient-to-r from-plum via-violet to-lilac bg-clip-text font-serif italic text-transparent">
+                moves fast
+              </em>
+              .
+            </h2>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={fadeUp}
+            custom={1}
+            className="flex flex-col justify-center gap-6"
+          >
+            <p className="text-balance text-base leading-relaxed text-ink/65 md:text-lg">
+              AJ Creationz builds the parts of a business that bring in customers: the brand, the website, the search
+              and ad traffic that reaches it, and the CRM that follows up. We work with owner-led businesses in the UK
+              and the US, remotely, with the people who do the work in every call. Our main studio site, ajcreationz.co,
+              covers our creative and brand-led work; this site is where we explain the web, search, ads and automation
+              side in detail, with the pricing context to go with it.
+            </p>
+            <Magnetic strength={0.25}>
+              <a
+                href="/contact/"
+                data-cursor-hover
+                className="group inline-flex w-fit items-center gap-2 border-b border-ink/25 pb-1 text-sm font-medium text-ink transition-colors duration-300 hover:border-ink"
+              >
+                Work with us
+                <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              </a>
+            </Magnetic>
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={fadeUp}
+          custom={2}
+          className="mt-16 grid grid-cols-3 gap-6 border-y border-ink/10 py-8 md:mt-20 md:gap-12 md:py-10"
+        >
+          {STATS.map((stat) => (
+            <div key={stat.label}>
+              <p className="font-display text-3xl text-ink md:text-5xl">
+                <CountUp value={stat.value} decimals={stat.decimals} suffix={stat.suffix} />
+              </p>
+              <p className="mt-1 text-xs uppercase tracking-wide text-ink/60 md:text-sm">{stat.label}</p>
+            </div>
+          ))}
+        </motion.div>
+
+        <div className="mt-16 grid gap-6 md:mt-20 md:grid-cols-3 md:gap-8" style={{ perspective: 1000 }}>
+          {VALUES.map((value, i) => (
+            <motion.div
+              key={value.index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={fadeUp}
+              custom={i + 3}
+            >
+              <TiltCard className="group h-full rounded-2xl border border-ink/10 bg-white/60 p-8 shadow-[0_1px_0_rgba(18,15,29,0.03)] transition-colors duration-300 hover:border-violet/30">
+                <span className="font-mono text-xs text-violet">{value.index}</span>
+                <h3 className="font-display mt-3 text-2xl font-medium tracking-tight text-ink md:text-3xl">
+                  {value.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-ink/60 md:text-base">{value.description}</p>
+              </TiltCard>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="mt-16 md:mt-20">
+          <h3 className="font-display text-2xl font-medium tracking-tight text-ink md:text-3xl">Meet the team</h3>
+          <p className="mt-3 max-w-2xl text-sm text-ink/60 md:text-base">
+            The people you will speak to on a project. More team members will be added here.
+          </p>
+          <ul id="team" className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8">
+            {SITE.team.map((member, i) => (
+              <li key={member.name} className="h-full">
+                <Reveal dir="up" delay={i * 0.1} className="h-full">
+                  <div className="group overflow-hidden rounded-2xl border border-ink/10 bg-white/60 transition-all duration-500 hover:-translate-y-2 hover:border-violet/40 hover:shadow-[0_30px_60px_-30px_rgba(76,29,149,0.4)]">
+                    {"photo" in member && member.photo && (
+                      <Image
+                        src={member.photo}
+                        alt={`${member.name}, ${member.role} at AJ Creationz`}
+                        width={600}
+                        height={800}
+                        sizes="(min-width: 768px) 30vw, 90vw"
+                        className="aspect-[3/4] w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      />
+                    )}
+                    <div className="p-6">
+                      <p className="font-display text-xl font-medium text-ink">{member.name}</p>
+                      <p className="mt-1 text-sm text-ink/60">{member.role}</p>
+                    </div>
+                  </div>
+                </Reveal>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}

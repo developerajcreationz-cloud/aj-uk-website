@@ -6,29 +6,40 @@
     "dev": "next dev",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run typecheck && npm run build"
   },
   "dependencies": {
-    "@react-three/drei": "^10.7.8",
-    "@react-three/fiber": "^9.8.1",
     "clsx": "^2.1.1",
     "framer-motion": "^13.4.4",
     "gsap": "^3.15.0",
     "lenis": "^1.3.26",
     "next": "16.3.8",
+    "nodemailer": "^10.0.16",
     "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "three": "^0.186.1"
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/nodemailer": "^8.0.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/three": "^0.186.0",
     "eslint": "^9",
-    "eslint-config-next": "16.3.6",
+    "eslint-config-next": "16.3.8",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "overrides": {
+    "sharp": "0.35.5",
+    "source-map-js": "1.2.2"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "description": "Website for AJ Creationz (ajcreationz.co.uk): digital agency serving UK and US businesses."
 }

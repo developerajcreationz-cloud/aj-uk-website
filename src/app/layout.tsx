@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
-import { SmoothScroll } from "@/components/smooth-scroll";
-import { Cursor } from "@/components/cursor";
-import { ScrollProgress } from "@/components/scroll-progress";
-import { ScrollToTop } from "@/components/scroll-to-top";
-import { SITE } from "@/lib/site";
+import { SmoothScroll } from "@/components/layout/smooth-scroll";
+import { Cursor } from "@/components/layout/cursor";
+import { ScrollProgress } from "@/components/layout/scroll-progress";
+import { ScrollToTop } from "@/components/layout/scroll-to-top";
+import { Analytics } from "@/components/layout/analytics";
+import { JsonLd } from "@/components/seo/json-ld";
+import { OG_IMAGE } from "@/lib/metadata";
+import { SITE } from "@/config/site";
 import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
@@ -24,18 +27,9 @@ export const metadata: Metadata = {
   title: { default: SITE.title, template: "%s — AJ Creationz" },
   description: SITE.description,
   applicationName: SITE.name,
-  keywords: [
-    "digital agency UK",
-    "creative agency",
-    "web design agency",
-    "branding agency",
-    "SEO agency",
-    "website design",
-    "social media marketing",
-    "AJ Creationz",
-  ],
-  authors: [{ name: SITE.name, url: SITE.url }],
+  authors: [{ name: SITE.name, url: `${SITE.url}/` }],
   alternates: { canonical: "/" },
+  verification: { google: process.env.GOOGLE_SITE_VERIFICATION || SITE.googleVerification },
   robots: {
     index: true,
     follow: true,
@@ -44,17 +38,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: SITE.title,
     description: SITE.description,
-    url: SITE.url,
+    url: `${SITE.url}/`,
     siteName: SITE.name,
-    images: [SITE.logo],
     locale: "en_GB",
+    alternateLocale: ["en_US"],
     type: "website",
+    images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE.title,
     description: SITE.description,
-    images: [SITE.logo],
+    images: [OG_IMAGE.url],
   },
 };
 
@@ -65,36 +60,38 @@ const jsonLd = {
       "@type": "ProfessionalService",
       "@id": `${SITE.url}/#organization`,
       name: SITE.name,
-      url: SITE.url,
+      url: `${SITE.url}/`,
       logo: `${SITE.url}${SITE.logo}`,
       image: `${SITE.url}${SITE.logo}`,
       description: SITE.description,
       email: SITE.email,
-      areaServed: ["GB", "Worldwide"],
+      areaServed: SITE.markets.map((name) => ({ "@type": "Country", name })),
+      sameAs: [SITE.mainSiteUrl, ...SITE.social.map((s) => s.href)],
+      employee: SITE.team.map((m) => ({
+        "@type": "Person",
+        name: m.name,
+        jobTitle: m.role,
+        ...("photo" in m && m.photo ? { image: `${SITE.url}${m.photo}` } : {}),
+      })),
       serviceType: SITE.services,
     },
     {
       "@type": "WebSite",
       "@id": `${SITE.url}/#website`,
-      url: SITE.url,
+      url: `${SITE.url}/`,
       name: SITE.name,
       publisher: { "@id": `${SITE.url}/#organization` },
-      inLanguage: "en-GB",
+      inLanguage: "en",
     },
   ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${bricolage.variable} ${inter.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${bricolage.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-cream text-ink cursor-enabled">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
-        />
+        <JsonLd data={jsonLd} />
+        <Analytics />
         <SmoothScroll>
           <ScrollProgress />
           <Cursor />

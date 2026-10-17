@@ -1,7 +1,42 @@
 import type { NextConfig } from "next";
 
+const securityHeaders = [
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+  { key: "Strict-Transport-Security", value: "max-age=31536000" },
+];
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Every URL ends in a slash (redirects the slash-less form with a 308).
+  trailingSlash: true,
+  poweredByHeader: false,
+  async headers() {
+    return [{ source: "/:path*", headers: securityHeaders }];
+  },
+  // One canonical host: send www to the bare domain with a permanent redirect.
+  async redirects() {
+    return [
+      // Pages from the previous site that have a direct equivalent here.
+      { source: "/about-us", destination: "/about/", permanent: true },
+      { source: "/contact-us", destination: "/contact/", permanent: true },
+      { source: "/home-2", destination: "/", permanent: true },
+      {
+        source: "/",
+        has: [{ type: "host", value: "www.ajcreationz.co.uk" }],
+        destination: "https://ajcreationz.co.uk/",
+        permanent: true,
+      },
+      // Keep the trailing slash in the destination so www URLs reach the canonical page in one hop.
+      {
+        source: "/:path+",
+        has: [{ type: "host", value: "www.ajcreationz.co.uk" }],
+        destination: "https://ajcreationz.co.uk/:path+/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
