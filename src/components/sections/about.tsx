@@ -12,7 +12,7 @@ const VALUES = [
   {
     index: "01",
     title: "Senior only",
-    description: "Every project is led by people who've shipped it before — no juniors learning on your dime.",
+    description: "Every project is led by people who've shipped it before, not juniors learning on your dime.",
   },
   {
     index: "02",
@@ -22,7 +22,7 @@ const VALUES = [
   {
     index: "03",
     title: "Built to scale",
-    description: "Systems over one-offs — brand and code that hold up as the team, the traffic, and the ambition grow.",
+    description: "Systems over one-offs: brand and code that hold up as the team, the traffic, and the ambition grow.",
   },
 ];
 
@@ -86,9 +86,8 @@ export function About() {
             <p className="text-balance text-base leading-relaxed text-ink/65 md:text-lg">
               AJ Creationz builds the parts of a business that bring in customers: the brand, the website, the search
               and ad traffic that reaches it, and the CRM that follows up. We work with owner-led businesses in the UK
-              and the US, remotely, with the people who do the work in every call. Our main studio site, ajcreationz.co,
-              covers our creative and brand-led work; this site is where we explain the web, search, ads and automation
-              side in detail, with the pricing context to go with it.
+              and the US, remotely, with the people who do the work in every call. Every service page explains what is
+              included, how we work and what the market charges, in pounds for the UK and dollars for the US.
             </p>
             <Magnetic strength={0.25}>
               <a

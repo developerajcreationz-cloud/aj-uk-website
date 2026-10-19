@@ -8,9 +8,12 @@ import { Reveal } from "@/components/ui/reveal";
 import { InlineText } from "@/components/sections/inline-text";
 import { Accordion } from "@/components/ui/accordion";
 import { JsonLd } from "@/components/seo/json-ld";
-import { POSTS } from "@/content/posts";
+import { livePosts } from "@/content/posts";
 import { pageMetadata } from "@/lib/metadata";
 import { SITE } from "@/config/site";
+
+/** Re-render hourly so newly published guides appear in "From the blog". */
+export const revalidate = 3600;
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -76,7 +79,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
   // A pillar page also lists the guides of its child pages (for example, website development lists Shopify guides).
   const guideSlugs = [service.slug, ...childrenOf(service.slug).map((c) => c.slug)];
-  const guides = POSTS.filter((p) => guideSlugs.includes(p.parent));
+  const guides = livePosts().filter((p) => guideSlugs.includes(p.parent));
   const uk = UK_PRICING[service.slug];
   const related = service.related.map(getService).filter((s): s is NonNullable<typeof s> => !!s);
 
@@ -168,36 +171,25 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
       {service.pricing && (
         <section className="border-t border-ink/10 bg-cream px-6 py-16 md:px-10 md:py-20">
-          <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-[1fr_2fr] md:gap-16">
-            <h2 className="font-display text-3xl font-medium tracking-tight md:text-4xl">{service.pricing.h2}</h2>
-            <div className="max-w-3xl">
-              <p className="text-base leading-relaxed text-ink/70">{service.pricing.intro}</p>
-              <dl className="mt-6 divide-y divide-ink/10 border-y border-ink/10">
-                {service.pricing.rows.map((r) => (
-                  <div key={r.label} className="flex flex-col gap-1 py-4 sm:flex-row sm:justify-between">
-                    <dt className="text-ink/75">{r.label}</dt>
-                    <dd className="font-medium">{r.range}</dd>
-                  </div>
-                ))}
-              </dl>
-              <p className="mt-4 text-xs leading-relaxed text-ink/60">{service.pricing.note}</p>
+          <div className="mx-auto max-w-[1440px]">
+            <h2 className="font-display max-w-3xl text-3xl font-medium tracking-tight md:text-4xl">
+              {service.pricing.h2}
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink/70">
+              Market figures from published guides, not AJ Creationz quotes: pounds for the UK and dollars for the US.
+              We quote every project in writing after a short call.
+            </p>
+            <div className={`mt-10 grid gap-10 ${uk ? "lg:grid-cols-2" : ""}`}>
               {uk && (
-                <>
-                  <h3 className="font-display mt-10 text-xl font-medium tracking-tight md:text-2xl">
-                    Market figures in pounds
-                  </h3>
-                  <p className="mt-2 text-base leading-relaxed text-ink/70">{uk.intro}</p>
-                  <dl className="mt-4 divide-y divide-ink/10 border-y border-ink/10">
-                    {uk.rows.map((r) => (
-                      <div key={r.label} className="flex flex-col gap-1 py-4 sm:flex-row sm:justify-between">
-                        <dt className="text-ink/75">{r.label}</dt>
-                        <dd className="font-medium">{r.range}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                  <p className="mt-4 text-xs leading-relaxed text-ink/60">{uk.note}</p>
-                </>
+                <PriceTable market="United Kingdom" currency="GBP, £" intro={uk.intro} rows={uk.rows} note={uk.note} />
               )}
+              <PriceTable
+                market="United States"
+                currency="USD, $"
+                intro={service.pricing.intro}
+                rows={service.pricing.rows}
+                note={service.pricing.note}
+              />
             </div>
           </div>
         </section>
@@ -275,5 +267,39 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       </section>
       <CtaBand />
     </PageShell>
+  );
+}
+
+function PriceTable({
+  market,
+  currency,
+  intro,
+  rows,
+  note,
+}: {
+  market: string;
+  currency: string;
+  intro: string;
+  rows: { label: string; range: string }[];
+  note: string;
+}) {
+  return (
+    <div className="rounded-2xl border border-ink/10 bg-white/40 p-6 md:p-8">
+      <h3 className="font-display text-xl font-medium tracking-tight md:text-2xl">
+        {market} <span className="text-base font-normal text-ink/55">({currency})</span>
+      </h3>
+      <p className="mt-2 text-sm leading-relaxed text-ink/70">{intro}</p>
+      <dl className="mt-5 divide-y divide-ink/10 border-y border-ink/10">
+        {rows.map((r) => (
+          <div key={r.label} className="flex flex-col gap-1 py-4 sm:flex-row sm:justify-between sm:gap-6">
+            <dt className="text-ink/75">{r.label}</dt>
+            <dd className="font-medium sm:text-right">{r.range}</dd>
+          </div>
+        ))}
+      </dl>
+      <p className="mt-4 text-xs leading-relaxed text-ink/60">
+        <InlineText text={note} />
+      </p>
+    </div>
   );
 }

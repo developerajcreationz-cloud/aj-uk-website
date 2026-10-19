@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { BlogListing, PAGE_SIZE } from "@/components/blog/blog-listing";
-import { POSTS } from "@/content/posts";
+import { livePosts } from "@/content/posts";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = pageMetadata({
@@ -10,12 +10,16 @@ export const metadata: Metadata = pageMetadata({
   path: "/blog/",
 });
 
+/** Re-render hourly so scheduled posts appear on their date without a rebuild. */
+export const revalidate = 3600;
+
 export default function BlogIndex() {
+  const posts = livePosts();
   return (
     <BlogListing
-      posts={POSTS.slice(0, PAGE_SIZE)}
+      posts={posts.slice(0, PAGE_SIZE)}
       page={1}
-      totalPages={Math.max(1, Math.ceil(POSTS.length / PAGE_SIZE))}
+      totalPages={Math.max(1, Math.ceil(posts.length / PAGE_SIZE))}
     />
   );
 }

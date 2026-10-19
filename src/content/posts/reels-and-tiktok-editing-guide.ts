@@ -19,7 +19,7 @@ export const reelsAndTiktokEditingGuide: Post = {
   related: ["brand-guidelines-template", "google-ads-vs-facebook-ads"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-08",
-  dateModified: "2026-10-08",
+  dateModified: "2026-10-19",
   takeaways: [
     "Instagram Reels safe zones with the pixel math, for organic posts and for ads",
     "Caption and hook rules you can apply in any editor",
@@ -150,13 +150,25 @@ export const reelsAndTiktokEditingGuide: Post = {
           caption: "Indicative short-form editing prices (US dollars, third-party guides)",
           head: ["Editor", "Price"],
           rows: [
-            ["Short-form video, beginner editor", "$25 – $75"],
-            ["Short-form video, intermediate editor", "$75 – $200"],
-            ["Short-form video, senior editor", "$200 – $500"],
-            ["Hourly, Western mid-level editor", "$50 – $150"],
-            ["Hourly, offshore editor in Southeast Asia", "$15 – $40"],
+            ["Short-form video, beginner editor", "$25 to $75"],
+            ["Short-form video, intermediate editor", "$75 to $200"],
+            ["Short-form video, senior editor", "$200 to $500"],
+            ["Hourly, Western mid-level editor", "$50 to $150"],
+            ["Hourly, offshore editor in Southeast Asia", "$15 to $40"],
           ],
           note: "Sources are listed on our video editing service page. Most publishers sell video editing. Ask what a price includes: captions, revisions, music licensing and number of formats.",
+        },
+        {
+          type: "table",
+          caption: "Indicative UK prices (pounds, third-party guides)",
+          head: ["Editor or job", "Price"],
+          rows: [
+            ["Basic short-form video, single clip", "£150 to £500"],
+            ["Series of 3 to 5 short clips with custom graphics", "£800 to £2,000"],
+            ["Freelance editor, entry level", "£20 to £40 an hour"],
+            ["Freelance editor, mid level", "£50 to £80 an hour"],
+          ],
+          note: "Source: Videotto's UK guide (2026); Videotto sells editing. Our [video editing cost guide](/blog/video-editing-cost) compares UK and US rates in more detail.",
         },
         {
           type: "p",
@@ -192,6 +204,10 @@ export const reelsAndTiktokEditingGuide: Post = {
     },
   ],
   sources: [
+    {
+      label: "Videotto: how much does video editing cost in the UK in 2026?",
+      url: "https://www.videotto.com/blog/how-much-does-video-editing-cost-uk-2026",
+    },
     {
       label: "TryMyPost: Instagram Reels safe zones and text placement 2026",
       url: "https://www.trymypost.com/blog/instagram-reels-safe-zones-text-placement-2026",

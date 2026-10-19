@@ -75,14 +75,6 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                 ))}
               </ul>
             </div>
-            <a
-              href={project.sourceUrl}
-              target="_blank"
-              rel="noopener"
-              className="inline-block border-b border-ink/25 pb-1 text-sm font-medium hover:border-ink"
-            >
-              Also on ajcreationz.co ↗
-            </a>
           </aside>
 
           <div className="min-w-0 space-y-14">

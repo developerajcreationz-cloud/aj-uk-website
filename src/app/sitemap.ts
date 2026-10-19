@@ -1,10 +1,14 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/config/site";
 import { SERVICES } from "@/content/services";
-import { CATEGORIES, POSTS, categoryOf } from "@/content/posts";
+import { CATEGORIES, categoryOf, livePosts } from "@/content/posts";
 import { PROJECTS_WITH_PAGES } from "@/content/projects";
 
+/** Re-generate hourly so scheduled posts are listed on their publish date. */
+export const revalidate = 3600;
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  const posts = livePosts();
   const siteUpdated = new Date(SITE.contentUpdated);
   // Posts carry their own modified date; other pages use SITE.contentUpdated, bumped when their content changes.
   const paths: { p: string; priority: number; modified?: string }[] = [
@@ -14,15 +18,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { p: "/work", priority: 0.8 },
     ...PROJECTS_WITH_PAGES.map((project) => ({ p: `/work/${project.slug}`, priority: 0.6 })),
     { p: "/blog", priority: 0.7 },
-    ...Array.from({ length: Math.ceil(POSTS.length / 10) - 1 }, (_, i) => ({
+    ...Array.from({ length: Math.ceil(posts.length / 10) - 1 }, (_, i) => ({
       p: `/blog/page/${i + 2}`,
       priority: 0.4,
     })),
-    ...CATEGORIES.filter((c) => POSTS.some((p) => categoryOf(p)?.slug === c.slug)).map((c) => ({
+    ...CATEGORIES.filter((c) => posts.some((p) => categoryOf(p)?.slug === c.slug)).map((c) => ({
       p: `/blog/category/${c.slug}`,
       priority: 0.5,
     })),
-    ...POSTS.map((post) => ({ p: `/blog/${post.slug}`, priority: 0.6, modified: post.dateModified })),
+    ...posts.map((post) => ({ p: `/blog/${post.slug}`, priority: 0.6, modified: post.dateModified })),
     { p: "/about", priority: 0.7 },
     { p: "/contact", priority: 0.8 },
     { p: "/privacy", priority: 0.2 },

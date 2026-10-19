@@ -141,11 +141,6 @@ export function Footer() {
                   {SITE.email}
                 </a>
               </li>
-              <li>
-                <a href={SITE.mainSiteUrl} target="_blank" rel="noopener" data-cursor-hover className={linkClass}>
-                  Global site: ajcreationz.co ↗
-                </a>
-              </li>
               {SITE.social.map((s) => (
                 <li key={s.label}>
                   <a href={s.href} target="_blank" rel="noopener noreferrer" data-cursor-hover className={linkClass}>

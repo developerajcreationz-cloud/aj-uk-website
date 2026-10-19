@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogListing } from "@/components/blog/blog-listing";
-import { CATEGORIES, POSTS, categoryOf } from "@/content/posts";
+import { CATEGORIES, categoryOf, livePosts } from "@/content/posts";
 import { pageMetadata } from "@/lib/metadata";
 
-export const dynamicParams = false;
+/** Re-render hourly so scheduled posts appear on their date; a newly used category renders on demand. */
+export const revalidate = 3600;
 
-const withPosts = () => CATEGORIES.filter((c) => POSTS.some((p) => categoryOf(p)?.slug === c.slug));
+const withPosts = () => CATEGORIES.filter((c) => livePosts().some((p) => categoryOf(p)?.slug === c.slug));
 
 export function generateStaticParams() {
   return withPosts().map((c) => ({ slug: c.slug }));
@@ -26,5 +27,5 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function BlogCategory({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug;
   if (!withPosts().some((c) => c.slug === slug)) notFound();
-  return <BlogListing posts={POSTS.filter((p) => categoryOf(p)?.slug === slug)} category={slug} />;
+  return <BlogListing posts={livePosts().filter((p) => categoryOf(p)?.slug === slug)} category={slug} />;
 }

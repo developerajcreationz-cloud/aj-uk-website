@@ -17,7 +17,7 @@ export type Project = {
   title: string;
   category: string;
   image: string;
-  /** Link to the full project on the main studio site. */
+  /** Internal record of where the project facts came from. Not rendered or linked on this site. */
   sourceUrl: string;
   brief: string;
   delivered: string[];

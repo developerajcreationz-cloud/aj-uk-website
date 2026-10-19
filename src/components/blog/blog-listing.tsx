@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Illustration } from "@/components/illustrations";
 import { Reveal } from "@/components/ui/reveal";
 import { PageShell, PageHero, CtaBand } from "@/components/layout/page-shell";
-import { CATEGORIES, POSTS, categoryOf } from "@/content/posts";
+import { CATEGORIES, categoryOf, livePosts } from "@/content/posts";
 import type { Post } from "@/content/posts/types";
 import { getService } from "@/content/services";
 
@@ -22,7 +22,7 @@ export function BlogListing({ posts, category, page = 1, totalPages = 1 }: Props
   const active = CATEGORIES.find((c) => c.slug === category);
   const chips = CATEGORIES.map((c) => ({
     ...c,
-    count: POSTS.filter((p) => categoryOf(p)?.slug === c.slug).length,
+    count: livePosts().filter((p) => categoryOf(p)?.slug === c.slug).length,
   })).filter((c) => c.count > 0);
   const chip = "rounded-full border px-4 py-2 text-sm transition-colors";
 
@@ -47,7 +47,7 @@ export function BlogListing({ posts, category, page = 1, totalPages = 1 }: Props
               aria-current={active ? undefined : "page"}
               className={`${chip} ${active ? "border-ink/15 hover:bg-ink hover:text-cream" : "border-ink bg-ink text-cream"}`}
             >
-              All guides <span className="opacity-70">({POSTS.length})</span>
+              All guides <span className="opacity-70">({livePosts().length})</span>
             </Link>
             {chips.map((c) => (
               <Link

@@ -17,13 +17,23 @@ import { chooseAWebDesignAgency } from "./choose-a-web-design-agency";
 import { brandingCost } from "./branding-cost";
 import { shopifyStoreCost } from "./shopify-store-cost";
 import { videoEditingCost } from "./video-editing-cost";
+import { speedToLead } from "./speed-to-lead";
+import { seoRoi } from "./seo-roi";
+import { websiteLeadGeneration } from "./website-lead-generation";
+import { googleAdsAudit } from "./google-ads-audit";
+import { getBusinessOnGoogleMaps } from "./get-business-on-google-maps";
+import { websiteBriefTemplate } from "./website-brief-template";
+import { shopifyTrafficNoSales } from "./shopify-traffic-no-sales";
+import { facebookLeadAdsVsLandingPage } from "./facebook-lead-ads-vs-landing-page";
+import { videoAdsForSmallBusiness } from "./video-ads-for-small-business";
+import { brandRefreshVsRebrand } from "./brand-refresh-vs-rebrand";
 
 export type { Post, Block } from "./types";
 export { CATEGORIES, categoryOf } from "./categories";
 export type { BlogCategory } from "./categories";
 
-/** Build date (UTC, YYYY-MM-DD). A post goes live on the first build on or after its `datePublished`. */
-const TODAY = new Date().toISOString().slice(0, 10);
+/** Today's date (UTC, YYYY-MM-DD), read on every call so ISR revalidation picks up newly due posts. */
+const today = () => new Date().toISOString().slice(0, 10);
 
 /** Every post written, including ones whose publish date has not arrived. Add new posts here. */
 const ALL_POSTS: Post[] = [
@@ -45,15 +55,28 @@ const ALL_POSTS: Post[] = [
   brandingCost,
   shopifyStoreCost,
   videoEditingCost,
+  // Lead-generation series, two a week from 22 Oct 2026 (Mondays and Thursdays).
+  speedToLead,
+  seoRoi,
+  websiteLeadGeneration,
+  googleAdsAudit,
+  getBusinessOnGoogleMaps,
+  websiteBriefTemplate,
+  shopifyTrafficNoSales,
+  facebookLeadAdsVsLandingPage,
+  videoAdsForSmallBusiness,
+  brandRefreshVsRebrand,
 ];
 
-/** Posts that are live: newest first, scheduled ones held back until their date. */
-export const POSTS: Post[] = ALL_POSTS.filter((p) => p.datePublished <= TODAY).sort((a, b) =>
-  b.datePublished.localeCompare(a.datePublished),
-);
+/**
+ * Posts that are live, newest first. A post goes live on its `datePublished` (UTC): pages that list posts
+ * set `revalidate`, so a scheduled post appears within the hour after its date without a rebuild.
+ */
+export const livePosts = (): Post[] =>
+  ALL_POSTS.filter((p) => p.datePublished <= today()).sort((a, b) => b.datePublished.localeCompare(a.datePublished));
 
 /** Posts written but waiting for their publish date. */
-export const SCHEDULED_POSTS: Post[] = ALL_POSTS.filter((p) => p.datePublished > TODAY);
+export const scheduledPosts = (): Post[] => ALL_POSTS.filter((p) => p.datePublished > today());
 
-export const getPost = (slug: string) => POSTS.find((p) => p.slug === slug);
-export const postsForService = (serviceSlug: string) => POSTS.filter((p) => p.parent === serviceSlug);
+export const getPost = (slug: string) => livePosts().find((p) => p.slug === slug);
+export const postsForService = (serviceSlug: string) => livePosts().filter((p) => p.parent === serviceSlug);

@@ -194,7 +194,7 @@ export function Contact() {
                 </span>
                 <h3 className="font-display text-2xl text-cream">Message sent.</h3>
                 <p className="max-w-xs text-sm text-cream/60">
-                  Thanks for reaching out — we&apos;ll reply within one business day.
+                  Thanks for reaching out, we&apos;ll reply within one business day.
                 </p>
               </motion.div>
             ) : (

@@ -53,20 +53,20 @@ export const websiteCost: Post = {
             ],
             [
               "Freelancer-built business site",
-              "$1,500 – $5,000, or $2,000 – $8,000 in another guide",
-              "£2,000 – £8,000 for a professionally built small-business site",
+              "$1,500 to $5,000, or $2,000 to $8,000 in another guide",
+              "£2,000 to £8,000 for a professionally built small-business site",
               "Design, build and launch; support varies",
             ],
             [
               "Small or regional agency",
-              "$10,000 – $35,000 (3 to 10 staff, fixed price)",
-              "£2,500 – £10,000",
+              "$10,000 to $35,000 (3 to 10 staff, fixed price)",
+              "£2,500 to £10,000",
               "Strategy, design, development, usually fixed-price",
             ],
             [
               "Ecommerce store",
               "from about $10,000 up to $30,000+",
-              "£5,000 – £15,000 typical, up to £40,000",
+              "£5,000 to £15,000 typical, up to £40,000",
               "Catalog, checkout, payments, shipping setup",
             ],
             [

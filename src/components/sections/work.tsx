@@ -43,7 +43,7 @@ function ProjectCard({ project, priority }: { project: Project; priority?: boole
     >
       <Image
         src={project.image}
-        alt={`${project.title} — ${project.category}`}
+        alt={`${project.title}: ${project.category}`}
         fill
         priority={priority}
         sizes="(min-width: 1024px) 32vw, 45vw"

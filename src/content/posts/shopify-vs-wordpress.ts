@@ -19,7 +19,7 @@ export const shopifyVsWordpress: Post = {
   related: ["how-much-does-a-website-cost", "website-migration-seo-checklist"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-03",
-  dateModified: "2026-10-03",
+  dateModified: "2026-10-19",
   takeaways: [
     "Shopify plan prices and WordPress running costs, with the sources and their limits",
     "An 8-question scorecard that gives you a recommendation from your own answers",
@@ -42,21 +42,51 @@ export const shopifyVsWordpress: Post = {
           rows: [
             [
               "Core cost",
-              "Basic $39, Grow $105, Advanced $399 per month ($29, $79, $299 on annual billing); Starter $5; Plus about $2,300 – $2,500",
+              "Basic $39, Grow $105, Advanced $399 per month ($29, $79, $299 on annual billing); Starter $5; Plus about $2,300 to $2,500",
               "Software free",
             ],
-            ["Hosting", "Included", "$40 – $150 per year for a self-managed site"],
-            ["Domain", "Extra, or via Shopify", "$12 – $25 per year"],
-            ["Theme", "Free and paid themes", "Free or premium, about $30 – $100"],
+            ["Hosting", "Included", "$40 to $150 per year for a self-managed site"],
+            ["Domain", "Extra, or via Shopify", "$12 to $25 per year"],
+            ["Theme", "Free and paid themes", "Free or premium, about $30 to $100"],
             [
               "Extras",
-              "Apps for an established store about $200 – $500 per month in one guide; transaction fees when not using Shopify Payments",
+              "Apps for an established store about $200 to $500 per month in one guide; transaction fees when not using Shopify Payments",
               "Paid plugins; security and updates are your responsibility",
             ],
-            ["Build cost, freelancer", "$2,000 – $10,000", "$1,500 – $5,000"],
-            ["Build cost, agency", "$8,000 – $50,000+", "$5,000 – $15,000"],
+            ["Build cost, freelancer", "$2,000 to $10,000", "$1,500 to $5,000"],
+            ["Build cost, agency", "$8,000 to $50,000+", "$5,000 to $15,000"],
           ],
           note: "Sources: NerdWallet, WebsiteBuilderExpert, Swell and 2HatsLogic for Shopify plans; WebsiteSetup, FS Code and WPZoom for WordPress. Sources differ slightly on the Shopify Basic price. The two build-cost rows are not like-for-like: a Shopify build usually includes the store, while WordPress ranges cover many types of site.",
+        },
+        {
+          type: "table",
+          caption: "UK costs in pounds",
+          head: ["Item", "Shopify (UK)", "WordPress (UK)"],
+          rows: [
+            [
+              "Core cost",
+              "Basic £19, Grow £49, Advanced £259 a month on yearly billing; Plus from £1,800",
+              "Software free",
+            ],
+            ["Hosting", "Included", "Managed WordPress hosting £15 to £60 a month"],
+            ["Domain", "Extra, or via Shopify", "£10 to £20 a year"],
+            [
+              "Payments",
+              "Shopify Payments from 2% + 25p per online order on Basic",
+              "Depends on your payment provider",
+            ],
+            [
+              "Build cost, freelancer",
+              "Not separately reported in UK guides",
+              "£1,500 to £3,500 for a 4 to 6 page site",
+            ],
+            [
+              "Build cost, agency",
+              "£5,000 to £15,000 for a typical UK ecommerce build",
+              "£3,500 to £8,000 custom design; WooCommerce from about £5,000",
+            ],
+          ],
+          note: "Sources: Shopify UK pricing page (checked 14 October 2026), MoneyMagpie (July 2026) and UK agency cost guides listed in our website cost guide. Figures exclude VAT unless the source says otherwise.",
         },
         {
           type: "p",
@@ -168,6 +198,11 @@ export const shopifyVsWordpress: Post = {
     },
   ],
   sources: [
+    { label: "Shopify: pricing (UK), checked 14 October 2026", url: "https://www.shopify.com/uk/pricing" },
+    {
+      label: "MoneyMagpie: how much should a small business pay for a website in 2026? (UK)",
+      url: "https://www.moneymagpie.com/manage-your-money/how-much-should-a-small-business-pay-for-a-website-in-2026",
+    },
     {
       label: "NerdWallet: Shopify pricing 2026",
       url: "https://www.nerdwallet.com/article/small-business/shopify-pricing",

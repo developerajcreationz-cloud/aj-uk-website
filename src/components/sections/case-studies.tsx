@@ -88,14 +88,6 @@ export function CaseStudies() {
                         Read the case study →
                       </Link>
                     )}
-                    <a
-                      href={p.sourceUrl}
-                      target="_blank"
-                      rel="noopener"
-                      className="border-b border-ink/25 pb-1 hover:border-ink"
-                    >
-                      Full project on ajcreationz.co ↗
-                    </a>
                     <Link href="/contact/" className="border-b border-ink/25 pb-1 hover:border-ink">
                       Start a similar project →
                     </Link>
