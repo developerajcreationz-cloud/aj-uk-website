@@ -4,7 +4,11 @@ export type Block =
   | { type: "p"; text: string }
   | { type: "h3"; text: string }
   | { type: "ul"; items: string[] }
-  | { type: "ol"; items: string[] }
+  | {
+      type: "ol";
+      items: string[];
+      /** First number when a list continues an earlier one. Defaults to 1. */ start?: number;
+    }
   | { type: "table"; caption?: string; head: string[]; rows: string[][]; note?: string }
   | { type: "callout"; title: string; text: string };
 

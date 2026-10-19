@@ -65,7 +65,7 @@ export async function POST(request: Request) {
       from: `"AJ Creationz Website" <${SMTP_USER}>`,
       to: TO,
       replyTo: `"${name.replace(/"/g, "")}" <${email}>`,
-      subject: `New enquiry: ${projectType} — ${name}`,
+      subject: `New enquiry: ${projectType}, ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nProject type: ${projectType}\n\n${message}`,
     });
   } catch (err) {

@@ -21,7 +21,7 @@ export const hubspotAlternatives: Post = {
   related: ["gohighlevel-pricing", "gohighlevel-vs-hubspot", "google-ads-cost"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-11",
-  dateModified: "2026-10-11",
+  dateModified: "2026-10-19",
   takeaways: [
     "A need-by-need table that matches common reasons for leaving HubSpot to specific alternatives",
     "Entry prices for Zoho CRM, Pipedrive and others, and where per-seat pricing overtakes a flat-fee tool",
@@ -93,6 +93,19 @@ export const hubspotAlternatives: Post = {
             ],
           ],
           note: "Sources: FitSmallBusiness (Pipedrive and Zoho plan prices), EngageBay (other entry prices; EngageBay sells a competing product), Zoho (free plan), HighLevel (pricing page). Prices change; confirm on each vendor's page.",
+        },
+        {
+          type: "table",
+          caption: "Prices in pounds for UK buyers",
+          head: ["Tool", "UK price", "Note"],
+          rows: [
+            ["HubSpot Smart CRM", "£0 for up to 2 users", "Free tier"],
+            ["HubSpot Starter (any hub)", "£18 a seat a month", "Annual billing, excluding VAT"],
+            ["HubSpot Sales Hub Professional", "£85 a seat a month", "Annual billing, excluding VAT"],
+            ["Pipedrive", "Roughly £12, £31 and £51 a user a month", "Converted from dollar list prices by the source"],
+            ["GoHighLevel", "Quoted in US dollars ($97 a month)", "Your card provider converts at its own rate"],
+          ],
+          note: "Sources: Spotdev (HubSpot UK prices, checked 11 July 2026) and Compare the Cloud (Pipedrive in GBP, February 2026). HubSpot charges a one-time onboarding fee on some Professional plans. Confirm current prices and VAT on each vendor's UK page.",
         },
         {
           type: "p",
@@ -236,6 +249,14 @@ export const hubspotAlternatives: Post = {
     },
   ],
   sources: [
+    {
+      label: "Spotdev: how much does HubSpot cost in the UK? (prices checked 11 July 2026)",
+      url: "https://www.spotdev.co.uk/blog/how-much-does-hubspot-cost-uk",
+    },
+    {
+      label: "Compare the Cloud: HubSpot vs Salesforce Essentials vs Pipedrive, real costs in GBP (Feb 2026)",
+      url: "https://www.comparethecloud.net/articles/hubspot-crm-vs-salesforce-essentials-vs-pipedrive-uk-b2b-company-10-50-staff-gbp",
+    },
     { label: "HubSpot: free CRM page", url: "https://www.hubspot.com/pricing/crm" },
     {
       label: "Zoho: CRM pricing and editions (free for 3 users)",

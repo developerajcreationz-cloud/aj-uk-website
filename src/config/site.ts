@@ -1,8 +1,6 @@
 export const SITE = {
   name: "AJ Creationz",
   url: "https://ajcreationz.co.uk",
-  /** Global brand site. ajcreationz.co serves the world; this site (ajcreationz.co.uk) serves the UK and US. */
-  mainSiteUrl: "https://ajcreationz.co",
   title: "Digital Agency | Web, Brand, SEO & Ads | AJ Creationz",
   description:
     "Digital agency for UK and US businesses: WordPress, Shopify and custom websites, brand identity, SEO, Meta and Google Ads, video and GoHighLevel CRM.",
@@ -11,9 +9,9 @@ export const SITE = {
   /** Search Console HTML-tag verification. Keep this tag in the page head. */
   googleVerification: "Yp0JS38ugKIipb5Dze06h2fRRWb8XHbVmPbuiV65Ye0",
   /** Bump when page content changes materially; used for sitemap lastModified. */
-  contentUpdated: "2026-10-10",
+  contentUpdated: "2026-10-19",
   markets: ["United Kingdom", "United States"],
-  /** Profiles taken from the main site (ajcreationz.co). */
+  /** Brand social profiles. ajcreationz.co is a separate site and is not linked from here. */
   social: [
     { label: "Instagram", href: "https://www.instagram.com/ajcreationz.co/" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/ahmadjan1012/" },

@@ -20,7 +20,7 @@ export const gohighlevelVsHubspot: Post = {
   related: ["google-ads-vs-facebook-ads", "seo-pricing"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-05",
-  dateModified: "2026-10-05",
+  dateModified: "2026-10-19",
   takeaways: [
     "Published GoHighLevel and HubSpot prices, with the sources and their limits",
     "A yearly cost model with the arithmetic shown, so you can rerun it for your team size",
@@ -83,7 +83,7 @@ export const gohighlevelVsHubspot: Post = {
             ["GoHighLevel Agency Pro (white-label)", "$497 per month", "Includes white-label and SaaS mode"],
             [
               "GoHighLevel usage (SMS, email, voice)",
-              "about $25 – $75 per month for a typical local business",
+              "about $25 to $75 per month for a typical local business",
               "From our [GoHighLevel guide](/services/gohighlevel-crm)",
             ],
             ["HubSpot Starter Customer Platform", "about $20 per seat per month", "Promotional prices are lower"],
@@ -99,6 +99,11 @@ export const gohighlevelVsHubspot: Post = {
             ],
           ],
           note: "None of these figures comes from the vendors' own pricing pages, which we could not open. One reseller's example for 5,000 contacts and 5 users reports roughly $3,564 a year for GoHighLevel against $14,880 for HubSpot; that is a single vendor-biased calculation, so we built our own model below.",
+        },
+        {
+          type: "callout",
+          title: "Paying in pounds",
+          text: "HubSpot's UK prices are set in pounds: about £18 a seat a month for Starter and £85 a seat for Sales Hub Professional on annual billing, excluding VAT (Spotdev, prices checked July 2026). GoHighLevel's plans are quoted in US dollars, so a UK business pays $97, $297 or $497 a month converted at its card provider's rate, plus any foreign transaction fee. For the 5-seat example below in pounds: HubSpot Starter is 18 × 5 × 12 = £1,080 a year and Sales Hub Professional is 85 × 5 × 12 = £5,100, before onboarding fees and VAT.",
         },
       ],
     },
@@ -203,6 +208,10 @@ export const gohighlevelVsHubspot: Post = {
     },
   ],
   sources: [
+    {
+      label: "Spotdev: how much does HubSpot cost in the UK? (prices checked 11 July 2026)",
+      url: "https://www.spotdev.co.uk/blog/how-much-does-hubspot-cost-uk",
+    },
     { label: "Softr: GoHighLevel vs HubSpot, 2026 comparison", url: "https://softr.io/blog/gohighlevel-vs-hubspot" },
     {
       label: "RSLA: GoHighLevel vs HubSpot for small business",

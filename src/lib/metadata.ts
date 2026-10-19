@@ -16,10 +16,13 @@ type PageMeta = {
   /** Path with trailing slash, e.g. "/services/seo-growth/". */
   path: string;
   article?: { publishedTime: string; modifiedTime: string; authors: string[] };
+  /** Page-specific share image; defaults to the site-wide card. */
+  image?: { url: string; alt: string };
 };
 
 /** Metadata for one page: canonical plus matching Open Graph and Twitter cards, so none inherit the homepage's. */
-export function pageMetadata({ title, description, path, article }: PageMeta): Metadata {
+export function pageMetadata({ title, description, path, article, image }: PageMeta): Metadata {
+  const og = image ? { ...OG_IMAGE, ...image } : OG_IMAGE;
   return {
     title: { absolute: title },
     description,
@@ -32,9 +35,9 @@ export function pageMetadata({ title, description, path, article }: PageMeta): M
       siteName: SITE.name,
       locale: "en_GB",
       alternateLocale: ["en_US"],
-      images: [OG_IMAGE],
+      images: [og],
       ...(article ? { type: "article" as const, ...article } : { type: "website" as const }),
     },
-    twitter: { card: "summary_large_image", title, description, images: [OG_IMAGE.url] },
+    twitter: { card: "summary_large_image", title, description, images: [og.url] },
   };
 }

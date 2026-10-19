@@ -24,7 +24,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: { default: SITE.title, template: "%s — AJ Creationz" },
+  title: { default: SITE.title, template: "%s | AJ Creationz" },
   description: SITE.description,
   applicationName: SITE.name,
   authors: [{ name: SITE.name, url: `${SITE.url}/` }],
@@ -66,7 +66,7 @@ const jsonLd = {
       description: SITE.description,
       email: SITE.email,
       areaServed: SITE.markets.map((name) => ({ "@type": "Country", name })),
-      sameAs: [SITE.mainSiteUrl, ...SITE.social.map((s) => s.href)],
+      sameAs: SITE.social.map((s) => s.href),
       employee: SITE.team.map((m) => ({
         "@type": "Person",
         name: m.name,

@@ -33,10 +33,10 @@ export function PostBlocks({ blocks }: { blocks: Block[] }) {
             );
           case "ol":
             return (
-              <ol key={i} className="space-y-3">
+              <ol key={i} start={b.start} className="space-y-3">
                 {b.items.map((it, n) => (
                   <li key={it} className="flex gap-4">
-                    <span className="font-mono text-sm text-violet">{String(n + 1).padStart(2, "0")}</span>
+                    <span className="font-mono text-sm text-violet">{String(n + (b.start ?? 1)).padStart(2, "0")}</span>
                     <span>
                       <InlineText text={it} />
                     </span>

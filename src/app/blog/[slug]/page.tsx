@@ -9,13 +9,16 @@ import { InlineText } from "@/components/sections/inline-text";
 import { Accordion } from "@/components/ui/accordion";
 import { Reveal } from "@/components/ui/reveal";
 import { PostBlocks } from "@/components/sections/post-body";
-import { POSTS, categoryOf, getPost } from "@/content/posts";
+import { categoryOf, getPost, livePosts } from "@/content/posts";
 import { getService } from "@/content/services";
 import { pageMetadata } from "@/lib/metadata";
 import { SITE } from "@/config/site";
 
+/** Re-render hourly; a scheduled post renders on demand once its date arrives and 404s before it. */
+export const revalidate = 3600;
+
 export function generateStaticParams() {
-  return POSTS.map((p) => ({ slug: p.slug }));
+  return livePosts().map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -27,6 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: p.metaDescription,
     path: `/blog/${p.slug}/`,
     article: { publishedTime: p.datePublished, modifiedTime: p.dateModified, authors: [p.author.name] },
+    image: { url: `/og/blog/${p.slug}/`, alt: p.title },
   });
 }
 
@@ -49,6 +53,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         description: post.metaDescription,
         url,
         mainEntityOfPage: url,
+        image: `${SITE.url}/og/blog/${post.slug}/`,
         datePublished: post.datePublished,
         dateModified: post.dateModified,
         keywords: [post.primaryKeyword, ...post.secondaryKeywords].join(", "),

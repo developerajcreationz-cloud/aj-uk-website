@@ -94,9 +94,9 @@ export const SERVICES: Service[] = [
       intro:
         "Published pricing guides give these indicative ranges in US dollars. They are market figures, not AJ Creationz quotes, and prices vary by region and scope.",
       rows: [
-        { label: "Freelance logo design", range: "$200 – $1,500" },
-        { label: "Design agency or small studio (logo plus basic system)", range: "$1,000 – $10,000+" },
-        { label: "Boutique agency, full identity with strategy and guidelines", range: "$10,000 – $50,000" },
+        { label: "Freelance logo design", range: "$200 to $1,500" },
+        { label: "Design agency or small studio (logo plus basic system)", range: "$1,000 to $10,000+" },
+        { label: "Boutique agency, full identity with strategy and guidelines", range: "$10,000 to $50,000" },
       ],
       note: "Sources: DesignMonks (2026), Fiverr's branding cost guide (2026) and Inkbot Design (2026). Most publishers sell branding services, so treat these as a guide and compare written quotes. Check that any quote includes full ownership of the final files, every file format and a stated number of revision rounds.",
     },
@@ -206,10 +206,10 @@ export const SERVICES: Service[] = [
       intro:
         "Published guides give these indicative ranges in US dollars. They are market figures, not AJ Creationz quotes, and rates vary by region and scope.",
       rows: [
-        { label: "Freelancer-built small business site (5–10 pages)", range: "$1,500 – $5,000" },
-        { label: "Agency-built WordPress site with strategy and content", range: "$5,000 – $15,000" },
-        { label: "Shopify store, freelancer", range: "$2,000 – $10,000" },
-        { label: "Shopify store, agency", range: "$8,000 – $50,000+" },
+        { label: "Freelancer-built small business site (5 to 10 pages)", range: "$1,500 to $5,000" },
+        { label: "Agency-built WordPress site with strategy and content", range: "$5,000 to $15,000" },
+        { label: "Shopify store, freelancer", range: "$2,000 to $10,000" },
+        { label: "Shopify store, agency", range: "$8,000 to $50,000+" },
       ],
       note: "Sources: WebsiteSetup, FS Code and WPZoom (2026) for WordPress; Ecosire (2026) for Shopify, a single vendor source. Ecommerce, custom features and integrations push costs above these ranges, and most publishers sell website services. Compare scope, not just price.",
     },
@@ -319,11 +319,14 @@ export const SERVICES: Service[] = [
       rows: [
         {
           label: "DIY: domain, hosting and optional premium theme",
-          range: "domain $12–$25/yr, hosting $40–$150/yr, theme $30–$100",
+          range: "domain $12 to $25/yr, hosting $40 to $150/yr, theme $30 to $100",
         },
-        { label: "Freelancer build, 5–10 page business site", range: "$1,500 – $5,000" },
-        { label: "Agency build including strategy, design and content", range: "$5,000 – $15,000" },
-        { label: "Developer hourly rates by region", range: "$25–$60 emerging markets; $75–$200 US, UK, Australia" },
+        { label: "Freelancer build, 5 to 10 page business site", range: "$1,500 to $5,000" },
+        { label: "Agency build including strategy, design and content", range: "$5,000 to $15,000" },
+        {
+          label: "Developer hourly rates by region",
+          range: "$25 to $60 emerging markets; $75 to $200 US, UK, Australia",
+        },
       ],
       note: "Sources: WebsiteSetup, FS Code and WPZoom (2026). Several publishers sell WordPress hosting, themes or development, so figures can lean high or low. Get written quotes that list exactly what is included.",
     },
@@ -421,11 +424,11 @@ export const SERVICES: Service[] = [
       intro:
         "There are two separate costs: Shopify's subscription and the build. Published guides give these indicative figures in US dollars.",
       rows: [
-        { label: "Freelancer build", range: "$2,000 – $10,000" },
-        { label: "Agency build", range: "$8,000 – $50,000+" },
-        { label: "Migration from another platform (extra)", range: "$1,500 – $15,000" },
-        { label: "Apps for an established store, per month", range: "$200 – $500" },
-        { label: "Payment processing on most plans", range: "≈ 2.5–2.9% + 30¢ per order" },
+        { label: "Freelancer build", range: "$2,000 to $10,000" },
+        { label: "Agency build", range: "$8,000 to $50,000+" },
+        { label: "Migration from another platform (extra)", range: "$1,500 to $15,000" },
+        { label: "Apps for an established store, per month", range: "$200 to $500" },
+        { label: "Payment processing on most plans", range: "≈ 2.5 to 2.9% + 30¢ per order" },
       ],
       note: "Source: Ecosire (2026), a single vendor blog, so treat as indicative. Check Shopify's own pricing page for current subscription plans, which vary by country and billing period.",
     },
@@ -637,11 +640,11 @@ export const SERVICES: Service[] = [
       intro:
         "Published guides give these indicative figures in US dollars. We provide fixed quotes once we have seen your footage and brief.",
       rows: [
-        { label: "Short-form video, beginner editor", range: "$25 – $75" },
-        { label: "Short-form video, intermediate editor", range: "$75 – $200" },
-        { label: "Short-form video, senior editor", range: "$200 – $500" },
-        { label: "Hourly rate, Western mid-level editor", range: "$50 – $150" },
-        { label: "Hourly rate, offshore editor in Southeast Asia", range: "$15 – $40" },
+        { label: "Short-form video, beginner editor", range: "$25 to $75" },
+        { label: "Short-form video, intermediate editor", range: "$75 to $200" },
+        { label: "Short-form video, senior editor", range: "$200 to $500" },
+        { label: "Hourly rate, Western mid-level editor", range: "$50 to $150" },
+        { label: "Hourly rate, offshore editor in Southeast Asia", range: "$15 to $40" },
       ],
       note: "Sources: Ad Snipper, Vidico and Videotto (2026), all of which sell editing or clipping services. Captions, color grading, motion graphics, the number of formats and revisions all raise the price.",
     },
@@ -750,11 +753,11 @@ export const SERVICES: Service[] = [
       intro:
         "Published guides give these indicative monthly ranges in US dollars. They are market figures, not AJ Creationz quotes.",
       rows: [
-        { label: "Typical small-business budget", range: "$500 – $5,000 per month" },
-        { label: "Freelancers", range: "$300 – $1,500 per month" },
-        { label: "Mid-size agencies", range: "$1,500 – $5,000 per month" },
-        { label: "Local SEO", range: "$500 – $2,500 per month" },
-        { label: "One-time audit, rebuild or migration", range: "$1,000 – $5,000" },
+        { label: "Typical small-business budget", range: "$500 to $5,000 per month" },
+        { label: "Freelancers", range: "$300 to $1,500 per month" },
+        { label: "Mid-size agencies", range: "$1,500 to $5,000 per month" },
+        { label: "Local SEO", range: "$500 to $2,500 per month" },
+        { label: "One-time audit, rebuild or migration", range: "$1,000 to $5,000" },
       ],
       note: "Sources: SEO.com, SEOProfy and W3Era (2026); most are published by SEO providers, so ranges differ. One 2026 agency survey reported most agencies raising rates for AI search work. Ask exactly what work is included each month.",
     },
@@ -854,11 +857,11 @@ export const SERVICES: Service[] = [
       intro:
         "There are two separate costs: what you pay the platforms, and what you pay to manage them. Published guides give these indicative figures in US dollars.",
       rows: [
-        { label: "Management fee as share of ad spend", range: "10% – 20% (small accounts often 20–30%)" },
-        { label: "Flat retainer, mid-tier agency", range: "$1,500 – $3,500 per month" },
-        { label: "Flat retainer, complex or enterprise accounts", range: "$5,000 – $10,000+ per month" },
+        { label: "Management fee as share of ad spend", range: "10% to 20% (small accounts often 20 to 30%)" },
+        { label: "Flat retainer, mid-tier agency", range: "$1,500 to $3,500 per month" },
+        { label: "Flat retainer, complex or enterprise accounts", range: "$5,000 to $10,000+ per month" },
         { label: "Hybrid example", range: "$1,000 base + 5% of spend" },
-        { label: "Account setup", range: "$500 – $5,000+" },
+        { label: "Account setup", range: "$500 to $5,000+" },
       ],
       note: "Sources: Outerbox Design, Linear Design, ClicksGeek and SaaS Hero (2026), all of which sell ad management. Ad spend is paid directly to Google and Meta and is not included in management fees. Ask for the fee structure in writing, including what setup and reporting cover.",
     },
@@ -977,6 +980,17 @@ export const SERVICES: Service[] = [
         ],
       },
     ],
+    pricing: {
+      h2: "How much does Google Ads management cost?",
+      intro:
+        "You pay Google for clicks and pay a manager separately. Published guides give these indicative management figures in US dollars, on top of ad spend.",
+      rows: [
+        { label: "Management fee as share of ad spend", range: "10% to 20% (small accounts often 20% to 30%)" },
+        { label: "Flat retainer, mid-tier agency", range: "$1,500 to $3,500 per month" },
+        { label: "Account setup", range: "$500 to $5,000+" },
+      ],
+      note: "Sources: Outerbox Design, Linear Design and ClicksGeek (2026), all of which sell ad management. Ad spend is paid directly to Google and is not part of the management fee. Our guide to [Google Ads cost](/blog/google-ads-cost/) covers click prices and budgets.",
+    },
     method: {
       name: "The AJ Search Audit",
       steps: [
@@ -1071,9 +1085,9 @@ export const SERVICES: Service[] = [
       intro:
         "Meta ad management is usually priced the same ways as other paid media. Published guides give these indicative figures in US dollars.",
       rows: [
-        { label: "Agency fee as share of ad spend", range: "10% – 20%" },
-        { label: "Flat monthly retainer, mid-tier agency", range: "$1,500 – $3,500" },
-        { label: "Account setup", range: "$500 – $5,000+" },
+        { label: "Agency fee as share of ad spend", range: "10% to 20%" },
+        { label: "Flat monthly retainer, mid-tier agency", range: "$1,500 to $3,500" },
+        { label: "Account setup", range: "$500 to $5,000+" },
       ],
       note: "Sources: Outerbox Design, Linear Design and ClicksGeek (2026), which cover paid media management generally and sell the service. Ad spend is paid to Meta, separately from our fee.",
     },
@@ -1170,7 +1184,7 @@ export const SERVICES: Service[] = [
         { label: "Starter plan", range: "$97 per month" },
         { label: "Unlimited plan", range: "$297 per month" },
         { label: "Agency Pro / SaaS Mode (white-label)", range: "$497 per month" },
-        { label: "Usage (SMS, email, voice) for a typical local business", range: "≈ $25 – $75 per month" },
+        { label: "Usage (SMS, email, voice) for a typical local business", range: "≈ $25 to $75 per month" },
         { label: "Basic freelance setup package (example listing)", range: "from $500" },
       ],
       note: "Sources: Ecosire (2026), which sells GoHighLevel services, and a Contra freelancer listing. We could not confirm these against GoHighLevel's own pricing page, so check it for current plans. Professional setup varies widely with the number of pipelines, automations and integrations.",
@@ -1209,53 +1223,95 @@ export const SERVICES: Service[] = [
   },
 ];
 
-/** UK market figures in GBP, kept separate from the USD tables. Sourced from UK guides searched on 10 Oct 2026; most publishers sell the service. */
+/** UK market figures in GBP, shown beside the US figures in USD on each service page. Sourced from UK guides (10 to 19 Oct 2026); most publishers sell the service. */
 export const UK_PRICING: Record<string, { intro: string; rows: { label: string; range: string }[]; note: string }> = {
   "brand-identity": {
     intro: "UK pricing guides give these indicative ranges in pounds.",
     rows: [
-      { label: "Logo only, professional small-business logo", range: "£500 – £3,000" },
-      { label: "Logo plus brand guidelines (starter pack)", range: "£1,500 – £5,000" },
-      { label: "Full identity with strategy, SMEs", range: "£5,000 – £20,000" },
-      { label: "Complete rebrand with research and rollout", range: "£10,000 – £50,000+" },
+      { label: "Logo only, professional small-business logo", range: "£500 to £3,000" },
+      { label: "Logo plus brand guidelines (starter pack)", range: "£1,500 to £5,000" },
+      { label: "Full identity with strategy, SMEs", range: "£5,000 to £20,000" },
+      { label: "Complete rebrand with research and rollout", range: "£10,000 to £50,000+" },
     ],
     note: "Sources: whito.co.uk, Huddle Creative and Phable, searched 10 Oct 2026. Figures disagree between publishers and London agencies are reported to charge more than regional ones. Confirm whether quotes include VAT.",
   },
   "website-development": {
     intro: "UK cost guides give these indicative ranges in pounds.",
     rows: [
-      { label: "Professionally built small-business site", range: "£2,000 – £8,000" },
-      { label: "Regional or small agency build", range: "£2,500 – £10,000" },
-      { label: "Ecommerce build, typical UK agency", range: "£5,000 – £15,000" },
-      { label: "Agency hourly rate", range: "£80 – £150+" },
+      { label: "Professionally built small-business site", range: "£2,000 to £8,000" },
+      { label: "Regional or small agency build", range: "£2,500 to £10,000" },
+      { label: "Ecommerce build, typical UK agency", range: "£5,000 to £15,000" },
+      { label: "Agency hourly rate", range: "£80 to £150+" },
     ],
     note: "Sources: UK agency cost guides from Blue Whale Media, ProfileTree, Spotdev and Kwiboo, searched 10 Oct 2026. Ask whether support and hosting are included, because post-launch costs can exceed the build over three to five years.",
+  },
+  "wordpress-web-design": {
+    intro: "UK WordPress cost guides give these indicative ranges in pounds.",
+    rows: [
+      { label: "Domain registration", range: "£10 to £20 per year" },
+      { label: "Managed WordPress hosting", range: "£15 to £60 per month" },
+      { label: "Freelancer build, 4 to 6 page brochure site", range: "£1,500 to £3,500" },
+      { label: "Agency build, custom-designed WordPress site", range: "£3,500 to £8,000" },
+      { label: "WooCommerce store", range: "from about £5,000; complex builds £15,000 to £20,000" },
+      { label: "Managed care plan", range: "£40 to £120 per month" },
+    ],
+    note: "Sources: MoneyMagpie (July 2026) and Rocking Tech (July 2026), searched 19 Oct 2026. Rocking Tech sells WordPress builds. MoneyMagpie puts the yearly cost of owning a business site at about £2,000 to £4,000 including hosting, maintenance and improvements. Confirm whether quotes include VAT.",
+  },
+  "shopify-web-design": {
+    intro: "Shopify's UK plans and UK agency build figures, in pounds.",
+    rows: [
+      { label: "Shopify Basic / Grow / Advanced (yearly billing)", range: "£19 / £49 / £259 per month" },
+      { label: "Shopify Plus", range: "from £1,800 per month" },
+      { label: "Shopify Payments, online card rate (Basic)", range: "2% + 25p per order" },
+      { label: "Ecommerce build, typical UK agency", range: "£5,000 to £15,000" },
+      { label: "Larger UK store builds", range: "up to about £40,000" },
+    ],
+    note: "Sources: Shopify UK pricing page (checked 14 Oct 2026; monthly billing costs more) and UK agency cost guides from Blue Whale Media, ProfileTree, Spotdev and Kwiboo. See our [Shopify store cost guide](/blog/shopify-store-cost/) for apps, themes and the sales needed to justify each plan.",
+  },
+  "video-editing": {
+    intro: "UK video editing guides give these indicative figures in pounds.",
+    rows: [
+      { label: "Basic short-form video, single clip", range: "£150 to £500" },
+      { label: "Series of 3 to 5 short clips with custom graphics", range: "£800 to £2,000" },
+      { label: "Company profile video", range: "£1,500 to £6,000" },
+      { label: "Freelance editor, entry to mid level", range: "£20 to £80 per hour" },
+      { label: "Agency editing", range: "£100 to £300+ per hour" },
+    ],
+    note: "Sources: Videotto (UK, 2026), Vidico, Fash and Krock (2026), most of which sell editing. Captions, colour grading, motion graphics and extra formats raise the price. Our [video editing cost guide](/blog/video-editing-cost/) has a worked example.",
+  },
+  "google-ads-management": {
+    intro: "UK management-fee guides give these indicative ranges in pounds, on top of your ad spend.",
+    rows: [
+      { label: "Google Ads management, typical UK SME", range: "£500 to £2,500 per month" },
+      { label: "Percentage of ad spend", range: "10% to 20%" },
+    ],
+    note: "Sources: Advertizingly (June 2026) and whito.co.uk, searched 10 Oct 2026. Publishers sell the service, and several agencies decline accounts spending under about £500 a month on ads.",
   },
   "seo-growth": {
     intro: "UK SEO pricing guides give these indicative monthly ranges in pounds.",
     rows: [
-      { label: "Typical small-business SEO retainer", range: "£500 – £2,000 per month" },
+      { label: "Typical small-business SEO retainer", range: "£500 to £2,000 per month" },
       { label: "Local-only SEO", range: "from about £300 per month" },
-      { label: "Freelancers", range: "£300 – £1,000 per month" },
-      { label: "Competitive national or ecommerce SEO", range: "£2,000 – £8,000 per month" },
+      { label: "Freelancers", range: "£300 to £1,000 per month" },
+      { label: "Competitive national or ecommerce SEO", range: "£2,000 to £8,000 per month" },
     ],
     note: "Sources: whitehat-seo.co.uk, Epic Edits and whito.co.uk, searched 10 Oct 2026. All publishers sell SEO and several warn that packages under about £400 a month are mostly automated work. Confirm whether quotes include VAT.",
   },
   "meta-google-ads": {
     intro: "UK management-fee guides give these indicative ranges in pounds, on top of your ad spend.",
     rows: [
-      { label: "Google Ads management, typical UK SME", range: "£500 – £2,500 per month" },
-      { label: "Percentage of ad spend", range: "10% – 20%" },
-      { label: "Meta ads retainers", range: "£1,500 – £8,000+ per month" },
-      { label: "Typical minimum ad budget cited by one UK guide (Meta)", range: "£3,000 – £5,000 per month" },
+      { label: "Google Ads management, typical UK SME", range: "£500 to £2,500 per month" },
+      { label: "Percentage of ad spend", range: "10% to 20%" },
+      { label: "Meta ads retainers", range: "£1,500 to £8,000+ per month" },
+      { label: "Typical minimum ad budget cited by one UK guide (Meta)", range: "£3,000 to £5,000 per month" },
     ],
     note: "Sources: Advertizingly (June 2026), whito.co.uk and Priority Pixels, searched 10 Oct 2026. Publishers sell these services and several agencies decline accounts spending under about £500 a month on ads.",
   },
   "meta-ads-management": {
     intro: "One UK guide gives these indicative figures in pounds, on top of your ad spend.",
     rows: [
-      { label: "Typical monthly retainer", range: "£1,500 – £8,000+" },
-      { label: "Percentage of spend", range: "10% – 20%" },
+      { label: "Typical monthly retainer", range: "£1,500 to £8,000+" },
+      { label: "Percentage of spend", range: "10% to 20%" },
     ],
     note: "Source: Priority Pixels guide to choosing a Meta ads agency, searched 10 Oct 2026. It also advises confirming that an agency uses both the Meta Pixel and the Conversions API, and asking how it handles UK consent and cookie compliance.",
   },
@@ -1265,7 +1321,7 @@ export const UK_PRICING: Record<string, { intro: string; rows: { label: string; 
       { label: "Implementation, UK specialist agency (from)", range: "£3,500" },
       { label: "White-label agency build (from)", range: "£8,000" },
       { label: "Consulting, hourly", range: "around £90 per hour" },
-      { label: "Full project-based builds, one ranking's range", range: "£2,000 – £12,000" },
+      { label: "Full project-based builds, one ranking's range", range: "£2,000 to £12,000" },
     ],
     note: "Sources: Softomate Solutions (a vendor that also ranks itself first in its own list) and a London GoHighLevel agency ranking, searched 10 Oct 2026. Treat as indicative; the sources are the vendors themselves.",
   },
