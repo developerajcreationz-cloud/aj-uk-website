@@ -18,9 +18,9 @@ export const videoAdsForSmallBusiness: Post = {
   parent: "video-editing",
   scene: "video",
   related: ["reels-and-tiktok-editing-guide", "video-editing-cost", "google-ads-vs-facebook-ads"],
-  author: { name: "Ahmad Jan", role: "Creative Imagination Lead" },
-  datePublished: "2026-11-19",
-  dateModified: "2026-11-19",
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
+  datePublished: "2026-11-03",
+  dateModified: "2026-11-03",
   takeaways: [
     "Three video ad types a small business can film with a phone, each with a shot list",
     "A 15-second script structure and the Meta formats to export, so one shoot covers feed, Reels and Stories",

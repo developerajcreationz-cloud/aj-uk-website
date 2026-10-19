@@ -19,8 +19,8 @@ export const seoRoi: Post = {
   scene: "seo",
   related: ["seo-pricing", "local-seo-cost", "technical-seo-audit-checklist"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-26",
-  dateModified: "2026-10-26",
+  datePublished: "2026-10-22",
+  dateModified: "2026-10-22",
   takeaways: [
     "An SEO ROI calculator you can fill in with five numbers, with worked UK and US examples and the arithmetic shown",
     "How to estimate the five inputs for free from Google's own tools and your own records",

@@ -19,9 +19,9 @@ export const websiteBriefTemplate: Post = {
   parent: "website-development",
   scene: "website",
   related: ["choose-a-web-design-agency", "how-much-does-a-website-cost", "website-migration-seo-checklist"],
-  author: { name: "Athar", role: "Strategic Director" },
-  datePublished: "2026-11-09",
-  dateModified: "2026-11-09",
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
+  datePublished: "2026-10-29",
+  dateModified: "2026-10-29",
   takeaways: [
     "A 12-section website brief template you can copy, with the question each section must answer",
     "A filled-in example brief for a fictional trade business, so you can see the level of detail that gets accurate quotes",

@@ -19,8 +19,8 @@ export const getBusinessOnGoogleMaps: Post = {
   scene: "seo",
   related: ["local-seo-cost", "seo-pricing", "seo-roi"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-11-05",
-  dateModified: "2026-11-05",
+  datePublished: "2026-10-27",
+  dateModified: "2026-10-27",
   takeaways: [
     "The steps to get a business on Google Maps, including the rules for service-area businesses that work from home",
     "A diagnosis table for the most common reasons a business is not showing on Google Maps, with the fix for each",

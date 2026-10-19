@@ -18,9 +18,9 @@ export const brandRefreshVsRebrand: Post = {
   parent: "brand-identity",
   scene: "brand",
   related: ["branding-cost", "brand-guidelines-template", "website-migration-seo-checklist"],
-  author: { name: "Hina", role: "Brand Architect" },
-  datePublished: "2026-11-23",
-  dateModified: "2026-11-23",
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
+  datePublished: "2026-11-05",
+  dateModified: "2026-11-05",
   takeaways: [
     "Seven signs it is time to change your brand, and which ones call for a refresh rather than a full rebrand",
     "A decision table for choosing between a brand refresh and a rebrand, with the risks of each",

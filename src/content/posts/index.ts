@@ -55,7 +55,7 @@ const ALL_POSTS: Post[] = [
   brandingCost,
   shopifyStoreCost,
   videoEditingCost,
-  // Lead-generation series, two a week from 22 Oct 2026 (Mondays and Thursdays).
+  // Lead-generation series, four a week from 20 Oct 2026 (Mon, Tue, Thu, Fri), all by Zohaib.
   speedToLead,
   seoRoi,
   websiteLeadGeneration,
