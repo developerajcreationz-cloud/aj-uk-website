@@ -18,9 +18,9 @@ export const facebookLeadAdsVsLandingPage: Post = {
   parent: "meta-ads-management",
   scene: "ads",
   related: ["google-ads-vs-facebook-ads", "google-ads-cost", "gohighlevel-pricing"],
-  author: { name: "Athar", role: "Strategic Director" },
-  datePublished: "2026-11-16",
-  dateModified: "2026-11-16",
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
+  datePublished: "2026-11-02",
+  dateModified: "2026-11-02",
   takeaways: [
     "How Facebook lead ads and landing pages differ in lead volume, quality and what you need to run them",
     "The instant form settings that reduce poor leads: Higher intent, qualifying questions and conditional logic",

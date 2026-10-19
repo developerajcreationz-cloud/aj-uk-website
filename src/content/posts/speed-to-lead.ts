@@ -17,9 +17,9 @@ export const speedToLead: Post = {
   parent: "gohighlevel-crm",
   scene: "crm",
   related: ["gohighlevel-pricing", "gohighlevel-vs-hubspot", "hubspot-alternatives"],
-  author: { name: "Athar", role: "Strategic Director" },
-  datePublished: "2026-10-22",
-  dateModified: "2026-10-22",
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
+  datePublished: "2026-10-20",
+  dateModified: "2026-10-20",
   takeaways: [
     "A 15-minute test that shows your real response time on every channel, with a log sheet",
     "Missed-call text back templates for UK and US trades, and the texting rules that apply in each country",

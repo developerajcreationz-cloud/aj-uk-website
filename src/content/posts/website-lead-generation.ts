@@ -18,8 +18,8 @@ export const websiteLeadGeneration: Post = {
   scene: "website",
   related: ["choose-a-web-design-agency", "how-much-does-a-website-cost", "technical-seo-audit-checklist"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-29",
-  dateModified: "2026-10-29",
+  datePublished: "2026-10-23",
+  dateModified: "2026-10-23",
   takeaways: [
     "A three-question diagnosis that tells you whether the problem is the traffic, the page or the follow-up",
     "A 15-point website lead generation scorecard you can run on your own site in under an hour",

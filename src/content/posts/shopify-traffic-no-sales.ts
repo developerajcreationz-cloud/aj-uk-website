@@ -19,8 +19,8 @@ export const shopifyTrafficNoSales: Post = {
   scene: "platforms",
   related: ["shopify-store-cost", "shopify-vs-wordpress", "website-maintenance-cost"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-11-12",
-  dateModified: "2026-11-12",
+  datePublished: "2026-10-30",
+  dateModified: "2026-10-30",
   takeaways: [
     "How to read Shopify's funnel to find the exact step where shoppers drop off, with a worked example",
     "2026 Shopify conversion rate benchmarks by industry, and why your traffic source matters more than the average",

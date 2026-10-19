@@ -17,9 +17,9 @@ export const googleAdsAudit: Post = {
   parent: "google-ads-management",
   scene: "ads",
   related: ["google-ads-cost", "google-ads-vs-facebook-ads", "seo-pricing"],
-  author: { name: "Athar", role: "Strategic Director" },
-  datePublished: "2026-11-02",
-  dateModified: "2026-11-02",
+  author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
+  datePublished: "2026-10-26",
+  dateModified: "2026-10-26",
   takeaways: [
     "A 12-point Google Ads audit in the order that finds the costly problems first, with where to click for each check",
     "The settings that quietly waste budget on small accounts: location options, auto-applied recommendations and broad search terms",
