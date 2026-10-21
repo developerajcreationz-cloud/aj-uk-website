@@ -43,6 +43,19 @@ export function Navbar() {
             />
           </Link>
 
+          <nav className="hidden items-center gap-8 md:flex lg:gap-10">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                data-cursor-hover
+                className="text-sm font-medium text-ink transition-colors hover:text-plum"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
           <div className="flex items-center gap-3 md:gap-4">
             <Link
               href="/contact/"
@@ -58,7 +71,7 @@ export function Navbar() {
               onClick={() => setOpen((v) => !v)}
               aria-expanded={open}
               aria-label="Toggle menu"
-              className="relative z-10 flex h-11 w-11 flex-col items-center justify-center gap-[6px] rounded-full border border-ink/15 bg-cream/60"
+              className="relative z-10 flex h-11 w-11 flex-col md:hidden items-center justify-center gap-[6px] rounded-full border border-ink/15 bg-cream/60"
             >
               <motion.span
                 animate={open ? { rotate: 45, y: 4 } : { rotate: 0, y: 0 }}
@@ -80,7 +93,7 @@ export function Navbar() {
             animate={{ clipPath: "circle(150% at calc(100% - 44px) 44px)" }}
             exit={{ clipPath: "circle(0% at calc(100% - 44px) 44px)" }}
             transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
-            className="fixed inset-0 z-30 flex flex-col overflow-y-auto bg-ink px-6 pb-10 pt-28 text-cream md:px-16"
+            className="fixed inset-0 z-30 flex flex-col overflow-y-auto md:hidden bg-ink px-6 pb-10 pt-28 text-cream md:px-16"
           >
             <nav className="my-auto flex flex-col gap-1 md:gap-2">
               {NAV_LINKS.map((link, i) => (
