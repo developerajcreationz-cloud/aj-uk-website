@@ -19,8 +19,8 @@ export const shopifyTrafficNoSales: Post = {
   scene: "platforms",
   related: ["shopify-store-cost", "shopify-vs-wordpress", "website-maintenance-cost"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-30",
-  dateModified: "2026-10-30",
+  datePublished: "2026-10-27",
+  dateModified: "2026-10-27",
   takeaways: [
     "How to read Shopify's funnel to find the exact step where shoppers drop off, with a worked example",
     "2026 Shopify conversion rate benchmarks by industry, and why your traffic source matters more than the average",
@@ -28,7 +28,7 @@ export const shopifyTrafficNoSales: Post = {
   ],
   answer: [
     "When a Shopify store gets traffic but no sales, the problem sits at one of four steps: the visitors are the wrong people, product pages do not persuade them to add to cart, the cart does not lead to checkout, or checkout loses them. Shopify's analytics shows sessions, add to cart, reached checkout and completed checkout, so you can see which step breaks rather than guessing.",
-    "For context, a 2026 benchmark of 745 Shopify stores put the average conversion rate at 2.61%, with a median of 1.74%, so half the stores in the sample converted fewer than about 2 in 100 sessions. If yours is far below that, start with traffic quality, then work down the funnel. This guide shows how to read your numbers, compares them with benchmarks by industry, and gives fixes for each step. For hands-on help, see our [Shopify web design service](/services/shopify-web-design).",
+    "For context, a 2026 benchmark of 745 Shopify stores put the average conversion rate at 2.61%, with a median of 1.74%, so half the stores in the sample converted fewer than about 2 in 100 sessions. If yours is far below that, start with traffic quality, then work down the funnel. This guide shows how to read your numbers, compares them with benchmarks by industry, and gives fixes for each step. For hands-on help, see our [Shopify web design service](/services/shopify-web-design/).",
   ],
   disclosure:
     "AJ Creationz builds and improves Shopify stores. Benchmarks are third-party figures from vendor studies and vary with sample and method; use them as a rough guide only.",
@@ -154,7 +154,7 @@ export const shopifyTrafficNoSales: Post = {
         },
         {
           type: "p",
-          text: "Fix the weakest step first and re-measure after two to four weeks, so you know which change made the difference. If the store also needs a bigger plan or theme, our [Shopify store cost guide](/blog/shopify-store-cost) shows what plans, apps and builds cost in pounds and dollars.",
+          text: "Fix the weakest step first and re-measure after two to four weeks, so you know which change made the difference. If the store also needs a bigger plan or theme, our [Shopify store cost guide](/blog/shopify-store-cost/) shows what plans, apps and builds cost in pounds and dollars.",
         },
       ],
     },

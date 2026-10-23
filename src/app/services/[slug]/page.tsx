@@ -124,7 +124,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               {children.map((c) => (
                 <li key={c.slug}>
                   <Link
-                    href={`/services/${c.slug}`}
+                    href={`/services/${c.slug}/`}
                     data-cursor-hover
                     className="block h-full rounded-2xl border border-ink/10 p-6 transition-colors hover:bg-ink hover:text-cream"
                   >
@@ -226,7 +226,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               {guides.map((g) => (
                 <li key={g.slug}>
                   <Link
-                    href={`/blog/${g.slug}`}
+                    href={`/blog/${g.slug}/`}
                     data-cursor-hover
                     className="block h-full rounded-2xl border border-ink/10 p-6 transition-colors hover:bg-ink hover:text-cream"
                   >
@@ -247,7 +247,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           {[...(parent ? [parent] : []), ...related].map((s) => (
             <Link
               key={s.slug}
-              href={`/services/${s.slug}`}
+              href={`/services/${s.slug}/`}
               className="rounded-full border border-ink/15 px-4 py-2 text-sm transition-colors hover:bg-ink hover:text-cream"
             >
               {s.title}
@@ -257,7 +257,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             TOP_LEVEL_SERVICES.filter((s) => s.slug !== service.slug && !service.related.includes(s.slug)).map((s) => (
               <Link
                 key={s.slug}
-                href={`/services/${s.slug}`}
+                href={`/services/${s.slug}/`}
                 className="rounded-full border border-ink/15 px-4 py-2 text-sm transition-colors hover:bg-ink hover:text-cream"
               >
                 {s.title}

@@ -67,7 +67,7 @@ export function BlogListing({ posts, category, page = 1, totalPages = 1 }: Props
               <li key={p.slug}>
                 <Reveal dir="zoom" delay={(i % 2) * 0.1} className="h-full">
                   <Link
-                    href={`/blog/${p.slug}`}
+                    href={`/blog/${p.slug}/`}
                     data-cursor-hover
                     className="block h-full rounded-2xl border border-ink/10 p-8 transition-all duration-500 hover:-translate-y-1.5 hover:bg-ink hover:text-cream hover:shadow-[0_30px_60px_-30px_rgba(76,29,149,0.5)]"
                   >

@@ -3,15 +3,13 @@ import type { Post } from "./types";
 export const seoPricing: Post = {
   slug: "seo-pricing",
   title: "SEO pricing: how much does SEO cost for a small business?",
-  metaTitle: "SEO Pricing: What Small Businesses Should Pay in 2026",
+  metaTitle: "SEO Pricing UK 2026: What Small Businesses Should Pay",
   metaDescription:
     "SEO pricing explained: monthly retainer ranges in pounds and dollars, what each tier should include, and a break-even formula to test if SEO is worth it.",
   primaryKeyword: "seo pricing",
   secondaryKeywords: [
     "how much does seo cost",
     "cheap seo packages",
-    "is seo worth it",
-    "local seo cost",
     "seo retainer cost",
     "small business seo cost per month",
   ],
@@ -20,7 +18,7 @@ export const seoPricing: Post = {
   related: ["how-much-does-a-website-cost", "google-ads-vs-facebook-ads"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-02",
-  dateModified: "2026-10-02",
+  dateModified: "2026-10-23",
   takeaways: [
     "Typical monthly SEO prices for small businesses, in pounds and dollars, with named sources",
     "What you should receive at each price, so you can spot a package that is mostly automation",
@@ -28,7 +26,7 @@ export const seoPricing: Post = {
   ],
   answer: [
     "SEO pricing for a small business usually lands between £500 and £2,000 a month in UK guides, and between $500 and $5,000 a month in US guides. Local-only work can start lower, around £300 a month, and competitive national or ecommerce campaigns run higher, from about £2,000 to £8,000 a month. Freelancers are cheaper, at roughly £300 to £1,000 or $300 to $1,500 a month, but you rely on one person.",
-    "How much does SEO cost in practice depends on what you are paying for: technical fixes, content, links and reporting all take different amounts of time. Prices under about £400 a month are treated with suspicion by several UK providers, who say they usually cover automated tasks with little strategy. This guide shows the ranges, what each tier should include, and a formula to test whether SEO is worth it for your numbers. If you want a scoped plan, see our [SEO and growth service](/services/seo-growth).",
+    "How much does SEO cost in practice depends on what you are paying for: technical fixes, content, links and reporting all take different amounts of time. Prices under about £400 a month are treated with suspicion by several UK providers, who say they usually cover automated tasks with little strategy. This guide shows the ranges, what each tier should include, and a formula to test whether SEO is worth it for your numbers. If you want a scoped plan, see our [SEO and growth service](/services/seo-growth/).",
   ],
   disclosure:
     "AJ Creationz sells SEO, and nearly every price guide we found is also published by an SEO provider. Treat all ranges as indicative and compare written quotes.",
@@ -123,7 +121,7 @@ export const seoPricing: Post = {
       blocks: [
         {
           type: "p",
-          text: "If you serve customers in a town or region, local SEO is often enough on its own: guides put it at about £300 a month in the UK and $500 to $2,500 in the US. It focuses on your Google Business Profile, reviews, consistent business details and location-relevant pages. If you sell nationally or online, you need the broader work above, which costs more. Our [website development](/services/website-development) work covers the technical side if your site is the bottleneck.",
+          text: "If you serve customers in a town or region, local SEO is often enough on its own: guides put it at about £300 a month in the UK and $500 to $2,500 in the US. It focuses on your Google Business Profile, reviews, consistent business details and location-relevant pages. If you sell nationally or online, you need the broader work above, which costs more. Our [website development](/services/website-development/) work covers the technical side if your site is the bottleneck.",
         },
       ],
     },

@@ -20,8 +20,8 @@ export const websiteBriefTemplate: Post = {
   scene: "website",
   related: ["choose-a-web-design-agency", "how-much-does-a-website-cost", "website-migration-seo-checklist"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-29",
-  dateModified: "2026-10-29",
+  datePublished: "2026-10-26",
+  dateModified: "2026-10-26",
   takeaways: [
     "A 12-section website brief template you can copy, with the question each section must answer",
     "A filled-in example brief for a fictional trade business, so you can see the level of detail that gets accurate quotes",
@@ -29,7 +29,7 @@ export const websiteBriefTemplate: Post = {
   ],
   answer: [
     "A website brief is a short document that tells a web designer what the site is for, who it is for, what pages and features it needs, what you already have, and your budget and deadline. A good website brief template covers those points in 12 sections and fits on two to four pages. It matters because designers quote on what they understand: two agencies given a vague brief can quote very different prices for very different sites, and you cannot compare them fairly.",
-    "Below is the template, the question each section must answer, a filled-in example, and an extra checklist if you are replacing an existing site. Send the same brief to every designer you ask to quote. For what the work should cost, see our [website cost guide](/blog/how-much-does-a-website-cost); to have us build it, see our [website development service](/services/website-development).",
+    "Below is the template, the question each section must answer, a filled-in example, and an extra checklist if you are replacing an existing site. Send the same brief to every designer you ask to quote. For what the work should cost, see our [website cost guide](/blog/how-much-does-a-website-cost/); to have us build it, see our [website development service](/services/website-development/).",
   ],
   disclosure:
     "AJ Creationz builds websites and receives briefs like this. The template is our own; use it with any designer or agency.",
@@ -196,7 +196,7 @@ export const websiteBriefTemplate: Post = {
         },
         {
           type: "p",
-          text: "Our [website migration SEO checklist](/blog/website-migration-seo-checklist) covers redirects in detail, with a redirect map template.",
+          text: "Our [website migration SEO checklist](/blog/website-migration-seo-checklist/) covers redirects in detail, with a redirect map template.",
         },
       ],
     },
@@ -205,7 +205,7 @@ export const websiteBriefTemplate: Post = {
       blocks: [
         {
           type: "p",
-          text: "Send the same brief to three designers or agencies and ask each to quote against it, listing what is included. That makes quotes comparable. Our guide to [choosing a web design agency](/blog/choose-a-web-design-agency) has the questions to ask and a scorecard for comparing proposals.",
+          text: "Send the same brief to three designers or agencies and ask each to quote against it, listing what is included. That makes quotes comparable. Our guide to [choosing a web design agency](/blog/choose-a-web-design-agency/) has the questions to ask and a scorecard for comparing proposals.",
         },
       ],
     },

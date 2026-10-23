@@ -3,7 +3,7 @@ import type { Post } from "./types";
 export const websiteMaintenanceCost: Post = {
   slug: "website-maintenance-cost",
   title: "Website maintenance cost: what a monthly care plan should include",
-  metaTitle: "Website Maintenance Cost per Month: Prices and Inclusions",
+  metaTitle: "Website Maintenance Cost UK: Monthly Prices and Inclusions",
   metaDescription:
     "Website maintenance cost per month in pounds and dollars by site type, what a care plan should include, and a checklist to compare quotes like for like.",
   primaryKeyword: "website maintenance cost",
@@ -18,10 +18,15 @@ export const websiteMaintenanceCost: Post = {
   ],
   parent: "wordpress-web-design",
   scene: "platforms",
-  related: ["how-much-does-a-website-cost", "technical-seo-audit-checklist", "shopify-vs-wordpress"],
+  related: [
+    "how-much-does-a-website-cost",
+    "technical-seo-audit-checklist",
+    "shopify-vs-wordpress",
+    "speed-up-wordpress-site",
+  ],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-13",
-  dateModified: "2026-10-13",
+  dateModified: "2026-10-23",
   takeaways: [
     "Monthly maintenance prices by site type in pounds and dollars, with sources and where they disagree",
     "A checklist of what a care plan should name in writing, so you can compare quotes like for like",
@@ -29,7 +34,7 @@ export const websiteMaintenanceCost: Post = {
   ],
   answer: [
     "Website maintenance usually costs £30 to £75 a month for a small brochure site, £75 to £150 for a WordPress business site, £150 to £300 for a lead-generation or custom site, and £200 to £500 or more for an online store, according to one UK guide. US guides give $35 to $500 a month for small and medium business sites and much more for ecommerce. Doing it yourself is cheaper in cash, typically under $100 a month, but costs your time.",
-    "A plan is only worth its price if it names what it does: updates, backups you can restore, security checks, uptime monitoring and support. The sections below list the prices, what to ask for and how to compare two quotes. If you want one scoped for your site, see our [WordPress web design and support](/services/wordpress-web-design).",
+    "A plan is only worth its price if it names what it does: updates, backups you can restore, security checks, uptime monitoring and support. The sections below list the prices, what to ask for and how to compare two quotes. If you want one scoped for your site, see our [WordPress web design and support](/services/wordpress-web-design/).",
   ],
   disclosure:
     "AJ Creationz builds and supports WordPress, Shopify and custom sites, so we sell what this guide describes. Most pages that rank for this topic are written by agencies and hosts with the same interest. Treat every range as indicative and ask for written quotes.",
@@ -133,7 +138,7 @@ export const websiteMaintenanceCost: Post = {
             [
               "Performance and SEO checks",
               "Speed scans, broken links, search health",
-              "What is checked and how it is reported. See our [technical SEO audit checklist](/blog/technical-seo-audit-checklist)",
+              "What is checked and how it is reported. See our [technical SEO audit checklist](/blog/technical-seo-audit-checklist/)",
             ],
             ["Reporting", "A short monthly summary", "What changed, what was fixed and what needs a decision"],
           ],
@@ -162,7 +167,7 @@ export const websiteMaintenanceCost: Post = {
         },
         {
           type: "p",
-          text: "For build and first-year costs, see [how much a website costs](/blog/how-much-does-a-website-cost), which includes a three-year cost worksheet.",
+          text: "For build and first-year costs, see [how much a website costs](/blog/how-much-does-a-website-cost/), which includes a three-year cost worksheet.",
         },
       ],
     },
@@ -201,7 +206,7 @@ export const websiteMaintenanceCost: Post = {
         },
         {
           type: "p",
-          text: "The honest version: sites built on a website builder or a hosted store platform need less upkeep because the provider handles updates. A WordPress site with several plugins needs regular attention. A site that takes payments or personal data needs the most. See [Shopify vs WordPress](/blog/shopify-vs-wordpress) for how the running costs differ.",
+          text: "The honest version: sites built on a website builder or a hosted store platform need less upkeep because the provider handles updates. A WordPress site with several plugins needs regular attention. A site that takes payments or personal data needs the most. See [Shopify vs WordPress](/blog/shopify-vs-wordpress/) for how the running costs differ.",
         },
       ],
     },

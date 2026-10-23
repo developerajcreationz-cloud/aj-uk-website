@@ -9,7 +9,7 @@ export const SITE = {
   /** Search Console HTML-tag verification. Keep this tag in the page head. */
   googleVerification: "Yp0JS38ugKIipb5Dze06h2fRRWb8XHbVmPbuiV65Ye0",
   /** Bump when page content changes materially; used for sitemap lastModified. */
-  contentUpdated: "2026-10-19",
+  contentUpdated: "2026-10-23",
   markets: ["United Kingdom", "United States"],
   /** Brand social profiles. ajcreationz.co is a separate site and is not linked from here. */
   social: [

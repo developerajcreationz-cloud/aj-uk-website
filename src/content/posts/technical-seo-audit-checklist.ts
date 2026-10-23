@@ -3,7 +3,7 @@ import type { Post } from "./types";
 export const technicalSeoAuditChecklist: Post = {
   slug: "technical-seo-audit-checklist",
   title: "Technical SEO audit checklist for small business websites",
-  metaTitle: "Technical SEO Audit Checklist: 20 Checks and a Free Sheet",
+  metaTitle: "SEO Audit Checklist: 20 Technical Checks and a Free Sheet",
   metaDescription:
     "A technical SEO audit checklist for small business sites: 20 checks for crawling, indexing, speed and markup, with severity ratings and an audit sheet.",
   primaryKeyword: "technical seo audit checklist",
@@ -21,7 +21,7 @@ export const technicalSeoAuditChecklist: Post = {
   related: ["seo-pricing", "website-migration-seo-checklist", "website-maintenance-cost"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-12",
-  dateModified: "2026-10-12",
+  dateModified: "2026-10-23",
   takeaways: [
     "Twenty checks in five groups, each with a free way to test it, what a pass looks like and how serious a failure is",
     "Current Google thresholds for Core Web Vitals, including why older checklists that list FID are out of date",
@@ -29,7 +29,7 @@ export const technicalSeoAuditChecklist: Post = {
   ],
   answer: [
     "A technical SEO audit checks whether Google can find, load and understand your pages. For a small business site, you can run a useful first pass in an afternoon with free tools: Google Search Console, PageSpeed Insights, your browser and two files on your own domain, robots.txt and the sitemap. Work through five groups in order, crawling and indexing, redirects and security, speed, mobile and rendering, then structure and markup, and rate each failure Critical, High, Medium or Low so you fix the damaging problems first.",
-    "The checklist below has 20 checks. If you would rather have someone run a deeper audit, see our [SEO and growth service](/services/seo-growth). Whoever does it, Google's advice is to give an auditor read-only access to Search Console, not write access.",
+    "The checklist below has 20 checks. If you would rather have someone run a deeper audit, see our [SEO and growth service](/services/seo-growth/). Whoever does it, Google's advice is to give an auditor read-only access to Search Console, not write access.",
   ],
   disclosure:
     "AJ Creationz sells SEO audits, and most checklists on this topic are published by SEO tool vendors. This one uses only free methods, and the severity ratings are our own house standard, not a Google score. Fixing technical issues does not guarantee higher rankings.",
@@ -310,7 +310,7 @@ export const technicalSeoAuditChecklist: Post = {
       blocks: [
         {
           type: "p",
-          text: "Google's own guidance on hiring an SEO is a useful filter. A good time to hire is a redesign or new site launch, when search can be built in. If an auditor asks for access, give read-only Search Console access. If anyone guarantees first place, find someone else. Check their recommendations against Google's official documentation rather than a third-party tool's score. If you are moving to a new site, use our [website migration SEO checklist](/blog/website-migration-seo-checklist), and for pricing see [SEO pricing](/blog/seo-pricing).",
+          text: "Google's own guidance on hiring an SEO is a useful filter. A good time to hire is a redesign or new site launch, when search can be built in. If an auditor asks for access, give read-only Search Console access. If anyone guarantees first place, find someone else. Check their recommendations against Google's official documentation rather than a third-party tool's score. If you are moving to a new site, use our [website migration SEO checklist](/blog/website-migration-seo-checklist/), and for pricing see [SEO pricing](/blog/seo-pricing/).",
         },
       ],
     },

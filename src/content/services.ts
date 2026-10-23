@@ -507,10 +507,10 @@ export const SERVICES: Service[] = [
         h2: "Custom, WordPress or Shopify: how to decide",
         paragraphs: ["Choose by the job the site has to do, not by what sounds most advanced. As a rule of thumb:"],
         bullets: [
-          "**Mostly pages and a blog, edited often by your team:** [WordPress](/services/wordpress-web-design) is usually the faster and cheaper route.",
-          "**Selling products with standard checkout:** [Shopify](/services/shopify-web-design) handles payments, tax and inventory so you do not have to.",
+          "**Mostly pages and a blog, edited often by your team:** [WordPress](/services/wordpress-web-design/) is usually the faster and cheaper route.",
+          "**Selling products with standard checkout:** [Shopify](/services/shopify-web-design/) handles payments, tax and inventory so you do not have to.",
           "**Custom logic, your own data, logins or a product:** a custom build is the better fit, because plugins and apps start to fight each other.",
-          "**Not sure:** [our website development overview](/services/website-development) compares the options, and we will recommend the simplest one that works.",
+          "**Not sure:** [our website development overview](/services/website-development/) compares the options, and we will recommend the simplest one that works.",
         ],
       },
       {
@@ -521,7 +521,7 @@ export const SERVICES: Service[] = [
         bullets: [
           "The full source code in a repository you own, with a README explaining how to run, change and deploy it",
           "Hosting and domain set up in your accounts, with access details",
-          "Search basics built in: unique titles and descriptions, a sitemap, canonical URLs, structured data and 301 redirects if you are replacing an old site (see our [website migration checklist](/blog/website-migration-seo-checklist))",
+          "Search basics built in: unique titles and descriptions, a sitemap, canonical URLs, structured data and 301 redirects if you are replacing an old site (see our [website migration checklist](/blog/website-migration-seo-checklist/))",
           "Analytics and conversion tracking installed and tested, with consent handled for your audience",
           "A short walkthrough for the people who will edit content",
         ],
@@ -950,7 +950,7 @@ export const SERVICES: Service[] = [
       {
         h2: "Google Ads on its own, or alongside Meta?",
         paragraphs: [
-          "This page covers Google Ads only. If you are still choosing between Google and Facebook or Instagram, read our [PPC agency overview](/services/meta-google-ads) or the guide to [Google Ads vs Facebook Ads](/blog/google-ads-vs-facebook-ads). For Meta campaigns specifically, see [Meta ads management](/services/meta-ads-management).",
+          "This page covers Google Ads only. If you are still choosing between Google and Facebook or Instagram, read our [PPC agency overview](/services/meta-google-ads/) or the guide to [Google Ads vs Facebook Ads](/blog/google-ads-vs-facebook-ads/). For Meta campaigns specifically, see [Meta ads management](/services/meta-ads-management/).",
         ],
       },
       {

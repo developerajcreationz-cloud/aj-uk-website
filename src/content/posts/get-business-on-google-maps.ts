@@ -19,8 +19,8 @@ export const getBusinessOnGoogleMaps: Post = {
   scene: "seo",
   related: ["local-seo-cost", "seo-pricing", "seo-roi"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-27",
-  dateModified: "2026-10-27",
+  datePublished: "2026-10-25",
+  dateModified: "2026-10-25",
   takeaways: [
     "The steps to get a business on Google Maps, including the rules for service-area businesses that work from home",
     "A diagnosis table for the most common reasons a business is not showing on Google Maps, with the fix for each",
@@ -28,7 +28,7 @@ export const getBusinessOnGoogleMaps: Post = {
   ],
   answer: [
     "To get your business on Google Maps, create or claim a Google Business Profile, enter your real business name, category and either your address or the area you serve, then verify it. Once verified and approved, the profile can appear in Google Maps and in the local results on Google Search. If you serve customers at their homes and work from a residential address, Google's guidelines say to hide that address and set a service area instead.",
-    "If your business is not showing on Google Maps, the usual causes are an unverified or suspended profile, a profile that breaks Google's guidelines, a search made from too far away, or a market where competitors look more relevant and better known. Google says local ranking depends on relevance, distance and prominence, and that there is no way to pay for a better local ranking. This guide covers each step and each fix. For help with the whole job, see our [SEO and growth service](/services/seo-growth).",
+    "If your business is not showing on Google Maps, the usual causes are an unverified or suspended profile, a profile that breaks Google's guidelines, a search made from too far away, or a market where competitors look more relevant and better known. Google says local ranking depends on relevance, distance and prominence, and that there is no way to pay for a better local ranking. This guide covers each step and each fix. For help with the whole job, see our [SEO and growth service](/services/seo-growth/).",
   ],
   disclosure:
     "AJ Creationz offers local SEO. Everything here is based on Google's published Business Profile help and guidelines, linked in the sources. Nobody can guarantee a position on Google Maps.",
@@ -187,7 +187,7 @@ export const getBusinessOnGoogleMaps: Post = {
       blocks: [
         {
           type: "p",
-          text: "Google Business Profile rules are the same in both countries. What differs is the directories that matter and how people search: UK customers often search by town or postcode, US customers by city, neighbourhood or ZIP code. Use the place names your customers use on your service area and on your website pages. Our [local SEO cost guide](/blog/local-seo-cost) covers what it costs to have this done, in pounds and dollars.",
+          text: "Google Business Profile rules are the same in both countries. What differs is the directories that matter and how people search: UK customers often search by town or postcode, US customers by city, neighbourhood or ZIP code. Use the place names your customers use on your service area and on your website pages. Our [local SEO cost guide](/blog/local-seo-cost/) covers what it costs to have this done, in pounds and dollars.",
         },
       ],
     },

@@ -18,7 +18,12 @@ export const gohighlevelPricing: Post = {
   ],
   parent: "gohighlevel-crm",
   scene: "crm",
-  related: ["gohighlevel-vs-hubspot", "hubspot-alternatives", "website-maintenance-cost"],
+  related: [
+    "gohighlevel-vs-hubspot",
+    "hubspot-alternatives",
+    "website-maintenance-cost",
+    "choose-a-gohighlevel-agency",
+  ],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-09",
   dateModified: "2026-10-09",
@@ -29,7 +34,7 @@ export const gohighlevelPricing: Post = {
   ],
   answer: [
     "GoHighLevel costs $97, $297 or $497 a month, depending on the plan, with no long-term contract and a 14-day free trial on any plan. Every plan includes unlimited contacts and users. For one business, the $97 Starter plan is the one that matters. The plan fee is not the whole bill: texts, calls, email and AI are charged on usage, so the realistic cost for one business is about $120 a month with light use and about $230 with heavy use. In pounds, that is roughly £96 and £179 at £1 = $1.27, before any VAT.",
-    "This guide lists the three plans, every usage fee we could find in HighLevel's own help articles, and a worksheet to work out your own year-one cost. If you would rather have the system built for you, see our [GoHighLevel CRM service](/services/gohighlevel-crm).",
+    "This guide lists the three plans, every usage fee we could find in HighLevel's own help articles, and a worksheet to work out your own year-one cost. If you would rather have the system built for you, see our [GoHighLevel CRM service](/services/gohighlevel-crm/).",
   ],
   disclosure:
     "AJ Creationz sets up GoHighLevel, so we are not neutral. Plan prices come from HighLevel's pricing page, checked on 14 October 2026. Usage rates come from HighLevel help articles as collected by a third-party guide, and they change, so confirm them in your own account before you budget.",
@@ -207,7 +212,7 @@ export const gohighlevelPricing: Post = {
         },
         {
           type: "p",
-          text: "For a head-to-head view against a per-seat CRM, read [GoHighLevel vs HubSpot](/blog/gohighlevel-vs-hubspot). If you are leaving HubSpot because of cost, see [HubSpot alternatives for small business](/blog/hubspot-alternatives).",
+          text: "For a head-to-head view against a per-seat CRM, read [GoHighLevel vs HubSpot](/blog/gohighlevel-vs-hubspot/). If you are leaving HubSpot because of cost, see [HubSpot alternatives for small business](/blog/hubspot-alternatives/).",
         },
       ],
     },

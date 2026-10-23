@@ -10,7 +10,8 @@
     "typecheck": "next typegen && tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run lint && npm run typecheck && npm run build"
+    "check:keywords": "node scripts/check-keywords.mjs",
+    "check": "npm run check:keywords && npm run lint && npm run typecheck && npm run build"
   },
   "dependencies": {
     "clsx": "^2.1.1",

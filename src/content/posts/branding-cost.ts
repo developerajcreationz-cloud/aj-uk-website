@@ -3,7 +3,7 @@ import type { Post } from "./types";
 export const brandingCost: Post = {
   slug: "branding-cost",
   title: "How much does branding cost? Logo, identity and guidelines prices",
-  metaTitle: "How Much Does Branding Cost? Logo, Identity and Guidelines",
+  metaTitle: "Branding Cost UK: Logo, Identity and Guidelines Prices",
   metaDescription:
     "How much does branding cost? Logo, brand identity and guidelines prices in pounds and dollars, what each level includes and how to compare quotes.",
   primaryKeyword: "how much does branding cost",
@@ -21,7 +21,7 @@ export const brandingCost: Post = {
   related: ["brand-guidelines-template", "choose-a-web-design-agency", "how-much-does-a-website-cost"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-16",
-  dateModified: "2026-10-16",
+  dateModified: "2026-10-23",
   takeaways: [
     "A five-level price ladder for branding in pounds and dollars, from a marketplace logo to a full rebrand",
     "What each deliverable is, so a quote for a logo and a quote for a brand are not mistaken for each other",
@@ -29,7 +29,7 @@ export const brandingCost: Post = {
   ],
   answer: [
     "In the UK, a professional logo costs about £500 to £3,000, a brand starter pack (logo plus guidelines) about £1,500 to £5,000, and a full brand identity with strategy about £5,000 to £20,000, according to one 2026 UK guide. US guides give $200 to $1,500 for a freelance-platform logo, $2,000 to $8,000 for an independent designer, and $5,000 to $25,000 for a boutique agency. The wide gaps exist because people use the word branding for different things.",
-    "The first job is to work out which level you are buying. This guide sets out the ladder, what each level includes, what drives the price and a checklist for comparing quotes. If you want a scope for your own brand, see our [brand identity service](/services/brand-identity).",
+    "The first job is to work out which level you are buying. This guide sets out the ladder, what each level includes, what drives the price and a checklist for comparing quotes. If you want a scope for your own brand, see our [brand identity service](/services/brand-identity/).",
   ],
   disclosure:
     "AJ Creationz designs brand identities, so we sell what this guide describes. Most pages that rank for this topic are written by agencies or logo sellers. Every range is indicative, and we do not publish fixed prices because scope varies. We give a written scope after a short call.",
@@ -99,13 +99,13 @@ export const brandingCost: Post = {
             "**Colour palette:** primary, secondary and accent colours with exact codes.",
             "**Typography:** fonts for headings and text, and rules for using them together.",
             "**Voice and messaging:** how the brand sounds in writing, a tagline and a short pitch.",
-            "**Brand guidelines:** the rulebook that keeps everything consistent as you grow. See our [brand guidelines template](/blog/brand-guidelines-template).",
+            "**Brand guidelines:** the rulebook that keeps everything consistent as you grow. See our [brand guidelines template](/blog/brand-guidelines-template/).",
             "**Applications:** stationery, social templates, signage, packaging and website styling.",
           ],
         },
         {
           type: "p",
-          text: "You can see what a full identity looks like in practice in our case studies: [NayaSource](/work/nayasource), [Framily Adventures](/work/framily-adventures) and [Call Time](/work/call-time) each show the identity applied to cards, social posts, signage and merchandise.",
+          text: "You can see what a full identity looks like in practice in our case studies: [NayaSource](/work/nayasource/), [Framily Adventures](/work/framily-adventures/) and [Call Time](/work/call-time/) each show the identity applied to cards, social posts, signage and merchandise.",
         },
       ],
     },
@@ -199,7 +199,7 @@ export const brandingCost: Post = {
         },
         {
           type: "p",
-          text: "Agencies that quote the same price for different scopes are not offering the same thing. For hiring advice, read [how to choose a web design agency](/blog/choose-a-web-design-agency), which uses the same questions.",
+          text: "Agencies that quote the same price for different scopes are not offering the same thing. For hiring advice, read [how to choose a web design agency](/blog/choose-a-web-design-agency/), which uses the same questions.",
         },
       ],
     },

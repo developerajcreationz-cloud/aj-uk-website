@@ -28,7 +28,7 @@ export const chooseAWebDesignAgency: Post = {
   ],
   answer: [
     "To choose a web design agency, write down what the site must achieve, shortlist three to five agencies with relevant work, ask each the same questions, check references, and compare proposals line by line. Weigh five things above the rest: who owns the site and code after launch, proof of results on similar projects, a clear process and named team, price broken down by line, and what happens after launch. Treat guaranteed rankings, no contract and refusal to show work as reasons to walk away.",
-    "Below is a brief checklist, twelve questions, a list of red flags and a scorecard that puts numbers on the decision. We are an agency, so score us too. If you want a quote from us, see our [website development service](/services/website-development).",
+    "Below is a brief checklist, twelve questions, a list of red flags and a scorecard that puts numbers on the decision. We are an agency, so score us too. If you want a quote from us, see our [website development service](/services/website-development/).",
   ],
   disclosure:
     "AJ Creationz is a web design and development agency, so we are not neutral. Most guides on this topic are written by agencies, and many are marketing for the author. We have tried to give advice you can use on any agency, including us.",
@@ -45,9 +45,9 @@ export const chooseAWebDesignAgency: Post = {
           items: [
             "**The goal:** leads, sales, bookings or credibility, and how you will measure it.",
             "**The scope:** the pages you expect, the functions you need (forms, bookings, a store, a login) and what you already have, such as content and photos.",
-            "**The budget range:** see [how much a website costs](/blog/how-much-does-a-website-cost) before you pick one.",
+            "**The budget range:** see [how much a website costs](/blog/how-much-does-a-website-cost/) before you pick one.",
             "**The timeline:** any date you cannot miss, such as a launch or a campaign.",
-            "**The ongoing needs:** who will update the site, and what support you expect. See [website maintenance cost](/blog/website-maintenance-cost).",
+            "**The ongoing needs:** who will update the site, and what support you expect. See [website maintenance cost](/blog/website-maintenance-cost/).",
           ],
         },
       ],
@@ -253,7 +253,7 @@ export const chooseAWebDesignAgency: Post = {
     },
     {
       q: "Freelancer or agency for a small business website?",
-      a: "A freelancer costs less but is one person to depend on. An agency adds a team, process and cover when someone is away, at a higher price. Compare the cost with our [website cost guide](/blog/how-much-does-a-website-cost).",
+      a: "A freelancer costs less but is one person to depend on. An agency adds a team, process and cover when someone is away, at a higher price. Compare the cost with our [website cost guide](/blog/how-much-does-a-website-cost/).",
     },
     {
       q: "Should I pick a full-service agency or a specialist?",

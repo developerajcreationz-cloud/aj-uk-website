@@ -26,7 +26,7 @@ export const googleAdsVsFacebookAds: Post = {
   ],
   answer: [
     "Google Ads vs Facebook Ads is not a contest, because they reach people at different moments. Google Ads shows your ad when someone searches for what you sell, so the person already wants it. Facebook and Instagram ads (Meta) reach people by interests and behavior while they scroll, so you create demand rather than catch it. If people already search for your service, start with Google. If your product is visual, impulse-led or new to the market, start with Meta.",
-    "Google charges per click, and cost per click ranges from cents to several dollars depending on the keyword. Meta often allows lower daily budgets and has strong retargeting. Whichever you choose, set the most you can pay per lead before you spend. The formula below gives you that number, and the sections after it cover fees and set-up. For management, see our [Google and Meta ads service](/services/meta-google-ads).",
+    "Google charges per click, and cost per click ranges from cents to several dollars depending on the keyword. Meta often allows lower daily budgets and has strong retargeting. Whichever you choose, set the most you can pay per lead before you spend. The formula below gives you that number, and the sections after it cover fees and set-up. For management, see our [Google and Meta ads service](/services/meta-google-ads/).",
   ],
   disclosure:
     "AJ Creationz manages both channels. Many comparison articles online are written by ad agencies or tool vendors, and some are years old; we flag figures that come from vendor pages.",
@@ -112,7 +112,7 @@ export const googleAdsVsFacebookAds: Post = {
           items: [
             "**Google Ads management in the UK:** one guide gives £300 to £2,000 a month; another says most UK SMEs pay £500 to £2,500, or 10% to 20% of spend, or flat retainers of £750 to £3,000.",
             "**Meta ads in the UK:** one guide gives retainers of £1,500 to £8,000+ a month, with minimum budgets often £3,000 to £5,000 a month.",
-            "**US agencies:** Google Ads management is often 10% to 20% of ad spend or a retainer, commonly $1,500 to $3,500 a month for mid-tier agencies, per our [service guide](/services/google-ads-management).",
+            "**US agencies:** Google Ads management is often 10% to 20% of ad spend or a retainer, commonly $1,500 to $3,500 a month for mid-tier agencies, per our [service guide](/services/google-ads-management/).",
           ],
         },
         {

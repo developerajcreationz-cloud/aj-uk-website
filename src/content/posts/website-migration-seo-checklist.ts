@@ -28,7 +28,7 @@ export const websiteMigrationSeoChecklist: Post = {
   ],
   answer: [
     "A website migration SEO checklist protects the rankings and traffic you already have when you redesign a site, change platform or move to a new domain. The biggest single cause of lost traffic, according to several migration guides, is an incomplete or wrong redirect map: old URLs that do not point to their closest equivalent on the new site. The rest of the checklist is about recording a baseline before launch, keeping on-page elements intact, and monitoring afterward.",
-    "This guide gives you the checklist in three stages and a redirect map template. Expect a short dip in rankings after launch even when everything is done well; schedule the move for a quieter period. If you are planning a rebuild, our [website development service](/services/website-development) includes this work, and our [website cost guide](/blog/how-much-does-a-website-cost) shows why it should be in the quote.",
+    "This guide gives you the checklist in three stages and a redirect map template. Expect a short dip in rankings after launch even when everything is done well; schedule the move for a quieter period. If you are planning a rebuild, our [website development service](/services/website-development/) includes this work, and our [website cost guide](/blog/how-much-does-a-website-cost/) shows why it should be in the quote.",
   ],
   disclosure:
     "AJ Creationz builds and migrates websites. The practices below recur across independent guides from Seer Interactive, Priority Pixels, Focus Reactive and others.",

@@ -112,7 +112,7 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               {TOP_LEVEL_SERVICES.map((s) => (
                 <li key={s.slug}>
-                  <Link href={`/services/${s.slug}`} data-cursor-hover className={linkClass}>
+                  <Link href={`/services/${s.slug}/`} data-cursor-hover className={linkClass}>
                     {s.title}
                   </Link>
                 </li>

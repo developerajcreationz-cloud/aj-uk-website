@@ -29,7 +29,7 @@ export const hubspotAlternatives: Post = {
   ],
   answer: [
     "The right HubSpot alternative depends on why you are leaving. HubSpot's CRM is still free, so most people who switch are reacting to cost or complexity once they need paid features. For a free CRM for a small team, Zoho CRM is free for up to three users. For a simple sales pipeline, Pipedrive starts at about $14 per user a month. For email automation first, ActiveCampaign or Brevo fit. If you need calls, texts, booking and funnels in one tool for a whole team, a flat-fee platform such as GoHighLevel can cost less than per-seat pricing once you have about nine users.",
-    "Below is a table that matches each need to an option, a per-seat cost worksheet, and a migration checklist. If you want a CRM built around your process rather than chosen from a list, see our [GoHighLevel CRM service](/services/gohighlevel-crm).",
+    "Below is a table that matches each need to an option, a per-seat cost worksheet, and a migration checklist. If you want a CRM built around your process rather than chosen from a list, see our [GoHighLevel CRM service](/services/gohighlevel-crm/).",
   ],
   disclosure:
     "AJ Creationz sets up GoHighLevel, one of the options below, so we are not neutral. Most guides on this topic are written by software vendors who rank their own product first. Prices are third-party figures checked on 14 October 2026, and HubSpot's own pricing page would not load for us, so confirm every price on the vendor's page.",
@@ -145,7 +145,7 @@ export const hubspotAlternatives: Post = {
         },
         {
           type: "p",
-          text: "Read the table both ways. Under about seven users, a per-seat CRM is cheaper on the plan fee alone. Above that, a flat fee wins, but only if you use what it includes. If you only need a pipeline, a flat-fee platform is shelf space. For a full breakdown of the flat-fee side, see [GoHighLevel pricing](/blog/gohighlevel-pricing).",
+          text: "Read the table both ways. Under about seven users, a per-seat CRM is cheaper on the plan fee alone. Above that, a flat fee wins, but only if you use what it includes. If you only need a pipeline, a flat-fee platform is shelf space. For a full breakdown of the flat-fee side, see [GoHighLevel pricing](/blog/gohighlevel-pricing/).",
         },
       ],
     },
@@ -158,7 +158,7 @@ export const hubspotAlternatives: Post = {
         },
         {
           type: "p",
-          text: "For a side-by-side with a flat-fee platform, see our [GoHighLevel vs HubSpot](/blog/gohighlevel-vs-hubspot) guide.",
+          text: "For a side-by-side with a flat-fee platform, see our [GoHighLevel vs HubSpot](/blog/gohighlevel-vs-hubspot/) guide.",
         },
       ],
     },

@@ -83,7 +83,7 @@ export function Services() {
 
                   <h3 className="font-display text-3xl font-medium tracking-tight transition-colors duration-500 group-hover:text-ink sm:text-4xl md:text-5xl">
                     <Link
-                      href={`/services/${service.slug}`}
+                      href={`/services/${service.slug}/`}
                       data-cursor-hover
                       className="after:absolute after:inset-0 after:content-['']"
                     >
@@ -99,7 +99,7 @@ export function Services() {
                       {children.map((c) => (
                         <Link
                           key={c.slug}
-                          href={`/services/${c.slug}`}
+                          href={`/services/${c.slug}/`}
                           data-cursor-hover
                           className="rounded-full border border-cream/20 px-3 py-1 text-xs text-cream/75 transition-colors duration-300 hover:!border-ink hover:!bg-ink hover:!text-cream group-hover:border-ink/30 group-hover:text-ink/80"
                         >
