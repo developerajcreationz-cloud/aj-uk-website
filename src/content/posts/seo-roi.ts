@@ -28,7 +28,7 @@ export const seoRoi: Post = {
   ],
   answer: [
     "SEO is worth it when people already search for what you sell, each new customer is worth a meaningful profit, and you can afford to wait several months for results. SEO ROI is the profit from customers who found you through organic search, minus what you spend on SEO, divided by that spend. If a £800 a month programme eventually brings in £1,440 a month of extra profit, the monthly return after the ramp-up is (1,440 − 800) ÷ 800 = 80%.",
-    "The catch is time. Google's own SEO starter guide says changes can take from a few hours to several months to show, so most programmes cost money for months before they return any. This guide gives you a calculator for the return and the payback month, shows where to find each input for free, and lists the situations where SEO is the wrong first spend. For a scoped plan, see our [SEO and growth service](/services/seo-growth).",
+    "The catch is time. Google's own SEO starter guide says changes can take from a few hours to several months to show, so most programmes cost money for months before they return any. This guide gives you a calculator for the return and the payback month, shows where to find each input for free, and lists the situations where SEO is the wrong first spend. For a scoped plan, see our [SEO and growth service](/services/seo-growth/).",
   ],
   disclosure:
     "AJ Creationz sells SEO. The calculator and examples use labelled assumptions, not results from a client, and no one can guarantee a ranking or a return.",
@@ -132,7 +132,7 @@ export const seoRoi: Post = {
         },
         {
           type: "p",
-          text: "If you need enquiries quickly, paid search can test demand while SEO builds. Our [Google Ads cost guide](/blog/google-ads-cost) shows what that costs, and the [Google Ads vs Facebook Ads guide](/blog/google-ads-vs-facebook-ads) helps you choose a channel.",
+          text: "If you need enquiries quickly, paid search can test demand while SEO builds. Our [Google Ads cost guide](/blog/google-ads-cost/) shows what that costs, and the [Google Ads vs Facebook Ads guide](/blog/google-ads-vs-facebook-ads/) helps you choose a channel.",
         },
       ],
     },
@@ -155,7 +155,7 @@ export const seoRoi: Post = {
         },
         {
           type: "p",
-          text: "If you then hire help, our [SEO pricing guide](/blog/seo-pricing) shows what UK and US providers charge and what each budget should buy, and the [local SEO cost guide](/blog/local-seo-cost) covers map and local rankings.",
+          text: "If you then hire help, our [SEO pricing guide](/blog/seo-pricing/) shows what UK and US providers charge and what each budget should buy, and the [local SEO cost guide](/blog/local-seo-cost/) covers map and local rankings.",
         },
       ],
     },

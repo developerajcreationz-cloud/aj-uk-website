@@ -3,7 +3,7 @@ import type { Post } from "./types";
 export const websiteCost: Post = {
   slug: "how-much-does-a-website-cost",
   title: "How much does a website cost in 2026?",
-  metaTitle: "How Much Does a Website Cost? A 2026 Price Guide by Type",
+  metaTitle: "How Much Does a Website Cost in the UK? 2026 Price Guide",
   metaDescription:
     "How much does a website cost? Sourced price ranges in pounds and dollars for freelancer, agency and ecommerce builds, plus a 3-year cost worksheet.",
   primaryKeyword: "how much does a website cost",
@@ -20,7 +20,7 @@ export const websiteCost: Post = {
   related: ["shopify-vs-wordpress", "website-migration-seo-checklist"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-01",
-  dateModified: "2026-10-01",
+  dateModified: "2026-10-23",
   takeaways: [
     "Price ranges for freelancer, agency and ecommerce websites, in pounds and dollars, with the source of each figure",
     "A worksheet that turns a quote into a three-year cost, with the arithmetic shown",
@@ -28,7 +28,7 @@ export const websiteCost: Post = {
   ],
   answer: [
     'How much does a website cost? For a professionally built small-business site, published UK guides put the build at roughly £2,000 to £8,000, and US guides range from about $1,500 to $5,000 for a freelancer to $10,000 to $35,000 for a small agency. Online stores cost more: £5,000 to £15,000 is typical in UK guides, and US guides start around $10,000. The spread is wide because "a website" can mean a four-page brochure or a custom ecommerce build.',
-    "The build price is only part of the answer. Hosting, a domain, updates and security fixes continue for as long as the site is live, and one UK guide notes that these can exceed the original build over a three to five year life. This guide gives you the ranges, then a worksheet to turn any quote into a three-year number you can compare. If you want a quote for a [website development project](/services/website-development), we will scope it in writing.",
+    "The build price is only part of the answer. Hosting, a domain, updates and security fixes continue for as long as the site is live, and one UK guide notes that these can exceed the original build over a three to five year life. This guide gives you the ranges, then a worksheet to turn any quote into a three-year number you can compare. If you want a quote for a [website development project](/services/website-development/), we will scope it in writing.",
   ],
   disclosure:
     "AJ Creationz builds websites, so we have an interest in this topic. The figures below come from third-party guides, most of which are also published by agencies, and are labeled as such.",
@@ -96,7 +96,7 @@ export const websiteCost: Post = {
         },
         {
           type: "p",
-          text: "Platform matters too. A WordPress build and a Shopify build have different cost profiles; see [Shopify vs WordPress](/blog/shopify-vs-wordpress) for the running costs of each, or our service guides on [WordPress web design](/services/wordpress-web-design) and [Shopify web design](/services/shopify-web-design).",
+          text: "Platform matters too. A WordPress build and a Shopify build have different cost profiles; see [Shopify vs WordPress](/blog/shopify-vs-wordpress/) for the running costs of each, or our service guides on [WordPress web design](/services/wordpress-web-design/) and [Shopify web design](/services/shopify-web-design/).",
         },
       ],
     },
@@ -167,7 +167,7 @@ export const websiteCost: Post = {
             "Check who owns the design files, the code and the content after payment.",
             "Ask what happens after launch: support period, response time, and the hourly rate for changes.",
             "Ask whether hosting, security updates and backups are included, and for how long.",
-            "Ask for launch SEO basics: titles, redirects from the old site, and tracking. A rebuild can lose traffic; see our [website migration SEO checklist](/blog/website-migration-seo-checklist).",
+            "Ask for launch SEO basics: titles, redirects from the old site, and tracking. A rebuild can lose traffic; see our [website migration SEO checklist](/blog/website-migration-seo-checklist/).",
             "Ask whether the quote includes VAT (UK) or sales tax (US), and whether you can reclaim it.",
             "Ask for two recent examples of similar work that you can open and test on your phone.",
           ],

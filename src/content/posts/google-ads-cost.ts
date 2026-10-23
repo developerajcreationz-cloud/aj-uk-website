@@ -3,7 +3,7 @@ import type { Post } from "./types";
 export const googleAdsCost: Post = {
   slug: "google-ads-cost",
   title: "How much does Google Ads cost? Budget, CPC and management fees",
-  metaTitle: "How Much Does Google Ads Cost? CPC, Budget and Fees 2026",
+  metaTitle: "Google Ads Cost UK 2026: CPC, Budget and Agency Fees",
   metaDescription:
     "How much does Google Ads cost? Typical click costs, monthly budgets and agency fees in pounds and dollars, plus a formula to set a budget you can defend.",
   primaryKeyword: "google ads cost",
@@ -21,7 +21,7 @@ export const googleAdsCost: Post = {
   related: ["google-ads-vs-facebook-ads", "gohighlevel-pricing", "seo-pricing"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",
-  dateModified: "2026-10-10",
+  dateModified: "2026-10-23",
   takeaways: [
     "What you pay Google (clicks) and what you pay a manager (fees), kept separate, with sourced ranges",
     "Click costs by industry in pounds and dollars, and why the sources disagree",
@@ -29,7 +29,7 @@ export const googleAdsCost: Post = {
   ],
   answer: [
     "Google Ads has two separate costs. You pay Google for each click, and you pay a freelancer or agency to manage the account if you hire one. Published guides put typical small-business ad spend at about $1,000 to $5,000 a month in the US and £750 to £5,000 in the UK, with most UK small businesses paying roughly £1.50 to £2.50 a click. Management is separate: about 10% to 20% of spend in US guides, or a flat £200 to £1,500 a month for small UK accounts.",
-    "Averages hide the number that matters, which is what a lead costs you all in. This guide gives the ranges, shows where sources disagree, and includes a formula for your own budget. If you want an account audited or managed, see our [Google Ads management service](/services/google-ads-management).",
+    "Averages hide the number that matters, which is what a lead costs you all in. This guide gives the ranges, shows where sources disagree, and includes a formula for your own budget. If you want an account audited or managed, see our [Google Ads management service](/services/google-ads-management/).",
   ],
   disclosure:
     "AJ Creationz manages Google Ads, and most pages that rank for this topic are written by agencies that sell the same service. Treat every range as indicative. One UK source states plainly that no primary UK-wide survey of click costs exists. For your own keywords, Google's Keyword Planner is the best first estimate.",
@@ -211,7 +211,7 @@ export const googleAdsCost: Post = {
             "**Landing pages.** A dedicated page per service lifts results, and some agencies charge for each one.",
             "**Tracking.** Without conversion tracking you cannot tell which clicks became enquiries, so you cannot judge the spend.",
             "**Creative and extras.** Images, video and call tracking are sometimes billed separately.",
-            "**Your time.** Following up leads quickly matters as much as the click, which is why we connect ads to a CRM. See [GoHighLevel pricing](/blog/gohighlevel-pricing) for the cost of that follow-up system.",
+            "**Your time.** Following up leads quickly matters as much as the click, which is why we connect ads to a CRM. See [GoHighLevel pricing](/blog/gohighlevel-pricing/) for the cost of that follow-up system.",
           ],
         },
         {
@@ -230,7 +230,7 @@ export const googleAdsCost: Post = {
             "Check the search terms report weekly and add irrelevant searches as negative keywords.",
             "Restrict locations to the areas you serve, and review results by device and time of day.",
             "Make sure conversion tracking counts real enquiries before you move to automated bidding.",
-            "Compare Google with other channels before you commit the whole budget. Our [Google Ads vs Facebook Ads](/blog/google-ads-vs-facebook-ads) guide shows when each fits.",
+            "Compare Google with other channels before you commit the whole budget. Our [Google Ads vs Facebook Ads](/blog/google-ads-vs-facebook-ads/) guide shows when each fits.",
           ],
         },
       ],

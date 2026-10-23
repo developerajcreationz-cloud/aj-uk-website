@@ -183,7 +183,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 <p className="font-display mt-1 text-xl font-medium text-ink">{post.author.name}</p>
                 <p className="text-sm text-ink/60">{post.author.role}, AJ Creationz</p>
                 <Link
-                  href="/about#team"
+                  href="/about/#team"
                   className="mt-2 inline-block text-sm underline underline-offset-4 hover:text-violet"
                 >
                   Meet the team
@@ -197,7 +197,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               <div className="rounded-2xl border border-ink/10 p-6">
                 <p className="text-xs uppercase tracking-wide text-ink/60">Related service</p>
                 <Link
-                  href={`/services/${parent.slug}`}
+                  href={`/services/${parent.slug}/`}
                   className="font-display mt-2 block text-xl font-medium hover:text-violet"
                 >
                   {parent.title}
@@ -211,7 +211,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 <ul className="mt-3 space-y-3">
                   {related.map((r) => (
                     <li key={r.slug}>
-                      <Link href={`/blog/${r.slug}`} className="text-sm font-medium hover:text-violet">
+                      <Link href={`/blog/${r.slug}/`} className="text-sm font-medium hover:text-violet">
                         {r.title}
                       </Link>
                     </li>

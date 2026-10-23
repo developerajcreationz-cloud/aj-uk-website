@@ -19,8 +19,8 @@ export const brandRefreshVsRebrand: Post = {
   scene: "brand",
   related: ["branding-cost", "brand-guidelines-template", "website-migration-seo-checklist"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-11-05",
-  dateModified: "2026-11-05",
+  datePublished: "2026-10-30",
+  dateModified: "2026-10-30",
   takeaways: [
     "Seven signs it is time to change your brand, and which ones call for a refresh rather than a full rebrand",
     "A decision table for choosing between a brand refresh and a rebrand, with the risks of each",
@@ -28,7 +28,7 @@ export const brandRefreshVsRebrand: Post = {
   ],
   answer: [
     "A brand refresh updates how your brand looks and sounds, such as the logo, colours, fonts and tone, while keeping the name and what the business stands for. A full rebrand changes something deeper: the name, the positioning or the audience. Most small businesses that feel their brand is tired need a refresh, which costs less and keeps the recognition they have built. A rebrand is worth the risk when the name or positioning is actively holding the business back.",
-    "This guide lists seven signs it is time to act, a table to help you choose, a rebranding strategy in five steps, and a rollout checklist so customers, search rankings and reviews follow you to the new brand. For what each option costs in pounds and dollars, see our [branding cost guide](/blog/branding-cost); to work with us, see our [brand identity service](/services/brand-identity).",
+    "This guide lists seven signs it is time to act, a table to help you choose, a rebranding strategy in five steps, and a rollout checklist so customers, search rankings and reviews follow you to the new brand. For what each option costs in pounds and dollars, see our [branding cost guide](/blog/branding-cost/); to work with us, see our [brand identity service](/services/brand-identity/).",
   ],
   disclosure:
     "AJ Creationz designs brand identities and runs refreshes and rebrands. The signs, decision table and checklist are our working method, not a published standard.",
@@ -107,7 +107,7 @@ export const brandRefreshVsRebrand: Post = {
             "**Write down why.** One sentence on the business problem the change solves, such as customers think we only do kitchens. If you cannot write it, reconsider.",
             "**Ask customers and staff.** A short survey or five conversations: what do people call you, what do they value, what confuses them? Keep what they value.",
             "**Check the name legally before you fall in love with it.** Search the UK trade mark register through GOV.UK, or the USPTO in the US, plus Companies House or your state's business register, domain names and social handles. Take legal advice for anything you plan to register.",
-            "**Design and document.** Logo, colours, type and voice, written into brand guidelines so every supplier applies them the same way. Our [brand guidelines template](/blog/brand-guidelines-template) covers what to include.",
+            "**Design and document.** Logo, colours, type and voice, written into brand guidelines so every supplier applies them the same way. Our [brand guidelines template](/blog/brand-guidelines-template/) covers what to include.",
             "**Roll out in one planned window,** using the checklist below, and tell customers why you changed.",
           ],
         },
@@ -165,7 +165,7 @@ export const brandRefreshVsRebrand: Post = {
         },
         {
           type: "p",
-          text: "If the rebrand includes a new domain, treat it as a website migration. Our [website migration SEO checklist](/blog/website-migration-seo-checklist) has the redirect map and what to monitor afterwards.",
+          text: "If the rebrand includes a new domain, treat it as a website migration. Our [website migration SEO checklist](/blog/website-migration-seo-checklist/) has the redirect map and what to monitor afterwards.",
         },
       ],
     },
@@ -174,7 +174,7 @@ export const brandRefreshVsRebrand: Post = {
       blocks: [
         {
           type: "p",
-          text: "A small business does not need a year-long programme. A refresh can be designed and rolled out in a few weeks if the guidelines are clear and the rollout is planned. Spend most of the effort on the places customers actually see you: your van, your Google Business Profile, your website and your quotes. For prices in pounds and dollars by scope, see our [branding cost guide](/blog/branding-cost).",
+          text: "A small business does not need a year-long programme. A refresh can be designed and rolled out in a few weeks if the guidelines are clear and the rollout is planned. Spend most of the effort on the places customers actually see you: your van, your Google Business Profile, your website and your quotes. For prices in pounds and dollars by scope, see our [branding cost guide](/blog/branding-cost/).",
         },
       ],
     },

@@ -3,7 +3,7 @@ import type { Post } from "./types";
 export const shopifyStoreCost: Post = {
   slug: "shopify-store-cost",
   title: "How much does a Shopify store cost? Setup, apps and monthly fees",
-  metaTitle: "How Much Does a Shopify Store Cost? Setup and Monthly Fees",
+  metaTitle: "Shopify Store Cost UK: Setup, Apps and Monthly Fees",
   metaDescription:
     "How much does a Shopify store cost? Plan prices in pounds and dollars, apps, payment fees and build costs, and the sales needed to justify a bigger plan.",
   primaryKeyword: "how much does a shopify store cost",
@@ -21,7 +21,7 @@ export const shopifyStoreCost: Post = {
   related: ["shopify-vs-wordpress", "how-much-does-a-website-cost", "website-maintenance-cost"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-17",
-  dateModified: "2026-10-17",
+  dateModified: "2026-10-23",
   takeaways: [
     "Shopify's current plan prices and card rates in pounds and dollars, from Shopify's own pricing pages",
     "Everything the plan does not cover: domain, theme, apps, email and payment fees, with a year-one cost for three store sizes",
@@ -29,7 +29,7 @@ export const shopifyStoreCost: Post = {
   ],
   answer: [
     "A Shopify plan costs $29, $79 or $299 a month in the US and £19, £49 or £259 in the UK on Shopify's own pricing pages, with prices shown for yearly billing, and Plus from $2,300 or £1,800. Most plans start with a free three-day trial and then $1 a month for three months, and there are no setup fees. The plan is not the whole bill: a small live store typically costs about $30 a month before payment fees, and about $93 to $113 once it has a paid theme and a few apps.",
-    "Below are the plan prices, what each cost covers, a year-one worksheet and a calculation for when a bigger plan pays off. If you want a store built for you, see our [Shopify web design service](/services/shopify-web-design).",
+    "Below are the plan prices, what each cost covers, a year-one worksheet and a calculation for when a bigger plan pays off. If you want a store built for you, see our [Shopify web design service](/services/shopify-web-design/).",
   ],
   disclosure:
     "AJ Creationz builds Shopify stores, so we sell what this guide describes. Plan prices come from Shopify's own pages, checked on 14 October 2026. App, theme and build costs come from third-party guides, many written by agencies, so treat them as indicative.",
@@ -161,11 +161,11 @@ export const shopifyStoreCost: Post = {
             ["Advanced: comprehensive design and development", "$5,000 to $10,000 or more", "Ecomm.Design"],
             ["Fully custom theme", "$3,000 to $7,000", "Ecomm.Design"],
           ],
-          note: "Ecomm.Design estimates the initial launch at $500 to $1,000 for a small business, $2,000 to $5,000 for a mid-sized one and $10,000 or more for a large one. UK agency ecommerce builds are covered in our [website cost guide](/blog/how-much-does-a-website-cost), which gives £5,000 to £15,000 for typical agency builds.",
+          note: "Ecomm.Design estimates the initial launch at $500 to $1,000 for a small business, $2,000 to $5,000 for a mid-sized one and $10,000 or more for a large one. UK agency ecommerce builds are covered in our [website cost guide](/blog/how-much-does-a-website-cost/), which gives £5,000 to £15,000 for typical agency builds.",
         },
         {
           type: "p",
-          text: "If you hire developers for ongoing work after launch, one guide puts support at $300 to $1,500 or more a month. For upkeep costs across platforms see [website maintenance cost](/blog/website-maintenance-cost), and for whether Shopify is the right platform see [Shopify vs WordPress](/blog/shopify-vs-wordpress).",
+          text: "If you hire developers for ongoing work after launch, one guide puts support at $300 to $1,500 or more a month. For upkeep costs across platforms see [website maintenance cost](/blog/website-maintenance-cost/), and for whether Shopify is the right platform see [Shopify vs WordPress](/blog/shopify-vs-wordpress/).",
         },
       ],
     },

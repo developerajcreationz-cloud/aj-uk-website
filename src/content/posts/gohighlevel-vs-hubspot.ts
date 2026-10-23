@@ -28,7 +28,7 @@ export const gohighlevelVsHubspot: Post = {
   ],
   answer: [
     "GoHighLevel vs HubSpot comes down to what you need the CRM to do. GoHighLevel is a flat-fee platform that bundles SMS, calling, booking, pipelines and automations, aimed at agencies and service businesses. HubSpot is a deeper CRM with polished reporting and many integrations, with a free tier and per-seat pricing that rises as you add features and people.",
-    "On price, third-party guides list GoHighLevel at about $97, $297 and $497 a month for its three plans, with unlimited contacts. HubSpot's paid plans are quoted per seat, from roughly $20 per seat for Starter to about $100 per seat for Sales Hub Professional, plus a reported one-time onboarding fee. Neither list is from the vendors' own price pages, so verify before you decide. If you want GoHighLevel set up properly, see our [GoHighLevel CRM service](/services/gohighlevel-crm).",
+    "On price, third-party guides list GoHighLevel at about $97, $297 and $497 a month for its three plans, with unlimited contacts. HubSpot's paid plans are quoted per seat, from roughly $20 per seat for Starter to about $100 per seat for Sales Hub Professional, plus a reported one-time onboarding fee. Neither list is from the vendors' own price pages, so verify before you decide. If you want GoHighLevel set up properly, see our [GoHighLevel CRM service](/services/gohighlevel-crm/).",
   ],
   disclosure:
     "AJ Creationz sets up GoHighLevel, so we are not neutral. We have tried to show the arithmetic and the limits of each source so you can reach your own conclusion. Most comparison articles on this topic are also written by resellers or affiliates.",
@@ -84,7 +84,7 @@ export const gohighlevelVsHubspot: Post = {
             [
               "GoHighLevel usage (SMS, email, voice)",
               "about $25 to $75 per month for a typical local business",
-              "From our [GoHighLevel guide](/services/gohighlevel-crm)",
+              "From our [GoHighLevel guide](/services/gohighlevel-crm/)",
             ],
             ["HubSpot Starter Customer Platform", "about $20 per seat per month", "Promotional prices are lower"],
             [

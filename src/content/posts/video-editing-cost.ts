@@ -29,7 +29,7 @@ export const videoEditingCost: Post = {
   ],
   answer: [
     "Video editing for business usually costs $50 to $400 for a short social clip, $300 to $1,500 for a longer YouTube-style video, and $400 to $2,000 for a corporate or brand video, according to one 2026 guide. UK figures are £150 to £500 for a basic short-form video, £800 to £2,000 for a series of three to five clips with custom graphics, and £1,500 to £6,000 for a company profile. Hourly rates run $25 to $150 for freelancers, and £20 to £80 an hour for entry-level and mid-level UK freelancers.",
-    "Price depends mainly on video type, length, how much raw footage there is and how many graphics and revisions you want. Below are the ranges, a budget formula and a brief template so quotes can be compared. For editing handled for you, see our [video editing service](/services/video-editing).",
+    "Price depends mainly on video type, length, how much raw footage there is and how many graphics and revisions you want. Below are the ranges, a budget formula and a brief template so quotes can be compared. For editing handled for you, see our [video editing service](/services/video-editing/).",
   ],
   disclosure:
     "AJ Creationz edits video for social media and ads, so we sell what this guide describes. Several of the sources are video vendors, and one sells an AI clipping tool, so their numbers may lean toward their own offers. Treat all ranges as indicative and ask for written quotes.",
@@ -163,7 +163,7 @@ export const videoEditingCost: Post = {
             "Footage: how much raw material, who shot it and in what format.",
             "Style: two example videos you like, and your brand colours, fonts and logo.",
             "Captions and languages: burnt-in captions, subtitles or voice-over.",
-            "Formats: vertical 9:16, square or widescreen, and the safe areas for each. See our [Reels and TikTok editing guide](/blog/reels-and-tiktok-editing-guide).",
+            "Formats: vertical 9:16, square or widescreen, and the safe areas for each. See our [Reels and TikTok editing guide](/blog/reels-and-tiktok-editing-guide/).",
             "Music and stock: who supplies it and who pays for licences.",
             "Revisions: how many rounds you expect, and the deadline.",
             "Ownership: that you receive the project files and final exports.",
@@ -180,7 +180,7 @@ export const videoEditingCost: Post = {
         },
         {
           type: "p",
-          text: "If your videos feed paid campaigns, see [Google Ads cost](/blog/google-ads-cost) for how creative and click costs combine.",
+          text: "If your videos feed paid campaigns, see [Google Ads cost](/blog/google-ads-cost/) for how creative and click costs combine.",
         },
       ],
     },

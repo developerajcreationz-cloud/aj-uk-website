@@ -29,7 +29,7 @@ export const localSeoCost: Post = {
   ],
   answer: [
     "Local SEO for a small business usually costs about £500 to £1,200 a month in UK guides and about $500 to $3,000 a month in US guides. WebFX puts the US average at $500 to $3,000, with one-off projects at $500 to $5,000 and consulting at $75 to $200 an hour. Prices below about £500 a month tend to mean automated tasks rather than strategy. Cost rises with competition, the number of locations and the number of services you want to rank for.",
-    "Local SEO is not a purchase you can rush: sources put noticeable results at roughly three to six months, and Google itself says no one can pay for a better local ranking. This guide shows what the fee should cover, how to check it will pay back, and what to do for free first. For a scoped plan, see our [SEO and growth service](/services/seo-growth).",
+    "Local SEO is not a purchase you can rush: sources put noticeable results at roughly three to six months, and Google itself says no one can pay for a better local ranking. This guide shows what the fee should cover, how to check it will pay back, and what to do for free first. For a scoped plan, see our [SEO and growth service](/services/seo-growth/).",
   ],
   disclosure:
     "AJ Creationz sells SEO, and nearly every local SEO price guide is published by an SEO provider. Treat all ranges as indicative. We cannot promise a ranking, and neither should anyone you hire.",
@@ -170,7 +170,7 @@ export const localSeoCost: Post = {
             "Keep your business information accurate and up to date: address, hours, phone number and categories.",
             "Respond to reviews, positive and negative.",
             "Add photos and videos of your premises, team and work.",
-            "Make sure your website lists the same name, address and phone number as your profile, and runs the checks in our [technical SEO audit checklist](/blog/technical-seo-audit-checklist).",
+            "Make sure your website lists the same name, address and phone number as your profile, and runs the checks in our [technical SEO audit checklist](/blog/technical-seo-audit-checklist/).",
           ],
         },
       ],
@@ -180,7 +180,7 @@ export const localSeoCost: Post = {
       blocks: [
         {
           type: "p",
-          text: "Google's guidance on hiring an SEO gives a useful set. Ask for examples of previous work and success stories, whether they follow Google's Search Essentials, what results and timeframe they expect and how they measure success, what experience they have in your industry and your area, and how they will communicate and share every change they make. If anyone guarantees first place, find someone else. Compare fees with [SEO pricing](/blog/seo-pricing).",
+          text: "Google's guidance on hiring an SEO gives a useful set. Ask for examples of previous work and success stories, whether they follow Google's Search Essentials, what results and timeframe they expect and how they measure success, what experience they have in your industry and your area, and how they will communicate and share every change they make. If anyone guarantees first place, find someone else. Compare fees with [SEO pricing](/blog/seo-pricing/).",
         },
       ],
     },

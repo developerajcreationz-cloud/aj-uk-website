@@ -27,7 +27,7 @@ export const shopifyVsWordpress: Post = {
   ],
   answer: [
     "Shopify vs WordPress is mainly a question of what you sell. Shopify is a hosted platform built for selling products: setup, checkout, payments and hosting come together, and your costs are a monthly plan plus apps. WordPress is a general website system; with the WooCommerce plugin it can run a shop, and it suits businesses that need content, memberships or bookings alongside it. If you mostly sell products, Shopify is usually simpler. If your site is mostly content with a smaller shop, WordPress is usually more flexible.",
-    "On price, Shopify's main plans are listed at about $39, $105 and $399 a month on monthly billing, with annual billing about 25% cheaper, according to third-party guides. WordPress software is free, but you pay for hosting, a domain, themes and maintenance. The scorecard below turns your answers into a recommendation. For build help on either, see our [Shopify web design](/services/shopify-web-design) and [WordPress web design](/services/wordpress-web-design) guides.",
+    "On price, Shopify's main plans are listed at about $39, $105 and $399 a month on monthly billing, with annual billing about 25% cheaper, according to third-party guides. WordPress software is free, but you pay for hosting, a domain, themes and maintenance. The scorecard below turns your answers into a recommendation. For build help on either, see our [Shopify web design](/services/shopify-web-design/) and [WordPress web design](/services/wordpress-web-design/) guides.",
   ],
   disclosure:
     "AJ Creationz builds on both platforms and earns nothing more from one than the other. Many comparison articles online are affiliate-supported, which can tilt their verdicts.",
@@ -90,7 +90,7 @@ export const shopifyVsWordpress: Post = {
         },
         {
           type: "p",
-          text: "A fair way to compare is the three-year cost, not the sticker price. Use the worksheet in our [website cost guide](/blog/how-much-does-a-website-cost) and add Shopify's monthly plan and apps on one side, and hosting, plugins and maintenance on the other.",
+          text: "A fair way to compare is the three-year cost, not the sticker price. Use the worksheet in our [website cost guide](/blog/how-much-does-a-website-cost/) and add Shopify's monthly plan and apps on one side, and hosting, plugins and maintenance on the other.",
         },
       ],
     },
@@ -166,7 +166,7 @@ export const shopifyVsWordpress: Post = {
       blocks: [
         {
           type: "p",
-          text: "Moving platforms changes your URLs, templates and often your metadata, so rankings can fall if the move is not planned. Map every old URL to a new one, keep titles and descriptions, and monitor Search Console afterwards. The steps are in our [website migration SEO checklist](/blog/website-migration-seo-checklist). Plan migration as a separate cost: guides put migration from another platform at about $1,500 to $15,000 on top of a build.",
+          text: "Moving platforms changes your URLs, templates and often your metadata, so rankings can fall if the move is not planned. Map every old URL to a new one, keep titles and descriptions, and monitor Search Console afterwards. The steps are in our [website migration SEO checklist](/blog/website-migration-seo-checklist/). Plan migration as a separate cost: guides put migration from another platform at about $1,500 to $15,000 on top of a build.",
         },
       ],
     },

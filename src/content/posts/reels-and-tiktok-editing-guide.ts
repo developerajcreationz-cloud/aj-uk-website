@@ -27,7 +27,7 @@ export const reelsAndTiktokEditingGuide: Post = {
   ],
   answer: [
     "Instagram Reels safe zones are the parts of a vertical video that stay clear of the app's buttons, captions and profile bar. Reels are 1080 by 1920 pixels (9:16). Most guides tell you to keep text and faces inside a centered 1080 by 1420 area, which leaves about 250 pixels clear at the top and bottom; the bottom needs the most room, with guides quoting 250 to 320 pixels. Sources disagree and Instagram does not publish a single official figure we could find, so check your edit in the app's preview before you post.",
-    "This guide gives the numbers, shows the arithmetic, and adds practical rules for TikTok video captions and for hooks in the first seconds. At the end you will find what short-form editing costs per video. If you want edits done for you, see our [video editing service](/services/video-editing).",
+    "This guide gives the numbers, shows the arithmetic, and adds practical rules for TikTok video captions and for hooks in the first seconds. At the end you will find what short-form editing costs per video. If you want edits done for you, see our [video editing service](/services/video-editing/).",
   ],
   disclosure:
     "AJ Creationz offers video editing. Safe-zone figures come from third-party guides because we could not find an official specification; the caption and hook advice is our working practice, not tested data.",
@@ -168,11 +168,11 @@ export const reelsAndTiktokEditingGuide: Post = {
             ["Freelance editor, entry level", "£20 to £40 an hour"],
             ["Freelance editor, mid level", "£50 to £80 an hour"],
           ],
-          note: "Source: Videotto's UK guide (2026); Videotto sells editing. Our [video editing cost guide](/blog/video-editing-cost) compares UK and US rates in more detail.",
+          note: "Source: Videotto's UK guide (2026); Videotto sells editing. Our [video editing cost guide](/blog/video-editing-cost/) compares UK and US rates in more detail.",
         },
         {
           type: "p",
-          text: "Short-form editing for business also covers ad versions of a video; see [Google Ads vs Facebook Ads](/blog/google-ads-vs-facebook-ads) for how to plan the channel, and use our [brand guidelines template](/blog/brand-guidelines-template) so every video follows your colors and fonts.",
+          text: "Short-form editing for business also covers ad versions of a video; see [Google Ads vs Facebook Ads](/blog/google-ads-vs-facebook-ads/) for how to plan the channel, and use our [brand guidelines template](/blog/brand-guidelines-template/) so every video follows your colors and fonts.",
         },
       ],
     },

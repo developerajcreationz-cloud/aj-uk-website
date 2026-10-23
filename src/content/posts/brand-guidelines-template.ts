@@ -27,7 +27,7 @@ export const brandGuidelinesTemplate: Post = {
   ],
   answer: [
     "Brand guidelines are a short document that tells anyone using your brand how to do it consistently: how your logo may be used, which colors and fonts to use, how your imagery looks and how you write. A good brand guidelines template covers nine things: purpose and audience, logo rules, color, typography, imagery, voice and tone, layout examples, dos and don'ts, and contacts and files. For a small business the document can be a few pages; most do not need a 100-page manual that nobody opens.",
-    "This guide gives the template, a filled-in example for a made-up business so you can see the level of detail, and a one-page option. If you would rather have the whole system built and documented, see our [brand identity service](/services/brand-identity).",
+    "This guide gives the template, a filled-in example for a made-up business so you can see the level of detail, and a one-page option. If you would rather have the whole system built and documented, see our [brand identity service](/services/brand-identity/).",
   ],
   disclosure:
     "AJ Creationz designs brand identities and writes guidelines for clients. The structure below reflects the sections that recur across guideline templates from design marketplaces and design blogs.",

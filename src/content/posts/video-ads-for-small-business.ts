@@ -19,8 +19,8 @@ export const videoAdsForSmallBusiness: Post = {
   scene: "video",
   related: ["reels-and-tiktok-editing-guide", "video-editing-cost", "google-ads-vs-facebook-ads"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-11-03",
-  dateModified: "2026-11-03",
+  datePublished: "2026-10-29",
+  dateModified: "2026-10-29",
   takeaways: [
     "Three video ad types a small business can film with a phone, each with a shot list",
     "A 15-second script structure and the Meta formats to export, so one shoot covers feed, Reels and Stories",
@@ -28,7 +28,7 @@ export const videoAdsForSmallBusiness: Post = {
   ],
   answer: [
     "Video ads that work for small businesses are usually simple: a clear hook in the first seconds, the problem your customer has, proof that you solve it, and one thing to do next. You do not need a production crew. A phone, good light, clear sound and an editor who cuts tightly will cover most needs. UGC ads, short videos in the style of a real customer talking to camera, often feel more native on social feeds than polished adverts, but if you pay or gift the person in them, the UK and US rules on disclosure apply.",
-    "This guide gives three ad types to film, a 15-second script you can adapt, the formats to export for Meta placements, the disclosure rules for creators, and a test plan that tells you which ad to scale. If you want the editing done for you, see our [video editing service](/services/video-editing).",
+    "This guide gives three ad types to film, a 15-second script you can adapt, the formats to export for Meta placements, the disclosure rules for creators, and a test plan that tells you which ad to scale. If you want the editing done for you, see our [video editing service](/services/video-editing/).",
   ],
   disclosure:
     "AJ Creationz edits video ads and short-form content. The ad structures and test plan are our working method; formats and rules come from the sources listed at the end, which you should check before a large campaign.",
@@ -107,7 +107,7 @@ export const videoAdsForSmallBusiness: Post = {
         },
         {
           type: "p",
-          text: "Film vertically with space around the subject, then crop to 4:5 and 1:1 in the edit. Keep faces, text and the offer in the centre of a 9:16 frame, because the profile name sits at the top of Reels and the caption and call to action sit at the bottom. Our [Reels and TikTok editing guide](/blog/reels-and-tiktok-editing-guide) has the safe-zone measurements.",
+          text: "Film vertically with space around the subject, then crop to 4:5 and 1:1 in the edit. Keep faces, text and the offer in the centre of a 9:16 frame, because the profile name sits at the top of Reels and the caption and call to action sit at the bottom. Our [Reels and TikTok editing guide](/blog/reels-and-tiktok-editing-guide/) has the safe-zone measurements.",
         },
       ],
     },
@@ -144,7 +144,7 @@ export const videoAdsForSmallBusiness: Post = {
         },
         {
           type: "p",
-          text: "For what editing should cost per video in pounds and dollars, see our [video editing cost guide](/blog/video-editing-cost). If you are deciding between platforms, the [Google Ads vs Facebook Ads guide](/blog/google-ads-vs-facebook-ads) compares the two.",
+          text: "For what editing should cost per video in pounds and dollars, see our [video editing cost guide](/blog/video-editing-cost/). If you are deciding between platforms, the [Google Ads vs Facebook Ads guide](/blog/google-ads-vs-facebook-ads/) compares the two.",
         },
       ],
     },

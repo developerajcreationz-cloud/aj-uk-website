@@ -27,7 +27,7 @@ export const websiteLeadGeneration: Post = {
   ],
   answer: [
     "When a website gets visitors but no enquiries, the cause is almost always one of three things: the visitors are not the right people, the page does not give them a clear reason and easy way to contact you, or enquiries are arriving but getting lost. Website lead generation improves when you fix them in that order of evidence: first check tracking, then the offer and trust on your key pages, then friction in forms and on mobile.",
-    "This guide starts with a short diagnosis, then gives a 15-point scorecard. Each point is a yes or no check you can do yourself, with the fix beside it. The first few fixes are usually free and take less than an hour. If you would rather have it done for you, see our [website development service](/services/website-development).",
+    "This guide starts with a short diagnosis, then gives a 15-point scorecard. Each point is a yes or no check you can do yourself, with the fix beside it. The first few fixes are usually free and take less than an hour. If you would rather have it done for you, see our [website development service](/services/website-development/).",
   ],
   disclosure:
     "AJ Creationz builds and improves websites. The scorecard is our own audit method; the research on forms and page speed is linked in the sources.",
@@ -192,7 +192,7 @@ export const websiteLeadGeneration: Post = {
       blocks: [
         {
           type: "p",
-          text: "Most of the fixes above work on an existing site. A rebuild makes sense when the site cannot be edited easily, fails Core Web Vitals because of its theme or platform, or has no room for separate service pages. If that is you, our guide to [choosing a web design agency](/blog/choose-a-web-design-agency) lists the questions to ask, and the [website cost guide](/blog/how-much-does-a-website-cost) shows UK and US prices.",
+          text: "Most of the fixes above work on an existing site. A rebuild makes sense when the site cannot be edited easily, fails Core Web Vitals because of its theme or platform, or has no room for separate service pages. If that is you, our guide to [choosing a web design agency](/blog/choose-a-web-design-agency/) lists the questions to ask, and the [website cost guide](/blog/how-much-does-a-website-cost/) shows UK and US prices.",
         },
       ],
     },

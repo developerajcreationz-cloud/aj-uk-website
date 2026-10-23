@@ -27,7 +27,7 @@ export const speedToLead: Post = {
   ],
   answer: [
     "Speed to lead is the time between a customer enquiring and getting a real reply from you. It matters because enquiries go cold fast. In a Harvard Business Review audit of 2,241 US companies, only 37% replied to an online lead within an hour, the average reply took 42 hours, and 23% never replied. Firms that made contact within an hour were about seven times more likely to have a meaningful conversation with a decision maker than firms that waited longer, and over sixty times more likely than firms that waited a day or more.",
-    "For a trade business the problem is simple: you are up a ladder or under a sink when the phone rings, and the customer rings the next name on the list. The fix is a system that replies in seconds when you cannot, then makes sure a person follows up within a set time. This guide shows how to measure your current speed, how missed-call text back works, the rules for texting customers in the UK and the US, and the follow-up stages a CRM for trades should run. If you want it built for you, see our [GoHighLevel CRM service](/services/gohighlevel-crm).",
+    "For a trade business the problem is simple: you are up a ladder or under a sink when the phone rings, and the customer rings the next name on the list. The fix is a system that replies in seconds when you cannot, then makes sure a person follows up within a set time. This guide shows how to measure your current speed, how missed-call text back works, the rules for texting customers in the UK and the US, and the follow-up stages a CRM for trades should run. If you want it built for you, see our [GoHighLevel CRM service](/services/gohighlevel-crm/).",
   ],
   disclosure:
     "AJ Creationz sets up GoHighLevel and other CRMs, so we have an interest in this topic. The response-time research quoted here is independent; the templates and follow-up timings are our working practice, not tested benchmarks.",
@@ -211,7 +211,7 @@ export const speedToLead: Post = {
         },
         {
           type: "p",
-          text: "If even one extra job a month covers your software and texting costs, the system pays for itself. Our [GoHighLevel pricing guide](/blog/gohighlevel-pricing) breaks down plan and usage costs, and the [GoHighLevel vs HubSpot comparison](/blog/gohighlevel-vs-hubspot) covers which suits a trade business.",
+          text: "If even one extra job a month covers your software and texting costs, the system pays for itself. Our [GoHighLevel pricing guide](/blog/gohighlevel-pricing/) breaks down plan and usage costs, and the [GoHighLevel vs HubSpot comparison](/blog/gohighlevel-vs-hubspot/) covers which suits a trade business.",
         },
       ],
     },

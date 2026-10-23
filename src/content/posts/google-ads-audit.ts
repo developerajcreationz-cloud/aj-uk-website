@@ -18,8 +18,8 @@ export const googleAdsAudit: Post = {
   scene: "ads",
   related: ["google-ads-cost", "google-ads-vs-facebook-ads", "seo-pricing"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
-  datePublished: "2026-10-26",
-  dateModified: "2026-10-26",
+  datePublished: "2026-10-24",
+  dateModified: "2026-10-24",
   takeaways: [
     "A 12-point Google Ads audit in the order that finds the costly problems first, with where to click for each check",
     "The settings that quietly waste budget on small accounts: location options, auto-applied recommendations and broad search terms",
@@ -27,7 +27,7 @@ export const googleAdsAudit: Post = {
   ],
   answer: [
     "When Google Ads is not working, the cause is usually one of four things: conversions are not tracked correctly, so Google optimises for the wrong thing; ads show for searches or places you do not want; settings have been changed automatically; or the landing page does not turn clicks into enquiries. A Google Ads audit checks each of these in turn, starting with tracking, because every other number in the account depends on it.",
-    "This 12-point audit takes about an hour on a small account. Each check says where to look in Google Ads and what a problem looks like. It ends with a cost-per-lead test that tells you whether the account can be profitable at your prices at all. If you want it done for you, see our [Google Ads management service](/services/google-ads-management).",
+    "This 12-point audit takes about an hour on a small account. Each check says where to look in Google Ads and what a problem looks like. It ends with a cost-per-lead test that tells you whether the account can be profitable at your prices at all. If you want it done for you, see our [Google Ads management service](/services/google-ads-management/).",
   ],
   disclosure:
     "AJ Creationz manages Google Ads accounts. The audit order and thresholds are our working method; Google's own documentation for each setting is linked in the sources.",
@@ -91,7 +91,7 @@ export const googleAdsAudit: Post = {
         },
         {
           type: "p",
-          text: "For the landing page itself, our [website lead generation scorecard](/blog/website-lead-generation) has 15 checks you can run in under an hour.",
+          text: "For the landing page itself, our [website lead generation scorecard](/blog/website-lead-generation/) has 15 checks you can run in under an hour.",
         },
       ],
     },
@@ -122,7 +122,7 @@ export const googleAdsAudit: Post = {
         },
         {
           type: "p",
-          text: "If your break-even cost per lead is below what clicks in your market cost to turn into leads, no amount of tuning will make the account profitable. Our [Google Ads cost guide](/blog/google-ads-cost) shows typical click prices and budgets in pounds and dollars, and the [Google Ads vs Facebook Ads guide](/blog/google-ads-vs-facebook-ads) helps you decide whether another channel fits better.",
+          text: "If your break-even cost per lead is below what clicks in your market cost to turn into leads, no amount of tuning will make the account profitable. Our [Google Ads cost guide](/blog/google-ads-cost/) shows typical click prices and budgets in pounds and dollars, and the [Google Ads vs Facebook Ads guide](/blog/google-ads-vs-facebook-ads/) helps you decide whether another channel fits better.",
         },
       ],
     },
