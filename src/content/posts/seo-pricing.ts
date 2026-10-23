@@ -10,8 +10,6 @@ export const seoPricing: Post = {
   secondaryKeywords: [
     "how much does seo cost",
     "cheap seo packages",
-    "is seo worth it",
-    "local seo cost",
     "seo retainer cost",
     "small business seo cost per month",
   ],

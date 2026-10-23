@@ -18,7 +18,7 @@ export const googleAdsCost: Post = {
   ],
   parent: "google-ads-management",
   scene: "ads",
-  related: ["google-ads-vs-facebook-ads", "gohighlevel-pricing", "seo-pricing"],
+  related: ["google-ads-vs-facebook-ads", "gohighlevel-pricing", "seo-pricing", "facebook-ads-cost-uk"],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-10",
   dateModified: "2026-10-23",

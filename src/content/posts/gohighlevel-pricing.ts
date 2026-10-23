@@ -18,7 +18,12 @@ export const gohighlevelPricing: Post = {
   ],
   parent: "gohighlevel-crm",
   scene: "crm",
-  related: ["gohighlevel-vs-hubspot", "hubspot-alternatives", "website-maintenance-cost"],
+  related: [
+    "gohighlevel-vs-hubspot",
+    "hubspot-alternatives",
+    "website-maintenance-cost",
+    "choose-a-gohighlevel-agency",
+  ],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-09",
   dateModified: "2026-10-09",

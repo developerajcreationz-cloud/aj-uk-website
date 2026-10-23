@@ -7,14 +7,7 @@ export const gohighlevelVsHubspot: Post = {
   metaDescription:
     "GoHighLevel vs HubSpot for small teams: published plan prices, a transparent yearly cost model, and clear rules for which CRM fits your business.",
   primaryKeyword: "gohighlevel vs hubspot",
-  secondaryKeywords: [
-    "best crm for small business",
-    "gohighlevel pricing",
-    "hubspot alternatives",
-    "gohighlevel review",
-    "hubspot cost for small business",
-    "crm with sms and booking",
-  ],
+  secondaryKeywords: ["gohighlevel review", "hubspot cost for small business"],
   parent: "gohighlevel-crm",
   scene: "crm",
   related: ["google-ads-vs-facebook-ads", "seo-pricing"],

@@ -12,7 +12,6 @@ export const reelsAndTiktokEditingGuide: Post = {
     "reels editing tips",
     "hook ideas for reels",
     "short form video editing for business",
-    "video editing cost per video",
   ],
   parent: "video-editing",
   scene: "video",

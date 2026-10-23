@@ -27,6 +27,11 @@ import { shopifyTrafficNoSales } from "./shopify-traffic-no-sales";
 import { facebookLeadAdsVsLandingPage } from "./facebook-lead-ads-vs-landing-page";
 import { videoAdsForSmallBusiness } from "./video-ads-for-small-business";
 import { brandRefreshVsRebrand } from "./brand-refresh-vs-rebrand";
+import { facebookAdsCostUk } from "./facebook-ads-cost-uk";
+import { speedUpWordpressSite } from "./speed-up-wordpress-site";
+import { shopifySeoChecklist } from "./shopify-seo-checklist";
+import { customWebsiteVsWordpress } from "./custom-website-vs-wordpress";
+import { chooseAGohighlevelAgency } from "./choose-a-gohighlevel-agency";
 
 export type { Post, Block } from "./types";
 export { CATEGORIES, categoryOf } from "./categories";
@@ -66,6 +71,12 @@ const ALL_POSTS: Post[] = [
   facebookLeadAdsVsLandingPage,
   videoAdsForSmallBusiness,
   brandRefreshVsRebrand,
+  // Second batch, one a day from 31 Oct 2026, written from Search Console queries and a SERP review on 23 Oct.
+  facebookAdsCostUk,
+  speedUpWordpressSite,
+  shopifySeoChecklist,
+  customWebsiteVsWordpress,
+  chooseAGohighlevelAgency,
 ];
 
 /**

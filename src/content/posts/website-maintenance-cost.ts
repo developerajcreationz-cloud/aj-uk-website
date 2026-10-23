@@ -18,7 +18,12 @@ export const websiteMaintenanceCost: Post = {
   ],
   parent: "wordpress-web-design",
   scene: "platforms",
-  related: ["how-much-does-a-website-cost", "technical-seo-audit-checklist", "shopify-vs-wordpress"],
+  related: [
+    "how-much-does-a-website-cost",
+    "technical-seo-audit-checklist",
+    "shopify-vs-wordpress",
+    "speed-up-wordpress-site",
+  ],
   author: { name: "Zohaib", role: "Web Developer and SEO Specialist" },
   datePublished: "2026-10-13",
   dateModified: "2026-10-23",
